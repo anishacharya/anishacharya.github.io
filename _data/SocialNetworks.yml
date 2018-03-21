@@ -6,6 +6,11 @@
 #            site.social-network-links.<key>
 #   icon: Specify a valid fontawesome icon class
 
+scholar:
+  name: "Google-Scholar"
+  base-URL: "scholar.google.co.in/"
+  icon: 
+
 facebook:
   name: "Facebook"
   baseURL: "https://www.facebook.com/"

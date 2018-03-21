@@ -22,6 +22,7 @@ title: ""
 
 # List of links in the navigation bar
 navbar-links:
+   Home: ""
    Reading-Group: "reading_group"
    Blog:
    Projects:

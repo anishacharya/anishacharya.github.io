@@ -22,7 +22,7 @@ title: ""
 
 # List of links in the navigation bar
 navbar-links:
-   Reading-Group:
+   Reading-Group: "reading_group"
    Blog:
    Projects:
    Resources:

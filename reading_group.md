@@ -6,8 +6,7 @@ subtitle: List of Papers appeared in our recent Reading Groups
 ### Spectral Decompositions in DNN
 - [Efficient Orthogonal Parametrisation of Recurrent Neural Networks
 Using Householder Reflections](https://arxiv.org/pdf/1612.00188.pdf)
-- [LOW-RANK MATRIX FACTORIZATION FOR DEEP NEURAL NETWORK
-TRAINING WITH HIGH-DIMENSIONAL OUTPUT TARGETS](https://pdfs.semanticscholar.org/30a9/97d0bd5cb9d65d3603124c8c3dd3315baf40.pdf)
+- [Low Rank Matrix Factorization for Deep Neural Network training with High Dimensional output targets](https://pdfs.semanticscholar.org/30a9/97d0bd5cb9d65d3603124c8c3dd3315baf40.pdf)
 
 ### Optimization
 - [Batch Normalization: Accelerating Deep Network Training by Reducing

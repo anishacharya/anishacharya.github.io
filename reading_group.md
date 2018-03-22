@@ -11,4 +11,4 @@ Using Householder Reflections](https://arxiv.org/pdf/1612.00188.pdf)
 ### Optimization
 - [Batch Normalization: Accelerating Deep Network Training by Reducing
 Internal Covariate Shift](http://proceedings.mlr.press/v37/ioffe15.pdf)
--[Self-Normalizing Neural Networks](http://papers.nips.cc/paper/6698-self-normalizing-neural-networks.pdf)
+- [Self-Normalizing Neural Networks](http://papers.nips.cc/paper/6698-self-normalizing-neural-networks.pdf)

@@ -24,9 +24,11 @@ title: ""
 navbar-links:
    Home: ""
    Reading-Group: "reading_group"
+   Conferences: "conference_deadlines"
    Blog:
    Projects:
    Resources:
+   
 #  About Me: "aboutme"
 #  Resources:
 #    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
@@ -81,7 +83,7 @@ social-network-links:
   linkedin: anish-acharya-a98a9383
   facebook: anish.acharya.94
   instagram: anishacharya91
-
+  twitter: AnishAc10645870
 #  reddit: yourname
 #  google-plus: +DeanAttali
 #  linkedin: daattali

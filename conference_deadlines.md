@@ -11,4 +11,4 @@ subtitle: Conferences I plan to Attend this Year
 
 
 ## Workshop Links:
-	- [Non-Convex Optimization - ICML2018 ](https://sites.google.com/view/icml2018nonconvex/home?authuser=0)  
+- [Non-Convex Optimization - ICML2018 ](https://sites.google.com/view/icml2018nonconvex/home?authuser=0)  

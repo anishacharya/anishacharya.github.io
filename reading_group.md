@@ -1,8 +1,11 @@
 ---
 layout: page
 title: Reading Group
-subtitle: List of Papers appeared in our recent Reading Groups
+subtitle: List of Seminal Papers 
 ---
+### General Theory
+- [On the difficulty of training recurrent neural networks](http://proceedings.mlr.press/v28/pascanu13.pdf)
+
 ### Spectral Decompositions in DNN
 - [Efficient Orthogonal Parametrisation of Recurrent Neural Networks
 Using Householder Reflections](https://arxiv.org/pdf/1612.00188.pdf)
@@ -12,3 +15,4 @@ Using Householder Reflections](https://arxiv.org/pdf/1612.00188.pdf)
 - [Batch Normalization: Accelerating Deep Network Training by Reducing
 Internal Covariate Shift](http://proceedings.mlr.press/v37/ioffe15.pdf)
 - [Self-Normalizing Neural Networks](http://papers.nips.cc/paper/6698-self-normalizing-neural-networks.pdf)
+

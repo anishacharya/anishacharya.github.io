@@ -30,6 +30,7 @@ navbar-links:
    Resources:
      - Reading-Group: "reading_group"
      - Conferences: "conference_deadlines"
+     - Conference_Calendar: "https://aideadlin.es/?sub=ML,CV,NLP,RO,SP,GR"
 #  About Me: "aboutme"
 #  Resources:
 #    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"

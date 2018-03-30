@@ -12,8 +12,8 @@ subtitle: Conferences I plan to Attend this Year
 
 
 ## Interesting Workshop Links:
-# ICML
-- [Non-Convex Optimization - ICML2018 ](https://sites.google.com/view/icml2018nonconvex/home?authuser=0) - May 22, 2018
+### ICML
+- [Non-Convex Optimization](https://sites.google.com/view/icml2018nonconvex/home?authuser=0) - May 22, 2018
 - [Theory of Deep Learning](https://sites.google.com/site/deeplearningtheory/) - May 1, 2018
 - [MMAS](http://www.ai.soc.i.kyoto-u.ac.jp/mmas2018/) - May 7, 2018 
 - [Ai for IOT](https://www.zurich.ibm.com/AI4IoT/submissions.html) - April 24,2018

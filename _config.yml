@@ -25,8 +25,11 @@ title: ""
 # List of links in the navigation bar
 navbar-links:
    Home: ""
-   Blog:
-   Projects:
+   About Me: 
+   Blog: 
+   Research:
+     - Recent-Projects:
+     - Publications: "publications"     
    Resources:
      - Reading-Group: "reading_group"
      - Conferences: "conference_deadlines"

@@ -5,7 +5,11 @@ subtitle: List of Seminal Papers
 ---
 ### General Theory
 - [On the difficulty of training recurrent neural networks](http://proceedings.mlr.press/v28/pascanu13.pdf)
-
+- [Theoretical insights into the optimization landscape of
+over-parameterized shallow neural networks](https://arxiv.org/pdf/1707.04926.pdf)
+- [The Landscape of Deep Learning Algorithms](https://arxiv.org/pdf/1705.07038.pdf)
+- [The loss surface of deep and wide neural networks](https://arxiv.org/abs/1704.08045)
+- [The loss surfaces of multilayer networks](http://proceedings.mlr.press/v38/choromanska15.pdf)
 ### Spectral Decompositions in DNN
 - [Efficient Orthogonal Parametrisation of Recurrent Neural Networks
 Using Householder Reflections](https://arxiv.org/pdf/1612.00188.pdf)

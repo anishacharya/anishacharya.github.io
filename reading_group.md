@@ -20,3 +20,10 @@ Using Householder Reflections](https://arxiv.org/pdf/1612.00188.pdf)
 Internal Covariate Shift](http://proceedings.mlr.press/v37/ioffe15.pdf)
 - [Self-Normalizing Neural Networks](http://papers.nips.cc/paper/6698-self-normalizing-neural-networks.pdf)
 
+
+----- 
+## Reading List (Courses) ##
+- [Statistical Learning Theory -CMU ](http://www.stat.cmu.edu/~siva/705/main.html)
+- [Statisti Learning Theory - Berkley(Berlett)](https://bcourses.berkeley.edu/courses/1409209/pages/lectures)
+- [Multi-Arm Bandit](http://www.cs.umd.edu/~slivkins/CMSC858G-fall16/)
+

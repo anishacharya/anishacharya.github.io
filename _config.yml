@@ -31,7 +31,7 @@ navbar-links:
      - Recent-Projects:
      - Publications: "publications"     
    Resources:
-     - Reading-Group: "reading_group"
+     - Reading-Group: "https://github.com/anishacharya/Write_Ups/tree/master/Reading_Group"
      - Conferences: "conference_deadlines"
      - Conference_Calendar: "https://aideadlin.es/?sub=ML,CV,NLP,RO,SP,GR"
 #  About Me: "aboutme"

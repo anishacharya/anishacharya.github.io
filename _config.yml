@@ -32,8 +32,9 @@ navbar-links:
      - Publications: "publications"     
    Resources:
      - Reading-Group: "https://github.com/anishacharya/Write_Ups/tree/master/Reading_Group"
-     - Conferences: "conference_deadlines"
+     # - Conferences: "conference_deadlines"
      - Conference_Calendar: "https://aideadlin.es/?sub=ML,CV,NLP,RO,SP,GR"
+     - Conference_Ranking: "http://webdocs.cs.ualberta.ca/~zaiane/htmldocs/ConfRanking.html#"	
 #  About Me: "aboutme"
 #  Resources:
 #    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"

@@ -35,6 +35,7 @@ navbar-links:
      # - Conferences: "conference_deadlines"
      - Conference_Calendar: "https://aideadlin.es/?sub=ML,CV,NLP,RO,SP,GR"
      - Conference_Ranking: "http://webdocs.cs.ualberta.ca/~zaiane/htmldocs/ConfRanking.html#"	
+     - PhD Fellowships: "https://medium.com/machine-learning-in-practice/top-12-computer-science-ph-d-fellowships-6da6d5f7225b"	
 #  About Me: "aboutme"
 #  Resources:
 #    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"

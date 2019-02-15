@@ -1,4 +1,4 @@
-##Theory: 
+## Theory: 
 [1] Learning Accuracy Preserving Low Resource DNN Models   
 [2] Effects of LR Schedule on GD based Non-convex optimization methods  
 [3] Understanding the Topology and geometry of DNNs  
@@ -6,7 +6,7 @@
 [5] Learning Disentangled Respresentations  
 
 
-##NLP:
+## NLP:
 [1] Paraphrase Detection and Generation  
 [2] Text Classification  
 [3] Named Entity Recognition  

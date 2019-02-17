@@ -25,9 +25,9 @@ title: ""
 # List of links in the navigation bar
 navbar-links:
    Home: ""
-   About Me: 
-   Blog: 
-   Resume: "/doc/cv_anish.pdf"
+   # About Me: 
+   # Blog: 
+   Resume: "/doc/CV_ANISH.pdf"
    Research:
      - Research Area: "research_areas"
      - Publications: "publications"     

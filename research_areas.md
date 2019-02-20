@@ -2,6 +2,7 @@
 layout: page
 title: Research Areas
 ---
+Problems I am thinking about these days:  
 ## Theory: 
 [1] Learning Accuracy Preserving Low Resource DNN Models   
 [2] Effects of LR Schedule on GD based Non-convex optimization methods  

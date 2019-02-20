@@ -27,7 +27,7 @@ navbar-links:
    Home: ""
    # About Me: 
    # Blog: 
-   Resume: "/doc/CV_ANISH.pdf"
+   Resume: "/blob/db27be28d8e91d5f407efe355e2813652b67170a/doc/CV_ANISH.pdf"
    Research:
      - Research Area: "research_areas"
      - Publications: "publications"     
@@ -37,6 +37,7 @@ navbar-links:
      - Conference_Calendar: "https://aideadlin.es/?sub=ML,CV,NLP,RO,SP,GR"
      - Conference_Ranking: "http://webdocs.cs.ualberta.ca/~zaiane/htmldocs/ConfRanking.html#"	
      - PhD Fellowships: "https://medium.com/machine-learning-in-practice/top-12-computer-science-ph-d-fellowships-6da6d5f7225b"	
+     - Fundings: "fundings"
 #  About Me: "aboutme"
 #  Resources:
 #    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"

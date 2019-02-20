@@ -27,7 +27,7 @@ navbar-links:
    Home: ""
    # About Me: 
    # Blog: 
-   Resume: "/blob/db27be28d8e91d5f407efe355e2813652b67170a/doc/CV_ANISH.pdf"
+   Resume: "./blob/master/doc/CV_ANISH.pdf"
    Research:
      - Research Area: "research_areas"
      - Publications: "publications"     

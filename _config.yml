@@ -27,7 +27,7 @@ navbar-links:
    Home: ""
    # About Me: 
    # Blog: 
-   Resume: "https://github.com/anishacharya/anishacharya.github.io/doc/CV_ANISH.pdf"
+   Resume: "https://github.com/anishacharya/anishacharya.github.io/blob/master/doc/CV_ANISH.pdf" 
    Research:
      - Research Area: "research_areas"
      - Publications: "publications"     

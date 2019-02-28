@@ -17,4 +17,12 @@ Problems I am thinking about these days:
 [3] Named Entity Recognition  
 [4] Learning universal Ontology  
 [5] char-word-sentence Embedding  
- 
+
+## Dialog Agents
+[1] Dialog Simulation
+[2] Unsupervised Dialog Evaluation
+[3] User Behavior Model
+[4] Automated Crowdsourcing to collect Dialog Data
+[5] Annotator Model (Automated Annotation Model) 
+[6] User Agent Self Play
+[7] Information theoretic Coherence 

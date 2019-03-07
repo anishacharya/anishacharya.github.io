@@ -12,7 +12,7 @@ subtitle: Selected Publications (Last Updated April 2018)
 S Das, *A Acharya*, I Pan. <span style="color:blue"> Mathematics and Computers in Simulation, 2014</span>  
  
 ### Conferences
-1. Online Embedding Compression for Text Classification using Low Rank Matrix Factorization
+1. Online Embedding Compression for Text Classification using Low Rank Matrix Factorization  
 *Anish Acharya*, Rahul Goel, Angeliki Metallinou, Inderjit Dhillon, <span style="color:blue">AAAI, 2019</span>  
 2. Least square and Instrumental Variable system identification of ac servo position control system with fractional Gaussian noise  
 S Das, A Kumar, I Pan, *A Acharya*, S Das, A Gupta. <span style="color:blue"> International Conference on Energy, Automation and Signal, 2011</span>  

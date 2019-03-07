@@ -1,9 +1,9 @@
 ---
 layout: page
 title: Published Work
-subtitle: Selected Publications (Last Updated April 2018)
+subtitle: Selected Publications (Last Updated Feb 2019)
 ---
-[Scholar-Goolge-Page](https://scholar.google.co.in/citations?hl=en&user=uBmgGMAAAAAJ) 
+For latest list of papers and citations please refer to: [Scholar-Goolge-Page](https://scholar.google.co.in/citations?hl=en&user=uBmgGMAAAAAJ) 
 
 ### Journal
 1. Extending the concept of analog Butterworth filter for fractional order systems  

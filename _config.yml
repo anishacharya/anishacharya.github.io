@@ -28,6 +28,10 @@ navbar-links:
    # About Me: 
    # Blog: 
    Resume: "https://github.com/anishacharya/anishacharya.github.io/blob/master/doc/CV_ANISH.pdf" 
+   Recognitions: 
+     - Press: "news"
+     - Awards: "awards"
+   
    Research:
      - Research Area: "research_areas"
      - Publications: "publications"     

@@ -8,7 +8,7 @@ or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2)
 *Fun Fact*:      
 My current [Erdős number](https://en.wikipedia.org/wiki/Erd%C5%91s_number) (according to AMS/MathSciNet) is 5 and I am at depth 7 from Albert Einstein   
 -> = co-authored with    
-Anish Acharya -> Saptarshi Das -> Arnold Neumaier -> Tibor Krisztin -> Vilmos Totik ->	Paul Erdős  
+Anish Acharya -> Inderjit S. Dhillon -> James Weldon Demmel -> John Russell Gilbert -> Roger C. Entringer -> Paul Erdős 
 Anish Acharya -> Saptarshi Das -> Suman Saha -> Sankar Kumar Pal -> R. Laurence Johnston -> T. E. Hull -> Leopold Infeld -> Albert Einstein  
 ### Journal
 1. Extending the concept of analog Butterworth filter for fractional order systems  

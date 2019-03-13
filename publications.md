@@ -1,10 +1,28 @@
 ---
 layout: page
-title: Published Work
+title: Published Workk
 subtitle: Selected Publications (Last Updated Feb 2019)
 ---
-For latest list of papers and citations please refer to: [Scholar-Goolge-Page](https://scholar.google.co.in/citations?hl=en&user=uBmgGMAAAAAJ) 
+You can follow my latest papers and citations on [Scholar Goolge](https://scholar.google.co.in/citations?hl=en&user=uBmgGMAAAAAJ) 
+or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2)  
+*Fun Fact*:   
+My current [Erdős number](https://en.wikipedia.org/wiki/Erd%C5%91s_number) (according to AMS/MathSciNet) is 5 and I am at depth 7 from Albert Einstein  
+.
+Collaboration Hierarchy:
+Anish Acharya	coauthored with	Saptarshi Das	MR3191967
+Saptarshi Das	coauthored with	Arnold Neumaier	MR3033081
+Arnold Neumaier	coauthored with	Tibor Krisztin	MR3183042
+Tibor Krisztin	coauthored with	Vilmos Totik	MR1334491 (96k:34104)
+Vilmos Totik	coauthored with	Paul Erdős	MR1388196 (98c:52021)
 
+
+Anish Acharya	coauthored with	Saptarshi Das1	MR3191967
+Saptarshi Das1	coauthored with	Suman Saha	MR2913998
+Suman Saha	coauthored with	Sankar Kumar Pal	MR2293056
+Sankar Kumar Pal	coauthored with	R. Laurence Johnston	MR0305628 (46 #4758)
+R. Laurence Johnston	coauthored with	T. E. Hull	MR0165700 (29 #2980)
+T. E. Hull	coauthored with	Leopold Infeld	MR0043308 (13,239d)
+Leopold Infeld	coauthored with	Albert Einstein	MR1503389
 ### Journal
 1. Extending the concept of analog Butterworth filter for fractional order systems  
 *A Acharya*, S Das, I Pan, S Das.  <span style="color:blue">Signal Processing, 2014</span>  

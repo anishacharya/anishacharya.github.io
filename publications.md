@@ -7,9 +7,9 @@ You can follow my latest papers and citations on [Scholar Goolge](https://schola
 or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2)  
 *Fun Fact*:      
 My current [Erdős number](https://en.wikipedia.org/wiki/Erd%C5%91s_number) (according to AMS/MathSciNet) is 5 and I am at depth 7 from Albert Einstein   
-Collaboration Hierarchy:  
-Anish Acharya coauthored with Saptarshi Das coauthored with Arnold Neumaier coauthored with Tibor Krisztin coauthored with Vilmos Totik coauthored with	Paul Erdős  
-Anish Acharya coauthored with Saptarshi Das coauthored with Suman Saha coauthored with Sankar Kumar Pal coauthored with	R. Laurence Johnston coauthored with T. E. Hull coauthored with Leopold Infeld coauthored with Albert Einstein
+-> = co-authored with    
+Anish Acharya -> Saptarshi Das -> Arnold Neumaier -> Tibor Krisztin -> Vilmos Totik ->	Paul Erdős  
+Anish Acharya -> Saptarshi Das -> Suman Saha -> Sankar Kumar Pal -> R. Laurence Johnston -> T. E. Hull -> Leopold Infeld -> Albert Einstein  
 ### Journal
 1. Extending the concept of analog Butterworth filter for fractional order systems  
 *A Acharya*, S Das, I Pan, S Das.  <span style="color:blue">Signal Processing, 2014</span>  

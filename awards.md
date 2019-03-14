@@ -1,6 +1,3 @@
----
-layout: page
----
 ## Honors and Awards
 - PhD fellowship from UT Austin [2019-2024]
 - [MHRD](https://mhrd.gov.in/) (Ministry of Human Resource Development) Fellow [2009-2013] 

@@ -6,7 +6,7 @@ plugins:
   - jekyll-seo-tag
 
 # If you are building a simple GitHub user page (http://username.github.io) then use these settings:
-url: "http://anishacharya.github.io"
+url: #"http://anishacharya.github.io"
 baseurl: ""
 
 # If you are building a GitHub project page then use these settings:

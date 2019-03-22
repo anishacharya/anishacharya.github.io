@@ -3,7 +3,7 @@ layout: page
 title: Published Work
 subtitle: Selected Publications (Last Updated Feb 2019)
 ---
-You can follow my latest papers and citations on [Scholar Goolgle](https://scholar.google.co.in/citations?hl=en&user=uBmgGMAAAAAJ) 
+You can follow my latest papers and citations on [Scholar Google](https://scholar.google.co.in/citations?hl=en&user=uBmgGMAAAAAJ) 
 or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2)  
    
 *Fun Fact*:      

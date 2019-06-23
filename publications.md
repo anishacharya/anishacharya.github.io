@@ -11,6 +11,7 @@ My current [Erdős number](https://en.wikipedia.org/wiki/Erd%C5%91s_number) (acc
 -> = co-authored with    
 a) *Anish Acharya* -> Inderjit S. Dhillon -> James Weldon Demmel -> John Russell Gilbert -> Roger C. Entringer -> **Paul Erdős**       
 b) *Anish Acharya* -> Saptarshi Das -> Suman Saha -> Sankar Kumar Pal -> R. Laurence Johnston -> T. E. Hull -> Leopold Infeld -> **Albert Einstein**     
+
 ### Journal
 1. Extending the concept of analog Butterworth filter for fractional order systems  
 *A Acharya*, S Das, I Pan, S Das.  <span style="color:blue">Signal Processing, 2014</span>  
@@ -19,7 +20,7 @@ S Das, *A Acharya*, I Pan. <span style="color:blue"> Mathematics and Computers i
  
 ### Conferences
 1. Online Embedding Compression for Text Classification using Low Rank Matrix Factorization  
-*Anish Acharya*, Rahul Goel, Angeliki Metallinou, Inderjit Dhillon, <span style="color:blue">AAAI, 2019</span>  
+*Anish Acharya*, Rahul Goel, Angeliki Metallinou, Inderjit Dhillon, <span style="color:blue">AAAI, 2019</span> , <span style="color:blue">Acceptance Rate, 16.2% (1150/7095)</span> 
 2. Least square and Instrumental Variable system identification of ac servo position control system with fractional Gaussian noise  
 S Das, A Kumar, I Pan, *A Acharya*, S Das, A Gupta. <span style="color:blue"> International Conference on Energy, Automation and Signal, 2011</span>  
 3. Stability analysis of delayed system using Bode integral  

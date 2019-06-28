@@ -25,9 +25,11 @@ title: ""
 # List of links in the navigation bar
 navbar-links:
    Home: ""
-   # About Me: 
-   # Blog: 
-   Resume: "https://github.com/anishacharya/anishacharya.github.io/blob/master/doc/CV_ANISH.pdf" 
+   About Me:  
+     - Education: "education" 
+     - Industry: "industry"
+     - Resume: "https://github.com/anishacharya/anishacharya.github.io/blob/master/doc/CV_ANISH.pdf" 
+   
    Recognitions: 
      - Press: "news"
      - Awards: "awards"
@@ -35,9 +37,9 @@ navbar-links:
    Research:
      - Research Area: "research_areas"
      - Publications: "publications"     
+   
    Resources:
      - Reading-Group: "https://github.com/anishacharya/Write_Ups/tree/master/Reading_Group"
-     # - Conferences: "conference_deadlines"
      - Conference_Calendar: "https://aideadlin.es/?sub=ML,CV,NLP,RO,SP,GR"
      - Conference_Ranking: "http://webdocs.cs.ualberta.ca/~zaiane/htmldocs/ConfRanking.html#"	
      - PhD Fellowships: "https://medium.com/machine-learning-in-practice/top-12-computer-science-ph-d-fellowships-6da6d5f7225b"	

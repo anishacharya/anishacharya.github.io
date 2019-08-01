@@ -10,6 +10,7 @@ over-parameterized shallow neural networks](https://arxiv.org/pdf/1707.04926.pdf
 - [The Landscape of Deep Learning Algorithms](https://arxiv.org/pdf/1705.07038.pdf)
 - [The loss surface of deep and wide neural networks](https://arxiv.org/abs/1704.08045)
 - [The loss surfaces of multilayer networks](http://proceedings.mlr.press/v38/choromanska15.pdf)
+
 ### Spectral Decompositions in DNN
 - [Efficient Orthogonal Parametrisation of Recurrent Neural Networks
 Using Householder Reflections](https://arxiv.org/pdf/1612.00188.pdf)
@@ -24,6 +25,6 @@ Internal Covariate Shift](http://proceedings.mlr.press/v37/ioffe15.pdf)
 ----- 
 ## Reading List (Courses) ##
 - [Statistical Learning Theory -CMU ](http://www.stat.cmu.edu/~siva/705/main.html)
-- [Statisti Learning Theory - Berkley(Berlett)](https://bcourses.berkeley.edu/courses/1409209/pages/lectures)
+- [Statistical Learning Theory - Berkley(Berlett)](https://bcourses.berkeley.edu/courses/1409209/pages/lectures)
 - [Multi-Arm Bandit](http://www.cs.umd.edu/~slivkins/CMSC858G-fall16/)
 

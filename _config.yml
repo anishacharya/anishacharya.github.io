@@ -16,8 +16,8 @@ baseurl: ""
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: "" 
-
+title: Anish Acharya 
+description: "PhD Candidate @UT Austin, Previously Applied Scientist @Amazon Alexa AI"
 # Short description of your site
 
 # --- Navigation bar options --- #
@@ -28,9 +28,9 @@ navbar-links:
    Research:
      - Research Area: "research_areas"
      - Publications: "publications"     
-   Recognitions: 
-     - Press: "news"
-     - Awards: "awards"
+   Recognitions: "news" 
+    # - Press: "news"
+    # - Awards: "awards"
    Resources:
      - Resume: "https://github.com/anishacharya/anishacharya.github.io/blob/master/doc/CV_ANISH.pdf" 
      - Reading-Group: "https://github.com/anishacharya/Write_Ups/tree/master/Reading_Group"

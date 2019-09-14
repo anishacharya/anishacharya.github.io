@@ -37,3 +37,8 @@ A Pakhira, S Das, *A Acharya*, I Pan, S Saha.  <span style="color:blue">Third In
 ### Tutorials/Notes 
 1. Template Matching based Object Detection Using HOG Feature Pyramid  
 *A Anish* , <span style="color:blue">Computing Research Recository 22 (6), 2014</span>
+2. A Complete Review of Controlling the FDR in a Multiple Comparison Problem Framework -- The Benjamini-Hochberg Algorithm
+*Acharya A*,  <span style="color:blue">arXiv preprint arXiv:1406.7117, 2014</span>
+3 Are We Ready for Driver-less Vehicles? Security vs. Privacy-A Social Perspective
+*Acharya A*,  <span style="color:blue">arXiv preprint arXiv:1412.5207, 2014</span>
+

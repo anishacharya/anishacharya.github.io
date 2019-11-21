@@ -24,7 +24,8 @@ description: "PhD Candidate @UT Austin, Previously Applied Scientist @Amazon Ale
 
 # List of links in the navigation bar
 navbar-links:
-   About Me: "aboutme"  
+   Bio: "bio"
+   Journey: "aboutme"  
    Research:
      - Research Area: "research_areas"
      - Publications: "publications"     

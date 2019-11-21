@@ -6,21 +6,18 @@ subtitle: Selected Publications (Last Updated Feb 2019)
 You can follow my latest papers and citations on [Scholar Google](https://scholar.google.co.in/citations?hl=en&user=uBmgGMAAAAAJ) 
 or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2)  
    
-*Fun Fact*:      
-My current [Erdős number](https://en.wikipedia.org/wiki/Erd%C5%91s_number) (according to AMS/MathSciNet) is 5 and I am at depth 7 from Albert Einstein   
--> = co-authored with    
-a) *Anish Acharya* -> Inderjit S. Dhillon -> James Weldon Demmel -> John Russell Gilbert -> Roger C. Entringer -> **Paul Erdős**       
-b) *Anish Acharya* -> Saptarshi Das -> Suman Saha -> Sankar Kumar Pal -> R. Laurence Johnston -> T. E. Hull -> Leopold Infeld -> **Albert Einstein**     
-
 ### Journal
 1. Extending the concept of analog Butterworth filter for fractional order systems  
 *A Acharya*, S Das, I Pan, S Das.  <span style="color:blue">Signal Processing, 2014</span> , <span style="color:red">impact factor: 4.086</span> 
+[View Online](https://scholar.google.co.in/citations?hl=en&user=uBmgGMAAAAAJ#d=gs_md_cita-d&u=%2Fcitations%3Fview_op%3Dview_citation%26hl%3Den%26user%3DuBmgGMAAAAAJ%26citation_for_view%3DuBmgGMAAAAAJ%3Ak_7cPK9k7w8C%26tzom%3D360)
 2. Simulation studies on the design of optimum PID controllers to suppress chaotic oscillations in a family of Lorenz-like multi-wing attractors  
 S Das, *A Acharya*, I Pan. <span style="color:blue"> Mathematics and Computers in Simulation, 2014</span>  <span style="color:red">impact factor: 1.643</span>
- 
+[View Online](https://scholar.google.co.in/citations?hl=en&user=uBmgGMAAAAAJ#d=gs_md_cita-d&u=%2Fcitations%3Fview_op%3Dview_citation%26hl%3Den%26user%3DuBmgGMAAAAAJ%26citation_for_view%3DuBmgGMAAAAAJ%3A4vMrXwiscB8C%26tzom%3D360)
+
 ### Conferences
 1. Online Embedding Compression for Text Classification using Low Rank Matrix Factorization  
-*Anish Acharya*, Rahul Goel, Angeliki Metallinou, Inderjit Dhillon, <span style="color:blue">AAAI, 2019</span> , <span style="color:red">Acceptance Rate, 16.2% (1150/7095)</span> 
+*Anish Acharya*, Rahul Goel, Angeliki Metallinou, Inderjit Dhillon, <span style="color:blue">AAAI, 2019</span> , <span style="color:red">Acceptance Rate, 16.2% (1150/7095)</span> [View Online](https://scholar.google.co.in/citations?hl=en&user=uBmgGMAAAAAJ#d=gs_md_cita-d&u=%2Fcitations%3Fview_op%3Dview_citation%26hl%3Den%26user%3DuBmgGMAAAAAJ%26citation_for_view%3DuBmgGMAAAAAJ%3ALXmCCkuhhTsC%26tzom%3D360)
+ 
 2. Least square and Instrumental Variable system identification of ac servo position control system with fractional Gaussian noise  
 S Das, A Kumar, I Pan, *A Acharya*, S Das, A Gupta. <span style="color:blue"> International Conference on Energy, Automation and Signal, 2011</span>  
 3. Stability analysis of delayed system using Bode integral  
@@ -41,4 +38,11 @@ A Pakhira, S Das, *A Acharya*, I Pan, S Saha.  <span style="color:blue">Third In
 *Acharya A*,  <span style="color:blue">arXiv preprint arXiv:1406.7117, 2014</span>     
 3. Are We Ready for Driver-less Vehicles? Security vs. Privacy-A Social Perspective
 *Acharya A*,  <span style="color:blue">arXiv preprint arXiv:1412.5207, 2014</span>
+
+*Fun Fact*:      
+My current [Erdős number](https://en.wikipedia.org/wiki/Erd%C5%91s_number) (according to AMS/MathSciNet) is 5 and I am at depth 7 from Albert Einstein   
+-> = co-authored with    
+a) *Anish Acharya* -> Inderjit S. Dhillon -> James Weldon Demmel -> John Russell Gilbert -> Roger C. Entringer -> **Paul Erdős**       
+b) *Anish Acharya* -> Saptarshi Das -> Suman Saha -> Sankar Kumar Pal -> R. Laurence Johnston -> T. E. Hull -> Leopold Infeld -> **Albert Einstein**     
+
 

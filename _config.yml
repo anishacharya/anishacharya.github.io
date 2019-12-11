@@ -27,7 +27,7 @@ navbar-links:
    About Me: "bio"
     # - Bio: "bio"
     # - Journey: "aboutme"  
-   Publications:"publications"
+   Publications: "publications"
     # - Research Area: "research_areas"
     # - Publications: "publications"     
    Recognitions: "news" 

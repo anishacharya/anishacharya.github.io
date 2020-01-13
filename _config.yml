@@ -24,18 +24,19 @@ description: "PhD Candidate @UT Austin, Previously Applied Scientist @Amazon Ale
 
 # List of links in the navigation bar
 navbar-links:
-   About Me: "bio"
+   Bio: "bio"
     # - Bio: "bio"
     # - Journey: "aboutme"  
-   Publications: "publications"
+   Publication: "publications"
     # - Research Area: "research_areas"
     # - Publications: "publications"     
-   Recognitions: "news" 
+   Recognition: "news" 
     # - Press: "news"
     # - Awards: "awards"
-   Resources:
+   Experience: "aboutme"
+   Resource:
      - Resume: "https://wncg.org/sites/wncg.org/files/cv/Acharya-Anish-CV-2019-WNCG.pdf"
-     - Interactive Resume: "aboutme"
+     #- Interactive Resume: "aboutme"
      #- Reading-Group: "https://github.com/anishacharya/Write_Ups/tree/master/Reading_Group"
      - WNCG: "http://wncg.org/people/students/anish-acharya"
      - Center of Big Data Analytics: "https://bigdata.oden.utexas.edu/people/"

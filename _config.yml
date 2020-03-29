@@ -38,6 +38,7 @@ navbar-links:
      - Resume: "https://wncg.org/sites/wncg.org/files/cv/Acharya-Anish-CV-2019-WNCG.pdf"
      #- Interactive Resume: "aboutme"
      #- Reading-Group: "https://github.com/anishacharya/Write_Ups/tree/master/Reading_Group"
+     - Double Descent: "double_descent"
      - WNCG: "http://wncg.org/people/students/anish-acharya"
      - Dhillon Lab: "https://bigdata.oden.utexas.edu/people/"
      - Sanghavi Lab: "http://users.ece.utexas.edu/~sanghavi/group.html"

@@ -28,7 +28,7 @@ be mitigated, i.e. we do not observe an intermediate dip at all or observe a ver
 dip in the test performance.
 
 ### DataSets
-We shall try to reproduce the limited existing results from DeepMind 
+We shall try to reproduce the limited existing results from OpenAI 
 [[Nakkiran et.al.](https://arxiv.org/pdf/1912.02292.pdf)] 
 which use commonly used datasets such as CIFAR-10, CIFAR-100, etc. on common 
 architectures such as ResNets, VGG, etc. We shall also try to observe this 
@@ -40,8 +40,7 @@ controlling the extent of double descent.
 
 
 ### Timeline   
--[x] April 15 : Literature Review on Overparametrized Models   
--[ ] April 30 : Literature Review on SGD behavior in Overparameterized setting     
+-[x] April 15 : Literature Review of Double Descent in a Overparameterized Models       
 -[ ] May 23 : Preliminary experiments and theory on linear regression models   
--[ ] May 23 : Deep learning experiments (Tentative)   
+-[ ] May 23 : Deep learning experiments    
 

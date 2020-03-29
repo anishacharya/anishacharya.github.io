@@ -1,8 +1,6 @@
 ### Understanding Double Descent      
 
 ###Background
-
-----------------
 <img align="right" width="500" height="300" src="/img/double_descent.png"> 
 We focus on the phenomenon of double descent in deep learning wherein when we increase model size or 
 the num-ber of epochs, performance on the test set initially improves(as expected), 
@@ -15,9 +13,6 @@ double descent for simple linear regression settings.
 
 
 ###Proposal
-
--------------------
-
 In this project, we aim to investigate double descent more deeply and try to precisely 
 characterize the phenomenon under different settings. 
 Specifically, we shall focus on a couple of aspects the impact of **label noise** and **regularization** on 
@@ -30,9 +25,6 @@ be mitigated, i.e. we do not observe an intermediate dip at all or observe a ver
 dip in the test performance.
 
 ###DataSets
-
--------------------
-
 We shall try to reproduce the limited existing results from DeepMind which use commonly used 
 datasets such as CIFAR-10, CIFAR-100, etc. on common architectures such as ResNets, VGG, etc. 
 We shall also try to observe this in simple problems such as linear regression. 
@@ -43,9 +35,6 @@ controlling the extent of double descent.
 
 
 ###Rough Timeline
-
----------
-
 -[x] April 15 : Literature Review on Overparametrized Models   
 -[ ] April 30 : Literature Review on SGD behavior in Overparameterized setting     
 -[ ] May 23 : Preliminary experiments and theory on linear regression models   

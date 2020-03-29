@@ -9,8 +9,9 @@ We focus on the phenomenon of double descent in deep learning wherein when we in
 the num-ber of epochs, performance on the test set initially improves(as expected), 
 then worsens but again starts to improve andfinally saturates, which is against conventional wisdom.
 This phenomenon has already been demonstrated on traditional machine 
-learning models [Belikin et.al.](https://arxiv.org/pdf/1812.11118.pdf),
-[Belkin et.al.](https://arxiv.org/pdf/1903.07571.pdf) but more recently was also observed in complex deep learning models [[Nakkiran et.al.][2]]. 
+learning models [[Belikin et.al.](https://arxiv.org/pdf/1812.11118.pdf)],
+[[Belkin et.al.](https://arxiv.org/pdf/1903.07571.pdf)] but more recently was also observed in complex deep learning models 
+[[Nakkiran et.al.](https://arxiv.org/pdf/1912.02292.pdf)]. 
 There have also been attempts at mathematically explaining
 double descent for simple linear regression settings.
 
@@ -38,7 +39,7 @@ do not consider regularization in too much detail but we think it is a critical 
 controlling the extent of double descent.
 
 
-### Timeline
+### Timeline   
 -[x] April 15 : Literature Review on Overparametrized Models   
 -[ ] April 30 : Literature Review on SGD behavior in Overparameterized setting     
 -[ ] May 23 : Preliminary experiments and theory on linear regression models   

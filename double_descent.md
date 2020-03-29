@@ -3,7 +3,7 @@
 **_Background_**
 
 ----------------
-<img align="left" width="300" height="300" src="/img/double_descent.png"> 
+<img align="right" width="500" height="300" src="/img/double_descent.png"> 
 We focus on the phenomenon of double descent in deep learning wherein when we increase model size or 
 the num-ber of epochs, performance on the test set initially improves(as expected), 
 then worsens but again starts to improve andfinally saturates, which is against conventional wisdom.
@@ -46,10 +46,10 @@ controlling the extent of double descent.
 
 ---------
 
-- [ ] April 15 : Literature Review on Overparametrized Models .
-- [ ] April 30 : Literature Review on SGD behavior in Overparameterized setting.   
-- [ ] May 23 : Preliminary experiments and theory on linear regression models .
-- [ ] May 23 : Deep learning experiments (Tentative) .
+-[x] April 15 : Literature Review on Overparametrized Models .
+-[ ] April 30 : Literature Review on SGD behavior in Overparameterized setting.   
+-[ ] May 23 : Preliminary experiments and theory on linear regression models .
+-[ ] May 23 : Deep learning experiments (Tentative) .
 
 
 

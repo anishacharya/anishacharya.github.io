@@ -1,6 +1,6 @@
-## On Understanding Double Descent      
+### Understanding Double Descent      
 
-**_Background_**
+###Background
 
 ----------------
 <img align="right" width="500" height="300" src="/img/double_descent.png"> 
@@ -14,7 +14,7 @@ double descent for simple linear regression settings.
 
 
 
-**_Proposal_**
+###Proposal
 
 -------------------
 
@@ -29,7 +29,7 @@ bias the trajectory of gradient-based optimization algorithms in such a way that
 be mitigated, i.e. we do not observe an intermediate dip at all or observe a very small intermediate 
 dip in the test performance.
 
-**_DataSets_**
+###DataSets
 
 -------------------
 
@@ -42,14 +42,14 @@ do not consider regularization in too much detail but we think it is a critical 
 controlling the extent of double descent.
 
 
-**_Rough Timeline_**
+###Rough Timeline
 
 ---------
 
--[x] April 15 : Literature Review on Overparametrized Models .
--[ ] April 30 : Literature Review on SGD behavior in Overparameterized setting.   
--[ ] May 23 : Preliminary experiments and theory on linear regression models .
--[ ] May 23 : Deep learning experiments (Tentative) .
+-[x] April 15 : Literature Review on Overparametrized Models   
+-[ ] April 30 : Literature Review on SGD behavior in Overparameterized setting     
+-[ ] May 23 : Preliminary experiments and theory on linear regression models   
+-[ ] May 23 : Deep learning experiments (Tentative)   
 
 
 

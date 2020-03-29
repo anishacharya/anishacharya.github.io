@@ -41,6 +41,6 @@ controlling the extent of double descent.
 
 ### Timeline   
 -[x] April 15 : Literature Review of Double Descent in a Overparameterized Models       
--[ ] May 23 : Preliminary experiments and theory on linear regression models   
+-[ ] May 10 : Preliminary experiments and theory on linear regression models   
 -[ ] May 23 : Deep learning experiments    
 

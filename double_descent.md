@@ -3,7 +3,7 @@
 **_Background_**
 
 ----------------
-<img align="left" width="300" height="300" src="./img/double_descent.png"> 
+<img align="left" width="300" height="300" src="/img/double_descent.png"> 
 We focus on the phenomenon of double descent in deep learning wherein when we increase model size or 
 the num-ber of epochs, performance on the test set initially improves(as expected), 
 then worsens but again starts to improve andfinally saturates, which is against conventional wisdom.

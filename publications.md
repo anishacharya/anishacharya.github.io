@@ -1,22 +1,40 @@
 ---
 layout: page
 title: Published Work
-subtitle: Selected Publications (Last Updated Feb 2019)
+subtitle: Selected Publications (Last Updated April 2021)
 ---
-You can follow my latest papers and citations on [Scholar Google](https://scholar.google.co.in/citations?hl=en&user=uBmgGMAAAAAJ) 
+Google Bots are awesome at curating latest papers and citations on [Scholar Google](https://scholar.google.co.in/citations?hl=en&user=uBmgGMAAAAAJ) 
 or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2)  
+
+### Preprints
+1. Robust Optimization in very High Dimensions via Block Coordinate Geometric Median Descent   
+***A Acharya***, A. Hashemi, S. Sanghavi, P. Jain, I. Dhillon, U. Topcu   
+   [NSF-TRIPODS Workshop: Communication Efficient Distributed Optimization](https://sites.google.com/ucsd.edu/cedo/)
    
+2. Faster Non-Convex Federated Learning via Global and  Local Momentum   
+R. Das, ***A Acharya***, A. Hashemi, S. Sanghavi, I. Dhillon, U. Topcu
+   [Arxiv](https://arxiv.org/abs/2012.04061)
+3. On the Benefits of Multiple Gossip Steps in Communication-Constrained Decentralized Optimization   
+   A. Hashemi, ***A Acharya***, R. Das, H. Vikalo, S. Sanghavi, I. Dhillon   
+   [Arxiv](https://arxiv.org/abs/2011.10643)
+   
+### Patents
+1. Embedding Compression via Matrix Factorization (Amazon Technologies Inc)    
+***A Acharya***, A. Metallinou, R. Goel, I. Dhillon  
+   [View Online](https://patents.google.com/patent/US10872601B1/en)
+
 ### Journal
 1. Extending the concept of analog Butterworth filter for fractional order systems  
-***A Acharya***, S Das, I Pan, S Das.  <span style="color:blue">Signal Processing, 2014</span> , <span style="color:red">impact factor: 4.086</span> 
+***A Acharya***, S Das, I Pan, S Das.  <span style="color:blue">Signal Processing, 2014</span>    
 [View Online](https://scholar.google.co.in/citations?hl=en&user=uBmgGMAAAAAJ#d=gs_md_cita-d&u=%2Fcitations%3Fview_op%3Dview_citation%26hl%3Den%26user%3DuBmgGMAAAAAJ%26citation_for_view%3DuBmgGMAAAAAJ%3Ak_7cPK9k7w8C%26tzom%3D360)
 2. Simulation studies on the design of optimum PID controllers to suppress chaotic oscillations in a family of Lorenz-like multi-wing attractors  
-S Das, ***A Acharya***, I Pan. <span style="color:blue"> Mathematics and Computers in Simulation, 2014</span>  <span style="color:red">impact factor: 1.643</span>
+S Das, ***A Acharya***, I Pan. <span style="color:blue"> Mathematics and Computers in Simulation, 2014</span>    
 [View Online](https://scholar.google.co.in/citations?hl=en&user=uBmgGMAAAAAJ#d=gs_md_cita-d&u=%2Fcitations%3Fview_op%3Dview_citation%26hl%3Den%26user%3DuBmgGMAAAAAJ%26citation_for_view%3DuBmgGMAAAAAJ%3A4vMrXwiscB8C%26tzom%3D360)
 
 ### Conferences
-1. Online Embedding Compression for Text Classification using Low Rank Matrix Factorization  
-***Anish Acharya***, Rahul Goel, Angeliki Metallinou, Inderjit Dhillon, <span style="color:blue">AAAI, 2019</span> , <span style="color:red">Acceptance Rate, 16.2% (1150/7095)</span> [View Online](https://scholar.google.co.in/citations?hl=en&user=uBmgGMAAAAAJ#d=gs_md_cita-d&u=%2Fcitations%3Fview_op%3Dview_citation%26hl%3Den%26user%3DuBmgGMAAAAAJ%26citation_for_view%3DuBmgGMAAAAAJ%3ALXmCCkuhhTsC%26tzom%3D360)
+1. Online Embedding Compression for Text Classification using Low Rank Matrix Factorization    
+***Anish Acharya***, Rahul Goel, Angeliki Metallinou, Inderjit Dhillon, <span style="color:blue">AAAI, 2019</span>    
+   [View Online](https://scholar.google.co.in/citations?hl=en&user=uBmgGMAAAAAJ#d=gs_md_cita-d&u=%2Fcitations%3Fview_op%3Dview_citation%26hl%3Den%26user%3DuBmgGMAAAAAJ%26citation_for_view%3DuBmgGMAAAAAJ%3ALXmCCkuhhTsC%26tzom%3D360)
 2. Least square and Instrumental Variable system identification of ac servo position control system with fractional Gaussian noise  
 S Das, A Kumar, I Pan, ***A Acharya***, S Das, A Gupta. <span style="color:blue"> International Conference on Energy, Automation and Signal (IEEE) , 2011</span>  
 3. Stability analysis of delayed system using Bode integral  

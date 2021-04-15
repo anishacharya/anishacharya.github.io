@@ -9,10 +9,9 @@ or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2)
 ### Preprints
 1. Robust Optimization in very High Dimensions via Block Coordinate Geometric Median Descent   
 ***A Acharya***, A. Hashemi, S. Sanghavi, P. Jain, I. Dhillon, U. Topcu   
-   [NSF-TRIPODS Workshop: Communication Efficient Distributed Optimization](https://sites.google.com/ucsd.edu/cedo/)
-   
+   [NSF-TRIPODS Workshop: Communication Efficient Distributed Optimization](https://sites.google.com/ucsd.edu/cedo/)   
 2. Faster Non-Convex Federated Learning via Global and  Local Momentum   
-R. Das, ***A Acharya***, A. Hashemi, S. Sanghavi, I. Dhillon, U. Topcu
+R. Das, ***A Acharya***, A. Hashemi, S. Sanghavi, I. Dhillon, U. Topcu   
    [Arxiv](https://arxiv.org/abs/2012.04061)
 3. On the Benefits of Multiple Gossip Steps in Communication-Constrained Decentralized Optimization   
    A. Hashemi, ***A Acharya***, R. Das, H. Vikalo, S. Sanghavi, I. Dhillon   
@@ -33,10 +32,11 @@ S Das, ***A Acharya***, I Pan. <span style="color:blue"> Mathematics and Compute
 
 ### Conferences
 1. Online Embedding Compression for Text Classification using Low Rank Matrix Factorization    
-***Anish Acharya***, Rahul Goel, Angeliki Metallinou, Inderjit Dhillon, <span style="color:blue">AAAI, 2019</span>    
+***A. Acharya***, R. Goel, A. Metallinou, I. Dhillon; <span style="color:blue">AAAI, 2019</span>    
    [View Online](https://scholar.google.co.in/citations?hl=en&user=uBmgGMAAAAAJ#d=gs_md_cita-d&u=%2Fcitations%3Fview_op%3Dview_citation%26hl%3Den%26user%3DuBmgGMAAAAAJ%26citation_for_view%3DuBmgGMAAAAAJ%3ALXmCCkuhhTsC%26tzom%3D360)
 2. Least square and Instrumental Variable system identification of ac servo position control system with fractional Gaussian noise  
-S Das, A Kumar, I Pan, ***A Acharya***, S Das, A Gupta. <span style="color:blue"> International Conference on Energy, Automation and Signal (IEEE) , 2011</span>  
+S Das, A Kumar, I Pan, ***A Acharya***, S Das, A Gupta. <span style="color:blue"> International Conference on Energy, Automation and Signal (IEEE),2011</span>   
+   [View Online]()
 3. Stability analysis of delayed system using Bode integral  
 ***A Acharya***, D Mitra, K Halder. <span style="color:blue">International Conference on Computer Communication and Informatics (IEEE), 2013</span>  
 4. Identification of Nonlinear Systems From the Knowledge Around Different Operating Conditions: A Feed-Forward Multi-Layer ANN Based Approach  

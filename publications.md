@@ -71,12 +71,12 @@ S Das, A Kumar, I Pan, ***A Acharya***, S Das, A Gupta. <span style="color:blue"
 ### Online Short Notes 
 6. Fourier RIP   
 E. Price, ***A. Acharya***, R. Das   
-   [UT Austin Link]()
+   [UT Austin Link](https://www.cs.utexas.edu/~ecprice/courses/sublinear/scribe/lec18.pdf)
 
 
 5. Sparse Recovery    
 E. Price, ***A. Acharya***, R. Das    
-   [UT Austin Link]()
+   [UT Austin Link](https://www.cs.utexas.edu/~ecprice/courses/sublinear/scribe/lec15.pdf)
    
 
 4. On image segmentation using fractional gradients-learning model parameters using approximate marginal inference    

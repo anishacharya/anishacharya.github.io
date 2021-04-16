@@ -35,8 +35,9 @@ navbar-links:
     # - Press: "news"
     # - Awards: "awards"
    Software:
+     - Federated Learning: "https://github.com/microsoft/OpenMSFTL"
      - Lexical Substitution: "https://anishacharya.github.io/LexSub/"
-     - Double Descent: "https://anishacharya.github.io/double-descent/"
+     # - Double Descent: "https://anishacharya.github.io/double-descent/"
    Pointers:
      - Resume: "https://wncg.org/sites/wncg.org/files/cv/Acharya-Anish-CV-2019-WNCG.pdf"
      #- Interactive Resume: "aboutme"

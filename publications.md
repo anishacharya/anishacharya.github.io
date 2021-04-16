@@ -40,7 +40,7 @@ S Das, ***A Acharya***, I Pan. <span style="color:blue"> Mathematics and Compute
 ### Conferences
 6. Online Embedding Compression for Text Classification using Low Rank Matrix Factorization    
 ***A. Acharya***, R. Goel, A. Metallinou, I. Dhillon; <span style="color:blue">AAAI, 2019</span>    
-   [Conference Proceeding](https://ojs.aaai.org/index.php/AAAI/article/view/4578)
+   [AAAI Proceeding](https://ojs.aaai.org/index.php/AAAI/article/view/4578)
 
 
 5. Stability analysis of delayed system using Bode integral  

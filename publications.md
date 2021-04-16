@@ -49,22 +49,22 @@ S Das, ***A Acharya***, I Pan. <span style="color:blue"> Mathematics and Compute
 
 
 4. Optimum PID control of multi-wing attractors in a family of Lorenz-like chaotic systems  
-***A Acharya***, S Das, I Pan.  <span style="color:blue"> IEEE - Third International Conference on Computing, Communication and Networking Technologies (IEEE-ICCCNT'12) (IEEE), 2012</span>   
+***A Acharya***, S Das, I Pan.  <span style="color:blue"> IEEE - Third International Conference on Computing, Communication and Networking Technologies (IEEE-ICCCNT'12), 2012</span>   
    [IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/6396002)
    
 
 3. Optimized quality factor of fractional order analog filters with band-pass and band-stop characteristics  
-A Pakhira, S Das, ***A Acharya***, I Pan, S Saha.  <span style="color:blue"> IEEE Third International Conference on Computing, Communication and Networking Technologies (IEEE-ICCCNT'12) (IEEE), 2012</span>    
+A Pakhira, S Das, ***A Acharya***, I Pan, S Saha.  <span style="color:blue"> IEEE Third International Conference on Computing, Communication and Networking Technologies (IEEE-ICCCNT'12), 2012</span>    
    [IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/6396000)
 
 
 2. Identification of Nonlinear Systems From the Knowledge Around Different Operating Conditions: A Feed-Forward Multi-Layer ANN Based Approach  
-S Saha, S Das, ***A Acharya***, A Kumar, S Mukherjee, I Pan, A Gupta. <span style="color:blue">IEEE Conference on Parallel Distributed and Grid Computing (PDGC), 2012</span>    
+S Saha, S Das, ***A Acharya***, A Kumar, S Mukherjee, I Pan, A Gupta. <span style="color:blue">IEEE Conference on Parallel Distributed and Grid Computing (IEEE-PDGC'12), 2012</span>    
    [IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/6449856)
    
 
 1. Least square and Instrumental Variable system identification of ac servo position control system with fractional Gaussian noise     
-S Das, A Kumar, I Pan, ***A Acharya***, S Das, A Gupta. <span style="color:blue"> International Conference on Energy, Automation and Signal (IEEE),2011</span>   
+S Das, A Kumar, I Pan, ***A Acharya***, S Das, A Gupta. <span style="color:blue"> International Conference on Energy, Automation and Signal (IEAS),2011</span>   
    [IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/6147165)
    
 

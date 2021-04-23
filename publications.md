@@ -30,7 +30,7 @@ R. Das, ***A Acharya***, A. Hashemi, S. Sanghavi, I. Dhillon, U. Topcu
 ### Patents
 1. Embedding Compression via Matrix Factorization (Amazon Technologies Inc)    
 ***A Acharya***, A. Metallinou, R. Goel, I. Dhillon  
-   [View Online](https://patents.google.com/patent/US10872601B1/en)
+   [Google Patents](https://patents.google.com/patent/US10872601B1/en)
 
 
 ### Journal
@@ -49,7 +49,7 @@ S Das, ***A Acharya***, I Pan. <span style="color:blue"> Mathematics and Compute
    R. Gabriel, S. Gao, R. Goel, D. Hakkani-Tur, J. Jezabek, A. Jha, J. Kao, P. Krishnan, P. Ku, A. Goyal, C. Lin, 
    Q. Liu, A. Mandal, A. Metallinou, V. Naik, Y. Pan, S. Paul, V. Perera, A. Sethi, M. Shen, N. Strom and E. Wang; 
    <span style="color:blue">NAACL, 2021</span>    
-   [PrePrint](https://arxiv.org/pdf/2104.09088.pdf)   
+   [Arxiv](https://arxiv.org/pdf/2104.09088.pdf)   
    ***Media :*** [Alexa Blog](https://www.amazon.science/blog/amazon-unveils-novel-alexa-dialog-modeling-for-natural-cross-skill-conversations) ; 
    [Alexa Skill](https://developer.amazon.com/en-US/docs/alexa/conversations/about-alexa-conversations.html) ;
    [VentureBeat](https://www.youtube.com/watch?v=hEIjCF-KaRY) ; 

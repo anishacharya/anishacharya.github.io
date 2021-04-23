@@ -9,22 +9,22 @@ or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2)
 ### Preprints
 4. Robust Optimization in very High Dimensions via Block Coordinate Geometric Median Descent   
 ***A Acharya***, A. Hashemi, S. Sanghavi, P. Jain, I. Dhillon, U. Topcu   
-   [NSF-TRIPODS Workshop: Communication Efficient Distributed Optimization](https://sites.google.com/ucsd.edu/cedo/)   
+   [NSF-TRIPODS Workshop](https://sites.google.com/ucsd.edu/cedo/)   
    
 
 3. Faster Non-Convex Federated Learning via Global and  Local Momentum   
 R. Das, ***A Acharya***, A. Hashemi, S. Sanghavi, I. Dhillon, U. Topcu   
-   [Arxiv](https://arxiv.org/abs/2012.04061)
+   [PrePrint](https://arxiv.org/abs/2012.04061)
 
 
 2. On the Benefits of Multiple Gossip Steps in Communication-Constrained Decentralized Optimization   
    A. Hashemi, ***A Acharya***, R. Das, H. Vikalo, S. Sanghavi, I. Dhillon   
-   [Arxiv](https://arxiv.org/abs/2011.10643)   
+   [PrePrint](https://arxiv.org/abs/2011.10643)   
    
 
 1. GupShup: An Annotated Corpus for Abstractive Summarization of Open-Domain Code-Switched Conversations    
    L. Mehnaz, D. Mahata, R. Gosangi, U. Gunturi, R. Jain, G. Gupta, A. Kumar, I. Lee, ***A Acharya***,  R. Shah   
-   [Arxiv](https://arxiv.org/pdf/2104.08578.pdf)
+   [PrePrint](https://arxiv.org/pdf/2104.08578.pdf)
    
    
 ### Patents
@@ -44,9 +44,24 @@ S Das, ***A Acharya***, I Pan. <span style="color:blue"> Mathematics and Compute
    [ScienceDirect](https://www.sciencedirect.com/science/article/abs/pii/S0378475414000469)
 
 ### Conferences
+7. Alexa Conversations: An Extensible Data-driven Approach for Building Task-oriented Dialogue Systems   
+***A. Acharya***, S. Adhikari, S. Agarwal, V. Auvray, N. Belgamwar, A. Biswas, S. Chandra, T. Chung, M. Zarandi, 
+   R. Gabriel, S. Gao, R. Goel, D. Hakkani-Tur, J. Jezabek, A. Jha, J. Kao, P. Krishnan, P. Ku, A. Goyal, C. Lin, 
+   Q. Liu, A. Mandal, A. Metallinou, V. Naik, Y. Pan, S. Paul, V. Perera, A. Sethi, M. Shen, N. Strom and E. Wang; 
+   <span style="color:blue">NAACL, 2021</span>    
+   [PrePrint](https://arxiv.org/pdf/2104.09088.pdf)   
+   ***Media :*** [Alexa Blog](https://www.amazon.science/publications/alexa-conversations-an-extensible-data-driven-approach-for-building-task-oriented-dialogue-systems) ; 
+   [Alexa Skill](https://developer.amazon.com/en-US/docs/alexa/conversations/about-alexa-conversations.html) ;
+   [VentureBeat](https://www.youtube.com/watch?v=hEIjCF-KaRY) ; 
+   [Forbes](https://www.forbes.com/sites/cognitiveworld/2019/06/12/amazon-advances-conversational-applications/?sh=443c78197d26)
+   
+
+
 6. Online Embedding Compression for Text Classification using Low Rank Matrix Factorization    
 ***A. Acharya***, R. Goel, A. Metallinou, I. Dhillon; <span style="color:blue">AAAI, 2019</span>    
-   [AAAI Proceeding](https://ojs.aaai.org/index.php/AAAI/article/view/4578)
+   [AAAI Proceeding](https://ojs.aaai.org/index.php/AAAI/article/view/4578)   
+   ***Media:*** [Alexa Blog](https://www.amazon.science/blog/new-method-for-compressing-neural-networks-better-preserves-accuracy) ;
+   [Packt](https://hub.packtpub.com/amazon-alexa-ai-researchers-develop-new-method-to-compress-neural-networks-and-preserves-accuracy-of-system/)
 
 
 5. Stability analysis of delayed system using Bode integral  

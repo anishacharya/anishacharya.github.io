@@ -50,10 +50,12 @@ S Das, ***A Acharya***, I Pan. <span style="color:blue"> Mathematics and Compute
    Q. Liu, A. Mandal, A. Metallinou, V. Naik, Y. Pan, S. Paul, V. Perera, A. Sethi, M. Shen, N. Strom and E. Wang; 
    <span style="color:blue">NAACL, 2021</span>    
    [PrePrint](https://arxiv.org/pdf/2104.09088.pdf)   
-   ***Media :*** [Alexa Blog](https://www.amazon.science/publications/alexa-conversations-an-extensible-data-driven-approach-for-building-task-oriented-dialogue-systems) ; 
+   ***Media :*** [Alexa Blog](https://www.amazon.science/blog/amazon-unveils-novel-alexa-dialog-modeling-for-natural-cross-skill-conversations) ; 
    [Alexa Skill](https://developer.amazon.com/en-US/docs/alexa/conversations/about-alexa-conversations.html) ;
    [VentureBeat](https://www.youtube.com/watch?v=hEIjCF-KaRY) ; 
-   [Forbes](https://www.forbes.com/sites/cognitiveworld/2019/06/12/amazon-advances-conversational-applications/?sh=443c78197d26)
+   [Forbes](https://www.forbes.com/sites/cognitiveworld/2019/06/12/amazon-advances-conversational-applications/?sh=443c78197d26) ;
+   [CNN](https://www.cnn.com/2020/09/25/tech/amazon-alexa-conversational-ai/index.html) ;
+   
    
 
 

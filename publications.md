@@ -9,7 +9,8 @@ or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2)
 ### Preprints
 4. Robust Optimization in very High Dimensions via Block Coordinate Geometric Median Descent   
 ***A Acharya***, A. Hashemi, S. Sanghavi, P. Jain, I. Dhillon, U. Topcu   
-   [NSF-TRIPODS Workshop](https://sites.google.com/ucsd.edu/cedo/)   
+   [NSF-TRIPODS Workshop - CEDO](https://sites.google.com/ucsd.edu/cedo/)  
+   [PRiML-PIFODS Seminar, UPenn](https://priml.upenn.edu/events-and-seminars/)
    
 
 3. Faster Non-Convex Federated Learning via Global and  Local Momentum   

@@ -7,6 +7,10 @@ Google Bots are awesome at curating latest papers and citations on [Scholar Goog
 or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2)  
 
 ### Preprints
+5. Neural Distributed Source Coding   
+J. Whang, ***A Acharya***, H. Kim, A. Dimakis  
+   
+
 4. Robust Optimization in very High Dimensions via Block Coordinate Geometric Median Descent   
 ***A Acharya***, A. Hashemi, S. Sanghavi, P. Jain, I. Dhillon, U. Topcu  
    ***Talks:***   

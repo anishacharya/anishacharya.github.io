@@ -9,6 +9,7 @@ or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2)
 ### Preprints
 5. Neural Distributed Source Coding   
 J. Whang, ***A Acharya***, H. Kim, A. Dimakis  
+   [PrePrint](https://arxiv.org/abs/2106.02797)
    
 
 4. Robust Optimization in very High Dimensions via Block Coordinate Geometric Median Descent   
@@ -55,8 +56,9 @@ S Das, ***A Acharya***, I Pan. <span style="color:blue"> Mathematics and Compute
    R. Gabriel, S. Gao, R. Goel, D. Hakkani-Tur, J. Jezabek, A. Jha, J. Kao, P. Krishnan, P. Ku, A. Goyal, C. Lin, 
    Q. Liu, A. Mandal, A. Metallinou, V. Naik, Y. Pan, S. Paul, V. Perera, A. Sethi, M. Shen, N. Strom and E. Wang; 
    <span style="color:blue">NAACL, 2021</span>    
-   [Arxiv](https://arxiv.org/pdf/2104.09088.pdf)   
-   ***Media :*** [Alexa Blog](https://www.amazon.science/blog/amazon-unveils-novel-alexa-dialog-modeling-for-natural-cross-skill-conversations) ; 
+   [ACL Proceedings](https://www.aclweb.org/anthology/2021.naacl-demos.15/)   
+   ***Media :*** 
+   [Alexa Blog](https://www.amazon.science/blog/amazon-unveils-novel-alexa-dialog-modeling-for-natural-cross-skill-conversations) ; 
    [Alexa Skill](https://developer.amazon.com/en-US/docs/alexa/conversations/about-alexa-conversations.html) ;
    [VentureBeat](https://www.youtube.com/watch?v=hEIjCF-KaRY) ; 
    [Forbes](https://www.forbes.com/sites/cognitiveworld/2019/06/12/amazon-advances-conversational-applications/?sh=443c78197d26) ;
@@ -68,7 +70,8 @@ S Das, ***A Acharya***, I Pan. <span style="color:blue"> Mathematics and Compute
 6. Online Embedding Compression for Text Classification using Low Rank Matrix Factorization    
 ***A. Acharya***, R. Goel, A. Metallinou, I. Dhillon; <span style="color:blue">AAAI, 2019</span>    
    [AAAI Proceeding](https://ojs.aaai.org/index.php/AAAI/article/view/4578)   
-   ***Media:*** [Alexa Blog](https://www.amazon.science/blog/new-method-for-compressing-neural-networks-better-preserves-accuracy) ;
+   ***Media:*** 
+   [Alexa Blog](https://www.amazon.science/blog/new-method-for-compressing-neural-networks-better-preserves-accuracy) ;
    [Packt](https://hub.packtpub.com/amazon-alexa-ai-researchers-develop-new-method-to-compress-neural-networks-and-preserves-accuracy-of-system/)
 
 

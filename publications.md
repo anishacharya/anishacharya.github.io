@@ -9,8 +9,11 @@ or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2)
 ### Preprints
 4. Robust Training in High Dimensions via Block Coordinate Geometric Median Descent   
 ***A Acharya***, A. Hashemi, S. Sanghavi, P. Jain, I. Dhillon, U. Topcu  
-   [PrePrint](https://arxiv.org/pdf/2106.08882.pdf)      
+   [PrePrint](https://arxiv.org/pdf/2106.08882.pdf), 
+   [Slides](https://github.com/anishacharya/BGMD/blob/main/BgmD_slides.pdf), 
+   [Poster](https://github.com/anishacharya/BGMD/blob/main/BGMD_Simons.pdf)   
    ***Talks:***   
+   [Simons Institute - Berkley]()   
    [NSF-TRIPODS Workshop - CEDO](https://sites.google.com/ucsd.edu/cedo/)  
    [PRiML-PIFODS Seminar, UPenn](https://priml.upenn.edu/events-and-seminars/)
    

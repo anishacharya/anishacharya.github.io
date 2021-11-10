@@ -34,8 +34,11 @@ navbar-links:
    Recognition: "news" 
     # - Press: "news"
     # - Awards: "awards"
-   Open Source:
-     - Federated Learning: "https://github.com/microsoft/OpenMSFTL"
+   Code:
+     - Embedding Compression: "https://github.com/anishacharya/Online-Embedding-Compression-AAAI-2019"
+     - BGMD: "https://github.com/anishacharya/BGMD"
+     - DeLiCoCo: "https://github.com/anishacharya/DeLiCoCo"
+     - OpenMSFTL: "https://github.com/microsoft/OpenMSFTL"
      - Lexical Substitution: "https://anishacharya.github.io/LexSub/"
      # - Double Descent: "https://anishacharya.github.io/double-descent/"
    Pointers:

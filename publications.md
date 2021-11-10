@@ -13,7 +13,7 @@ or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2)
    [Slides](https://github.com/anishacharya/BGMD/blob/main/BgmD_slides.pdf), 
    [Poster](https://github.com/anishacharya/BGMD/blob/main/BGMD_Simons.pdf)   
    ***Talks:***   
-   [Simons Institute - Berkley]()   
+   [Simons Institute - Berkley](https://simons.berkeley.edu/programs/si2021)   
    [NSF-TRIPODS Workshop - CEDO](https://sites.google.com/ucsd.edu/cedo/)  
    [PRiML-PIFODS Seminar, UPenn](https://priml.upenn.edu/events-and-seminars/)
    

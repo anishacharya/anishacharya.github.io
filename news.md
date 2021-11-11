@@ -2,6 +2,7 @@
 layout: page
 title: "" 
 ---
+Slides and other resources used in these talks are available at the following [Github Link](https://github.com/anishacharya/Presentations)
 ## Research Showcase (Presentations / Talks)
 - Nov 2021. (Virtual) University of Denver - Computer Science 
 - Nov 2021. (Virtual) Facebook Capacity Engineering Research

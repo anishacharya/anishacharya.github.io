@@ -7,7 +7,7 @@ Google Bots are awesome at curating latest papers and citations on [Scholar Goog
 or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2)  
 
 ### Preprints
-4. Robust Training in High Dimensions via Block Coordinate Geometric Median Descent   
+3. Robust Training in High Dimensions via Block Coordinate Geometric Median Descent   
 ***A Acharya***, A. Hashemi, S. Sanghavi, P. Jain, I. Dhillon, U. Topcu  
    [PrePrint](https://arxiv.org/pdf/2106.08882.pdf), 
    [Slides](https://github.com/anishacharya/BGMD/blob/main/BgmD_slides.pdf), 
@@ -18,19 +18,15 @@ or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2)
    [PRiML-PIFODS Seminar, UPenn](https://priml.upenn.edu/events-and-seminars/)
    
 
-3. Neural Distributed Source Coding   
+2. Neural Distributed Source Coding   
 J. Whang, ***A Acharya***, H. Kim, A. Dimakis  
    [PrePrint](https://arxiv.org/abs/2106.02797.pdf)      
    
 
-2. Faster Non-Convex Federated Learning via Global and  Local Momentum   
+1. Faster Non-Convex Federated Learning via Global and  Local Momentum   
 R. Das, ***A Acharya***, A. Hashemi, S. Sanghavi, I. Dhillon, U. Topcu   
    [PrePrint](https://arxiv.org/abs/2012.04061)
-
-
-1. On the Benefits of Multiple Gossip Steps in Communication-Constrained Decentralized Optimization   
-   A. Hashemi, ***A Acharya***, R. Das, H. Vikalo, S. Sanghavi, I. Dhillon   
-   [PrePrint](https://arxiv.org/abs/2011.10643)
+   
    
    
 ### Patents
@@ -40,13 +36,18 @@ R. Das, ***A Acharya***, A. Hashemi, S. Sanghavi, I. Dhillon, U. Topcu
 
 
 ### Journal
+3. On the Benefits of Multiple Gossip Steps in Communication-Constrained Decentralized Optimization   
+   A. Hashemi, ***A Acharya***, R. Das, H. Vikalo, S. Sanghavi, I. Dhillon   
+   <span style="color:blue">IEEE Transactions on Parallel and Distributed Systems (TPDS), 2021 </span>  
+   [PrePrint](https://arxiv.org/abs/2011.10643)
+
 2. Extending the concept of analog Butterworth filter for fractional order systems  
-***A Acharya***, S Das, I Pan, S Das.  <span style="color:blue">Signal Processing, 2014</span>   
+***A Acharya***, S Das, I Pan, S Das.  <span style="color:blue">Signal Processing: Elsevier, 2014</span>   
    [ScienceDirect](https://www.sciencedirect.com/science/article/abs/pii/S0165168413002910)
 
 
 1. Simulation studies on the design of optimum PID controllers to suppress chaotic oscillations in a family of Lorenz-like multi-wing attractors  
-S Das, ***A Acharya***, I Pan. <span style="color:blue"> Mathematics and Computers in Simulation, 2014</span>   
+S Das, ***A Acharya***, I Pan. <span style="color:blue"> Mathematics and Computers in Simulation: Elsevier, 2014</span>   
    [ScienceDirect](https://www.sciencedirect.com/science/article/abs/pii/S0378475414000469)
 
 ### Conferences

@@ -57,7 +57,7 @@ S Das, ***A Acharya***, I Pan. <span style="color:blue"> Mathematics and Compute
 8. GupShup: An Annotated Corpus for Abstractive Summarization of Open-Domain Code-Switched Conversations    
    L. Mehnaz, D. Mahata, R. Gosangi, U. Gunturi, R. Jain, G. Gupta, A. Kumar, I. Lee, ***A Acharya***,  R. Shah; 
    <span style="color:blue">EMNLP, 2021</span>    
-   <span style="color:red">Acceptance Rate: </span> 23.3\%   
+   <span style="color:red">Acceptance Rate: </span> 23.3%   
    [PrePrint](https://arxiv.org/pdf/2104.08578.pdf)
    
 
@@ -66,7 +66,7 @@ S Das, ***A Acharya***, I Pan. <span style="color:blue"> Mathematics and Compute
    R. Gabriel, S. Gao, R. Goel, D. Hakkani-Tur, J. Jezabek, A. Jha, J. Kao, P. Krishnan, P. Ku, A. Goyal, C. Lin, 
    Q. Liu, A. Mandal, A. Metallinou, V. Naik, Y. Pan, S. Paul, V. Perera, A. Sethi, M. Shen, N. Strom and E. Wang; 
    <span style="color:blue">NAACL, 2021</span>   
-   <span style="color:red">Acceptance Rate: </span> 28\%     
+   <span style="color:red">Acceptance Rate: </span> 28%     
    [ACL Proceedings](https://www.aclweb.org/anthology/2021.naacl-demos.15/)   
    ***Media :*** 
    [Alexa Blog](https://www.amazon.science/blog/amazon-unveils-novel-alexa-dialog-modeling-for-natural-cross-skill-conversations) ; 
@@ -78,7 +78,7 @@ S Das, ***A Acharya***, I Pan. <span style="color:blue"> Mathematics and Compute
 
 6. Online Embedding Compression for Text Classification using Low Rank Matrix Factorization    
 ***A. Acharya***, R. Goel, A. Metallinou, I. Dhillon; <span style="color:blue">AAAI, 2019</span>   
-   <span style="color:red">Acceptance Rate: </span> 16.2\%    
+   <span style="color:red">Acceptance Rate: </span> 16.2%    
    [AAAI Proceeding](https://ojs.aaai.org/index.php/AAAI/article/view/4578)   
    ***Media:*** 
    [Alexa Blog](https://www.amazon.science/blog/new-method-for-compressing-neural-networks-better-preserves-accuracy) ;

@@ -38,16 +38,19 @@ R. Das, ***A Acharya***, A. Hashemi, S. Sanghavi, I. Dhillon, U. Topcu
 ### Journal
 3. On the Benefits of Multiple Gossip Steps in Communication-Constrained Decentralized Optimization   
    A. Hashemi, ***A Acharya***, R. Das, H. Vikalo, S. Sanghavi, I. Dhillon   
-   <span style="color:blue">IEEE Transactions on Parallel and Distributed Systems (TPDS), 2021 </span>  
+   <span style="color:blue">IEEE Transactions on Parallel and Distributed Systems (TPDS), 2021 </span>     
+   <span style="color:red">Impact Factor: </span> 2.69   
    [PrePrint](https://arxiv.org/abs/2011.10643)
 
 2. Extending the concept of analog Butterworth filter for fractional order systems  
-***A Acharya***, S Das, I Pan, S Das.  <span style="color:blue">Signal Processing: Elsevier, 2014</span>   
+***A Acharya***, S Das, I Pan, S Das.  <span style="color:blue">Signal Processing: Elsevier, 2014</span>    
+   <span style="color:red">Impact Factor: </span> 4.66   
    [ScienceDirect](https://www.sciencedirect.com/science/article/abs/pii/S0165168413002910)
 
 
 1. Simulation studies on the design of optimum PID controllers to suppress chaotic oscillations in a family of Lorenz-like multi-wing attractors  
 S Das, ***A Acharya***, I Pan. <span style="color:blue"> Mathematics and Computers in Simulation: Elsevier, 2014</span>   
+   <span style="color:red">Impact Factor: </span> 2.46   
    [ScienceDirect](https://www.sciencedirect.com/science/article/abs/pii/S0378475414000469)
 
 ### Conferences

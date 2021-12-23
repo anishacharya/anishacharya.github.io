@@ -4,18 +4,7 @@ title: ""
 ---
 Slides and other resources used in these talks are available at the following [Github Link](https://github.com/anishacharya/Presentations)
 
-## Press Coverage 
-- Jan 2019. [Amazon Alexa Science Blog](https://developer.amazon.com/blogs/alexa/post/a7bb4a16-c86b-4019-b3f9-b0d663b87d30/new-method-for-compressing-neural-networks-better-preserves-accuracy)
-- Jan 2019. [Packt Blog Post](https://www.google.com/amp/s/hub.packtpub.com/amazon-alexa-ai-researchers-develop-new-method-to-compress-neural-networks-and-preserves-accuracy-of-system/amp/)
-- May 2007. [The Telegraph](https://www.telegraphindia.com/states/west-bengal/upswing-in-city-pass-rate/cid/1005795)
-
-## Awards
-- 2019-2024. PhD fellowship from UT Austin 
-- 2009-2013. [MHRD](https://mhrd.gov.in/) (Ministry of Human Resource Development) Fellow 
-- May 2007. [CPYLS](http://csirhrdg.res.in/cpyls.htm)(CSIR Program on Youth for Leadership in Science) Fellow 
-- Apr 2007. Mamraj Agarwal Rashtriya Puraskar (Governor's Medal) Award 
-
-## Research Showcase (Presentations / Talks)
+## Invited Talks 
 - Nov 2021. (Virtual) University of Denver - Computer Science 
 - Nov 2021. (Virtual) Facebook Capacity Engineering Research
 - Nov 2021. (Berkley, CA) Simons Institute [IFML/CCSI Symposium](https://simons.berkeley.edu/programs/si2021) 
@@ -35,3 +24,14 @@ Slides and other resources used in these talks are available at the following [G
 - Expert Reviewer [NeuRips-2021](https://nips.cc/)
 - Expert Reviewer [ICML-2021](https://icml.cc/)
 - Reviewer [AISTATS-2021](https://aistats.org/aistats2021/)
+
+## Press Coverage 
+- Jan 2019. [Amazon Alexa Science Blog](https://developer.amazon.com/blogs/alexa/post/a7bb4a16-c86b-4019-b3f9-b0d663b87d30/new-method-for-compressing-neural-networks-better-preserves-accuracy)
+- Jan 2019. [Packt Blog Post](https://www.google.com/amp/s/hub.packtpub.com/amazon-alexa-ai-researchers-develop-new-method-to-compress-neural-networks-and-preserves-accuracy-of-system/amp/)
+- May 2007. [The Telegraph](https://www.telegraphindia.com/states/west-bengal/upswing-in-city-pass-rate/cid/1005795)
+
+## Awards
+- 2019-2024. PhD fellowship from UT Austin 
+- 2009-2013. [MHRD](https://mhrd.gov.in/) (Ministry of Human Resource Development) Fellow 
+- May 2007. [CPYLS](http://csirhrdg.res.in/cpyls.htm)(CSIR Program on Youth for Leadership in Science) Fellow 
+- Apr 2007. Mamraj Agarwal Rashtriya Puraskar (Governor's Medal) Award

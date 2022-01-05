@@ -40,7 +40,7 @@ R. Das, ***A Acharya***, A. Hashemi, S. Sanghavi, I. Dhillon, U. Topcu
    A. Hashemi, ***A Acharya***, R. Das, H. Vikalo, S. Sanghavi, I. Dhillon   
    <span style="color:blue">IEEE Transactions on Parallel and Distributed Systems (TPDS), 2021 </span>     
    <span style="color:red">Impact Factor: </span> 2.69   
-   [PrePrint](https://arxiv.org/abs/2011.10643)
+   [IEEE Xplore](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9664349)
 
 2. Extending the concept of analog Butterworth filter for fractional order systems  
 ***A Acharya***, S Das, I Pan, S Das.  <span style="color:blue">Signal Processing: Elsevier, 2014</span>    

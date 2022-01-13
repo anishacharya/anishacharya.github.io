@@ -58,7 +58,7 @@ S Das, ***A Acharya***, I Pan. <span style="color:blue"> Mathematics and Compute
    L. Mehnaz, D. Mahata, R. Gosangi, U. Gunturi, R. Jain, G. Gupta, A. Kumar, I. Lee, ***A Acharya***,  R. Shah; 
    <span style="color:blue">EMNLP, 2021</span>    
    <span style="color:red">Acceptance Rate: </span> 23.3%   
-   [PrePrint](https://arxiv.org/pdf/2104.08578.pdf)
+   [ACL Proceedings](https://aclanthology.org/2021.emnlp-main.499/)
    
 
 7. Alexa Conversations: An Extensible Data-driven Approach for Building Task-oriented Dialogue Systems   

@@ -7,17 +7,6 @@ Google Bots are awesome at curating latest papers and citations on [Scholar Goog
 or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2)  
 
 ### Preprints
-3. Robust Training in High Dimensions via Block Coordinate Geometric Median Descent   
-***A Acharya***, A. Hashemi, S. Sanghavi, P. Jain, I. Dhillon, U. Topcu  
-   [PrePrint](https://arxiv.org/pdf/2106.08882.pdf), 
-   [Slides](https://github.com/anishacharya/BGMD/blob/main/BgmD_slides.pdf), 
-   [Poster](https://github.com/anishacharya/BGMD/blob/main/BGMD_Simons.pdf)   
-   ***Talks:***   
-   [Simons Institute - Berkley](https://simons.berkeley.edu/programs/si2021)   
-   [NSF-TRIPODS Workshop - CEDO](https://sites.google.com/ucsd.edu/cedo/)  
-   [PRiML-PIFODS Seminar, UPenn](https://priml.upenn.edu/events-and-seminars/)
-   
-
 2. Neural Distributed Source Coding   
 J. Whang, ***A Acharya***, H. Kim, A. Dimakis  
    [PrePrint](https://arxiv.org/abs/2106.02797.pdf)      
@@ -54,6 +43,20 @@ S Das, ***A Acharya***, I Pan. <span style="color:blue"> Mathematics and Compute
    [ScienceDirect](https://www.sciencedirect.com/science/article/abs/pii/S0378475414000469)
 
 ### Conferences
+9. Robust Training in High Dimensions via Block Coordinate Geometric Median Descent   
+***A Acharya***, A. Hashemi, S. Sanghavi, P. Jain, I. Dhillon, U. Topcu;
+   <span style="color:blue">AISTATS, 2022</span>   
+   <span style="color:red">Acceptance Rate: </span> 29.2%    
+   [PrePrint](https://arxiv.org/pdf/2106.08882.pdf), 
+   [Slides](https://github.com/anishacharya/BGMD/blob/main/BgmD_slides.pdf), 
+   [Poster](https://github.com/anishacharya/BGMD/blob/main/BGMD_Simons.pdf)   
+   ***Talks:***   
+   [University of Denver](https://ritchieschool.du.edu/)   
+   [Meta AI Research](https://ai.facebook.com/)  
+   [Simons Institute - Berkley](https://simons.berkeley.edu/programs/si2021)   
+   [NSF-TRIPODS Workshop - CEDO](https://sites.google.com/ucsd.edu/cedo/)  
+   [PRiML-PIFODS Seminar, UPenn](https://priml.upenn.edu/events-and-seminars/)
+   
 8. GupShup: An Annotated Corpus for Abstractive Summarization of Open-Domain Code-Switched Conversations    
    L. Mehnaz, D. Mahata, R. Gosangi, U. Gunturi, R. Jain, G. Gupta, A. Kumar, I. Lee, ***A Acharya***,  R. Shah; 
    <span style="color:blue">EMNLP, 2021</span>    

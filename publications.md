@@ -6,15 +6,13 @@ Google Bots are awesome at curating latest papers and citations on [Scholar Goog
 or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2)
     
 ***Preprints***:
-1. Neural Distributed Source Coding
-   <span style="background-color: gray"> &nbsp; Preprint &nbsp; </span>
-
-   J. Whang, ***A Acharya***, H. Kim, A. Dimakis  
+- Neural Distributed Source Coding
+   <span style="background-color: gray"> &nbsp; Preprint &nbsp; </span>   
+   J. Whang, ***A Acharya***, H. Kim, A. Dimakis   
    [Arxiv](https://arxiv.org/abs/2106.02797.pdf)
-2. Faster Non-Convex Federated Learning via Global and  Local Momentum
-   <span style="background-color: gray"> &nbsp; Preprint &nbsp; </span>
-   
-   R. Das, ***A Acharya***, A. Hashemi, S. Sanghavi, I. Dhillon, U. Topcu   
+- Faster Non-Convex Federated Learning via Global and  Local Momentum
+   <span style="background-color: gray"> &nbsp; Preprint &nbsp; </span>   
+   R. Das, ***A Acharya***, A. Hashemi, S. Sanghavi, I. Dhillon, U. Topcu      
    [Arxiv](https://arxiv.org/abs/2012.04061)
    
 **Peer Reviewed Publications (grouped reverse chronologically)**:  

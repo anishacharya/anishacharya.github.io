@@ -28,13 +28,13 @@ navbar-links:
    Bio: "aboutme"
     # - Bio: "bio"
     # - Journey: "aboutme"  
-   Publication: "publications"
+   Publications: "publications"
     # - Research Area: "research_areas"
     # - Publications: "publications"     
-   Recognition: "news" 
+   Outreach: "news"
     # - Press: "news"
     # - Awards: "awards"
-   Code:
+   Open Source:
      - Embedding Compression: "https://github.com/anishacharya/Online-Embedding-Compression-AAAI-2019"
      - BGMD: "https://github.com/anishacharya/BGMD"
      - DeLiCoCo: "https://github.com/anishacharya/DeLiCoCo"
@@ -43,15 +43,12 @@ navbar-links:
      # - Double Descent: "https://anishacharya.github.io/double-descent/"
    Pointers:
      - Resume: "https://wncg.org/sites/default/files/cv/CV_ANISH_0.pdf"
-     #- Interactive Resume: "aboutme"
-     #- Reading-Group: "https://github.com/anishacharya/Write_Ups/tree/master/Reading_Group"
      - WNCG: "http://wncg.org/people/students/anish-acharya"
      - Dhillon Lab: "https://bigdata.oden.utexas.edu/people/"
      # - Double Descent: "double_descent"
      - Sanghavi Lab: "http://users.ece.utexas.edu/~sanghavi/group.html"
      - Conf Rank: "https://scholar.google.com/citations?view_op=top_venues&hl=en&vq=eng_artificialintelligence"	
      - Conf Cal: "https://aideadlin.es/?sub=ML,CV,NLP,RO,SP,GR"
-     #- PhD Fellowships: "https://medium.com/machine-learning-in-practice/top-12-computer-science-ph-d-fellowships-6da6d5f7225b"	
      #- Fundings: "fundings"
 #  About Me: "aboutme"
 #  Resources:

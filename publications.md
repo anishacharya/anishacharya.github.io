@@ -6,7 +6,7 @@ Google Bots are awesome at curating latest papers and citations on [Scholar Goog
 or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2). Below are
 **Peer Reviewed Publications (grouped reverse chronologically)**. 
     
-##PrePrints
+## PrePrints
 - Neural Distributed Source Coding
    <span style="background-color: gray"> &nbsp; Preprint &nbsp; </span>   
    J. Whang, ***A Acharya***, H. Kim, A. Dimakis   
@@ -16,24 +16,19 @@ or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2). Below ar
    R. Das, ***A Acharya***, A. Hashemi, S. Sanghavi, I. Dhillon, U. Topcu      
    [Arxiv](https://arxiv.org/abs/2012.04061)
 ### 2022
-1. Robust Training in High Dimensions via Block Coordinate Geometric Median Descent.
-   </span> <span style="background-color: maroon"> &nbsp; Conference &nbsp; </span> 
-   
-   ***A Acharya***, A. Hashemi, S. Sanghavi, P. Jain, I. Dhillon, U. Topcu;   
-   <span style="color:blue">Artificial Intelligence and Statistics (AISTATS 2022)
-   
+- Robust Training in High Dimensions via Block Coordinate Geometric Median Descent.
+  </span> <span style="background-color: maroon"> &nbsp; Conference &nbsp; </span>   
+  ***A Acharya***, A. Hashemi, S. Sanghavi, P. Jain, I. Dhillon, U. Topcu;   
+  <span style="color:blue">Artificial Intelligence and Statistics (AISTATS 2022) </span>   
    [Code](https://github.com/anishacharya/BGMD);
    [Poster](https://github.com/anishacharya/BGMD/blob/main/BGMD_Simons.pdf);
    [PrePrint](https://arxiv.org/pdf/2106.08882.pdf); 
-   [Slides](https://github.com/anishacharya/BGMD/blob/main/BgmD_slides.pdf); 
-    
+   [Slides](https://github.com/anishacharya/BGMD/blob/main/BgmD_slides.pdf);   
    An initial version of the work has been presented at:    
    [Joint IFML/CCSI Symposium](https://simons.berkeley.edu/workshops/joint-ifmlccsi-symposium)
    (Simons Institute - UC Berkley)  <span style="background-color: gray"> &nbsp; Workshop &nbsp; </span>   
    [NSF-TRIPODS Workshop on Communication Efficient Distributed Optimization](https://sites.google.com/ucsd.edu/cedo/)
-   <span style="background-color: gray"> &nbsp; Workshop &nbsp; </span> 
-
-
+   <span style="background-color: gray"> &nbsp; Workshop &nbsp; </span>
 ### 2021
 1. On the Benefits of Multiple Gossip Steps in Communication-Constrained Decentralized Optimization
    <span style="background-color: red"> &nbsp; Journal &nbsp; </span>

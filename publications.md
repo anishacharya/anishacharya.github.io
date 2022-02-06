@@ -6,7 +6,7 @@ Google Bots are awesome at curating latest papers and citations on [Scholar Goog
 or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2). Below are
 **Peer Reviewed Publications (grouped reverse chronologically)**. 
     
-## PrePrints
+**PrePrints**
 - <span style="background-color: gray"> &nbsp; Preprint &nbsp; </span> Neural Distributed Source Coding   
    J. Whang, ***A Acharya***, H. Kim, A. Dimakis   
    [Arxiv](https://arxiv.org/abs/2106.02797.pdf)
@@ -14,7 +14,7 @@ or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2). Below ar
    R. Das, ***A Acharya***, A. Hashemi, S. Sanghavi, I. Dhillon, U. Topcu      
    [Arxiv](https://arxiv.org/abs/2012.04061)
   
-### 2022
+**2022**
 - <span style="background-color: maroon"> &nbsp; Conference &nbsp; </span> 
    Robust Training in High Dimensions via Block Coordinate Geometric Median Descent.   
   ***A Acharya***, A. Hashemi, S. Sanghavi, P. Jain, I. Dhillon, U. Topcu;   

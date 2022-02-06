@@ -7,31 +7,33 @@ or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2). Below ar
 **Peer Reviewed Publications (grouped reverse chronologically)**. 
     
 ## PrePrints
-- Neural Distributed Source Coding
-   <span style="background-color: gray"> &nbsp; Preprint &nbsp; </span>   
+- <span style="background-color: gray"> &nbsp; Preprint &nbsp; </span> Neural Distributed Source Coding
    J. Whang, ***A Acharya***, H. Kim, A. Dimakis   
    [Arxiv](https://arxiv.org/abs/2106.02797.pdf)
-- Faster Non-Convex Federated Learning via Global and  Local Momentum
-   <span style="background-color: gray"> &nbsp; Preprint &nbsp; </span>   
+- <span style="background-color: gray"> &nbsp; Preprint &nbsp; </span> Faster Non-Convex Federated Learning via Global and  Local Momentum
    R. Das, ***A Acharya***, A. Hashemi, S. Sanghavi, I. Dhillon, U. Topcu      
    [Arxiv](https://arxiv.org/abs/2012.04061)
+  
 ### 2022
-- Robust Training in High Dimensions via Block Coordinate Geometric Median Descent.
-  </span> <span style="background-color: maroon"> &nbsp; Conference &nbsp; </span>   
+- <span style="background-color: maroon"> &nbsp; Conference &nbsp; </span> 
+   Robust Training in High Dimensions via Block Coordinate Geometric Median Descent.    
+  
   ***A Acharya***, A. Hashemi, S. Sanghavi, P. Jain, I. Dhillon, U. Topcu;   
-  <span style="color:blue">Artificial Intelligence and Statistics (AISTATS 2022) </span>   
+  <span style="color:blue">Artificial Intelligence and Statistics (AISTATS 2022) </span>  
+  
    [Code](https://github.com/anishacharya/BGMD);
    [Poster](https://github.com/anishacharya/BGMD/blob/main/BGMD_Simons.pdf);
    [PrePrint](https://arxiv.org/pdf/2106.08882.pdf); 
    [Slides](https://github.com/anishacharya/BGMD/blob/main/BgmD_slides.pdf);   
    An initial version of the work has been presented at:    
-   [Joint IFML/CCSI Symposium](https://simons.berkeley.edu/workshops/joint-ifmlccsi-symposium)
-   (Simons Institute - UC Berkley)  <span style="background-color: gray"> &nbsp; Workshop &nbsp; </span>   
-   [NSF-TRIPODS Workshop on Communication Efficient Distributed Optimization](https://sites.google.com/ucsd.edu/cedo/)
-   <span style="background-color: gray"> &nbsp; Workshop &nbsp; </span>
+   <span style="background-color: gray"> &nbsp; Workshop &nbsp; </span> 
+  [Joint IFML/CCSI Symposium](https://simons.berkeley.edu/workshops/joint-ifmlccsi-symposium)
+   (Simons Institute - UC Berkley)    
+   <span style="background-color: gray"> &nbsp; Workshop &nbsp; </span> [NSF-TRIPODS Workshop on Communication Efficient Distributed Optimization](https://sites.google.com/ucsd.edu/cedo/)
+   
 ### 2021
-1. On the Benefits of Multiple Gossip Steps in Communication-Constrained Decentralized Optimization
-   <span style="background-color: red"> &nbsp; Journal &nbsp; </span>
+- <span style="background-color: red"> &nbsp; Journal &nbsp; </span> 
+   On the Benefits of Multiple Gossip Steps in Communication-Constrained Decentralized Optimization
    
    A. Hashemi, ***A Acharya***, R. Das, H. Vikalo, S. Sanghavi, I. Dhillon   
    <span style="color:blue">IEEE Transactions on Parallel and Distributed Systems (TPDS), 2021 </span>
@@ -39,9 +41,9 @@ or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2). Below ar
    [Paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9664349); 
    [Code](https://github.com/anishacharya/DeLiCoCo)
    
-2. GupShup: An Annotated Corpus for Abstractive Summarization of Open-Domain Code-Switched Conversations
-   </span> <span style="background-color: maroon"> &nbsp; Conference &nbsp; </span> 
-   
+- <span style="background-color: maroon"> &nbsp; Conference &nbsp; </span> 
+   GupShup: An Annotated Corpus for Abstractive Summarization of Open-Domain Code-Switched Conversations
+
    L. Mehnaz, D. Mahata, R. Gosangi, U. Gunturi, R. Jain, G. Gupta, A. Kumar, I. Lee, ***A Acharya***,  R. Shah;
    
    <span style="color:blue">Empirical Methods in Natural Language Processing (EMNLP), 2021</span>
@@ -49,8 +51,8 @@ or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2). Below ar
    [Paper](https://aclanthology.org/2021.emnlp-main.499/);
    [Code](https://github.com/midas-research/gupshup)
    
-3. Alexa Conversations: An Extensible Data-driven Approach for Building Task-oriented Dialogue Systems
-   </span> <span style="background-color: maroon"> &nbsp; Conference &nbsp; </span> 
+- <span style="background-color: maroon"> &nbsp; Conference &nbsp; </span> 
+   Alexa Conversations: An Extensible Data-driven Approach for Building Task-oriented Dialogue Systems
    
    ***A. Acharya***, S. Adhikari, S. Agarwal, V. Auvray, N. Belgamwar, A. Biswas, S. Chandra, T. Chung, M. Zarandi, 
    R. Gabriel, S. Gao, R. Goel, D. Hakkani-Tur, J. Jezabek, A. Jha, J. Kao, P. Krishnan, P. Ku, A. Goyal, C. Lin, 
@@ -68,8 +70,8 @@ or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2). Below ar
    [CNN](https://www.cnn.com/2020/09/25/tech/amazon-alexa-conversational-ai/index.html)
    
 ### 2020
-1. Natural Language Processing (On Device NLP via Embedding Compression)
-   </span> <span style="background-color: purple"> &nbsp; Patent &nbsp; </span> 
+- <span style="background-color: purple"> &nbsp; Patent &nbsp; </span>
+   Natural Language Processing (On Device NLP via Embedding Compression)
    
    ***A Acharya***, A. Metallinou, R. Goel, I. Dhillon (Amazon Technologies Inc)
    

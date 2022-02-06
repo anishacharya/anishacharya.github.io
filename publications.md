@@ -7,7 +7,7 @@ or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2). Below ar
 **Peer Reviewed Publications (grouped reverse chronologically)**. 
     
 ## PrePrints
-- <span style="background-color: gray"> &nbsp; Preprint &nbsp; </span> Neural Distributed Source Coding
+- <span style="background-color: gray"> &nbsp; Preprint &nbsp; </span> Neural Distributed Source Coding   
    J. Whang, ***A Acharya***, H. Kim, A. Dimakis   
    [Arxiv](https://arxiv.org/abs/2106.02797.pdf)
 - <span style="background-color: gray"> &nbsp; Preprint &nbsp; </span> Faster Non-Convex Federated Learning via Global and  Local Momentum
@@ -16,20 +16,19 @@ or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2). Below ar
   
 ### 2022
 - <span style="background-color: maroon"> &nbsp; Conference &nbsp; </span> 
-   Robust Training in High Dimensions via Block Coordinate Geometric Median Descent.    
-  
+   Robust Training in High Dimensions via Block Coordinate Geometric Median Descent.   
   ***A Acharya***, A. Hashemi, S. Sanghavi, P. Jain, I. Dhillon, U. Topcu;   
-  <span style="color:blue">Artificial Intelligence and Statistics (AISTATS 2022) </span>  
-  
+  <span style="color:blue">Artificial Intelligence and Statistics (AISTATS 2022) </span>   
    [Code](https://github.com/anishacharya/BGMD);
    [Poster](https://github.com/anishacharya/BGMD/blob/main/BGMD_Simons.pdf);
    [PrePrint](https://arxiv.org/pdf/2106.08882.pdf); 
-   [Slides](https://github.com/anishacharya/BGMD/blob/main/BgmD_slides.pdf);   
-   An initial version of the work has been presented at:    
+   [Slides](https://github.com/anishacharya/BGMD/blob/main/BgmD_slides.pdf);         
+   An initial version of the work has been presented at:       
    <span style="background-color: gray"> &nbsp; Workshop &nbsp; </span> 
   [Joint IFML/CCSI Symposium](https://simons.berkeley.edu/workshops/joint-ifmlccsi-symposium)
-   (Simons Institute - UC Berkley)    
-   <span style="background-color: gray"> &nbsp; Workshop &nbsp; </span> [NSF-TRIPODS Workshop on Communication Efficient Distributed Optimization](https://sites.google.com/ucsd.edu/cedo/)
+   (Simons Institute - UC Berkley)       
+   <span style="background-color: gray"> &nbsp; Workshop &nbsp; </span> 
+  [NSF-TRIPODS Workshop on Communication Efficient Distributed Optimization](https://sites.google.com/ucsd.edu/cedo/)
    
 ### 2021
 - <span style="background-color: red"> &nbsp; Journal &nbsp; </span> 

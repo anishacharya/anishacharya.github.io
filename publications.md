@@ -15,7 +15,7 @@ or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2). Below ar
    [Arxiv](https://arxiv.org/abs/2012.04061)
   
 **2022**
-- <span style="background-color: bisque">Conference</span>&nbsp; 
+- <span style="background-color: bisque">**conference**</span>&nbsp; 
    Robust Training in High Dimensions via Block Coordinate Geometric Median Descent.   
   ***A Acharya***, A. Hashemi, S. Sanghavi, P. Jain, I. Dhillon, U. Topcu;   
   <span style="color:blue">Artificial Intelligence and Statistics (AISTATS 2022) </span>   
@@ -32,19 +32,19 @@ or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2). Below ar
   (Virtual)
   
 **2021**
-- <span style="background-color: red">Journal</span>&nbsp; 
+- <span style="background-color: red">**journal**</span>&nbsp; 
   On the Benefits of Multiple Gossip Steps in Communication-Constrained Decentralized Optimization      
    A. Hashemi, ***A Acharya***, R. Das, H. Vikalo, S. Sanghavi, I. Dhillon      
    <span style="color:blue">IEEE Transactions on Parallel and Distributed Systems (TPDS), 2021 </span>      
    [Paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9664349); 
    [Code](https://github.com/anishacharya/DeLiCoCo)
-- <span style="background-color: bisque">Conference</span>&nbsp;
+- <span style="background-color: bisque">**conference**</span>&nbsp;
   GupShup: An Annotated Corpus for Abstractive Summarization of Open-Domain Code-Switched Conversations    
    L. Mehnaz, D. Mahata, R. Gosangi, U. Gunturi, R. Jain, G. Gupta, A. Kumar, I. Lee, ***A Acharya***,  R. Shah;    
    <span style="color:blue">Empirical Methods in Natural Language Processing (EMNLP), 2021</span>    
    [Paper](https://aclanthology.org/2021.emnlp-main.499/);
    [Code](https://github.com/midas-research/gupshup)
-- <span style="background-color: bisque">Conference</span>&nbsp; 
+- <span style="background-color: bisque">**conference**</span>&nbsp; 
    Alexa Conversations: An Extensible Data-driven Approach for Building Task-oriented Dialogue Systems   
    ***A. Acharya***, S. Adhikari, S. Agarwal, V. Auvray, N. Belgamwar, A. Biswas, S. Chandra, T. Chung, M. Zarandi, 
    R. Gabriel, S. Gao, R. Goel, D. Hakkani-Tur, J. Jezabek, A. Jha, J. Kao, P. Krishnan, P. Ku, A. Goyal, C. Lin, 
@@ -66,7 +66,7 @@ or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2). Below ar
    [United States Patent-10872601B1](https://patents.google.com/patent/US10872601B1/en)
 
 **2019**
-- <span style="background-color: bisque">Conference</span>&nbsp;
+- <span style="background-color: bisque">**conference**</span>&nbsp;
   Online Embedding Compression for Text Classification using Low Rank Matrix Factorization   
    ***A. Acharya***, R. Goel, A. Metallinou, I. Dhillon.   
    <span style="color:blue">AAAI Conference on Artificial Intelligence (AAAI), 2019</span>   
@@ -78,43 +78,43 @@ or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2). Below ar
    
 
 **2014-11**
-- <span style="background-color: red">Journal</span>&nbsp;
+- <span style="background-color: red">**journal**</span>&nbsp;
   Extending the concept of analog Butterworth filter for fractional order systems    
    ***A Acharya***, S Das, I Pan, S Das.    
    <span style="color:blue">Signal Processing (Elsevier), 2014</span>   
    [Paper](https://www.sciencedirect.com/science/article/abs/pii/S0165168413002910)
-- <span style="background-color: red">Journal</span>&nbsp;
+- <span style="background-color: red">**journal**</span>&nbsp;
   Simulation studies on the design of optimum PID controllers to suppress chaotic oscillations in a
   family of Lorenz-like multi-wing attractors    
   S Das, ***A Acharya***, I Pan.     
   <span style="color:blue">
    Mathematics and Computers in Simulation (Elsevier), 2014</span>    
    [Paper](https://www.sciencedirect.com/science/article/abs/pii/S0378475414000469)
-- <span style="background-color: bisque">Conference</span>&nbsp;
+- <span style="background-color: bisque">**conference**</span>&nbsp;
   Stability analysis of delayed system using Bode integral    
    ***A Acharya***, D Mitra, K Halder.    
    <span style="color:blue"> IEEE International Conference on Computer 
    Communication and Informatics, 2013</span>    
    [Paper](https://ieeexplore.ieee.org/abstract/document/6466311)
-- <span style="background-color: bisque">Conference</span>&nbsp;
+- <span style="background-color: bisque">**Conference**</span>&nbsp;
   Optimum PID control of multi-wing attractors in a family of Lorenz-like chaotic systems   
    ***A Acharya***, S Das, I Pan.      
    <span style="color:blue"> IEEE International Conference on Computing, Communication and Networking 
    Technologies, 2012</span>     
    [Paper](https://ieeexplore.ieee.org/abstract/document/6396002)
-- <span style="background-color: bisque">Conference</span>&nbsp;
+- <span style="background-color: bisque">**conference**</span>&nbsp;
   Optimized quality factor of fractional order analog filters with band-pass and band-stop characteristics    
   A Pakhira, S Das, ***A Acharya***, I Pan, S Saha.        
   <span style="color:blue"> IEEE International Conference on Computing, 
   Communication and Networking Technologies, 2012</span>    
   [Paper](https://ieeexplore.ieee.org/abstract/document/6396000)
-- <span style="background-color: bisque">Conference</span>&nbsp;
+- <span style="background-color: bisque">**conference**</span>&nbsp;
   Identification of Nonlinear Systems From the Knowledge Around Different Operating Conditions:
   A Feed-Forward Multi-Layer ANN Based Approach    
   S Saha, S Das, ***A Acharya***, A Kumar, S Mukherjee, I Pan, A Gupta.    
   <span style="color:blue">IEEE Conference on Parallel Distributed and Grid Computing, 2012</span>    
   [Paper](https://ieeexplore.ieee.org/abstract/document/6449856)
-- <span style="background-color: bisque">Conference</span>&nbsp;
+- <span style="background-color: bisque">**conference**</span>&nbsp;
   Least square and Instrumental Variable system identification of ac servo position control
   system with fractional Gaussian noise    
   S Das, A Kumar, I Pan, ***A Acharya***, S Das, A Gupta.    

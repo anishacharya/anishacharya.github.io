@@ -30,7 +30,7 @@ or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2). Below ar
    <span style="background-color: gray"> &nbsp; Workshop &nbsp; </span> 
   [NSF-TRIPODS Workshop on Communication Efficient Distributed Optimization](https://sites.google.com/ucsd.edu/cedo/)
    
-### 2021
+**2021**
 - <span style="background-color: red"> &nbsp; Journal &nbsp; </span> 
    On the Benefits of Multiple Gossip Steps in Communication-Constrained Decentralized Optimization   
    A. Hashemi, ***A Acharya***, R. Das, H. Vikalo, S. Sanghavi, I. Dhillon      
@@ -60,32 +60,26 @@ or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2). Below ar
    [Forbes](https://www.forbes.com/sites/cognitiveworld/2019/06/12/amazon-advances-conversational-applications/?sh=443c78197d26) ;
    [CNN](https://www.cnn.com/2020/09/25/tech/amazon-alexa-conversational-ai/index.html)
    
-### 2020
+**2020**
 - <span style="background-color: purple"> &nbsp; Patent &nbsp; </span>
-   Natural Language Processing (On Device NLP via Embedding Compression)
-   
-   ***A Acharya***, A. Metallinou, R. Goel, I. Dhillon (Amazon Technologies Inc)
-   
+   Natural Language Processing (On Device NLP via Embedding Compression)    
+   ***A Acharya***, A. Metallinou, R. Goel, I. Dhillon (Amazon Technologies Inc)   
    [United States Patent-10872601B1](https://patents.google.com/patent/US10872601B1/en)
 
-### 2019
-1. Online Embedding Compression for Text Classification using Low Rank Matrix Factorization
-   </span> <span style="background-color: maroon"> &nbsp; Conference &nbsp; </span> 
-   
-   ***A. Acharya***, R. Goel, A. Metallinou, I. Dhillon. 
-   
-   <span style="color:blue">AAAI Conference on Artificial Intelligence (AAAI), 2019</span>
-   
+**2019**
+- <span style="background-color: maroon"> &nbsp; Conference &nbsp; </span>
+  Online Embedding Compression for Text Classification using Low Rank Matrix Factorization   
+   ***A. Acharya***, R. Goel, A. Metallinou, I. Dhillon.   
+   <span style="color:blue">AAAI Conference on Artificial Intelligence (AAAI), 2019</span>   
    [Paper](https://ojs.aaai.org/index.php/AAAI/article/view/4578);
-   [Code](https://github.com/anishacharya/Online-Embedding-Compression-AAAI-2019)
-   
+   [Code](https://github.com/anishacharya/Online-Embedding-Compression-AAAI-2019)   
    ***Media:*** 
    [Alexa Blog](https://www.amazon.science/blog/new-method-for-compressing-neural-networks-better-preserves-accuracy) ;
    [Packt](https://hub.packtpub.com/amazon-alexa-ai-researchers-develop-new-method-to-compress-neural-networks-and-preserves-accuracy-of-system/)
    
 
-### 2014 - 2011
-7. Extending the concept of analog Butterworth filter for fractional order systems
+**2014-11**
+- Extending the concept of analog Butterworth filter for fractional order systems
    <span style="background-color: red"> &nbsp; Journal &nbsp; </span>
    
    ***A Acharya***, S Das, I Pan, S Das.  

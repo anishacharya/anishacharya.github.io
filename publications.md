@@ -7,10 +7,10 @@ or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2). Below ar
 **Peer Reviewed Publications (grouped reverse chronologically)**. 
     
 **PrePrints**
-- <span style="background-color: gray">Preprint</span>&nbsp; Neural Distributed Source Coding   
+- <span style="background-color:lightgrey">**preprint**</span>&nbsp; Neural Distributed Source Coding   
    J. Whang, ***A Acharya***, H. Kim, A. Dimakis   
    [Arxiv](https://arxiv.org/abs/2106.02797.pdf)
-- <span style="background-color: gray">Preprint</span>&nbsp; Faster Non-Convex Federated Learning via Global and  Local Momentum
+- <span style="background-color:lightgrey">**preprint**</span>&nbsp; Faster Non-Convex Federated Learning via Global and  Local Momentum
    R. Das, ***A Acharya***, A. Hashemi, S. Sanghavi, I. Dhillon, U. Topcu      
    [Arxiv](https://arxiv.org/abs/2012.04061)
   
@@ -24,10 +24,10 @@ or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2). Below ar
    [PrePrint](https://arxiv.org/pdf/2106.08882.pdf); 
    [Slides](https://github.com/anishacharya/BGMD/blob/main/BgmD_slides.pdf);         
    An initial version of the work has been presented at:       
-   <span style="background-color: gray">Workshop</span>&nbsp; 
+   <span style="background-color:lightgrey">**workshop**</span>&nbsp; 
   [Joint IFML/CCSI Symposium](https://simons.berkeley.edu/workshops/joint-ifmlccsi-symposium)
    (Simons Institute - UC Berkley)       
-   <span style="background-color: gray">Workshop</span>&nbsp; 
+   <span style="background-color:lightgrey">**workshop**</span>&nbsp; 
   [NSF-TRIPODS Workshop on Communication Efficient Distributed Optimization (NSF-CEDO)](https://sites.google.com/ucsd.edu/cedo/)
   (Virtual)
   
@@ -60,7 +60,7 @@ or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2). Below ar
    [CNN](https://www.cnn.com/2020/09/25/tech/amazon-alexa-conversational-ai/index.html)
    
 **2020**
-- <span style="background-color: purple">Patent</span>&nbsp;
+- <span style="background-color: lightcyan">**patent**</span>&nbsp;
    Natural Language Processing (On Device NLP via Embedding Compression)    
    ***A Acharya***, A. Metallinou, R. Goel, I. Dhillon (Amazon Technologies Inc)   
    [United States Patent-10872601B1](https://patents.google.com/patent/US10872601B1/en)
@@ -96,7 +96,7 @@ or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2). Below ar
    <span style="color:blue"> IEEE International Conference on Computer 
    Communication and Informatics, 2013</span>    
    [Paper](https://ieeexplore.ieee.org/abstract/document/6466311)
-- <span style="background-color: bisque">**Conference**</span>&nbsp;
+- <span style="background-color: bisque">**conference**</span>&nbsp;
   Optimum PID control of multi-wing attractors in a family of Lorenz-like chaotic systems   
    ***A Acharya***, S Das, I Pan.      
    <span style="color:blue"> IEEE International Conference on Computing, Communication and Networking 
@@ -123,28 +123,28 @@ or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2). Below ar
    
 
 **Non Peer Reviewed Notes** 
-- <span style="background-color: gray">Scribe Notes</span>&nbsp;
+- <span style="background-color:lightgrey">**scribe**</span>&nbsp;
   Fourier RIP    
   E. Price, ***A. Acharya***, R. Das     
   [UT Austin Link](https://www.cs.utexas.edu/~ecprice/courses/sublinear/scribe/lec18.pdf)
-- <span style="background-color: gray">Scribe Notes</span>&nbsp; 
+- <span style="background-color:lightgrey">**scribe**</span>&nbsp; 
   Sparse Recovery    
   E. Price, ***A. Acharya***, R. Das    
   [UT Austin Link](https://www.cs.utexas.edu/~ecprice/courses/sublinear/scribe/lec15.pdf)
-- <span style="background-color: gray">Project Report</span>&nbsp; 
+- <span style="background-color:lightgrey">**report**</span>&nbsp; 
   On image segmentation using fractional gradients-learning model parameters using approximate marginal inference         
   ***A Acharya***, U Mukherjee, C Fowlkes                 
   [Arxiv](https://arxiv.org/abs/1605.02240)
-- <span style="background-color: gray">Project Report</span>&nbsp;
+- <span style="background-color:lightgrey">**report**</span>&nbsp;
   Are We Ready for Driver-less Vehicles? Security vs. Privacy-A Social Perspective    
   ***A Acharya***      
   [Arxiv](https://arxiv.org/abs/1412.5207)
-- <span style="background-color: gray">Project Report</span>&nbsp; 
+- <span style="background-color:lightgrey">**report**</span>&nbsp; 
   A Complete Review of Controlling the FDR in a Multiple Comparison Problem Framework
   -- The Benjamini-Hochberg Algorithm        
   ***A Acharya***      
   [Arxiv](https://arxiv.org/abs/1406.7117)
-- <span style="background-color: gray">Project Report</span>&nbsp;
+- <span style="background-color:lightgrey">**report**</span>&nbsp;
   Template Matching based Object Detection Using HOG Feature Pyramid    
   ***A Acharya***       
   [Arxiv](https://arxiv.org/abs/1406.7120)

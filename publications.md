@@ -32,7 +32,7 @@ or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2). Below ar
   (Virtual)
   
 **2021**
-- <span style="background-color: red">**journal**</span>&nbsp; 
+- <span style="background-color: thistle">**journal**</span>&nbsp; 
   On the Benefits of Multiple Gossip Steps in Communication-Constrained Decentralized Optimization      
    A. Hashemi, ***A Acharya***, R. Das, H. Vikalo, S. Sanghavi, I. Dhillon      
    <span style="color:blue">IEEE Transactions on Parallel and Distributed Systems (TPDS), 2021 </span>      
@@ -78,12 +78,12 @@ or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2). Below ar
    
 
 **2014-11**
-- <span style="background-color: red">**journal**</span>&nbsp;
+- <span style="background-color: thistle">**journal**</span>&nbsp;
   Extending the concept of analog Butterworth filter for fractional order systems    
    ***A Acharya***, S Das, I Pan, S Das.    
    <span style="color:blue">Signal Processing (Elsevier), 2014</span>   
    [Paper](https://www.sciencedirect.com/science/article/abs/pii/S0165168413002910)
-- <span style="background-color: red">**journal**</span>&nbsp;
+- <span style="background-color: thistle">**journal**</span>&nbsp;
   Simulation studies on the design of optimum PID controllers to suppress chaotic oscillations in a
   family of Lorenz-like multi-wing attractors    
   S Das, ***A Acharya***, I Pan.     

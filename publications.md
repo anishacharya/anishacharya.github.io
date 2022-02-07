@@ -78,12 +78,12 @@ or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2). Below ar
    
 
 **2014-11**
-- <span style="background-color: red"> &nbsp; Journal &nbsp; </span>
+- <span style="background-color: red">Journal</span>&nbsp;
   Extending the concept of analog Butterworth filter for fractional order systems    
    ***A Acharya***, S Das, I Pan, S Das.    
    <span style="color:blue">Signal Processing (Elsevier), 2014</span>   
    [Paper](https://www.sciencedirect.com/science/article/abs/pii/S0165168413002910)
-- <span style="background-color: red"> &nbsp; Journal &nbsp; </span>
+- <span style="background-color: red">Journal</span>&nbsp;
   Simulation studies on the design of optimum PID controllers to suppress chaotic oscillations in a
   family of Lorenz-like multi-wing attractors    
   S Das, ***A Acharya***, I Pan.     
@@ -123,7 +123,7 @@ or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2). Below ar
    
 
 **Non Peer Reviewed Notes** 
-- <span style="background-color: gray">Scribe Notes</span>&nbsp;  
+- <span style="background-color: gray">Scribe Notes</span>&nbsp;
   Fourier RIP    
   E. Price, ***A. Acharya***, R. Das     
   [UT Austin Link](https://www.cs.utexas.edu/~ecprice/courses/sublinear/scribe/lec18.pdf)

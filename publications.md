@@ -37,14 +37,12 @@ or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2). Below ar
    <span style="color:blue">IEEE Transactions on Parallel and Distributed Systems (TPDS), 2021 </span>   
    [Paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9664349); 
    [Code](https://github.com/anishacharya/DeLiCoCo)
-   
 - <span style="background-color: maroon"> &nbsp; Conference &nbsp; </span>
     GupShup: An Annotated Corpus for Abstractive Summarization of Open-Domain Code-Switched Conversations    
    L. Mehnaz, D. Mahata, R. Gosangi, U. Gunturi, R. Jain, G. Gupta, A. Kumar, I. Lee, ***A Acharya***,  R. Shah;    
    <span style="color:blue">Empirical Methods in Natural Language Processing (EMNLP), 2021</span>    
    [Paper](https://aclanthology.org/2021.emnlp-main.499/);
    [Code](https://github.com/midas-research/gupshup)
-   
 - <span style="background-color: maroon"> &nbsp; Conference &nbsp; </span> 
    Alexa Conversations: An Extensible Data-driven Approach for Building Task-oriented Dialogue Systems   
    ***A. Acharya***, S. Adhikari, S. Agarwal, V. Auvray, N. Belgamwar, A. Biswas, S. Chandra, T. Chung, M. Zarandi, 

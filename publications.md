@@ -77,121 +77,73 @@ or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2). Below ar
    
 
 **2014-11**
-- Extending the concept of analog Butterworth filter for fractional order systems
-   <span style="background-color: red"> &nbsp; Journal &nbsp; </span>
-   
-   ***A Acharya***, S Das, I Pan, S Das.  
-   
-   <span style="color:blue">Signal Processing (Elsevier), 2014</span>
-   
+- <span style="background-color: red"> &nbsp; Journal &nbsp; </span>
+  Extending the concept of analog Butterworth filter for fractional order systems    
+   ***A Acharya***, S Das, I Pan, S Das.    
+   <span style="color:blue">Signal Processing (Elsevier), 2014</span>   
    [Paper](https://www.sciencedirect.com/science/article/abs/pii/S0165168413002910)
-
-6. Simulation studies on the design of optimum PID controllers to suppress chaotic oscillations in a 
-   family of Lorenz-like multi-wing attractors
-   <span style="background-color: red"> &nbsp; Journal &nbsp; </span>
-   
-   S Das, ***A Acharya***, I Pan. <span style="color:blue"> 
-   
-   Mathematics and Computers in Simulation (Elsevier), 2014</span>
-   
+- <span style="background-color: red"> &nbsp; Journal &nbsp; </span>
+  Simulation studies on the design of optimum PID controllers to suppress chaotic oscillations in a
+  family of Lorenz-like multi-wing attractors    
+  S Das, ***A Acharya***, I Pan.     
+  <span style="color:blue">
+   Mathematics and Computers in Simulation (Elsevier), 2014</span>    
    [Paper](https://www.sciencedirect.com/science/article/abs/pii/S0378475414000469)
-
-5. Stability analysis of delayed system using Bode integral
-   <span style="background-color: maroon"> &nbsp; Conference &nbsp; </span>
-   
-   ***A Acharya***, D Mitra, K Halder. 
-   
+- <span style="background-color: maroon"> &nbsp; Conference &nbsp; </span>
+  Stability analysis of delayed system using Bode integral    
+   ***A Acharya***, D Mitra, K Halder.    
    <span style="color:blue"> IEEE International Conference on Computer 
-   Communication and Informatics, 2013</span>
-   
-   [Paper](https://ieeexplore.ieee.org/abstract/document/6466311)   
-
-
-4. Optimum PID control of multi-wing attractors in a family of Lorenz-like chaotic systems
-   <span style="background-color: maroon"> &nbsp; Conference &nbsp; </span> 
-   
-   ***A Acharya***, S Das, I Pan.  
-   
+   Communication and Informatics, 2013</span>    
+   [Paper](https://ieeexplore.ieee.org/abstract/document/6466311)
+- <span style="background-color: maroon"> &nbsp; Conference &nbsp; </span>
+  Optimum PID control of multi-wing attractors in a family of Lorenz-like chaotic systems   
+   ***A Acharya***, S Das, I Pan.      
    <span style="color:blue"> IEEE International Conference on Computing, Communication and Networking 
-   Technologies, 2012</span>
-   
+   Technologies, 2012</span>     
    [Paper](https://ieeexplore.ieee.org/abstract/document/6396002)
+- <span style="background-color: maroon"> &nbsp; Conference &nbsp; </span>
+  Optimized quality factor of fractional order analog filters with band-pass and band-stop characteristics    
+  A Pakhira, S Das, ***A Acharya***, I Pan, S Saha.        
+  <span style="color:blue"> IEEE International Conference on Computing, 
+  Communication and Networking Technologies, 2012</span>    
+  [Paper](https://ieeexplore.ieee.org/abstract/document/6396000)
+- <span style="background-color: maroon"> &nbsp; Conference &nbsp; </span>
+  Identification of Nonlinear Systems From the Knowledge Around Different Operating Conditions:
+  A Feed-Forward Multi-Layer ANN Based Approach    
+  S Saha, S Das, ***A Acharya***, A Kumar, S Mukherjee, I Pan, A Gupta.    
+  <span style="color:blue">IEEE Conference on Parallel Distributed and Grid Computing, 2012</span>    
+  [Paper](https://ieeexplore.ieee.org/abstract/document/6449856)
+- <span style="background-color: maroon"> &nbsp; Conference &nbsp; </span>
+  Least square and Instrumental Variable system identification of ac servo position control
+  system with fractional Gaussian noise    
+  S Das, A Kumar, I Pan, ***A Acharya***, S Das, A Gupta.    
+  <span style="color:blue"> IEEE International Conference on Energy, Automation and Signal,2011</span>    
+  [Paper](https://ieeexplore.ieee.org/abstract/document/6147165)
    
 
-3. Optimized quality factor of fractional order analog filters with band-pass and band-stop characteristics
-   <span style="background-color: maroon"> &nbsp; Conference &nbsp; </span>
-   
-   A Pakhira, S Das, ***A Acharya***, I Pan, S Saha.  
-   
-   <span style="color:blue"> IEEE International Conference on Computing, 
-   Communication and Networking Technologies, 2012</span>
-   
-   [Paper](https://ieeexplore.ieee.org/abstract/document/6396000)
-
-
-2. Identification of Nonlinear Systems From the Knowledge Around Different Operating Conditions: 
-   A Feed-Forward Multi-Layer ANN Based Approach
-   <span style="background-color: maroon"> &nbsp; Conference &nbsp; </span>
-   
-   S Saha, S Das, ***A Acharya***, A Kumar, S Mukherjee, I Pan, A Gupta. 
-   
-   <span style="color:blue">IEEE Conference on Parallel Distributed and Grid Computing, 2012</span>
-   
-   [Paper](https://ieeexplore.ieee.org/abstract/document/6449856)
-   
-
-1. Least square and Instrumental Variable system identification of ac servo position control 
-   system with fractional Gaussian noise
-   <span style="background-color: maroon"> &nbsp; Conference &nbsp; </span>
-   
-   S Das, A Kumar, I Pan, ***A Acharya***, S Das, A Gupta. 
-   
-   <span style="color:blue"> IEEE International Conference on Energy, Automation and Signal,2011</span>
-   
-   [Paper](https://ieeexplore.ieee.org/abstract/document/6147165)
-   
-
-### Non Peer Reviewed Notes 
-6. Fourier RIP 
-   <span style="background-color: gray"> &nbsp; Scribe Notes &nbsp; </span> 
-   
-   E. Price, ***A. Acharya***, R. Das
-   
-   [UT Austin Link](https://www.cs.utexas.edu/~ecprice/courses/sublinear/scribe/lec18.pdf)
-
-
-5. Sparse Recovery
-   <span style="background-color: gray"> &nbsp; Scribe Notes &nbsp; </span>
-   
-   E. Price, ***A. Acharya***, R. Das
-   
-   [UT Austin Link](https://www.cs.utexas.edu/~ecprice/courses/sublinear/scribe/lec15.pdf)
-   
-
-4. On image segmentation using fractional gradients-learning model parameters using approximate marginal inference
-   <span style="background-color: gray"> &nbsp; Project Report &nbsp; </span>
-
-   ***A Acharya***, U Mukherjee, C Fowlkes      
-   [Arxiv](https://arxiv.org/abs/1605.02240)
-   
-3. Are We Ready for Driver-less Vehicles? Security vs. Privacy-A Social Perspective
-   <span style="background-color: gray"> &nbsp; Project Report &nbsp; </span>
-   
-   ***A Acharya***
-   
-   [Arxiv](https://arxiv.org/abs/1412.5207)
-   
-
-2. A Complete Review of Controlling the FDR in a Multiple Comparison Problem Framework 
-   -- The Benjamini-Hochberg Algorithm
-   <span style="background-color: gray"> &nbsp; Project Report &nbsp; </span>
-   
-   ***A Acharya***   
-   [Arxiv](https://arxiv.org/abs/1406.7117)
-   
-
-1. Template Matching based Object Detection Using HOG Feature Pyramid
-   <span style="background-color: gray"> &nbsp; Project Report &nbsp; </span>
-   
-   ***A Acharya***   
-   [Arxiv](https://arxiv.org/abs/1406.7120)
+**Non Peer Reviewed Notes** 
+- <span style="background-color: gray"> &nbsp; Scribe Notes &nbsp; </span> 
+  Fourier RIP    
+  E. Price, ***A. Acharya***, R. Das     
+  [UT Austin Link](https://www.cs.utexas.edu/~ecprice/courses/sublinear/scribe/lec18.pdf)
+- <span style="background-color: gray"> &nbsp; Scribe Notes &nbsp; </span> 
+  Sparse Recovery    
+  E. Price, ***A. Acharya***, R. Das    
+  [UT Austin Link](https://www.cs.utexas.edu/~ecprice/courses/sublinear/scribe/lec15.pdf)
+- <span style="background-color: gray"> &nbsp; Project Report &nbsp; </span> 
+  On image segmentation using fractional gradients-learning model parameters using approximate marginal inference         
+  ***A Acharya***, U Mukherjee, C Fowlkes                 
+  [Arxiv](https://arxiv.org/abs/1605.02240)
+- <span style="background-color: gray"> &nbsp; Project Report &nbsp; </span>
+  Are We Ready for Driver-less Vehicles? Security vs. Privacy-A Social Perspective    
+  ***A Acharya***      
+  [Arxiv](https://arxiv.org/abs/1412.5207)
+- <span style="background-color: gray"> &nbsp; Project Report &nbsp; </span> 
+  A Complete Review of Controlling the FDR in a Multiple Comparison Problem Framework
+  -- The Benjamini-Hochberg Algorithm        
+  ***A Acharya***      
+  [Arxiv](https://arxiv.org/abs/1406.7117)
+- <span style="background-color: gray"> &nbsp; Project Report &nbsp; </span>
+  Template Matching based Object Detection Using HOG Feature Pyramid    
+  ***A Acharya***       
+  [Arxiv](https://arxiv.org/abs/1406.7120)

@@ -32,39 +32,31 @@ or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2). Below ar
    
 ### 2021
 - <span style="background-color: red"> &nbsp; Journal &nbsp; </span> 
-   On the Benefits of Multiple Gossip Steps in Communication-Constrained Decentralized Optimization
-   
-   A. Hashemi, ***A Acharya***, R. Das, H. Vikalo, S. Sanghavi, I. Dhillon   
-   <span style="color:blue">IEEE Transactions on Parallel and Distributed Systems (TPDS), 2021 </span>
-       
+   On the Benefits of Multiple Gossip Steps in Communication-Constrained Decentralized Optimization   
+   A. Hashemi, ***A Acharya***, R. Das, H. Vikalo, S. Sanghavi, I. Dhillon      
+   <span style="color:blue">IEEE Transactions on Parallel and Distributed Systems (TPDS), 2021 </span>   
    [Paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9664349); 
    [Code](https://github.com/anishacharya/DeLiCoCo)
    
-- <span style="background-color: maroon"> &nbsp; Conference &nbsp; </span> 
-   GupShup: An Annotated Corpus for Abstractive Summarization of Open-Domain Code-Switched Conversations
-
-   L. Mehnaz, D. Mahata, R. Gosangi, U. Gunturi, R. Jain, G. Gupta, A. Kumar, I. Lee, ***A Acharya***,  R. Shah;
-   
-   <span style="color:blue">Empirical Methods in Natural Language Processing (EMNLP), 2021</span>
-     
+- <span style="background-color: maroon"> &nbsp; Conference &nbsp; </span>
+    GupShup: An Annotated Corpus for Abstractive Summarization of Open-Domain Code-Switched Conversations    
+   L. Mehnaz, D. Mahata, R. Gosangi, U. Gunturi, R. Jain, G. Gupta, A. Kumar, I. Lee, ***A Acharya***,  R. Shah;    
+   <span style="color:blue">Empirical Methods in Natural Language Processing (EMNLP), 2021</span>    
    [Paper](https://aclanthology.org/2021.emnlp-main.499/);
    [Code](https://github.com/midas-research/gupshup)
    
 - <span style="background-color: maroon"> &nbsp; Conference &nbsp; </span> 
-   Alexa Conversations: An Extensible Data-driven Approach for Building Task-oriented Dialogue Systems
-   
+   Alexa Conversations: An Extensible Data-driven Approach for Building Task-oriented Dialogue Systems   
    ***A. Acharya***, S. Adhikari, S. Agarwal, V. Auvray, N. Belgamwar, A. Biswas, S. Chandra, T. Chung, M. Zarandi, 
    R. Gabriel, S. Gao, R. Goel, D. Hakkani-Tur, J. Jezabek, A. Jha, J. Kao, P. Krishnan, P. Ku, A. Goyal, C. Lin, 
    Q. Liu, A. Mandal, A. Metallinou, V. Naik, Y. Pan, S. Paul, V. Perera, A. Sethi, M. Shen, N. Strom and E. Wang;    
-   <span style="color:blue">North American Chapter of the Association for Computational Linguistics(NAACL), 2021</span> 
-     
+   <span style="color:blue">North American Chapter of the Association for Computational Linguistics(NAACL), 2021</span>   
    [Paper](https://www.aclweb.org/anthology/2021.naacl-demos.15/);
-   [Code](https://developer.amazon.com/en-US/docs/alexa/conversations/about-alexa-conversations.html)
-   
+   [Code](https://developer.amazon.com/en-US/docs/alexa/conversations/about-alexa-conversations.html)       
    ***Media :*** 
    [Alexa Blog](https://www.amazon.science/blog/amazon-unveils-novel-alexa-dialog-modeling-for-natural-cross-skill-conversations) ; 
    [Alexa Skill](https://developer.amazon.com/en-US/docs/alexa/conversations/about-alexa-conversations.html) ;
-   [VentureBeat](https://www.youtube.com/watch?v=hEIjCF-KaRY) ; 
+   [VentureBeat](https://www.youtube.com/watch?v=hEIjCF-KaRY) ;
    [Forbes](https://www.forbes.com/sites/cognitiveworld/2019/06/12/amazon-advances-conversational-applications/?sh=443c78197d26) ;
    [CNN](https://www.cnn.com/2020/09/25/tech/amazon-alexa-conversational-ai/index.html)
    

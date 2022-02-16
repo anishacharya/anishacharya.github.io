@@ -49,13 +49,16 @@ or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2). Below ar
    ***A. Acharya***, S. Adhikari, S. Agarwal, V. Auvray, N. Belgamwar, A. Biswas, S. Chandra, T. Chung, M. Zarandi, 
    R. Gabriel, S. Gao, R. Goel, D. Hakkani-Tur, J. Jezabek, A. Jha, J. Kao, P. Krishnan, P. Ku, A. Goyal, C. Lin, 
    Q. Liu, A. Mandal, A. Metallinou, V. Naik, Y. Pan, S. Paul, V. Perera, A. Sethi, M. Shen, N. Strom and E. Wang;    
-   <span style="color:blue">North American Chapter of the Association for Computational Linguistics(NAACL), 2021</span>   
+   <span style="color:blue">North American Chapter of the Association for Computational Linguistics (NAACL), 2021</span>   
    [Paper](https://www.aclweb.org/anthology/2021.naacl-demos.15/);
-   [Code](https://developer.amazon.com/en-US/docs/alexa/conversations/about-alexa-conversations.html)       
+   [Code](https://developer.amazon.com/en-US/docs/alexa/conversations/about-alexa-conversations.html);
+   [Dialog Manager](https://developer.amazon.com/en-US/alexa/alexa-skills-kit/dialog-management).  
+   ***Launch :*** 
+   [ReMars - VentureBeat](https://www.youtube.com/watch?v=hEIjCF-KaRY) ;
+   [Alexa Live](https://youtu.be/1nYfRvg976E).   
    ***Media :*** 
    [Alexa Blog](https://www.amazon.science/blog/amazon-unveils-novel-alexa-dialog-modeling-for-natural-cross-skill-conversations) ; 
    [Alexa Skill](https://developer.amazon.com/en-US/docs/alexa/conversations/about-alexa-conversations.html) ;
-   [VentureBeat](https://www.youtube.com/watch?v=hEIjCF-KaRY) ;
    [Forbes](https://www.forbes.com/sites/cognitiveworld/2019/06/12/amazon-advances-conversational-applications/?sh=443c78197d26) ;
    [CNN](https://www.cnn.com/2020/09/25/tech/amazon-alexa-conversational-ai/index.html)
    

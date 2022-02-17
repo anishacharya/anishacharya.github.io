@@ -4,9 +4,9 @@ title: ""
 ---
 Slides and other resources used in these talks are available at the following [Github Link](https://github.com/anishacharya/Presentations)
 
-## Invited Talks 
-- Nov 2021. (Virtual) University of Denver - Computer Science 
-- Nov 2021. (Virtual) Facebook Capacity Engineering Research
+## Research Talks 
+- Nov 2021. (Virtual) University of Denver - Computer Science (Guest Lecture)
+- Nov 2021. (Virtual) Facebook Capacity Engineering Research  
 - Nov 2021. (Berkley, CA) Simons Institute [IFML/CCSI Symposium](https://simons.berkeley.edu/programs/si2021) 
 - Aug 2021. (Virtual) Facebook AI Research 
 - Aug 2020. (Virtual) Microsoft Azure AI 

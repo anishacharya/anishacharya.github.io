@@ -10,7 +10,7 @@ or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2). Below ar
 - <span style="background-color:lightgrey">**preprint**</span>&nbsp; Neural Distributed Source Coding   
    J. Whang, ***A Acharya***, H. Kim, A. Dimakis   
    [Arxiv](https://arxiv.org/abs/2106.02797.pdf)
-- <span style="background-color:lightgrey">**preprint**</span>&nbsp; Faster Non-Convex Federated Learning via Global and  Local Momentum
+- <span style="background-color:lightgrey">**preprint**</span>&nbsp; Faster Non-Convex Federated Learning via Global and  Local Momentum   
    R. Das, ***A Acharya***, A. Hashemi, S. Sanghavi, I. Dhillon, U. Topcu      
    [Arxiv](https://arxiv.org/abs/2012.04061)
   

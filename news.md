@@ -5,6 +5,7 @@ title: ""
 Slides and other resources used in these talks are available at the following [Github Link](https://github.com/anishacharya/Presentations)
 
 ## Research Talks 
+- March 2022. (Virtual) [AISTATS 2022](https://virtual.aistats.org/) ([Recorded Talk](https://virtual.aistats.org/virtual/2022/poster/3629))
 - March 2022. (Virtual) University of Exeter - Dept of Mathematics (Invited Talk)
 - Nov 2021. (Virtual) University of Denver - Computer Science (Guest Lecture)
 - Nov 2021. (Virtual) Meta - Capacity Engineering Research (Internal)

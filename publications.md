@@ -7,6 +7,9 @@ or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2). Below ar
 **Peer Reviewed Publications (grouped reverse chronologically)**. 
     
 **PrePrints**
+- <span style="background-color:lightgrey">**preprint**</span>&nbsp; LDKP: A Dataset for Identifying Keyphrases from Long Scientific Documents   
+  Debanjan Mahata, Naveen Agarwal, Dibya Gautam, Amardeep Kumar, Swapnil Parekh, Yaman Kumar Singla, ***Anish Acharya***, Rajiv Ratn Shah   
+  [Arxiv](https://arxiv.org/pdf/2203.15349.pdf)
 - <span style="background-color:lightgrey">**preprint**</span>&nbsp; Neural Distributed Source Coding   
    J. Whang, ***A Acharya***, H. Kim, A. Dimakis   
    [Arxiv](https://arxiv.org/abs/2106.02797.pdf)

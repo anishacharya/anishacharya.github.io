@@ -2,10 +2,10 @@
 layout: page
 title: "" 
 ---
-Google Bots are awesome at curating latest papers and citations on [Scholar Google](https://scholar.google.co.in/citations?hl=en&user=uBmgGMAAAAAJ) 
+Google Bots are awesome at curating latest papers and citations on [Scholar Google](https://scholar.google.co.in/citations?hl=en&user=uBmgGMAAAAAJ&view_op=list_works&sortby=pubdate) 
 or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2). Below are
-**Peer Reviewed Publications (grouped reverse chronologically)**. 
-    
+**Peer Reviewed Publications (grouped reverse chronologically)**.
+
 **PrePrints**
 - <span style="background-color:lightgrey">**preprint**</span>&nbsp; LDKP: A Dataset for Identifying Keyphrases from Long Scientific Documents   
   D. Mahata, N. Agarwal, D. Gautam, A. Kumar, S. Parekh, Y. Singla, ***A.Acharya***, R. Shah   

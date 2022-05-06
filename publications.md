@@ -22,10 +22,10 @@ or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2). Below ar
    Robust Training in High Dimensions via Block Coordinate Geometric Median Descent.   
   ***A Acharya***, A. Hashemi, S. Sanghavi, P. Jain, I. Dhillon, U. Topcu;   
   <span style="color:blue">Artificial Intelligence and Statistics (AISTATS 2022) </span>   
+   [Paper](https://proceedings.mlr.press/v151/acharya22a/acharya22a.pdf); 
    [Code](https://github.com/anishacharya/BGMD);
-   [Poster](https://github.com/anishacharya/BGMD/blob/main/BGMD_Simons.pdf);
-   [PrePrint](https://arxiv.org/pdf/2106.08882.pdf); 
-   [Slides](https://github.com/anishacharya/BGMD/blob/main/BgmD_slides.pdf);         
+   [Poster](https://github.com/anishacharya/BGMD/blob/main/poster_aistats.pdf);
+   [Slides](https://github.com/anishacharya/BGMD/blob/main/slides_aistats.pdf);         
    An initial version of the work has been presented at:       
    <span style="background-color:lightgrey">**workshop**</span>&nbsp; 
   [Joint IFML/CCSI Symposium](https://simons.berkeley.edu/workshops/joint-ifmlccsi-symposium)

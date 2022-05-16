@@ -15,7 +15,8 @@ or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2). Below ar
    [Arxiv](https://arxiv.org/abs/2106.02797.pdf)
   
 **2022**
-- <span style="background-color:lightgrey">**preprint**</span>&nbsp; Faster Non-Convex Federated Learning via Global and  Local Momentum   
+- <span style="background-color: bisque">**conference**</span>&nbsp; 
+  Faster Non-Convex Federated Learning via Global and  Local Momentum   
    R. Das, ***A Acharya***, A. Hashemi, S. Sanghavi, I. Dhillon, U. Topcu   
   <span style="color:blue">The Conference on Uncertainty in Artificial Intelligence (UAI), 2022. </span>    
    [Preprint](https://arxiv.org/abs/2012.04061)

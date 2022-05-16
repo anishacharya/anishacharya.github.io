@@ -13,15 +13,17 @@ or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2). Below ar
 - <span style="background-color:lightgrey">**preprint**</span>&nbsp; Neural Distributed Source Coding   
    J. Whang, ***A Acharya***, H. Kim, A. Dimakis   
    [Arxiv](https://arxiv.org/abs/2106.02797.pdf)
-- <span style="background-color:lightgrey">**preprint**</span>&nbsp; Faster Non-Convex Federated Learning via Global and  Local Momentum   
-   R. Das, ***A Acharya***, A. Hashemi, S. Sanghavi, I. Dhillon, U. Topcu      
-   [Arxiv](https://arxiv.org/abs/2012.04061)
   
 **2022**
+- <span style="background-color:lightgrey">**preprint**</span>&nbsp; Faster Non-Convex Federated Learning via Global and  Local Momentum   
+   R. Das, ***A Acharya***, A. Hashemi, S. Sanghavi, I. Dhillon, U. Topcu   
+  <span style="color:blue">The Conference on Uncertainty in Artificial Intelligence (UAI), 2022. </span>    
+   [Preprint](https://arxiv.org/abs/2012.04061)
+  
 - <span style="background-color: bisque">**conference**</span>&nbsp; 
    Robust Training in High Dimensions via Block Coordinate Geometric Median Descent.   
-  ***A Acharya***, A. Hashemi, S. Sanghavi, P. Jain, I. Dhillon, U. Topcu;   
-  <span style="color:blue">Artificial Intelligence and Statistics (AISTATS 2022) </span>   
+  ***A Acharya***, A. Hashemi, S. Sanghavi, P. Jain, I. Dhillon, U. Topcu     
+  <span style="color:blue">Artificial Intelligence and Statistics (AISTATS), 2022. </span>   
    [Paper](https://proceedings.mlr.press/v151/acharya22a/acharya22a.pdf); 
    [Code](https://github.com/anishacharya/BGMD);
    [Poster](https://github.com/anishacharya/BGMD/blob/main/poster_aistats.pdf);

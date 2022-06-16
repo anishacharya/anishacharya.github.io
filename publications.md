@@ -7,6 +7,12 @@ or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2). Below ar
 **Peer Reviewed Publications (grouped reverse chronologically)**.
 
 **PrePrints**
+- <span style="background-color:lightgrey">**preprint**</span>&nbsp; Positive Unlabeled Contrastive Learning    
+   ** A. Acharya **, S. Sanghavi, L. Jing, B. Bhushanam, D. Choudhary, M. Rabbat, I. Dhillon
+   [Arxiv](https://arxiv.org/pdf/2206.01206)   
+   An initial version of the work has been accepted at:       
+   <span style="background-color:lightgrey">**workshop**</span>&nbsp; 
+  [ICML- PODS](https://sites.google.com/view/icml-2022-pods) (Baltimore, MD)
 - <span style="background-color:lightgrey">**preprint**</span>&nbsp; LDKP: A Dataset for Identifying Keyphrases from Long Scientific Documents   
   D. Mahata, N. Agarwal, D. Gautam, A. Kumar, S. Parekh, Y. Singla, ***A.Acharya***, R. Shah   
   [Arxiv](https://arxiv.org/pdf/2203.15349.pdf)

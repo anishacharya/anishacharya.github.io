@@ -8,7 +8,7 @@ Slides and other resources used in these talks are available at the following [G
 - Aug 2022. (Eindhoven, Netherlands) [UAI](https://www.auai.org/uai2022/) (Spotlight)
 - July 2022. (Baltimore, MD) [ICML - PODS](https://icml.cc/) (Poster, Recorded Talk)
 - May 2022. (Austin,TX) [6g@UT Forum](https://www.6gutforum.org/) (Poster)
-- March 2022. (Virtual) [AISTATS 2022](https://virtual.aistats.org/) ([Recorded Talk](https://virtual.aistats.org/virtual/2022/poster/3629))
+- March 2022. (Virtual) [AISTATS 2022](https://virtual.aistats.org/) ([Slides](https://virtual.aistats.org/media/aistats-2022/Slides/3629.pdf), [Recorded Talk](https://virtual.aistats.org/virtual/2022/poster/3629))
 - March 2022. (Virtual) University of Exeter - Dept of Mathematics (Invited Talk)
 - Nov 2021. (Virtual) University of Denver - Computer Science (Guest Lecture)
 - Nov 2021. (Virtual) Meta - Capacity Engineering Research (Internal)

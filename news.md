@@ -6,7 +6,7 @@ Slides and other resources used in these talks are available at the following [G
 
 ## Research Talks 
 - Aug 2022. (Eindhoven, Netherlands) [UAI](https://www.auai.org/uai2022/) (Spotlight)
-- July 2022. (Baltimore, MD) [ICML - PODS](https://icml.cc/) (Oral)
+- July 2022. (Baltimore, MD) [ICML - PODS](https://icml.cc/) (Poster, Recorded Talk)
 - May 2022. (Austin,TX) [6g@UT Forum](https://www.6gutforum.org/) (Poster)
 - March 2022. (Virtual) [AISTATS 2022](https://virtual.aistats.org/) ([Recorded Talk](https://virtual.aistats.org/virtual/2022/poster/3629))
 - March 2022. (Virtual) University of Exeter - Dept of Mathematics (Invited Talk)

@@ -23,6 +23,11 @@ or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2). Below ar
    [Arxiv](https://arxiv.org/abs/2106.02797.pdf)
   
 **2022**
+- <span style="background-color: lightcyan">**patent**</span>&nbsp;
+   Goal Oriented Dialog Generation using dialog template, api and entity data.     
+   ***A Acharya***, A. Metallinou, T. Chung, S. Paul, S. Chandra, C. Lin, D. H. Tur, A. Mandal (Amazon Technologies Inc)   
+   [United States Patent-11393454B1]([https://patents.google.com/patent/US10872601B1/en](http://www.pat2pdf.org/patents/pat11393454.pdf))
+   
 - <span style="background-color: bisque">**conference**</span>&nbsp; 
   Faster Non-Convex Federated Learning via Global and  Local Momentum   
    R. Das, ***A Acharya***, A. Hashemi, S. Sanghavi, I. Dhillon, U. Topcu   

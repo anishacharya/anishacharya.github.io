@@ -24,7 +24,7 @@ or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2). Below ar
   
 **2022**
 - <span style="background-color: lightcyan">**patent**</span>&nbsp;
-   Goal Oriented Dialog Generation using dialog template, api and entity data.     
+   Goal Oriented Dialog Generation using Dialog Template, API and Entity data.     
    ***A Acharya***, A. Metallinou, T. Chung, S. Paul, S. Chandra, C. Lin, D. H. Tur, A. Mandal (Amazon Technologies Inc)   
    [United States Patent-11393454B1](http://www.pat2pdf.org/patents/pat11393454.pdf)
    

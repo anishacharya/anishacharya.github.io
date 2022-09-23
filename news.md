@@ -41,7 +41,7 @@ Slides and other resources used in these talks are available at the following [G
 - Reviewer [AISTATS-2021](https://aistats.org/aistats2021/)
 
 ## Awards
-- 2022. Conference Grant, UAI'22 
+- Aug 2022. Conference Grant, UAI'22 
 - 2021-2022. 100k Funding from Facebook (Spring 2022, Fall 2022, Spring 2023)   
 - 2009-2013. [MHRD](https://mhrd.gov.in/) (Ministry of Human Resource Development) Fellow 
 - May 2007. [CPYLS](http://csirhrdg.res.in/cpyls.htm)(CSIR Program on Youth for Leadership in Science) Fellow 

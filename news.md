@@ -33,12 +33,11 @@ Slides and other resources used in these talks are available at the following [G
 
 ## Reviewing Services 
 - Reviewer [Pattern Recognition Letters](https://www.journals.elsevier.com/pattern-recognition-letters) 2020 - Present
-- Reviewer [ICML-2022](https://icml.cc/)
-- Reviewer [AISTATS-2022](https://aistats.org/aistats2022/)
-- Reviewer [ICLR-2022](https://iclr.cc/)
-- Expert Reviewer [NeuRips-2021](https://nips.cc/)
-- Expert Reviewer [ICML-2021](https://icml.cc/)
-- Reviewer [AISTATS-2021](https://aistats.org/aistats2021/)
+- Reviewer [IEEE Transactions on Knowledge and Data Engineering](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=69). 2022 - Present
+- Reviewer [ICLR-2022, 2023](https://iclr.cc/)
+- Reviewer [NeuRips-2021, 2022](https://nips.cc/)
+- Reviewer [ICML-2021, 2022](https://icml.cc/)
+- Reviewer [AISTATS-2021, 2022, 2023](https://aistats.org/aistats2021/)
 
 ## Awards
 - Aug 2022. Conference Grant, UAI'22 

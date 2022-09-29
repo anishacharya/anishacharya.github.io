@@ -6,7 +6,7 @@ Slides and other resources used in these talks are available at the following [G
 
 ## Research Talks 
 - Nov 2022. (Virtual) Meta Fundamental AI Research (FAIR) (Invited Talk)
-- Oct 2022. (Berkley, CA) Simons Institute [Data-Driven Decision Processes Workshop](https://simons.berkeley.edu/workshops/schedule/22652) (Poster)
+- Oct 2022. (Berkley, CA) Simons Institute [Data-Driven Decision Processes](https://simons.berkeley.edu/workshops/schedule/22652) (Poster)
 - Sep 2022. (Virtual) Meta - Ads ML Research (Invited Talk)
 - Aug 2022. (Eindhoven, Netherlands) [UAI](https://www.auai.org/uai2022/) (Spotlight)
 - July 2022. (Baltimore, MD) [ICML - PODS](https://icml.cc/) (Poster, Recorded Talk)

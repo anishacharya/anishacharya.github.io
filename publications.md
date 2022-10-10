@@ -12,11 +12,7 @@ or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2). Below ar
    [Arxiv](https://arxiv.org/pdf/2206.01206)   
    An initial version of the work has been accepted at:       
    <span style="background-color:lightgrey">**workshop**</span>&nbsp; 
-  [ICML- PODS](https://sites.google.com/view/icml-2022-pods) (Baltimore, MD)  
-
-- <span style="background-color:lightgrey">**preprint**</span>&nbsp; LDKP: A Dataset for Identifying Keyphrases from Long Scientific Documents   
-  D. Mahata, N. Agarwal, D. Gautam, A. Kumar, S. Parekh, Y. Singla, ***A.Acharya***, R. Shah   
-  [Arxiv](https://arxiv.org/pdf/2203.15349.pdf)   
+  [ICML- PODS](https://sites.google.com/view/icml-2022-pods) (Baltimore, MD)     
 
 - <span style="background-color:lightgrey">**preprint**</span>&nbsp; Neural Distributed Source Coding   
    J. Whang, ***A Acharya***, H. Kim, A. Dimakis   
@@ -49,6 +45,11 @@ or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2). Below ar
    <span style="background-color:lightgrey">**workshop**</span>&nbsp; 
   [NSF-TRIPODS Workshop on Communication Efficient Distributed Optimization (NSF-CEDO)](https://sites.google.com/ucsd.edu/cedo/)
   (Virtual)
+  
+- <span style="background-color:lightgrey">**workshop**</span>&nbsp; LDKP: A Dataset for Identifying Keyphrases from Long Scientific Documents   
+  D. Mahata, N. Agarwal, D. Gautam, A. Kumar, S. Parekh, Y. Singla, ***A.Acharya***, R. Shah   
+  ACM International Conference on Information and Knowledge Management (CIKM) - DL4SR’22: Workshop on Deep Learning for Search and Recommendation.
+  [Arxiv](https://arxiv.org/pdf/2203.15349.pdf)
   
 **2021**
 - <span style="background-color: thistle">**journal**</span>&nbsp; 

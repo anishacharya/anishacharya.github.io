@@ -47,8 +47,8 @@ or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2). Below ar
   (Virtual)
   
 - <span style="background-color:lightgrey">**workshop**</span>&nbsp; LDKP: A Dataset for Identifying Keyphrases from Long Scientific Documents   
-  D. Mahata, N. Agarwal, D. Gautam, A. Kumar, S. Parekh, Y. Singla, ***A.Acharya***, R. Shah   
-  ACM International Conference on Information and Knowledge Management (CIKM) - DL4SR’22: Workshop on Deep Learning for Search and Recommendation.
+  D. Mahata, N. Agarwal, D. Gautam, A. Kumar, S. Parekh, Y. Singla, ***A.Acharya***, R. Shah.  
+  <span style="color:blue">ACM International Conference on Information and Knowledge Management (CIKM) DL4SR’22</span>
   [Arxiv](https://arxiv.org/pdf/2203.15349.pdf)
   
 **2021**

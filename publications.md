@@ -28,7 +28,7 @@ or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2). Below ar
   Faster Non-Convex Federated Learning via Global and  Local Momentum   
    R. Das, ***A Acharya***, A. Hashemi, S. Sanghavi, I. Dhillon, U. Topcu   
   <span style="color:blue">The Conference on Uncertainty in Artificial Intelligence (UAI), 2022. </span>    
-   [Preprint](https://arxiv.org/abs/2012.04061)
+   [Paper](https://proceedings.mlr.press/v180/das22b/das22b.pdf);[Arxiv](https://arxiv.org/abs/2012.04061)
   
 - <span style="background-color: bisque">**conference**</span>&nbsp; 
    Robust Training in High Dimensions via Block Coordinate Geometric Median Descent.   

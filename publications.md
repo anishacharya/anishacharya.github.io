@@ -41,7 +41,7 @@ or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2). Below ar
    [Poster](https://github.com/anishacharya/BGMD/blob/main/poster_aistats.pdf);
    [Slides](https://github.com/anishacharya/BGMD/blob/main/slides_aistats.pdf);         
    An initial version of the work has been presented at:       
-   <span style="background-color:lightgrey">**Symposiump**</span>&nbsp; 
+   <span style="background-color:lightgrey">**Symposium**</span>&nbsp; 
   [Joint IFML/CCSI Symposium](https://simons.berkeley.edu/workshops/joint-ifmlccsi-symposium)
    (Simons Institute - UC Berkley)       
    <span style="background-color:lightgrey">**workshop**</span>&nbsp; 

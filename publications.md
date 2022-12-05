@@ -10,7 +10,7 @@ or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2). Below ar
 - <span style="background-color:lightgrey">**preprint**</span>&nbsp; Positive Unlabeled Contrastive Learning    
    ***A. Acharya***, S. Sanghavi, L. Jing, B. Bhushanam, D. Choudhary, M. Rabbat, I. Dhillon
    [Arxiv](https://arxiv.org/pdf/2206.01206)   
-   An initial version of the work has been presented at:       
+   Early versions of the work has been presented at:       
    <span style="background-color:lightgrey">**workshop**</span>&nbsp; 
   [ICML- PODS](https://sites.google.com/view/icml-2022-pods) (Baltimore, MD).   
   <span style="background-color:lightgrey">**workshop**</span>&nbsp;[Joint IFML/Data-Driven Decision Processes Workshop](https://simons.berkeley.edu/workshops/joint-ifmldata-driven-decision-processes-workshop)

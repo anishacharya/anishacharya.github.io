@@ -6,13 +6,16 @@ Google Bots are awesome at curating latest papers and citations on [Scholar Goog
 or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2). Below are
 **Peer Reviewed Publications (grouped reverse chronologically)**.
 
-**PrePrints**
+**Ongoing Papers**
 - <span style="background-color:lightgrey">**preprint**</span>&nbsp; Positive Unlabeled Contrastive Learning    
    ***A. Acharya***, S. Sanghavi, L. Jing, B. Bhushanam, D. Choudhary, M. Rabbat, I. Dhillon
    [Arxiv](https://arxiv.org/pdf/2206.01206)   
-   An initial version of the work has been accepted at:       
+   An initial version of the work has been presented at:       
    <span style="background-color:lightgrey">**workshop**</span>&nbsp; 
-  [ICML- PODS](https://sites.google.com/view/icml-2022-pods) (Baltimore, MD)     
+  [ICML- PODS](https://sites.google.com/view/icml-2022-pods) (Baltimore, MD) 
+  <span style="background-color:lightgrey">**Symposiump**</span>&nbsp; 
+  [Joint IFML/Data-Driven Decision Processes Workshop](https://simons.berkeley.edu/workshops/joint-ifmlccsi-symposium)
+   (Simons Institute - UC Berkley) 
 
 - <span style="background-color:lightgrey">**preprint**</span>&nbsp; Neural Distributed Source Coding   
    J. Whang, ***A Acharya***, H. Kim, A. Dimakis   
@@ -39,7 +42,7 @@ or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2). Below ar
    [Poster](https://github.com/anishacharya/BGMD/blob/main/poster_aistats.pdf);
    [Slides](https://github.com/anishacharya/BGMD/blob/main/slides_aistats.pdf);         
    An initial version of the work has been presented at:       
-   <span style="background-color:lightgrey">**workshop**</span>&nbsp; 
+   <span style="background-color:lightgrey">**Symposiump**</span>&nbsp; 
   [Joint IFML/CCSI Symposium](https://simons.berkeley.edu/workshops/joint-ifmlccsi-symposium)
    (Simons Institute - UC Berkley)       
    <span style="background-color:lightgrey">**workshop**</span>&nbsp; 

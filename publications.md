@@ -12,9 +12,8 @@ or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2). Below ar
    [Arxiv](https://arxiv.org/pdf/2206.01206)   
    An initial version of the work has been presented at:       
    <span style="background-color:lightgrey">**workshop**</span>&nbsp; 
-  [ICML- PODS](https://sites.google.com/view/icml-2022-pods) (Baltimore, MD) 
-  <span style="background-color:lightgrey">**Symposiump**</span>&nbsp; 
-  [Joint IFML/Data-Driven Decision Processes Workshop](https://simons.berkeley.edu/workshops/joint-ifmlccsi-symposium)
+  [ICML- PODS](https://sites.google.com/view/icml-2022-pods) (Baltimore, MD).   
+  <span style="background-color:lightgrey">**workshop**</span>&nbsp;[Joint IFML/Data-Driven Decision Processes Workshop](https://simons.berkeley.edu/workshops/joint-ifmldata-driven-decision-processes-workshop)
    (Simons Institute - UC Berkley) 
 
 - <span style="background-color:lightgrey">**preprint**</span>&nbsp; Neural Distributed Source Coding   

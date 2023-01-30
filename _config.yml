@@ -24,14 +24,14 @@ description: "PhD Candidate @UT Austin, Previously Applied Scientist @Amazon Ale
 
 # List of links in the navigation bar
 navbar-links:
-    # Bio: "bio"
-   Bio: "aboutme"
+   # Bio: "bio"
+   # Bio: "aboutme"
    Resume: "https://www.wncg.org/sites/default/files/cv/CV_ANISH.pdf"
    Publications: "publications"
    Talks: "talks"
    Press: "press"   
    Awards: "awards"
-   Outreach: "service"
+   Outreach: "services"
    Open Source:
      - Embedding Compression: "https://github.com/anishacharya/Online-Embedding-Compression-AAAI-2019"
      - BGMD: "https://github.com/anishacharya/BGMD"

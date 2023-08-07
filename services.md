@@ -1,3 +1,9 @@
+## Teaching Experiences
+- University of Texas at Austin. ECE 461P (Senior Undergraduate/ Graduate) : Data Science Principles 
+- University of California Irvine. EECS 50 (Undergraduate) : Discrete Time signals and systems 
+- University of California Irvine. EECS 280A (Graduate) : Advanced Engineering Electromagnetics I 
+- University of California Irvine. EECS 118 (Undergraduate) : Introduction to Knowledge Management and software Engineering 
+- University of California Irvine. EECS 119 (Undergraduate) : Introduction to VLSI 
 ## Reviewing Services 
 - Reviewer [ISIT-2023](https://isit2023.org/)
 - Reviewer [UAI-2023](https://www.auai.org/)

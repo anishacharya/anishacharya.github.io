@@ -4,9 +4,22 @@ title: ""
 ---
 Google Bots are awesome at curating latest papers and citations on [Scholar Google](https://scholar.google.co.in/citations?hl=en&user=uBmgGMAAAAAJ&view_op=list_works&sortby=pubdate) 
 or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2). Below are
-**Peer Reviewed Publications (grouped reverse chronologically)**.
+**Publications (grouped reverse chronologically)**.
 
-**Ongoing Papers**
+**2024**
+- <span style="background-color:lightgrey">**preprint**</span>&nbsp; Neural Distributed Source Coding   
+   J. Whang, ***A Acharya***, H. Kim, A. Dimakis   
+   [IEEE Journal on Selected Areas in Information Theory](https://arxiv.org/abs/2106.02797.pdf)
+
+- <span style="background-color:lightgrey">**preprint**</span>&nbsp; Contrastive Approach to Prior Free Positive Unlabeled Learning     
+   ***A Acharya***,  S Sanghavi  
+   [Arxiv](https://arxiv.org/pdf/2402.06038)
+
+- <span style="background-color:lightgrey">**preprint**</span>&nbsp; Geometric Median (GM) Matching for Robust Data Pruning   
+   ***A Acharya***,  Inderjit Dhillon, S Sanghavi  
+   [Arxiv]()
+  
+**2022**
 - <span style="background-color:lightgrey">**preprint**</span>&nbsp; Positive Unlabeled Contrastive Learning    
    ***A. Acharya***, S. Sanghavi, L. Jing, B. Bhushanam, D. Choudhary, M. Rabbat, I. Dhillon
    [Arxiv](https://arxiv.org/pdf/2206.01206)   
@@ -14,13 +27,8 @@ or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2). Below ar
    <span style="background-color:lightgrey">**workshop**</span>&nbsp; 
   [ICML- PODS](https://sites.google.com/view/icml-2022-pods) (Baltimore, MD).   
   <span style="background-color:lightgrey">**workshop**</span>&nbsp;[Joint IFML/Data-Driven Decision Processes Workshop](https://simons.berkeley.edu/workshops/joint-ifmldata-driven-decision-processes-workshop)
-   (Simons Institute - UC Berkley) 
-
-- <span style="background-color:lightgrey">**preprint**</span>&nbsp; Neural Distributed Source Coding   
-   J. Whang, ***A Acharya***, H. Kim, A. Dimakis   
-   [Arxiv](https://arxiv.org/abs/2106.02797.pdf)
+   (Simons Institute - UC Berkley)
   
-**2022**
 - <span style="background-color: lightcyan">**patent**</span>&nbsp;
    Goal Oriented Dialog Generation using Dialog Template, API and Entity data.     
    ***A Acharya***, A. Metallinou, T. Chung, S. Paul, S. Chandra, C. Lin, D. H. Tur, A. Mandal (Amazon Technologies Inc)   

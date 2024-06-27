@@ -7,9 +7,9 @@ or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2). Below ar
 **Publications (grouped reverse chronologically)**.
 
 **2024**
-- <span style="background-color:lightgrey">**preprint**</span>&nbsp; Neural Distributed Source Coding   
+- <span style="background-color: thistle">**journal**</span>&nbsp; Neural Distributed Source Coding   
    J. Whang, ***A Acharya***, H. Kim, A. Dimakis   
-   [IEEE Journal on Selected Areas in Information Theory](https://arxiv.org/abs/2106.02797.pdf)
+   [IEEE Journal on Selected Areas in Information Theory](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10557705)
 
 - <span style="background-color:lightgrey">**preprint**</span>&nbsp; Contrastive Approach to Prior Free Positive Unlabeled Learning     
    ***A Acharya***,  S Sanghavi  

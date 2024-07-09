@@ -17,7 +17,7 @@ or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2). Below ar
    [Arxiv](https://arxiv.org/pdf/2402.06038)
 
 - <span style="background-color:lightgrey">**preprint**</span>&nbsp; Geometric Median (GM) Matching for Robust Data Pruning   
-   ***A Acharya***,  Inderjit Dhillon, S Sanghavi  
+   ***A Acharya***,  I Dhillon, S Sanghavi  
    [Arxiv](https://arxiv.org/pdf/2406.17188)
   
 **2022**

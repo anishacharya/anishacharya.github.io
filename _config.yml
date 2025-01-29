@@ -26,7 +26,8 @@ description: "PhD Candidate @UT Austin, Previously Applied Scientist @Amazon Ale
 navbar-links:
    # Bio: "bio"
    # Bio: "aboutme"
-   Resume: "https://www.wncg.org/sites/default/files/cv/CV_ANISH.pdf"
+   # Resume: "https://www.wncg.org/sites/default/files/cv/CV_ANISH.pdf"
+   Resume: "https://drive.google.com/file/d/14zCtVrJVr9EnM6YR8DAx-XItRokFhaHR/view?usp=sharing"
    Publications: "publications"
    Talks: "talks"
    Press: "press"   

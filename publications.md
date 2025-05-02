@@ -13,8 +13,8 @@ or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2). Below ar
    [Arxiv](https://arxiv.org/abs/2504.00564)
 
 - <span style="background-color:lightgrey">**preprint**</span>&nbsp; Understanding Contrastive Representation Learning from Positive Unlabeled (PU) Data    
-   ***A Acharya***,  S Sanghavi      
-   [Arxiv](https://arxiv.org/pdf/2402.06038)
+   ***A Acharya***, L Jing, B Bhushanam, D Choudhary, M Rabbat, S Sanghavi, I S Dhillon        
+   [Arxiv](https://arxiv.org/pdf/2402.06038)     
   Early versions of the work has been presented at:       
    <span style="background-color:lightgrey">**workshop**</span>&nbsp; 
   [ICML- PODS](https://sites.google.com/view/icml-2022-pods) (Baltimore, MD).   

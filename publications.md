@@ -21,14 +21,6 @@ or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2). Below ar
    J. Whang, A Nagle, ***A Acharya***, H. Kim, A G Dimakis   
   <span style="color:blue">IEEE Journal on Selected Areas in Information Theory. </span>   
    [Paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10557705)
-
-- <span style="background-color:lightgrey">**preprint**</span>&nbsp; Contrastive Approach to Prior Free Positive Unlabeled Learning     
-   ***A Acharya***,  S Sanghavi  
-   [Arxiv](https://arxiv.org/pdf/2402.06038)
-
-- <span style="background-color:lightgrey">**preprint**</span>&nbsp; Geometric Median (GM) Matching for Robust Data Pruning   
-   ***A Acharya***,  I Dhillon, S Sanghavi  
-   [Arxiv](https://arxiv.org/pdf/2406.17188)
   
 **2022**
 - <span style="background-color:lightgrey">**preprint**</span>&nbsp; Positive Unlabeled Contrastive Learning    

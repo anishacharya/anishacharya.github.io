@@ -15,6 +15,11 @@ or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2). Below ar
 - <span style="background-color:lightgrey">**preprint**</span>&nbsp; Understanding Contrastive Representation Learning from Positive Unlabeled (PU) Data    
    ***A Acharya***,  S Sanghavi      
    [Arxiv](https://arxiv.org/pdf/2402.06038)
+  Early versions of the work has been presented at:       
+   <span style="background-color:lightgrey">**workshop**</span>&nbsp; 
+  [ICML- PODS](https://sites.google.com/view/icml-2022-pods) (Baltimore, MD).   
+  <span style="background-color:lightgrey">**workshop**</span>&nbsp;[Joint IFML/Data-Driven Decision Processes Workshop](https://simons.berkeley.edu/workshops/joint-ifmldata-driven-decision-processes-workshop)
+   (Simons Institute - UC Berkley)
 
 **2024**
 - <span style="background-color: thistle">**journal**</span>&nbsp; Neural Distributed Source Coding   
@@ -23,15 +28,6 @@ or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2). Below ar
    [Paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10557705)
   
 **2022**
-- <span style="background-color:lightgrey">**preprint**</span>&nbsp; Positive Unlabeled Contrastive Learning    
-   ***A. Acharya***, S. Sanghavi, L. Jing, B. Bhushanam, D. Choudhary, M. Rabbat, I. Dhillon
-   [Arxiv](https://arxiv.org/pdf/2206.01206)   
-   Early versions of the work has been presented at:       
-   <span style="background-color:lightgrey">**workshop**</span>&nbsp; 
-  [ICML- PODS](https://sites.google.com/view/icml-2022-pods) (Baltimore, MD).   
-  <span style="background-color:lightgrey">**workshop**</span>&nbsp;[Joint IFML/Data-Driven Decision Processes Workshop](https://simons.berkeley.edu/workshops/joint-ifmldata-driven-decision-processes-workshop)
-   (Simons Institute - UC Berkley)
-  
 - <span style="background-color: lightcyan">**patent**</span>&nbsp;
    Goal Oriented Dialog Generation using Dialog Template, API and Entity data.     
    ***A Acharya***, A. Metallinou, T. Chung, S. Paul, S. Chandra, C. Lin, D. H. Tur, A. Mandal (Amazon Technologies Inc)   

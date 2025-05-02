@@ -6,9 +6,18 @@ Google Bots are awesome at curating latest papers and citations on [Scholar Goog
 or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2). Below are
 **Publications (grouped reverse chronologically)**.
 
+**2025**
+- <span style="background-color:lightgrey">**preprint**</span>&nbsp; Geometric Median Matching for Robust k-Subset Selection from Noisy Data
+   ***A Acharya***, S Sanghavi, A G Dimakis, I S Dhillon
+   [Arxiv](https://arxiv.org/pdf/2402.06038)
+
+- <span style="background-color:lightgrey">**preprint**</span>&nbsp; Understanding Contrastive Representation Learning from Positive Unlabeled (PU) Data
+   ***A Acharya***,  S Sanghavi  
+   [Arxiv](https://arxiv.org/pdf/2402.06038)
+
 **2024**
 - <span style="background-color: thistle">**journal**</span>&nbsp; Neural Distributed Source Coding   
-   J. Whang, Alliot Nagle, ***A Acharya***, H. Kim, A. Dimakis   
+   J. Whang, A Nagle, ***A Acharya***, H. Kim, A G Dimakis   
   <span style="color:blue">IEEE Journal on Selected Areas in Information Theory. </span>   
    [Paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10557705)
 

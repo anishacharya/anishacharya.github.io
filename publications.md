@@ -7,7 +7,7 @@ or [Researchgate](https://www.researchgate.net/profile/Anish_Acharya2). Below ar
 **Publications (grouped reverse chronologically)**.
 
 **2025**
-- <span style="background-color:lightgrey">**preprint**</span>&nbsp; Geometric Median Matching for Robust k-Subset Selection from Noisy Data      
+- <span style="background-color: bisque">**conference**</span>&nbsp; Geometric Median Matching for Robust k-Subset Selection from Noisy Data      
    ***A Acharya***, S Sanghavi, A G Dimakis, I S Dhillon    
   <span style="color:blue">International Confrence on Machine Learning (ICML), 2025. </span>      
    [Arxiv](https://arxiv.org/abs/2504.00564)

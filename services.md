@@ -11,11 +11,12 @@ title: ""
 - University of California Irvine. EECS 119 (Undergraduate) : Introduction to VLSI 
 ## Reviewing Services 
 - Program Committe [VISAPP-2025](https://visapp.scitevents.org/)
+- Reviewer [Journal of Machine Learning Research (JMLR)](https://jmlr.org/)
 - Reviewer [ISIT-2023](https://isit2023.org/)
 - Reviewer [UAI-2023](https://www.auai.org/)
 - Reviewer [ICLR-2022, 2023](https://iclr.cc/)
 - Reviewer [NeuRips-2021, 2022, 2023, 2024](https://nips.cc/)
-- Reviewer [ICML-2021, 2022, 2023, 2024](https://icml.cc/)
-- Reviewer [AISTATS-2021, 2022, 2023,2024](https://aistats.org/aistats2021/)
+- Reviewer [ICML-2021, 2022, 2023, 2024, 2025](https://icml.cc/)
+- Reviewer [AISTATS-2021, 2022, 2023, 2024](https://aistats.org/aistats2021/)
 - Reviewer [Pattern Recognition Letters](https://www.journals.elsevier.com/pattern-recognition-letters) 2020 - Present
 - Reviewer [IEEE Transactions on Knowledge and Data Engineering](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=69). 2022 - Present

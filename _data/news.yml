@@ -1,0 +1,19 @@
+# Landing-page "Recent" list. Editorial — 3 or 4 items, newest first.
+# This is the one hand-curated list on the site; everything else is derived.
+# Keep it short. If it grows past four, the oldest drops off.
+
+- when: 2026
+  what: "Two orals at the Amazon Machine Learning Conference — Prompt Optimization, and Robust LLM Jury"
+  url: ""
+
+- when: 2026
+  what: "AI-Assisted Product Listing shipped at AWS Summit NY"
+  url: "https://aws.amazon.com/about-aws/whats-new/2026/06/ai-assisted-product-listing/"
+
+- when: 2026
+  what: "RoPoLL: Robust Panel of LLM Judges — ICML 2026, AgenticUQ workshop"
+  url: "https://openreview.net/pdf?id=Rvj0jSb86u"
+
+- when: 2025
+  what: "AWS Marketplace Agent Mode launched at re:Invent"
+  url: "https://aws.amazon.com/marketplace/agentmode/#/"

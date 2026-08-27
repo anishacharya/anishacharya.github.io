@@ -1,0 +1,179 @@
+# Invited talks and presentations, strictly reverse chronological.
+# Reconciled against CV_ANISH/talks.tex. Comprehensive, not curated.
+#
+# Note: the recurring AWS GenAI training sessions are an Instructor role and
+# live in work.yml -> teaching, not here.
+
+- when: Fall 2026
+  where: Seattle, WA
+  host: Amazon Machine Learning Conference (AMLC)
+  title: Prompt Optimization
+  kind: Oral
+
+- when: Fall 2026
+  where: Seattle, WA
+  host: Amazon Machine Learning Conference (AMLC)
+  title: Robust LLM Jury
+  kind: Oral
+
+- when: Summer 2026
+  where: Seoul, South Korea
+  host: ICML 2026
+  title: Robust LLM Jury
+  kind: Poster
+  url: "https://icml.cc/"
+
+- when: Summer 2026
+  where: New York City, NY
+  host: AWS Marketplace Science
+  title: Agent Swarm Optimization
+  kind: Invited Talk
+
+- when: Summer 2026
+  where: Austin, TX
+  host: AI Across AWS
+  title: Agent Optimization
+  kind: Invited Talk
+
+- when: Spring 2026
+  where: Virtual
+  host: AWS Town Hall
+  title: Prompt Optimization
+  kind: Invited Talk
+
+- when: Fall 2025
+  where: Seattle, WA
+  host: Amazon Fulfillment Simulation Symposium (AFSS)
+  title: Robust Sampling
+  kind: Invited Talk
+
+- when: Summer 2025
+  where: Vancouver, Canada
+  host: ICML 2025
+  title: Robust Sampling
+  kind: Recorded Talk, Poster
+  url: "https://icml.cc/"
+
+- when: Fall 2023
+  where: Austin, TX
+  host: Future of Chatbots and Conversational AI Summit (FOCA 2023)
+  kind: Keynote, Panel
+  url: "https://groupfuturistaevent.com/FOCA2023/"
+
+- when: Fall 2022
+  where: Virtual
+  host: "Meta: Fundamental AI Research (FAIR)"
+  kind: Invited Talk
+
+- when: Fall 2022
+  where: Berkeley, CA
+  host: Simons Institute for the Theory of Computing
+  title: Robust Optimization
+  kind: Poster
+  url: "https://simons.berkeley.edu/workshops/joint-ifmldata-driven-decision-processes-workshop"
+
+- when: Fall 2022
+  where: Virtual
+  host: "Meta: Ads ML Research"
+  kind: Invited Talk
+
+- when: Summer 2022
+  where: Eindhoven, Netherlands
+  host: UAI 2022
+  title: Faster Non-Convex Federated Learning
+  kind: Poster
+  url: "https://www.auai.org/uai2022/"
+
+- when: Summer 2022
+  where: Baltimore, MD
+  host: ICML 2022
+  title: Robust Representation Learning
+  kind: Recorded Talk, Poster
+  url: "https://icml.cc/"
+
+- when: Spring 2022
+  where: Austin, TX
+  host: 6g@UT Forum
+  title: Robust Federated Learning
+  kind: Poster
+  url: "https://www.6gutforum.org/"
+
+- when: Spring 2022
+  where: Virtual
+  host: AISTATS 2022
+  title: Robust Federated Learning
+  kind: Recorded Talk, Poster
+  url: "https://virtual.aistats.org/"
+
+- when: Spring 2022
+  where: Virtual
+  host: University of Exeter — Department of Mathematics
+  title: Robust Federated Learning
+  kind: Invited Talk
+  url: "http://emps.exeter.ac.uk/mathematics/"
+
+- when: Fall 2021
+  where: Virtual
+  host: University of Denver — Department of Computer Science
+  title: Robust Federated Learning
+  kind: Guest Lecture
+
+- when: Fall 2021
+  where: Berkeley, CA
+  host: Simons Institute for the Theory of Computing
+  title: Robust Federated Learning
+  kind: Poster
+  url: "https://simons.berkeley.edu/"
+
+- when: Fall 2021
+  where: Virtual
+  host: "Meta: Fundamental AI Research (FAIR)"
+  title: Robust Representation Learning
+  kind: Invited Talk
+
+- when: Summer 2021
+  where: Virtual
+  host: "Meta: Capacity Engineering Research"
+  title: Robust Representation Learning
+  kind: Invited Talk
+  url: "https://engineering.fb.com/tag/cea/"
+
+- when: Spring 2021
+  where: Virtual
+  host: NSF TRIPODS
+  title: Efficient Decentralized Optimization
+  kind: Poster
+  url: "https://sites.google.com/ucsd.edu/cedo/"
+
+- when: Summer 2020
+  where: Virtual
+  host: "Microsoft: Azure AI"
+  title: Robust Optimization
+  kind: Invited Talk
+
+- when: Fall 2019
+  where: Austin, TX
+  host: UT Austin Graduate Research Showcase
+  title: Efficient ML
+  kind: Poster
+  url: "https://guides.lib.utexas.edu/2019GRS/presenters"
+
+- when: Fall 2019
+  where: Austin, TX
+  host: Texas Wireless Summit
+  title: Efficient ML
+  kind: Poster
+  url: "https://www.texaswirelesssummit.org/"
+
+- when: Spring 2019
+  where: Honolulu, HI
+  host: AAAI 2019
+  title: Efficient ML
+  kind: Oral
+  url: "https://aaai.org/Conferences/AAAI-19/"
+
+- when: Summer 2018
+  where: Seattle, WA
+  host: Amazon Machine Learning Conference (AMLC)
+  title: Efficient ML
+  kind: Oral

@@ -1,0 +1,18 @@
+{%- comment -%}
+Compact list of papers for a theme panel.
+Usage: {% include paperlist.html items=array %}
+Links to the paper's primary URL (first non-empty link), else plain text.
+{%- endcomment -%}
+<ul class="paperlist">
+  {% for p in include.items %}
+  {% assign primary = "" %}
+  {% for l in p.links %}{% if l[1] != "" and primary == "" %}{% assign primary = l[1] %}{% endif %}{% endfor %}
+  <li>
+    <span class="v">{{ p.venue }}</span>
+    <span class="ttl">
+      {% if primary != "" %}<a href="{{ primary }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}
+      {% if p.note_short and p.note_short contains "Spotlight" %} <span class="me">· Spotlight</span>{% endif %}
+    </span>
+  </li>
+  {% endfor %}
+</ul>

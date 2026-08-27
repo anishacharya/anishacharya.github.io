@@ -1,0 +1,17 @@
+<svg viewBox="0 0 320 108" role="img" aria-label="A lattice of candidate states with a dashed feasible region. The search hops between lattice points inside the region rather than relaxing the constraints.">
+  <path class="bd" d="M96 20 H236 Q252 20 252 36 V74 Q252 90 236 90 H96 Q80 90 80 74 V36 Q80 20 96 20 Z"/>
+  <g class="pt">
+    <circle cx="34" cy="30" r="2.4"/><circle cx="34" cy="56" r="2.4"/><circle cx="34" cy="82" r="2.4"/>
+    <circle cx="62" cy="30" r="2.4"/><circle cx="62" cy="56" r="2.4"/><circle cx="62" cy="82" r="2.4"/>
+    <circle cx="102" cy="30" r="2.4"/><circle cx="102" cy="82" r="2.4"/>
+    <circle cx="138" cy="30" r="2.4"/><circle cx="138" cy="82" r="2.4"/>
+    <circle cx="174" cy="30" r="2.4"/><circle cx="174" cy="82" r="2.4"/>
+    <circle cx="210" cy="30" r="2.4"/><circle cx="210" cy="82" r="2.4"/>
+    <circle cx="286" cy="30" r="2.4"/><circle cx="286" cy="56" r="2.4"/><circle cx="286" cy="82" r="2.4"/>
+  </g>
+  <path class="ar-d s1-s" d="M102 56 L 138 44 L 174 62 L 210 48"/>
+  <g class="s1-o-g"><circle cx="102" cy="56" r="3.4"/><circle cx="138" cy="44" r="3.4"/><circle cx="174" cy="62" r="3.4"/></g>
+  <circle class="s2-f" cx="210" cy="48" r="4.6"/>
+  <text class="s2-t" x="218" y="52">best feasible</text>
+  <text class="lb sm" x="166" y="102" text-anchor="middle">constraints hold exactly — no relaxation</text>
+</svg>

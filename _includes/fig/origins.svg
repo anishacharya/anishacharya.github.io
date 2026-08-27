@@ -1,0 +1,10 @@
+<svg viewBox="0 0 320 108" role="img" aria-label="Two step responses against a dashed setpoint: one rings and barely settles, the other converges smoothly. Stability is proved before the loop is tuned.">
+  <path class="ax-l" d="M24 92 H306"/>
+  <path class="ax-l" d="M24 92 V16"/>
+  <path class="sp" d="M24 34 H306"/>
+  <text class="lb sm" x="304" y="29" text-anchor="end">setpoint</text>
+  <path class="s1-line" d="M26 92 C 50 92, 56 18, 86 17 C 106 16, 112 62, 134 60 C 152 58, 160 20, 184 23 C 208 26, 214 48, 240 44 C 262 41, 276 36, 304 36"/>
+  <path class="s2-line" d="M26 92 C 56 92, 66 40, 108 36 C 150 32, 210 34, 304 34"/>
+  <text class="s1-t sm" x="140" y="76">ringing</text>
+  <text class="s2-t sm" x="226" y="28">settles</text>
+</svg>

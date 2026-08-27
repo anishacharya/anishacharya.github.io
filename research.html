@@ -1,0 +1,128 @@
+---
+layout: base
+title: Research
+permalink: /research/
+description: "Four threads, from recursive self improvement back to control theory and estimation."
+---
+
+<p class="lede">
+  A thematic reading of the work rather than the chronological one the
+  <a href="{{ '/cv/' | relative_url }}">CV</a> gives. The threads are not
+  independent, and the coupling is the point: <strong>search amplifies whatever
+  bias the signal carries</strong>, so a stronger optimizer aimed at a corrupted
+  objective is worse than a weaker one.
+</p>
+
+<!-- ── 1 ── -->
+<section class="theme">
+  <div class="theme-head">
+    <span class="theme-num">01</span>
+    <h3>Recursive self improvement</h3>
+  </div>
+  <p class="theme-sum">
+    Agent systems that propose changes to their own prompts, tools, and
+    orchestration, score them, and keep what scored better. I work on both halves
+    of that loop: the <em>signal</em> it optimizes against, and the
+    <em>search</em> that exploits it. The arc runs from human-specified agent
+    behaviour — Alexa Conversations, generated from hand-authored dialog
+    templates — to self-modifying behaviour. That transition is why the earlier
+    theory became load-bearing: once the human is out of the loop, nothing else
+    is checking the objective.
+  </p>
+  <div class="theme-fig">{% include fig/agents.svg %}</div>
+  {% assign g = site.data.papers | where_exp: "p", "p.thrusts contains 'rsi'" %}
+  {% include paperlist.html items=g %}
+</section>
+
+<!-- ── 2 ── -->
+<section class="theme">
+  <div class="theme-head">
+    <span class="theme-num">02</span>
+    <h3>Robust estimation under contamination</h3>
+  </div>
+  <p class="theme-sum">
+    The methodological spine, stated as a problem rather than a method: a
+    learning system is a chain of averaging steps, and the average is the least
+    robust estimator there is. Recognise a step as mean estimation under
+    contamination, then replace the naive estimator with one carrying a provable
+    breakdown point. The same diagnosis has now been applied at three points in
+    the pipeline, roughly one every three years — <strong>gradients across
+    workers</strong>, <strong>sample means used for matching</strong>, and
+    <strong>scores across a panel of judges</strong> — with the object different
+    each time and the mathematics unchanged. Distributed optimization is where
+    the lesson was learned: an aggregation rule is part of the estimator, not
+    part of the plumbing.
+  </p>
+  <div class="theme-fig">{% include fig/robust.svg %}</div>
+  {% assign g = site.data.papers | where_exp: "p", "p.thrusts contains 'robust'" %}
+  {% include paperlist.html items=g %}
+</section>
+
+<!-- ── 3 ── -->
+<section class="theme">
+  <div class="theme-head">
+    <span class="theme-num">03</span>
+    <h3>Learning on a budget: bits, labels, samples, tokens</h3>
+  </div>
+  <p class="theme-sum">
+    One question asked in four currencies over eleven years: you have a fixed
+    budget, so where does the accuracy actually go? Model footprint and learned
+    distributed compression spend <em>bits</em>; robust subset selection spends
+    <em>samples</em>; learning from positive and unlabeled data spends no
+    <em>negative labels</em> at all, because a non-click is not a negative and
+    manufacturing negatives injects the very bias you were avoiding. The current
+    form of the question is <em>tokens</em> — every iteration of a self-improving
+    loop spends inference, evaluation, and context.
+  </p>
+  <div class="theme-fig">{% include fig/weak.svg %}</div>
+  {% assign g = site.data.papers | where_exp: "p", "p.thrusts contains 'scarcity'" %}
+  {% include paperlist.html items=g %}
+</section>
+
+<!-- ── 4 ── -->
+<section class="theme">
+  <div class="theme-head">
+    <span class="theme-num">04</span>
+    <h3>Origins: control, estimation, signal processing</h3>
+  </div>
+  <p class="theme-sum">
+    The undergraduate work at Jadavpur was not machine learning. It was control
+    theory: fractional-order analog filters, optimal PID control of chaotic
+    Lorenz-like attractors, stability of delayed systems via Bode's integral, and
+    system identification under fractional Gaussian noise. Four ideas were
+    already present — <em>identify the system before you optimize it</em>;
+    <em>the noise model is a modelling choice</em>; <em>stability is not a
+    nice-to-have</em>; and <em>optimal control is optimization against a
+    dynamical objective</em>. Swap "plant" for "learned model" and "controller"
+    for "training procedure," and that is the current program almost verbatim.
+  </p>
+  <div class="theme-fig">{% include fig/origins.svg %}</div>
+  {% assign g = site.data.papers | where_exp: "p", "p.thrusts contains 'origins'" %}
+  {% include paperlist.html items=g %}
+</section>
+
+<h2>Also interested in</h2>
+<p>
+  Scalable oversight · reward model robustness · evaluation under adversarial and
+  biased supervision · robust high-dimensional estimation · non-convex and
+  distributed optimization · constrained combinatorial search.
+</p>
+
+<h2>Thesis</h2>
+{% assign phd = site.data.work.education | first %}
+<p>
+  <strong><a href="{{ phd.thesis_url }}">{{ phd.thesis }}</a></strong><br>
+  {{ phd.degree }}, {{ phd.school }}, {{ phd.to }}.<br>
+  <span class="card-also">Advised by {{ phd.advisors | join: " and " }}.
+  Committee: {{ phd.committee | join: ", " }}.</span>
+</p>
+
+<h2>Code</h2>
+<ul class="rows">
+  {% for c in site.data.work.code %}
+  <li class="row">
+    <div class="row-when"><a href="{{ c.url }}">{{ c.name }}</a></div>
+    <div class="row-main"><div class="s">{{ c.what }}</div></div>
+  </li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,18 @@
+<svg viewBox="0 0 320 108" role="img" aria-label="A small set of labelled positives beside a large unlabeled pool that still contains positives, so sampled negatives are biased.">
+  <text class="s2-t sm" x="52" y="20" text-anchor="middle">positive</text>
+  <g class="s2-f-g">
+    <circle cx="30" cy="40" r="3.6"/><circle cx="52" cy="34" r="3.6"/><circle cx="72" cy="44" r="3.6"/>
+    <circle cx="36" cy="62" r="3.6"/><circle cx="60" cy="56" r="3.6"/><circle cx="46" cy="80" r="3.6"/>
+    <circle cx="72" cy="72" r="3.6"/>
+  </g>
+  <path class="bd" d="M126 18 H296 Q308 18 308 30 V78 Q308 90 296 90 H126 Q114 90 114 78 V30 Q114 18 126 18 Z"/>
+  <g class="pt">
+    <circle cx="140" cy="34" r="2.8"/><circle cx="168" cy="46" r="2.8"/><circle cx="196" cy="30" r="2.8"/>
+    <circle cx="224" cy="42" r="2.8"/><circle cx="252" cy="32" r="2.8"/><circle cx="280" cy="44" r="2.8"/>
+    <circle cx="140" cy="70" r="2.8"/><circle cx="168" cy="80" r="2.8"/><circle cx="196" cy="66" r="2.8"/>
+    <circle cx="224" cy="78" r="2.8"/><circle cx="252" cy="68" r="2.8"/><circle cx="280" cy="76" r="2.8"/>
+    <circle cx="154" cy="58" r="2.8"/><circle cx="238" cy="58" r="2.8"/><circle cx="266" cy="56" r="2.8"/>
+  </g>
+  <g class="s2-o-g"><circle cx="182" cy="58" r="4.2"/><circle cx="210" cy="56" r="4.2"/></g>
+  <text class="lb sm" x="211" y="104" text-anchor="middle">unlabeled — still contains positives</text>
+</svg>

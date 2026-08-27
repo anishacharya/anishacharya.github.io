@@ -1,0 +1,204 @@
+# Roles, education, teaching, awards, service, code.
+# Reconciled against CV_ANISH/{work,education,teaching,awards,service}.tex.
+# Section order on the landing page follows main.tex:
+#   education -> interests -> work -> teaching -> awards -> service -> patents
+#
+# IMPORTANT: never write "Present" in a date field — it rots silently.
+# Set `current: true` and the template renders the trailing dash.
+
+education:
+  - school: The University of Texas at Austin
+    degree: PhD, Electrical and Computer Engineering
+    where: Austin, TX
+    when: Fall 2019 – Spring 2025
+    thesis: Robust and Efficient Learning in High Dimensions from Noisy Data
+    thesis_url: "https://repositories.lib.utexas.edu/items/60cdbaf7-6899-40af-b1aa-a6e23ba9749e"
+    advisors: [Inderjit S. Dhillon, Sujay Sanghavi]
+    committee: [Alex Dimakis, Ludwig Schmidt, Nhat Ho]
+
+  - school: University of California, Irvine
+    degree: MS, Electrical Engineering and Computer Science
+    where: Irvine, CA
+    when: Fall 2013 – Fall 2014
+
+  - school: Jadavpur University
+    degree: BE, Electronics and Instrumentation Engineering
+    where: Kolkata, India
+    when: Spring 2009 – Spring 2013
+    note: Highest Honors (First Class)
+    advisors: [Amitava Gupta, Shantanu Das]
+
+roles:
+  - org: Amazon (AWS)
+    title: Senior Research Scientist, AWS
+    where: Austin, TX
+    when: Spring 2025 –
+    kind: Full Time
+    tagline: Building Decentralized AI Marketplace
+    note: >-
+      Lead the full life-cycle of AWS multi-agent orchestration meshes —
+      architecture, core research, production integration, and eval-driven
+      iteration. Research on recursive self improvement: RoPoLL (robust reward
+      modeling), SPLICE (prompt optimization), OrchOpt (orchestration search).
+
+  - org: University of Texas at Austin
+    title: Graduate Research Assistant
+    where: Austin, TX
+    when: Fall 2019 – Spring 2025
+    kind: Part Time
+    note: >-
+      Doctoral research on robust, sample-efficient learning in high dimensions:
+      robust estimation under label noise and Byzantine corruption, distributed
+      and federated optimization, and data-efficient subset selection. Affiliated
+      with the Institute for Foundations of Machine Learning (IFML).
+
+  - org: Eidon AI
+    title: Head of AI Research
+    where: Austin, TX
+    when: Summer 2024 – Winter 2025
+    kind: Part Time
+    tagline: The AI is the Blockchain, the Blockchain is the AI
+    note: >-
+      Architected and launched a multi-agent dynamic point-based system
+      integrating blockchain with AI: evaluation metrics for content quality, AI
+      alignment, and community standards, plus a tokenomics framework for reward
+      distribution across the decentralized network.
+
+  - org: Meta
+    title: Research Scientist (Intern) / Student Researcher
+    where: Menlo Park, CA
+    when: Summer 2021 – Fall 2022
+    hosts: [Li Jing, Bhargav Bhushanam, Dhruv Choudhary, Michael Rabbat]
+    note: >-
+      With Meta Capacity Engineering and Fundamental AI Research (FAIR): online,
+      low-resource training to scale Facebook's deep recommendation models.
+      Developed positive-unlabeled contrastive representation learning for weakly
+      supervised click-through-rate prediction — learning from positives and
+      unlabeled data without negative sampling.
+
+  - org: Microsoft
+    title: Research Scientist (Intern)
+    where: Redmond, WA
+    when: Summer 2020
+    hosts: [Kenichi Kumatani, Dimitrios Dimitriadis]
+    note: >-
+      Speech and Dialog Research Group. Algorithms for training large-scale models
+      robust to adversarial, Byzantine, and noisy client updates in the federated
+      setting; built OpenMSFTL, an open-source federated learning platform.
+
+  - org: Amazon
+    title: Applied Scientist (AGI, Alexa AI, Alexa ML); SDE, Amazon Devices
+    where: Sunnyvale, CA
+    when: Summer 2016 – Spring 2019
+    kind: Full Time
+    note: >-
+      Shipped NLP domain models shared across Alexa devices — Timers, Alarms,
+      Reminders, Calendar, Communications — on Echo Show, Fire TV, and other Alexa
+      IoT devices. Primary inventor on Alexa Conversations, and on online embedding
+      compression for deployment-constrained NLU.
+
+  - org: eBay Inc.
+    title: Data Scientist, Customer Insights and Analytics
+    where: San Jose, CA
+    when: Fall 2015 – Summer 2016
+    kind: Contract — Manthan Systems Inc.
+    note: >-
+      Deep recommendation algorithms to personalize buyer search and targeted
+      advertising, including generative models for personalized emails.
+
+  - org: Schlumberger
+    title: Data Scientist
+    where: Houston, TX
+    when: Spring 2015 – Fall 2015
+    kind: Full Time
+    note: >-
+      Early member of the Digital Transformation Services AI research group:
+      failure prediction for deployed oil service instruments and oil level
+      estimation from extraction life-cycle sensor data.
+
+  - org: FEM Inc. (acquired by Nielsen Gracenote)
+    title: Data Engineer
+    where: Los Angeles, CA
+    when: Winter 2015
+    kind: Full Time
+    note: >-
+      With the co-founders: NLP models for a content recommendation system, and
+      visualization tooling for an interactive analytics dashboard.
+
+  - org: Toyota Technological Institute Chicago (TTIC)
+    title: Visiting Research Scientist (Intern)
+    where: Chicago, IL
+    when: Summer 2014
+    hosts: [David McAllester]
+    note: >-
+      Real-time stereo algorithm for 3D scene reconstruction for autonomous
+      vehicles, plus a stereo evaluation benchmark based on a slanted-plane scene
+      model; built for Toyota Research in North America (TRINA).
+
+teaching:
+  - school: Amazon Web Services
+    where: Austin, TX
+    role: Instructor
+    when: Winter 2026 –
+    courses:
+      - "Curriculum and internal GenAI training for AWS scientists and engineers, quarterly"
+  - school: University of Texas at Austin
+    where: Austin, TX
+    role: Instructor / Teaching Assistant
+    when: Fall 2023 – Fall 2025
+    courses:
+      - "Directed Reading Program (DiRP): Natural Language Optimization (NLO) for LLMs — Instructor, Fall 2025"
+      - "MIS 285N: Introduction to Deep Learning — Prof. C. Caramanis, Prof. A. Dimakis, Spring 2024"
+      - "MIS 185N: Emerging Trends in Machine Learning — Prof. S. Shakkottai, Spring 2024"
+      - "ECE 461P: Data Science Principles — Prof. S. Sanghavi, Fall 2023"
+  - school: University of California Irvine
+    where: Irvine, CA
+    role: Teaching Assistant
+    when: Fall 2013 – Fall 2014
+    courses:
+      - "EECS 50: Discrete Time Signals and Systems (Undergraduate) — Fall 2014"
+      - "EECS 280A: Advanced Engineering Electromagnetics I (Graduate) — Spring 2014"
+      - "EECS 118: Introduction to Knowledge Management and Software Engineering (Undergraduate) — Winter 2014"
+      - "EECS 119: Introduction to VLSI (Undergraduate) — Fall 2013"
+
+awards:
+  - when: Spring 2026
+    what: "Silver Reviewer award, ICML 2026"
+  - when: 2021 – 2024
+    what: "Travel Grants, UT Austin — ML conferences (NeurIPS, ICML, AISTATS, UAI) and Simons Institute, UC Berkeley"
+  - when: 2021 – 2023
+    what: "Meta PhD Research Grant ($100,000)"
+  - when: Spring 2022
+    what: "Meta PhD Research Fellowship Finalist — AI HW/SW co-design"
+    url: "https://research.facebook.com/blog/2022/2/announcing-the-recipients-of-the-2022-meta-phd-research-fellowship/"
+  - when: Fall 2013
+    what: "Bachelor of Engineering with Highest Honors (First Class), Jadavpur University"
+  - when: 2009 – 2013
+    what: "INSPIRE Fellowship and MHRD Fellowship for Academic Excellence, Govt. of India"
+  - when: Spring 2007
+    what: "State Rank 5 of ~700,000 candidates, West Bengal Board of Secondary Education"
+    url: "https://www.telegraphindia.com/west-bengal/upswing-in-city-pass-rate/cid/1005795"
+  - when: Summer 2007
+    what: "Mamraj Agarwal Rashtriya Puraskar (National Award for Academic Excellence), from the Governor of West Bengal"
+
+service:
+  - label: "Reviewer, Conferences"
+    items: [ICML, NeurIPS, ICLR, AISTATS, UAI, ACL, ISIT]
+  - label: "Reviewer, Journals"
+    items: [JMLR, IEEE TKDE, Pattern Recognition Letters]
+  - label: "Program Committee"
+    items: [ICML, AAAI]
+
+code:
+  - name: BGMD
+    what: Block coordinate geometric median descent (AISTATS 2022)
+    url: "https://github.com/anishacharya/BGMD"
+  - name: DeLiCoCo
+    what: Decentralized optimization with multiple gossip steps (IEEE TPDS 2021)
+    url: "https://github.com/anishacharya/DeLiCoCo"
+  - name: OpenMSFTL
+    what: Open-source federated learning platform (Microsoft)
+    url: "https://github.com/microsoft/OpenMSFTL"
+  - name: Embedding Compression
+    what: Online embedding compression (AAAI 2019)
+    url: "https://github.com/anishacharya/Online-Embedding-Compression-AAAI-2019"

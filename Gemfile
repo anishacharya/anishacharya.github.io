@@ -1,7 +1,8 @@
 source 'https://rubygems.org'
 
-gem "github-pages", '163', group: :jekyll_plugins
-gem 'jekyll-seo-tag'
-# enable tzinfo-data for local build
-# gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
-gem 'jekyll-paginate'
+# Kept deliberately minimal. Fewer dependencies = fewer things that rot.
+gem 'jekyll', '~> 4.3'
+gem 'jekyll-sitemap'
+
+# Needed for `jekyll serve` on Ruby 3.x
+gem 'webrick'

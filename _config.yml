@@ -7,7 +7,7 @@ url: "https://anishacharya.github.io"
 baseurl: ""
 
 title: Anish Acharya, PhD
-description: "Research scientist at AWS. Multi-agent systems, robust and efficient learning."
+description: "Research scientist at AWS. Post-training, recursive self improvement, and multi-agent systems."
 
 author:
   name: Anish Acharya
@@ -22,9 +22,8 @@ social:
 
 nav:
   Research: "/research/"
-  Papers: "/papers/"
+  Publications: "/publications/"
   Talks: "/talks/"
-  CV: "/cv/"
   Photos: "/photos/"
 
 # --- Build --------------------------------------------------------------- #

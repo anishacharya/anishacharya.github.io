@@ -13,7 +13,7 @@
 #   venue_full  spelled-out venue, shown on /papers
 #   year        integer, used for grouping
 #   type        conference | journal | workshop | preprint
-#   thrusts     rsi | robust | scarcity | origins  (groups /research; a list)
+#   thrusts     rsi | robust | optim | scarcity | origins  (groups /research; a list)
 #   selected    true to surface on the home page
 #   thumb       false if there is no rendered cover in img/papers/
 #   note        long qualifier; note_short is the card version
@@ -21,18 +21,6 @@
 #   also        earlier / extended versions
 
 # ─────────────────────────── 2026 ───────────────────────────
-
-- key: splice
-  thumb: false
-  title: "SPLICE: Structured Prompt Local Iterative Combinatorial Evolution"
-  authors: [A Acharya, P Studans, A Dhanda, N V Rao, R Ward, V A Khatri, S A Niaki, D Nevins, B Verkhovsky]
-  venue: Preprint 2026
-  venue_full: Preprint
-  year: 2026
-  type: preprint
-  thrusts: [rsi]
-  selected: true
-  links: {}
 
 - key: ropoll
   title: "RoPoLL: Robust Panel of LLM Judges"
@@ -58,7 +46,7 @@
   venue_full: Conference on Language Modeling
   year: 2026
   type: workshop
-  thrusts: [rsi]
+  thrusts: [rsi, optim]
   selected: true
   note: "2nd Workshop on Lifelong Agents: Learning, Aligning, and Evolving"
   note_short: Lifelong Agents Workshop
@@ -74,7 +62,7 @@
   venue_full: International Conference on Machine Learning
   year: 2025
   type: conference
-  thrusts: [robust, scarcity]
+  thrusts: [robust, optim, scarcity]
   selected: true
   links:
     OpenReview: "https://openreview.net/pdf?id=pxfpGbeVx2"
@@ -88,7 +76,7 @@
   title: Neural Distributed Source Coding
   authors: [A Nagle, J Whang, A Acharya, H Kim, A Dimakis]
   venue: IEEE JSAIT 2024
-  venue_full: IEEE Journal on Selected Areas in Information Theory
+  venue_full: "IEEE Journal on Selected Areas in Information Theory"
   year: 2024
   type: journal
   thrusts: [scarcity]
@@ -105,7 +93,7 @@
   venue_full: Conference on Uncertainty in Artificial Intelligence
   year: 2022
   type: conference
-  thrusts: [robust]
+  thrusts: [optim]
   note: Spotlight (short oral)
   note_short: Spotlight
   links:
@@ -119,7 +107,7 @@
   venue_full: International Conference on Artificial Intelligence and Statistics
   year: 2022
   type: conference
-  thrusts: [robust]
+  thrusts: [robust, optim]
   selected: true
   note: Spotlight — recorded talk, virtual conference
   note_short: Spotlight
@@ -169,10 +157,10 @@
   title: On the Benefits of Multiple Gossip Steps in Communication Constrained Federated Learning
   authors: [A Hashemi, A Acharya, R Das, H Vikalo, S Sanghavi, I Dhillon]
   venue: IEEE TPDS 2021
-  venue_full: IEEE Transactions on Parallel and Distributed Systems
+  venue_full: "IEEE Transactions on Parallel and Distributed Systems"
   year: 2021
   type: journal
-  thrusts: [robust]
+  thrusts: [optim, scarcity]
   links:
     IEEE Xplore: "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9664349"
     Code: "https://github.com/anishacharya/DeLiCoCo"
@@ -214,7 +202,7 @@
   year: 2019
   type: conference
   thrusts: [scarcity]
-  note: Spotlight (short oral)
+  note: Spotlight — 5-minute presentation
   note_short: Spotlight
   selected: true
   links:
@@ -227,8 +215,8 @@
   thumb: false
   title: Extending The Concept of Analog Butterworth Filter For Fractional Domain
   authors: [A Acharya, S Das, I Pan, S Das]
-  venue: Signal Processing (Elsevier) 2014
-  venue_full: "Signal Processing, Elsevier"
+  venue: Signal Processing 2014
+  venue_full: "Signal Processing (Elsevier)"
   year: 2014
   type: journal
   thrusts: [origins]
@@ -240,11 +228,11 @@
   thumb: false
   title: Simulation studies on the design of optimum PID controllers to suppress chaotic oscillations in a family of Lorenz-like multi-wing attractors
   authors: [S Das, A Acharya, I Pan]
-  venue: Math. and Computers in Simulation (Elsevier) 2014
-  venue_full: "Mathematics and Computers in Simulation, Elsevier"
+  venue: Math. Comp. Simulation 2014
+  venue_full: "Mathematics and Computers in Simulation (Elsevier)"
   year: 2014
   type: journal
-  thrusts: [origins]
+  thrusts: [origins, optim]
   links:
     ScienceDirect: "https://www.sciencedirect.com/science/article/abs/pii/S0378475414000469"
     arXiv: "https://arxiv.org/pdf/1611.09844"
@@ -269,7 +257,7 @@
   venue_full: International Conference on Computing, Communication and Networking Technologies
   year: 2012
   type: conference
-  thrusts: [origins]
+  thrusts: [origins, optim]
   links:
     IEEE Xplore: "https://ieeexplore.ieee.org/abstract/document/6396002"
 
@@ -281,7 +269,7 @@
   venue_full: International Conference on Computing, Communication and Networking Technologies
   year: 2012
   type: conference
-  thrusts: [origins]
+  thrusts: [origins, optim]
   links:
     IEEE Xplore: "https://ieeexplore.ieee.org/abstract/document/6396000"
 

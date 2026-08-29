@@ -1,0 +1,47 @@
+---
+layout: base
+title: Publications
+permalink: /publications/
+description: "PhD thesis, publications, granted patents, and technical reports."
+---
+
+<p class="lede">
+  Also on <a href="https://scholar.google.com/citations?user={{ site.social.scholar }}">Google Scholar</a>.
+</p>
+
+{% assign phd = site.data.work.education | first %}
+<h2>Thesis</h2>
+<div class="thesis">
+  <p class="thesis-title"><a href="{{ phd.thesis_url }}">{{ phd.thesis }}</a></p>
+  <p class="thesis-meta">
+    {{ phd.degree }} · {{ phd.school }}, 2025<br>
+    Advised by {{ phd.advisors | join: " and " }}.
+    Committee: {{ phd.committee | join: ", " }}.
+  </p>
+</div>
+
+<h2>Granted US patents</h2>
+<ul class="rows">
+  {% for pt in site.data.patents %}
+  <li class="row">
+    <div class="row-when">{{ pt.granted }}</div>
+    <div class="row-main">
+      <div class="t">{{ pt.title }}</div>
+      <div class="s">
+        {% for a in pt.inventors %}{% if a == "A Acharya" %}<strong>{{ a }}</strong>{% else %}{{ a }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}
+      </div>
+      <div class="s">
+        {{ pt.number }} · {{ pt.assignee }}
+        {% for l in pt.links %}{% if l[1] != "" %} · <a href="{{ l[1] }}">{{ l[0] }}</a>{% endif %}{% endfor %}
+      </div>
+    </div>
+  </li>
+  {% endfor %}
+</ul>
+
+<h2>Publications</h2>
+{% assign years = site.data.papers | group_by: "year" | sort: "name" | reverse %}
+{% for group in years %}
+  <p class="year">{{ group.name }}</p>
+  {% include publist.html items=group.items %}
+{% endfor %}

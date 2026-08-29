@@ -19,56 +19,139 @@ description: "Anish Acharya, PhD — Senior Research Scientist at AWS. Robust an
   <div class="ident">
     <h1>Anish Acharya, PhD</h1>
     <p class="titles">
-      Senior Research Scientist, <a href="https://aws.amazon.com/">AWS</a><br>
+      Senior Research Scientist<br>
+      <a href="https://aws.amazon.com/">Amazon Web Services</a><br>
       Austin, Texas
     </p>
-    <p class="contact"><a href="mailto:{{ site.social.email }}">{{ site.social.email }}</a></p>
-    <p class="idlinks">
-      <a href="https://scholar.google.com/citations?user={{ site.social.scholar }}">Scholar</a> ·
-      <a href="https://github.com/{{ site.social.github }}">GitHub</a> ·
-      <a href="https://www.linkedin.com/in/{{ site.social.linkedin }}">LinkedIn</a> ·
-      <a href="{{ '/doc/CV_ANISH.pdf' | relative_url }}">CV</a>
-    </p>
-  </div>
+    {% include idlinks.html %}
+</div>
 </div>
 
 <div class="bio">
   <p>
-    Anish Acharya is a Senior Research Scientist at AWS, where he works on
-    multi-agent AI systems. His research asks what can be guaranteed when the
-    signals a system learns from — its data, its supervision, its own evaluations —
-    cannot be trusted, and how agents can improve themselves without drifting.
-    Previously at Meta FAIR, Microsoft Research, and Alexa AI.
+    Anish Acharya works on post-training and recursive self improvement: systems
+    that revise their own prompts, tools, orchestration, policy, and weights. His
+    research
+    asks what can be guaranteed when the signals such a system learns from — its
+    data, its supervision, its own evaluations — cannot be trusted, and how a
+    self-improving loop can be made to compound rather than drift.
   </p>
 </div>
 
 <h2>Research interests</h2>
 <ul class="interests">
-  <li>Recursive self improvement and agentic systems</li>
-  <li>Robust estimation under contamination</li>
-  <li>Evaluation under adversarial and biased supervision</li>
-  <li>Non-convex, distributed, and combinatorial optimization</li>
-  <li>Data- and parameter-efficient learning</li>
+  <li>Post-training and recursive self improvement</li>
+  <li>Policy optimization and RLHF</li>
+  <li>Continual learning</li>
+  <li>Personalized foundation models</li>
+  <li>Prompt and orchestration optimization</li>
+  <li>Robust reward modeling</li>
+  <li>LLM-as-judge, juries, and debate</li>
+  <li>Scalable oversight and agent evaluation</li>
+  <li>Multi-agent systems</li>
+  <li>Robust estimation and non-convex optimization</li>
 </ul>
 
-{% assign phd = site.data.work.education | first %}
-<h2>Thesis</h2>
-<div class="thesis">
-  <p class="thesis-title"><a href="{{ phd.thesis_url }}">{{ phd.thesis }}</a></p>
-  <p class="thesis-meta">
-    {{ phd.degree }} · {{ phd.school }}, {{ phd.to }}<br>
-    Advised by {{ phd.advisors | join: " and " }}.
-  </p>
-</div>
-
-<h2>News</h2>
-<ul class="news">
-  {% for n in site.data.news %}
-  <li>
-    <span class="nd">{{ n.when }}</span>
-    <span class="nw">{% if n.url != "" %}<a href="{{ n.url }}">{{ n.what }}</a>{% else %}{{ n.what }}{% endif %}</span>
+<h2>Education</h2>
+<ul class="jobs">
+  {% for e in site.data.work.education %}
+  <li class="job">
+    <div class="job-when">{{ e.when }}</div>
+    {% include logo.html logo=e.logo %}
+    <div class="job-body">
+      <div class="job-org">{{ e.degree }}</div>
+      <div class="job-inst">{{ e.school }} <span class="job-where">· {{ e.where }}</span>{% if e.note %}<span class="job-where"> · {{ e.note }}</span>{% endif %}</div>
+      {% if e.thesis %}<p class="job-sub">Thesis: <a href="{{ e.thesis_url }}"><em>{{ e.thesis }}</em></a></p>{% endif %}
+      {% if e.advisors %}<p class="job-sub">Advised by {{ e.advisors | join: " and " }}</p>{% endif %}
+      {% if e.committee %}<p class="job-sub">Committee: {{ e.committee | join: ", " }}</p>{% endif %}
+    </div>
   </li>
   {% endfor %}
 </ul>
+
+<h2>Research experience</h2>
+<ul class="jobs">
+  {% for r in site.data.work.roles %}
+  <li class="job">
+    <div class="job-when">{{ r.when }}</div>
+    {% include logo.html logo=r.logo %}
+    <div class="job-body">
+      <div class="job-org">{{ r.org }} <span class="job-where">· {{ r.where }}</span></div>
+      <ul class="job-pos{% if r.positions.size > 1 %} railed{% endif %}">
+        {% for p in r.positions %}
+        <li>
+          <span class="pos-title"><span class="pos-role">{{ p.title }}</span>{% if p.team %}<span class="pos-team">, {{ p.team }}</span>{% endif %}</span>
+          {%- if r.positions.size > 1 %}<span class="pos-when">{{ p.when }}</span>{% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+      {%- comment -%}
+        Prose descriptions live in the CV PDF. Here we keep only what is unique:
+        the shipped systems, each linking to its primary source. Press coverage
+        for each launch has its own entries in the News timeline below.
+      {%- endcomment -%}
+      {% assign ls = site.data.launches | where: "role_key", r.key %}
+      {% if ls.size > 0 %}
+      <p class="job-ships">
+        {%- for l in ls %}
+          {%- assign primary = "" %}
+          {%- for k in l.links %}{% if k[1] != "" and primary == "" %}{% assign primary = k[1] %}{% endif %}{% endfor %}
+          {%- if primary != "" %}<a href="{{ primary }}">{{ l.name }}</a>{% else %}{{ l.name }}{% endif %}
+          {%- unless forloop.last %} <span class="sep">·</span> {% endunless %}
+        {%- endfor %}
+      </p>
+      {% endif %}
+      {% if r.hosts %}<p class="job-hosts">Hosted by {{ r.hosts | join: ", " }}</p>{% endif %}
+    </div>
+  </li>
+  {% endfor %}
+</ul>
+
+<h2>Teaching</h2>
+<ul class="jobs">
+  {% for t in site.data.work.teaching %}
+  <li class="job">
+    <div class="job-when">{{ t.when }}</div>
+    {% include logo.html logo=t.logo %}
+    <div class="job-body">
+      <div class="job-org">{{ t.school }} <span class="job-where">· {{ t.where }}</span></div>
+      <ul class="job-pos{% if t.courses.size > 1 %} railed{% endif %}">
+        {% for c in t.courses %}
+        <li>
+          <div class="pos-main">
+            <span class="pos-title" title="{{ c.role }}, {{ c.title }}"><span class="pos-role">{{ c.role }}</span><span class="pos-team">, {{ c.title }}</span></span>
+            {%- if c.note %}<span class="pos-note">{{ c.note }}</span>{% endif %}
+          </div>
+          {%- if t.courses.size > 1 %}<span class="pos-when">{{ c.when }}</span>{% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </li>
+  {% endfor %}
+</ul>
+
+<h2>Service</h2>
+<ul class="rows">
+  {% for sv in site.data.work.service %}
+  <li class="row">
+    <div class="row-when">{{ sv.label }}</div>
+    <div class="row-main"><div class="s">{{ sv.items | join: " · " }}</div></div>
+  </li>
+  {% endfor %}
+</ul>
+
+<h2>News</h2>
+<div class="newsbox" tabindex="0" role="region" aria-label="News and full record">
+  <ul class="news">
+    {% for e in site.data.timeline %}
+    <li>
+      <span class="nd">{% if e.when %}{{ e.when }}, {% endif %}{{ e.year }}</span>
+      <span class="tl-kind tl-{{ e.kind }}">{{ e.kind }}</span>
+      <span class="nw" title="{{ e.what }}">{% if e.url %}<a href="{{ e.url }}">{{ e.what }}</a>{% else %}{{ e.what }}{% endif %}</span>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
 
 {% endif %}

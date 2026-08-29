@@ -1,9 +1,10 @@
-# Shipped systems, newest first. Each launch carries its own links and press,
-# matching how the CV now handles coverage (media.tex retired — every outlet is
-# inline at the work level).
+# Shipped systems, newest first. Each launch carries its own links and press.
+# `role_key` must match the `key` of a role in work.yml — the Research experience
+# on the landing page renders each launch inline under its role.
 
 - key: ai-product-listing
   name: AI-Assisted Product Listing
+  role_key: amazon-aws
   org: AWS Marketplace
   when: 2026
   venue: AWS Summit NY 2026
@@ -15,6 +16,7 @@
 
 - key: partner-central-agents
   name: AWS Partner Central Agents
+  role_key: amazon-aws
   org: AWS
   when: 2026
   what: Partner onboarding and funding agents, served over MCP.
@@ -25,6 +27,7 @@
 
 - key: agent-mode
   name: AWS Marketplace Agent Mode
+  role_key: amazon-aws
   org: AWS Marketplace
   when: 2025
   venue: "re:Invent 2025"
@@ -39,6 +42,7 @@
 
 - key: eidon-state
   name: Eidon State
+  role_key: eidon
   org: Eidon AI
   when: 2025
   what: Multi-agent dynamic point-based system integrating blockchain with AI, with a tokenomics framework for reward distribution.
@@ -47,6 +51,7 @@
 
 - key: alexa-conversations-launch
   name: Alexa Conversations
+  role_key: amazon-alexa
   org: Amazon Alexa
   when: 2021
   what: Goal-oriented dialog generation from dialog templates, APIs, and entity data. Primary inventor.
@@ -61,6 +66,7 @@
 
 - key: embedding-compression-launch
   name: Online Embedding Compression
+  role_key: amazon-alexa
   org: Amazon Alexa
   when: 2019
   what: Low-rank factorization folded into training for deployment-constrained NLU, deployed across a large fleet of per-skill models.

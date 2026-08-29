@@ -1,0 +1,12 @@
+{%- comment -%}
+Institution mark, rendered on a neutral tile. Official brand colours, sourced
+from each org (Simple Icons / Wikipedia SVG / site assets), trimmed and squared
+at 4x for crisp display. The tile normalises marks that ship with their own
+background (AWS navy, Amazon orange, SLB blue) against those that don't, and
+keeps them legible on a dark page. Usage: {% include logo.html logo=x %}
+{%- endcomment -%}
+<div class="job-logo">
+  {%- if include.logo and include.logo != "" %}
+  <img src="{{ '/img/logos/color/' | append: include.logo | append: '.png' | relative_url }}" alt="" loading="lazy">
+  {%- endif %}
+</div>

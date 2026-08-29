@@ -21,21 +21,3 @@ description: "Invited talks, keynotes, and presentations."
   </li>
   {% endfor %}
 </ul>
-
-<h2>Shipped systems and coverage</h2>
-<ul class="rows">
-  {% for l in site.data.launches %}
-  <li class="row">
-    <div class="row-when">{{ l.when }}</div>
-    <div class="row-main">
-      <div class="t">{{ l.name }}</div>
-      <div class="s">{{ l.org }}{% if l.venue %} · {{ l.venue }}{% endif %}</div>
-      {% if l.links %}
-      <p class="card-links">
-        {% for k in l.links %}{% if k[1] != "" %}<a href="{{ k[1] }}">{{ k[0] }}</a>{% endif %}{% endfor %}
-      </p>
-      {% endif %}
-    </div>
-  </li>
-  {% endfor %}
-</ul>

@@ -6,8 +6,26 @@
 # IMPORTANT: never write "Present" in a date field — it rots silently.
 # Set `current: true` and the template renders the trailing dash.
 
+# Short display names for the landing-page chip strip. Full names live in
+# `education` and `roles` below and are used on /cv/.
+affiliations:
+  study:
+    - UT Austin
+    - UC Irvine
+    - Jadavpur University
+  work:
+    - AWS
+    - Meta FAIR
+    - Microsoft Research
+    - Amazon Alexa AI
+    - Eidon AI
+    - eBay
+    - Schlumberger
+    - TTIC
+
 education:
   - school: The University of Texas at Austin
+    logo: utaustin
     degree: PhD, Electrical and Computer Engineering
     where: Austin, TX
     when: Fall 2019 – Spring 2025
@@ -17,11 +35,13 @@ education:
     committee: [Alex Dimakis, Ludwig Schmidt, Nhat Ho]
 
   - school: University of California, Irvine
+    logo: uci
     degree: MS, Electrical Engineering and Computer Science
     where: Irvine, CA
     when: Fall 2013 – Fall 2014
 
   - school: Jadavpur University
+    logo: jadavpur
     degree: BE, Electronics and Instrumentation Engineering
     where: Kolkata, India
     when: Spring 2009 – Spring 2013
@@ -29,137 +49,183 @@ education:
     advisors: [Amitava Gupta, Shantanu Das]
 
 roles:
-  - org: Amazon (AWS)
-    title: Senior Research Scientist, AWS
+  # One entry per *contiguous* stint at a company, in the CV's order.
+  # Non-contiguous stints at the same employer stay separate (Amazon appears
+  # twice). `key` is what launches.yml matches on via `role_key`.
+  - key: amazon-aws
+    org: Amazon
     where: Austin, TX
+    logo: amazonwebservices
     when: Spring 2025 –
-    kind: Full Time
-    tagline: Building Decentralized AI Marketplace
-    note: >-
-      Lead the full life-cycle of AWS multi-agent orchestration meshes —
-      architecture, core research, production integration, and eval-driven
-      iteration. Research on recursive self improvement: RoPoLL (robust reward
-      modeling), SPLICE (prompt optimization), OrchOpt (orchestration search).
+    note: Multi-agent orchestration meshes at AWS — architecture, core research, production integration, and eval-driven iteration.
+    positions:
+      - title: Senior Research Scientist
+        team: AWS
+        when: Spring 2025 –
 
-  - org: University of Texas at Austin
-    title: Graduate Research Assistant
+  - key: ut-austin
+    org: University of Texas at Austin
     where: Austin, TX
+    logo: utaustin
     when: Fall 2019 – Spring 2025
-    kind: Part Time
-    note: >-
-      Doctoral research on robust, sample-efficient learning in high dimensions:
-      robust estimation under label noise and Byzantine corruption, distributed
-      and federated optimization, and data-efficient subset selection. Affiliated
-      with the Institute for Foundations of Machine Learning (IFML).
+    note: Doctoral research on robust, sample-efficient learning in high dimensions. Affiliated with IFML.
+    positions:
+      - title: Graduate Research Assistant
+        team: ECE and CS
+        when: Fall 2019 – Spring 2025
 
-  - org: Eidon AI
-    title: Head of AI Research
+  - key: eidon
+    org: Eidon AI
     where: Austin, TX
+    logo: eidon
     when: Summer 2024 – Winter 2025
-    kind: Part Time
-    tagline: The AI is the Blockchain, the Blockchain is the AI
-    note: >-
-      Architected and launched a multi-agent dynamic point-based system
-      integrating blockchain with AI: evaluation metrics for content quality, AI
-      alignment, and community standards, plus a tokenomics framework for reward
-      distribution across the decentralized network.
+    note: Multi-agent point-based system integrating blockchain with AI, with a tokenomics framework for reward distribution.
+    positions:
+      - title: Head of AI Research
+        when: Summer 2024 – Winter 2025
 
-  - org: Meta
-    title: Research Scientist (Intern) / Student Researcher
+  - key: meta
+    org: Meta
     where: Menlo Park, CA
+    logo: meta
     when: Summer 2021 – Fall 2022
+    note: Capacity Engineering and FAIR — positive-unlabeled contrastive learning for weakly supervised CTR prediction.
     hosts: [Li Jing, Bhargav Bhushanam, Dhruv Choudhary, Michael Rabbat]
-    note: >-
-      With Meta Capacity Engineering and Fundamental AI Research (FAIR): online,
-      low-resource training to scale Facebook's deep recommendation models.
-      Developed positive-unlabeled contrastive representation learning for weakly
-      supervised click-through-rate prediction — learning from positives and
-      unlabeled data without negative sampling.
+    positions:
+      - title: Student Researcher
+        when: Fall 2022
+      - title: Research Scientist
+        when: Summer 2022
+      - title: Student Researcher
+        when: Fall 2021
+      - title: Research Scientist
+        when: Summer 2021
 
-  - org: Microsoft
-    title: Research Scientist (Intern)
+  - key: microsoft
+    org: Microsoft
     where: Redmond, WA
+    logo: microsoft
     when: Summer 2020
+    note: Speech and Dialog Research Group — training robust to adversarial, Byzantine, and noisy client updates; built OpenMSFTL.
     hosts: [Kenichi Kumatani, Dimitrios Dimitriadis]
-    note: >-
-      Speech and Dialog Research Group. Algorithms for training large-scale models
-      robust to adversarial, Byzantine, and noisy client updates in the federated
-      setting; built OpenMSFTL, an open-source federated learning platform.
+    positions:
+      - title: Research Scientist
+        when: Summer 2020
 
-  - org: Amazon
-    title: Applied Scientist (AGI, Alexa AI, Alexa ML); SDE, Amazon Devices
+  - key: amazon-alexa
+    org: Amazon
     where: Sunnyvale, CA
+    logo: amazon
     when: Summer 2016 – Spring 2019
-    kind: Full Time
-    note: >-
-      Shipped NLP domain models shared across Alexa devices — Timers, Alarms,
-      Reminders, Calendar, Communications — on Echo Show, Fire TV, and other Alexa
-      IoT devices. Primary inventor on Alexa Conversations, and on online embedding
-      compression for deployment-constrained NLU.
+    note: NLP domain models shared across Alexa devices — Timers, Alarms, Reminders, Calendar, Communications.
+    positions:
+      - title: Applied Scientist
+        team: AGI
+        when: Summer 2018 – Spring 2019
+      - title: Applied Scientist
+        team: Alexa AI
+        when: Spring 2018 – Summer 2018
+      - title: Applied Scientist
+        team: Alexa ML
+        when: Winter 2017 – Spring 2018
+      - title: Software Development Engineer
+        team: Amazon Devices
+        when: Summer 2016 – Winter 2017
 
-  - org: eBay Inc.
-    title: Data Scientist, Customer Insights and Analytics
+  - key: ebay
+    org: eBay
     where: San Jose, CA
+    logo: ebay
     when: Fall 2015 – Summer 2016
-    kind: Contract — Manthan Systems Inc.
-    note: >-
-      Deep recommendation algorithms to personalize buyer search and targeted
-      advertising, including generative models for personalized emails.
+    note: Deep recommendation algorithms for personalized search and targeted advertising.
+    positions:
+      - title: Data Scientist
+        team: Customer Insights and Analytics
+        when: Fall 2015 – Summer 2016
 
-  - org: Schlumberger
-    title: Data Scientist
+  - key: slb
+    org: Schlumberger
     where: Houston, TX
+    logo: slb
     when: Spring 2015 – Fall 2015
-    kind: Full Time
-    note: >-
-      Early member of the Digital Transformation Services AI research group:
-      failure prediction for deployed oil service instruments and oil level
-      estimation from extraction life-cycle sensor data.
+    note: Early member of Digital Transformation Services — failure prediction for deployed oil service instruments.
+    positions:
+      - title: Data Scientist
+        when: Spring 2015 – Fall 2015
 
-  - org: FEM Inc. (acquired by Nielsen Gracenote)
-    title: Data Engineer
+  - key: fem
+    org: FEM Inc.
     where: Los Angeles, CA
+    logo: prizma
     when: Winter 2015
-    kind: Full Time
-    note: >-
-      With the co-founders: NLP models for a content recommendation system, and
-      visualization tooling for an interactive analytics dashboard.
+    note: NLP for content recommendation, with the co-founders. Later acquired by Nielsen Gracenote.
+    positions:
+      - title: Data Engineer
+        when: Winter 2015
 
-  - org: Toyota Technological Institute Chicago (TTIC)
-    title: Visiting Research Scientist (Intern)
+  - key: ttic
+    org: Toyota Technological Institute Chicago
     where: Chicago, IL
+    logo: ttic
     when: Summer 2014
+    note: Real-time stereo reconstruction for autonomous vehicles, for Toyota Research North America.
     hosts: [David McAllester]
-    note: >-
-      Real-time stereo algorithm for 3D scene reconstruction for autonomous
-      vehicles, plus a stereo evaluation benchmark based on a slanted-plane scene
-      model; built for Toyota Research in North America (TRINA).
+    positions:
+      - title: Visiting Research Assistant
+        when: Summer 2014
 
 teaching:
+  # Same shape as `roles`. Each course reads "Role, Course" — the way a job line
+  # reads "Senior Research Scientist, AWS".
   - school: Amazon Web Services
+    logo: amazonwebservices
     where: Austin, TX
-    role: Instructor
     when: Winter 2026 –
     courses:
-      - "Curriculum and internal GenAI training for AWS scientists and engineers, quarterly"
+      - role: Instructor
+        title: "Embedding AI into Products: Evaluation-Driven Development"
+        note: AWS GenAI Training
+        when: Summer 2026
+      - role: Instructor
+        title: "Embedding AI into Products: Governance and Guardrails"
+        note: AWS GenAI Training
+        when: Spring 2026
+
   - school: University of Texas at Austin
+    logo: utaustin
     where: Austin, TX
-    role: Instructor / Teaching Assistant
     when: Fall 2023 – Fall 2025
     courses:
-      - "Directed Reading Program (DiRP): Natural Language Optimization (NLO) for LLMs — Instructor, Fall 2025"
-      - "MIS 285N: Introduction to Deep Learning — Prof. C. Caramanis, Prof. A. Dimakis, Spring 2024"
-      - "MIS 185N: Emerging Trends in Machine Learning — Prof. S. Shakkottai, Spring 2024"
-      - "ECE 461P: Data Science Principles — Prof. S. Sanghavi, Fall 2023"
+      - role: Instructor
+        title: "Directed Reading Program: Natural Language Optimization"
+        when: Fall 2025
+      - role: Teaching Assistant
+        title: "MIS 285N: Introduction to Deep Learning"
+        when: Spring 2024
+      - role: Teaching Assistant
+        title: "MIS 185N: Emerging Trends in Machine Learning"
+        when: Spring 2024
+      - role: Teaching Assistant
+        title: "ECE 461P: Data Science Principles"
+        when: Fall 2023
+
   - school: University of California Irvine
+    logo: uci
     where: Irvine, CA
-    role: Teaching Assistant
     when: Fall 2013 – Fall 2014
     courses:
-      - "EECS 50: Discrete Time Signals and Systems (Undergraduate) — Fall 2014"
-      - "EECS 280A: Advanced Engineering Electromagnetics I (Graduate) — Spring 2014"
-      - "EECS 118: Introduction to Knowledge Management and Software Engineering (Undergraduate) — Winter 2014"
-      - "EECS 119: Introduction to VLSI (Undergraduate) — Fall 2013"
+      - role: Teaching Assistant
+        title: "EECS 50: Discrete Time Signals and Systems"
+        when: Fall 2014
+      - role: Teaching Assistant
+        title: "EECS 280A: Advanced Engineering Electromagnetics"
+        when: Spring 2014
+      - role: Teaching Assistant
+        title: "EECS 118: Knowledge Management and Software Eng."
+        when: Winter 2014
+      - role: Teaching Assistant
+        title: "EECS 119: Introduction to VLSI"
+        when: Fall 2013
 
 awards:
   - when: Spring 2026

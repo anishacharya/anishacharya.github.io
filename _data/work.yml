@@ -106,7 +106,9 @@ roles:
     where: Redmond, WA
     logo: microsoft
     when: Summer 2020
-    note: Speech and Dialog Research Group — training robust to adversarial, Byzantine, and noisy client updates; built OpenMSFTL.
+    # Do not name a launch here — the template appends a "Shipped …" sentence
+    # from launches.yml, so naming OpenMSFTL would render it twice.
+    note: Speech and Dialog Research Group — training robust to adversarial, Byzantine, and noisy client updates.
     hosts: [Kenichi Kumatani, Dimitrios Dimitriadis]
     positions:
       - title: Research Scientist
@@ -155,10 +157,10 @@ roles:
 
   - key: fem
     org: FEM Inc.
+    logo: fem
     where: Los Angeles, CA
-    logo: prizma
     when: Winter 2015
-    note: NLP for content recommendation, with the co-founders. Later acquired by Nielsen Gracenote.
+    note: NLP models for content recommendation and visualization tooling for an interactive analytics dashboard. Later branded Prizma; acquired by Gracenote, a Nielsen company, in 2018.
     positions:
       - title: Data Engineer
         when: Winter 2015
@@ -247,13 +249,41 @@ awards:
   - when: Summer 2007
     what: "Mamraj Agarwal Rashtriya Puraskar (National Award for Academic Excellence), from the Governor of West Bengal"
 
+# Venues carry full name + parenthesised abbreviation, matching 07-CV/service.tex and the venue lines
+# on /publications. Abbreviations alone assume the reader already knows the field; this section is often
+# read by someone who does not.
+#
+# Two deliberate non-abbreviations: Pattern Recognition Letters stays spelled out because "PRL" reads
+# universally as Physical Review Letters, and Cognitive Neurodynamics / Discover Electronics have no
+# established initialism, so none is invented.
 service:
   - label: "Reviewer, Conferences"
-    items: [ICML, NeurIPS, ICLR, AISTATS, UAI, ACL, ISIT]
+    items: ["International Conference on Machine Learning (ICML)",
+            "Conference on Neural Information Processing Systems (NeurIPS)",
+            "International Conference on Learning Representations (ICLR)",
+            "International Conference on Artificial Intelligence and Statistics (AISTATS)",
+            "Conference on Uncertainty in Artificial Intelligence (UAI)",
+            "Annual Meeting of the Association for Computational Linguistics (ACL)",
+            "IEEE International Symposium on Information Theory (ISIT)"]
   - label: "Reviewer, Journals"
-    items: [JMLR, IEEE TKDE, Pattern Recognition Letters]
+    # One rule: journal name, publisher in parentheses, every entry. No journal abbreviations, so the
+    # parenthetical means exactly one thing. (The conference line parenthesises abbreviations instead —
+    # conferences are cited by acronym and have no publisher; journals are cited by full name.)
+    #
+    # "Springer Nature", never "Nature": both Springer titles are portfolio journals, not Nature
+    # Portfolio, so "Nature" would misread as a Nature-branded venue.
+    #
+    # NOTE on JMLR: MIT Press published volumes 1–4 (2000–2004); Microtome Publishing / JMLR, Inc. has
+    # published it since 2005, so Microtome is the accurate publisher for recent reviewing. "MIT Press"
+    # is set at the author's explicit direction — do not silently change it in either direction.
+    items: ["Journal of Machine Learning Research (MIT Press)",
+            "Transactions on Knowledge and Data Engineering (IEEE)",
+            "Pattern Recognition Letters (Elsevier)",
+            "Cognitive Neurodynamics (Springer Nature)",
+            "Discover Electronics (Springer Nature)"]
   - label: "Program Committee"
-    items: [ICML, AAAI]
+    items: ["International Conference on Machine Learning (ICML)",
+            "AAAI Conference on Artificial Intelligence (AAAI)"]
 
 code:
   - name: BGMD

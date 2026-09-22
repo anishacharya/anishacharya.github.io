@@ -1,0 +1,9 @@
+{%- assign patent = include.patent -%}
+<li>
+  <p class="thread-paper-title">
+    {%- for link in patent.links limit:1 -%}
+      <a href="{{ link[1] }}">{{ patent.title }}</a>
+    {%- endfor -%}
+  </p>
+  <p class="thread-paper-venue">{{ patent.number }} · granted {{ patent.granted }}</p>
+</li>

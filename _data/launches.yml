@@ -1,0 +1,78 @@
+# Shipped systems, newest first. Each launch carries its own links and press.
+# `role_key` must match the `key` of a role in work.yml — the Research experience
+# on the landing page renders each launch inline under its role.
+
+- key: ai-product-listing
+  name: AI-Assisted Product Listing
+  role_key: amazon-aws
+  org: AWS Marketplace
+  when: 2026
+  venue: AWS Summit NY 2026
+  what: Also powers AWS Partner Assistant.
+  links:
+    Blog: "https://aws.amazon.com/about-aws/whats-new/2026/06/ai-assisted-product-listing/"
+    Docs: "https://docs.aws.amazon.com/marketplace/latest/userguide/ai-assisted-product-listing.html"
+    Video: "https://www.youtube.com/watch?v=Vuz9l-NrYug&t=39s"
+
+- key: partner-central-agents
+  name: AWS Partner Central Agents
+  role_key: amazon-aws
+  org: AWS
+  when: 2026
+  what: Partner onboarding and funding agents, served over MCP.
+  links:
+    Onboarding: "https://docs.aws.amazon.com/partner-central/latest/getting-started/partner-onboarding-agent.html"
+    Funding: "https://docs.aws.amazon.com/partner-central/latest/getting-started/partner-funding-agent.html"
+    MCP: "https://docs.aws.amazon.com/partner-central/latest/APIReference/partner-central-mcp-server.html"
+
+- key: agent-mode
+  name: AWS Marketplace Agent Mode
+  role_key: amazon-aws
+  org: AWS Marketplace
+  when: 2025
+  venue: "re:Invent 2025"
+  what: Deep research over structured requirements, long-context reasoning, and grounded solution comparison.
+  links:
+    Product: "https://aws.amazon.com/marketplace/agentmode/#/"
+    Blog: "https://aws.amazon.com/about-aws/whats-new/2025/11/aws-marketplace-agent-mode-ai-enhanced-search/"
+    ZDNet: "https://www.zdnet.com/article/ai-agents-see-explosive-growth-on-aws-marketplace-over-40x-the-teams-initial-targets/"
+    CRN: "https://www.crn.com/news/cloud/2025/aws-marketplace-gets-ai-injection-and-huge-new-benefits-5-keys-to-know"
+    The Ravit Show: "https://www.youtube.com/watch?v=w3ffU4KAkrk"
+    Inside Partnering: "https://youtu.be/6SAYlRZh1XA?si=JC8mj1jB3ryPGFWc"
+
+- key: eidon-state
+  name: Eidon State
+  role_key: eidon
+  org: Eidon AI
+  when: 2025
+  what: Multi-agent dynamic point-based system integrating blockchain with AI, with a tokenomics framework for reward distribution.
+  links:
+    Technical Docs: "https://docs.eidon.ai/the-network/eidon-state"
+
+- key: alexa-conversations-launch
+  name: Alexa Conversations
+  role_key: amazon-alexa
+  org: Amazon Alexa
+  when: 2021
+  what: Goal-oriented dialog generation from dialog templates, APIs, and entity data. Primary inventor.
+  links:
+    Paper: "https://aclanthology.org/2021.naacl-demos.15/"
+    Patent: "https://patentimages.storage.googleapis.com/e6/63/6a/f06b172a2d2d00/US11393454.pdf"
+    Skill: "https://developer.amazon.com/en-US/docs/alexa/conversations/about-alexa-conversations.html"
+    Amazon Science: "https://www.amazon.science/blog/amazon-unveils-novel-alexa-dialog-modeling-for-natural-cross-skill-conversations"
+    CNN: "https://www.cnn.com/2020/09/25/tech/amazon-alexa-conversational-ai/index.html"
+    Forbes: "https://www.forbes.com/sites/cognitiveworld/2019/06/12/amazon-advances-conversational-applications/"
+    VentureBeat: "https://www.youtube.com/watch?v=hEIjCF-KaRY"
+
+- key: embedding-compression-launch
+  name: Online Embedding Compression
+  role_key: amazon-alexa
+  org: Amazon Alexa
+  when: 2019
+  what: Low-rank factorization folded into training for deployment-constrained NLU, deployed across a large fleet of per-skill models.
+  links:
+    Paper: "https://www.aaai.org/ojs/index.php/AAAI/article/view/4578"
+    Patent: "https://patentimages.storage.googleapis.com/d1/a8/7a/77210494b73af9/US10872601.pdf"
+    Amazon Science: "https://www.amazon.science/blog/new-method-for-compressing-neural-networks-better-preserves-accuracy"
+    Packt: "https://hub.packtpub.com/amazon-alexa-ai-researchers-develop-new-method-to-compress-neural-networks-and-preserves-accuracy-of-system/"
+    Hacker News: "https://news.ycombinator.com/item?id=18912182"

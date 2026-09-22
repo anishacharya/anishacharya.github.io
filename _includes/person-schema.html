@@ -1,0 +1,79 @@
+{%- comment -%}
+schema.org Person, emitted on every page.
+
+Why this exists: searching "anish acharya phd" returns a Knowledge Graph card whose text describes
+this Anish Acharya but whose photo is Anish Acharya the a16z general partner. Two people share the
+name string, one has far more press coverage, and with no structured data here there was nothing
+telling a crawler that this site, this Scholar profile, this GitHub account and this LinkedIn account
+are one entity distinct from that one.
+
+`sameAs` is the property Google's entity reconciliation actually reads — a set of authoritative
+profile URLs it can cross-check. `disambiguatingDescription` exists in the vocabulary for exactly
+this case: two entities with the same name. Neither guarantees the card gets fixed (Google decides),
+but without them there is no signal to act on at all.
+
+Emitted site-wide rather than only on the homepage so any entry point carries the identity.
+
+TODO — the highest-value additions, all free, none of which I can invent an ID for:
+  * ORCID (orcid.org/register) — the canonical academic identifier and the strongest single
+    `sameAs` entry for a researcher. Add as both a `sameAs` URL and an `identifier`.
+  * DBLP author page — dblp.org, auto-generated from the publication record; find the exact URL.
+  * Semantic Scholar author page — likewise.
+  * arXiv author identifier (arxiv.org/a/<id>) — links the preprints to the person.
+Add each to `sameAs` below once you have the URL. More independent, cross-linking profiles is
+directly what makes the entity resolvable.
+{%- endcomment -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "{{ site.url }}/#person",
+  "name": "Anish Acharya",
+  "alternateName": "Anish Acharya, PhD",
+  "givenName": "Anish",
+  "familyName": "Acharya",
+  "honorificSuffix": "PhD",
+  "url": "{{ site.url }}/",
+  "image": "{{ '/img/portrait.jpg' | absolute_url }}",
+  "email": "mailto:{{ site.social.email }}",
+  "jobTitle": "Senior Research Scientist",
+  "description": "{{ site.description }}",
+  "disambiguatingDescription": "Machine learning research scientist at Amazon Web Services and PhD graduate of the University of Texas at Austin; not the venture capitalist of the same name at Andreessen Horowitz.",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Amazon Web Services",
+    "url": "https://aws.amazon.com/"
+  },
+  "alumniOf": [
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "The University of Texas at Austin",
+      "url": "https://www.utexas.edu/"
+    },
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "University of California, Irvine",
+      "url": "https://uci.edu/"
+    },
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "Jadavpur University",
+      "url": "http://www.jaduniv.edu.in/"
+    }
+  ],
+  "knowsAbout": [
+    "Recursive self improvement",
+    "Multi-agent systems",
+    "Robust reward modelling and evaluation",
+    "Constrained combinatorial search",
+    "Robust optimization",
+    "Federated learning",
+    "Machine learning theory"
+  ],
+  "sameAs": [
+    "https://scholar.google.com/citations?user={{ site.social.scholar }}",
+    "https://github.com/{{ site.social.github }}",
+    "https://www.linkedin.com/in/{{ site.social.linkedin }}"
+  ]
+}
+</script>

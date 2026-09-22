@@ -1,0 +1,18 @@
+<svg viewBox="0 0 320 108" role="img" aria-label="A tight cluster of points. The geometric median stays inside the cluster while the mean is dragged toward a single distant outlier.">
+  <g class="pt">
+    <circle cx="60" cy="44" r="2.6"/><circle cx="78" cy="56" r="2.6"/>
+    <circle cx="48" cy="60" r="2.6"/><circle cx="92" cy="42" r="2.6"/>
+    <circle cx="66" cy="70" r="2.6"/><circle cx="98" cy="60" r="2.6"/>
+    <circle cx="54" cy="76" r="2.6"/><circle cx="84" cy="76" r="2.6"/>
+    <circle cx="40" cy="50" r="2.6"/><circle cx="104" cy="50" r="2.6"/>
+    <circle cx="72" cy="34" r="2.6"/><circle cx="88" cy="66" r="2.6"/>
+    <circle cx="52" cy="36" r="2.6"/><circle cx="106" cy="70" r="2.6"/>
+  </g>
+  <path class="ar-d s1-s" d="M74 56 L 142 48"/>
+  <circle class="s2-f" cx="74" cy="56" r="4.6"/>
+  <circle class="s1-o" cx="148" cy="47" r="4.6"/>
+  <circle class="pt-o" cx="286" cy="26" r="4.6"/>
+  <text class="s2-t" x="74"  y="100" text-anchor="middle">geometric median</text>
+  <text class="s1-t" x="158" y="51">mean</text>
+  <text class="lb sm" x="300" y="20" text-anchor="end">one outlier</text>
+</svg>

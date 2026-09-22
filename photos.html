@@ -1,0 +1,19 @@
+---
+layout: base
+title: Photos
+permalink: /photos/
+description: "Places, mostly mountains and coastlines."
+---
+
+<p class="lede">Places, mostly mountains and coastlines.</p>
+
+<ul class="photos">
+  {% for p in site.data.photos %}
+  <li>
+    <figure>
+      <img src="{{ p.img | relative_url }}" alt="{{ p.caption }}" loading="lazy">
+      <figcaption>{{ p.caption }}{% if p.year %} · {{ p.year }}{% endif %}</figcaption>
+    </figure>
+  </li>
+  {% endfor %}
+</ul>

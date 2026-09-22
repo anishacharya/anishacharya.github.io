@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
-gem "github-pages", '163', group: :jekyll_plugins
-gem 'jekyll-seo-tag'
-# enable tzinfo-data for local build
-# gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
-gem 'jekyll-paginate'
+# Match the dependency set used by GitHub Pages' native branch build.
+gem 'github-pages', '~> 232', group: :jekyll_plugins
+
+# Needed for local serving on Ruby 3.x.
+gem 'webrick'

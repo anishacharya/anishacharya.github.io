@@ -1,0 +1,300 @@
+# Roles, education, teaching, awards, service, code.
+# Reconciled against CV_ANISH/{work,education,teaching,awards,service}.tex.
+# Section order on the landing page follows main.tex:
+#   education -> interests -> work -> teaching -> awards -> service -> patents
+#
+# IMPORTANT: never write "Present" in a date field — it rots silently.
+# Set `current: true` and the template renders the trailing dash.
+
+# Short display names for the landing-page chip strip. Full names live in
+# `education` and `roles` below and are used on /cv/.
+affiliations:
+  study:
+    - UT Austin
+    - UC Irvine
+    - Jadavpur University
+  work:
+    - AWS
+    - Meta FAIR
+    - Microsoft Research
+    - Amazon Alexa AI
+    - Eidon AI
+    - eBay
+    - Schlumberger
+    - TTIC
+
+education:
+  - school: The University of Texas at Austin
+    logo: utaustin
+    degree: PhD, Electrical and Computer Engineering
+    where: Austin, TX
+    when: Fall 2019 – Spring 2025
+    thesis: Robust and Efficient Learning in High Dimensions from Noisy Data
+    thesis_url: "https://repositories.lib.utexas.edu/items/60cdbaf7-6899-40af-b1aa-a6e23ba9749e"
+    advisors: [Inderjit S. Dhillon, Sujay Sanghavi]
+    committee: [Alex Dimakis, Ludwig Schmidt, Nhat Ho]
+
+  - school: University of California, Irvine
+    logo: uci
+    degree: MS, Electrical Engineering and Computer Science
+    where: Irvine, CA
+    when: Fall 2013 – Fall 2014
+
+  - school: Jadavpur University
+    logo: jadavpur
+    degree: BE, Electronics and Instrumentation Engineering
+    where: Kolkata, India
+    when: Spring 2009 – Spring 2013
+    note: Highest Honors (First Class)
+    advisors: [Amitava Gupta, Shantanu Das]
+
+roles:
+  # One entry per *contiguous* stint at a company, in the CV's order.
+  # Non-contiguous stints at the same employer stay separate (Amazon appears
+  # twice). `key` is what launches.yml matches on via `role_key`.
+  - key: amazon-aws
+    org: Amazon
+    where: Austin, TX
+    logo: amazonwebservices
+    when: Spring 2025 –
+    note: Multi-agent orchestration meshes at AWS — architecture, core research, production integration, and eval-driven iteration.
+    positions:
+      - title: Senior Research Scientist
+        team: AWS
+        when: Spring 2025 –
+
+  - key: ut-austin
+    org: University of Texas at Austin
+    where: Austin, TX
+    logo: utaustin
+    when: Fall 2019 – Spring 2025
+    note: Doctoral research on robust, sample-efficient learning in high dimensions. Affiliated with IFML.
+    positions:
+      - title: Graduate Research Assistant
+        team: ECE and CS
+        when: Fall 2019 – Spring 2025
+
+  - key: eidon
+    org: Eidon AI
+    where: Austin, TX
+    logo: eidon
+    when: Summer 2024 – Winter 2025
+    note: Multi-agent point-based system integrating blockchain with AI, with a tokenomics framework for reward distribution.
+    positions:
+      - title: Head of AI Research
+        when: Summer 2024 – Winter 2025
+
+  - key: meta
+    org: Meta
+    where: Menlo Park, CA
+    logo: meta
+    when: Summer 2021 – Fall 2022
+    note: Capacity Engineering and FAIR — positive-unlabeled contrastive learning for weakly supervised CTR prediction.
+    hosts: [Li Jing, Bhargav Bhushanam, Dhruv Choudhary, Michael Rabbat]
+    positions:
+      - title: Student Researcher
+        when: Fall 2022
+      - title: Research Scientist
+        when: Summer 2022
+      - title: Student Researcher
+        when: Fall 2021
+      - title: Research Scientist
+        when: Summer 2021
+
+  - key: microsoft
+    org: Microsoft
+    where: Redmond, WA
+    logo: microsoft
+    when: Summer 2020
+    # Do not name a launch here — the template appends a "Shipped …" sentence
+    # from launches.yml, so naming OpenMSFTL would render it twice.
+    note: Speech and Dialog Research Group — training robust to adversarial, Byzantine, and noisy client updates.
+    hosts: [Kenichi Kumatani, Dimitrios Dimitriadis]
+    positions:
+      - title: Research Scientist
+        when: Summer 2020
+
+  - key: amazon-alexa
+    org: Amazon
+    where: Sunnyvale, CA
+    logo: amazon
+    when: Summer 2016 – Spring 2019
+    note: NLP domain models shared across Alexa devices — Timers, Alarms, Reminders, Calendar, Communications.
+    positions:
+      - title: Applied Scientist
+        team: AGI
+        when: Summer 2018 – Spring 2019
+      - title: Applied Scientist
+        team: Alexa AI
+        when: Spring 2018 – Summer 2018
+      - title: Applied Scientist
+        team: Alexa ML
+        when: Winter 2017 – Spring 2018
+      - title: Software Development Engineer
+        team: Amazon Devices
+        when: Summer 2016 – Winter 2017
+
+  - key: ebay
+    org: eBay
+    where: San Jose, CA
+    logo: ebay
+    when: Fall 2015 – Summer 2016
+    note: Deep recommendation algorithms for personalized search and targeted advertising.
+    positions:
+      - title: Data Scientist
+        team: Customer Insights and Analytics
+        when: Fall 2015 – Summer 2016
+
+  - key: slb
+    org: Schlumberger
+    where: Houston, TX
+    logo: slb
+    when: Spring 2015 – Fall 2015
+    note: Early member of Digital Transformation Services — failure prediction for deployed oil service instruments.
+    positions:
+      - title: Data Scientist
+        when: Spring 2015 – Fall 2015
+
+  - key: fem
+    org: FEM Inc.
+    logo: fem
+    where: Los Angeles, CA
+    when: Winter 2015
+    note: NLP models for content recommendation and visualization tooling for an interactive analytics dashboard. Later branded Prizma; acquired by Gracenote, a Nielsen company, in 2018.
+    positions:
+      - title: Data Engineer
+        when: Winter 2015
+
+  - key: ttic
+    org: Toyota Technological Institute Chicago
+    where: Chicago, IL
+    logo: ttic
+    when: Summer 2014
+    note: Real-time stereo reconstruction for autonomous vehicles, for Toyota Research North America.
+    hosts: [David McAllester]
+    positions:
+      - title: Visiting Research Assistant
+        when: Summer 2014
+
+teaching:
+  # Same shape as `roles`. Each course reads "Role, Course" — the way a job line
+  # reads "Senior Research Scientist, AWS".
+  - school: Amazon Web Services
+    logo: amazonwebservices
+    where: Austin, TX
+    when: Winter 2026 –
+    courses:
+      - role: Instructor
+        title: "Embedding AI into Products: Evaluation-Driven Development"
+        note: AWS GenAI Training
+        when: Summer 2026
+      - role: Instructor
+        title: "Embedding AI into Products: Governance and Guardrails"
+        note: AWS GenAI Training
+        when: Spring 2026
+
+  - school: University of Texas at Austin
+    logo: utaustin
+    where: Austin, TX
+    when: Fall 2023 – Fall 2025
+    courses:
+      - role: Instructor
+        title: "Directed Reading Program: Natural Language Optimization"
+        when: Fall 2025
+      - role: Teaching Assistant
+        title: "MIS 285N: Introduction to Deep Learning"
+        when: Spring 2024
+      - role: Teaching Assistant
+        title: "MIS 185N: Emerging Trends in Machine Learning"
+        when: Spring 2024
+      - role: Teaching Assistant
+        title: "ECE 461P: Data Science Principles"
+        when: Fall 2023
+
+  - school: University of California Irvine
+    logo: uci
+    where: Irvine, CA
+    when: Fall 2013 – Fall 2014
+    courses:
+      - role: Teaching Assistant
+        title: "EECS 50: Discrete Time Signals and Systems"
+        when: Fall 2014
+      - role: Teaching Assistant
+        title: "EECS 280A: Advanced Engineering Electromagnetics"
+        when: Spring 2014
+      - role: Teaching Assistant
+        title: "EECS 118: Knowledge Management and Software Eng."
+        when: Winter 2014
+      - role: Teaching Assistant
+        title: "EECS 119: Introduction to VLSI"
+        when: Fall 2013
+
+awards:
+  - when: Spring 2026
+    what: "Silver Reviewer award, ICML 2026"
+  - when: 2021 – 2024
+    what: "Travel Grants, UT Austin — ML conferences (NeurIPS, ICML, AISTATS, UAI) and Simons Institute, UC Berkeley"
+  - when: 2021 – 2023
+    what: "Meta PhD Research Grant ($100,000)"
+  - when: Spring 2022
+    what: "Meta PhD Research Fellowship Finalist — AI HW/SW co-design"
+    url: "https://research.facebook.com/blog/2022/2/announcing-the-recipients-of-the-2022-meta-phd-research-fellowship/"
+  - when: Fall 2013
+    what: "Bachelor of Engineering with Highest Honors (First Class), Jadavpur University"
+  - when: 2009 – 2013
+    what: "INSPIRE Fellowship and MHRD Fellowship for Academic Excellence, Govt. of India"
+  - when: Spring 2007
+    what: "State Rank 5 of ~700,000 candidates, West Bengal Board of Secondary Education"
+    url: "https://www.telegraphindia.com/west-bengal/upswing-in-city-pass-rate/cid/1005795"
+  - when: Summer 2007
+    what: "Mamraj Agarwal Rashtriya Puraskar (National Award for Academic Excellence), from the Governor of West Bengal"
+
+# Venues carry full name + parenthesised abbreviation, matching 07-CV/service.tex and the venue lines
+# on /publications. Abbreviations alone assume the reader already knows the field; this section is often
+# read by someone who does not.
+#
+# Two deliberate non-abbreviations: Pattern Recognition Letters stays spelled out because "PRL" reads
+# universally as Physical Review Letters, and Cognitive Neurodynamics / Discover Electronics have no
+# established initialism, so none is invented.
+service:
+  - label: "Reviewer, Conferences"
+    items: ["International Conference on Machine Learning (ICML)",
+            "Conference on Neural Information Processing Systems (NeurIPS)",
+            "International Conference on Learning Representations (ICLR)",
+            "International Conference on Artificial Intelligence and Statistics (AISTATS)",
+            "Conference on Uncertainty in Artificial Intelligence (UAI)",
+            "Annual Meeting of the Association for Computational Linguistics (ACL)",
+            "IEEE International Symposium on Information Theory (ISIT)"]
+  - label: "Reviewer, Journals"
+    # One rule: journal name, publisher in parentheses, every entry. No journal abbreviations, so the
+    # parenthetical means exactly one thing. (The conference line parenthesises abbreviations instead —
+    # conferences are cited by acronym and have no publisher; journals are cited by full name.)
+    #
+    # "Springer Nature", never "Nature": both Springer titles are portfolio journals, not Nature
+    # Portfolio, so "Nature" would misread as a Nature-branded venue.
+    #
+    # NOTE on JMLR: MIT Press published volumes 1–4 (2000–2004); Microtome Publishing / JMLR, Inc. has
+    # published it since 2005, so Microtome is the accurate publisher for recent reviewing. "MIT Press"
+    # is set at the author's explicit direction — do not silently change it in either direction.
+    items: ["Journal of Machine Learning Research (MIT Press)",
+            "Transactions on Knowledge and Data Engineering (IEEE)",
+            "Pattern Recognition Letters (Elsevier)",
+            "Cognitive Neurodynamics (Springer Nature)",
+            "Discover Electronics (Springer Nature)"]
+  - label: "Program Committee"
+    items: ["International Conference on Machine Learning (ICML)",
+            "AAAI Conference on Artificial Intelligence (AAAI)"]
+
+code:
+  - name: BGMD
+    what: Block coordinate geometric median descent (AISTATS 2022)
+    url: "https://github.com/anishacharya/BGMD"
+  - name: DeLiCoCo
+    what: Decentralized optimization with multiple gossip steps (IEEE TPDS 2021)
+    url: "https://github.com/anishacharya/DeLiCoCo"
+  - name: OpenMSFTL
+    what: Open-source federated learning platform (Microsoft)
+    url: "https://github.com/microsoft/OpenMSFTL"
+  - name: Embedding Compression
+    what: Online embedding compression (AAAI 2019)
+    url: "https://github.com/anishacharya/Online-Embedding-Compression-AAAI-2019"

@@ -1,0 +1,24 @@
+# ============================================================
+#  THE SWITCH — this is the only file you edit to change which
+#  version of the site is live at anishacharya.github.io/
+# ============================================================
+#
+#   active: v2   ->  the new site is served at /
+#   active: v1   ->  the archived (old) site is served at /
+#
+# Either way BOTH versions stay reachable:
+#   new site      /            (or /v2/ when v1 is active)
+#   archived site /legacy/
+#
+# Commit the change and GitHub Pages rebuilds in ~1 minute.
+
+active: v2
+
+# Labels used in the version banner.
+versions:
+  v1:
+    name: "Archive (2022)"
+    path: "/legacy/"
+  v2:
+    name: "Current"
+    path: "/"

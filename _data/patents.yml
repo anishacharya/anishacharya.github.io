@@ -1,0 +1,20 @@
+# Granted US patents. Primary inventor on both.
+# Reconciled against CV_ANISH/patents.tex.
+
+- key: goal-oriented-dialog
+  title: Goal Oriented Dialog Generation using Dialog Template, API and Entity data
+  number: US11393454
+  granted: 2022-07
+  assignee: Amazon
+  inventors: [A Acharya, A Metallinou, T Chung, S Paul, S Chandra, C Lin, D H Tur, A Mandal]
+  links:
+    USPTO: "https://patentimages.storage.googleapis.com/e6/63/6a/f06b172a2d2d00/US11393454.pdf"
+
+- key: nlp-embedding-compression
+  title: "Natural Language Processing: Amazon Alexa AI"
+  number: US10872601
+  granted: 2020-12
+  assignee: Amazon
+  inventors: [A Acharya, A Metallinou, R Goel, I Dhillon]
+  links:
+    USPTO: "https://patentimages.storage.googleapis.com/d1/a8/7a/77210494b73af9/US10872601.pdf"

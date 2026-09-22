@@ -15,7 +15,13 @@ description: "Anish Acharya, PhD — Senior Research Scientist at AWS. Robust an
 {% else %}
 
 <div class="idcard">
-  <img class="portrait" src="{{ '/img/portrait.jpg' | relative_url }}" alt="Anish Acharya">
+  {%- comment -%}
+    Alt text names the role as well as the person. Image search pairs a face with the surrounding
+    text, and "Anish Acharya" alone is the exact string that collides with the a16z partner — the
+    affiliation is what makes this photo resolvable to the right entity.
+  {%- endcomment -%}
+  <img class="portrait" src="{{ '/img/portrait.jpg' | relative_url }}"
+       alt="Anish Acharya, PhD — Senior Research Scientist at Amazon Web Services">
   <div class="ident">
     <h1>Anish Acharya, PhD</h1>
     <p class="titles">
@@ -56,11 +62,10 @@ description: "Anish Acharya, PhD — Senior Research Scientist at AWS. Robust an
 <ul class="jobs">
   {% for e in site.data.work.education %}
   <li class="job">
-    <div class="job-when">{{ e.when }}</div>
     {% include logo.html logo=e.logo %}
     <div class="job-body">
       <div class="job-org">{{ e.degree }}</div>
-      <div class="job-inst">{{ e.school }} <span class="job-where">· {{ e.where }}</span>{% if e.note %}<span class="job-where"> · {{ e.note }}</span>{% endif %}</div>
+      <div class="job-inst">{{ e.school }} <span class="job-where">· {{ e.where }}</span><span class="job-date"> · {{ e.when }}</span>{% if e.note %}<span class="job-where"> · {{ e.note }}</span>{% endif %}</div>
       {% if e.thesis %}<p class="job-sub">Thesis: <a href="{{ e.thesis_url }}"><em>{{ e.thesis }}</em></a></p>{% endif %}
       {% if e.advisors %}<p class="job-sub">Advised by {{ e.advisors | join: " and " }}</p>{% endif %}
       {% if e.committee %}<p class="job-sub">Committee: {{ e.committee | join: ", " }}</p>{% endif %}
@@ -73,10 +78,9 @@ description: "Anish Acharya, PhD — Senior Research Scientist at AWS. Robust an
 <ul class="jobs">
   {% for r in site.data.work.roles %}
   <li class="job">
-    <div class="job-when">{{ r.when }}</div>
     {% include logo.html logo=r.logo %}
     <div class="job-body">
-      <div class="job-org">{{ r.org }} <span class="job-where">· {{ r.where }}</span></div>
+      <div class="job-org">{{ r.org }} <span class="job-where">· {{ r.where }}</span><span class="job-date"> · {{ r.when }}</span></div>
       <ul class="job-pos{% if r.positions.size > 1 %} railed{% endif %}">
         {% for p in r.positions %}
         <li>
@@ -86,21 +90,12 @@ description: "Anish Acharya, PhD — Senior Research Scientist at AWS. Robust an
         {% endfor %}
       </ul>
       {%- comment -%}
-        Prose descriptions live in the CV PDF. Here we keep only what is unique:
-        the shipped systems, each linking to its primary source. Press coverage
-        for each launch has its own entries in the News timeline below.
+        Deliberately bare: org, positions, dates, hosts — no description and no
+        links. Prose lives in the CV PDF; `work.yml`'s `note` is kept as source
+        material but is not rendered here. Everything a role produced is reachable
+        from the News timeline below and from /publications, so this section stays
+        a scannable index rather than a second copy of them.
       {%- endcomment -%}
-      {% assign ls = site.data.launches | where: "role_key", r.key %}
-      {% if ls.size > 0 %}
-      <p class="job-ships">
-        {%- for l in ls %}
-          {%- assign primary = "" %}
-          {%- for k in l.links %}{% if k[1] != "" and primary == "" %}{% assign primary = k[1] %}{% endif %}{% endfor %}
-          {%- if primary != "" %}<a href="{{ primary }}">{{ l.name }}</a>{% else %}{{ l.name }}{% endif %}
-          {%- unless forloop.last %} <span class="sep">·</span> {% endunless %}
-        {%- endfor %}
-      </p>
-      {% endif %}
       {% if r.hosts %}<p class="job-hosts">Hosted by {{ r.hosts | join: ", " }}</p>{% endif %}
     </div>
   </li>
@@ -111,10 +106,9 @@ description: "Anish Acharya, PhD — Senior Research Scientist at AWS. Robust an
 <ul class="jobs">
   {% for t in site.data.work.teaching %}
   <li class="job">
-    <div class="job-when">{{ t.when }}</div>
     {% include logo.html logo=t.logo %}
     <div class="job-body">
-      <div class="job-org">{{ t.school }} <span class="job-where">· {{ t.where }}</span></div>
+      <div class="job-org">{{ t.school }} <span class="job-where">· {{ t.where }}</span><span class="job-date"> · {{ t.when }}</span></div>
       <ul class="job-pos{% if t.courses.size > 1 %} railed{% endif %}">
         {% for c in t.courses %}
         <li>
@@ -131,12 +125,20 @@ description: "Anish Acharya, PhD — Senior Research Scientist at AWS. Robust an
   {% endfor %}
 </ul>
 
-<h2>Service</h2>
+<h2>Academic Service</h2>
 <ul class="rows">
   {% for sv in site.data.work.service %}
   <li class="row">
     <div class="row-when">{{ sv.label }}</div>
-    <div class="row-main"><div class="s">{{ sv.items | join: " · " }}</div></div>
+    {%- comment -%}
+      One venue per line rather than a "·"-joined run. With abbreviations alone the run was scannable,
+      but full venue names push it to ~450 characters, and once it wraps across five lines the middot
+      separators stop being findable — the eye cannot tell a separator mid-line from one at a wrap.
+      A list gives each venue its own edge to scan down. .row-main ul/li styling already exists.
+    {%- endcomment -%}
+    <div class="row-main">
+      <ul>{% for it in sv.items %}<li>{{ it }}</li>{% endfor %}</ul>
+    </div>
   </li>
   {% endfor %}
 </ul>
@@ -148,7 +150,15 @@ description: "Anish Acharya, PhD — Senior Research Scientist at AWS. Robust an
     <li>
       <span class="nd">{% if e.when %}{{ e.when }}, {% endif %}{{ e.year }}</span>
       <span class="tl-kind tl-{{ e.kind }}">{{ e.kind }}</span>
-      <span class="nw" title="{{ e.what }}">{% if e.url %}<a href="{{ e.url }}">{{ e.what }}</a>{% else %}{{ e.what }}{% endif %}</span>
+      {%- comment -%}
+        Row text is never a link. Every link lives in .nx, named, so all 78 rows
+        expose their material the same way -- previously a launch showed named
+        links on the right, a paper hid its link under the row text, and a talk
+        showed nothing, which gave three treatments and no way to tell which rows
+        had anything attached without hovering each one.
+      {%- endcomment -%}
+      <span class="nw" title="{{ e.what }}">{{ e.what }}</span>
+      <span class="nx">{%- for k in e.links -%}{%- if k[1] != "" -%}<a href="{{ k[1] }}">{{ k[0] }}</a>{%- unless forloop.last %} <span class="sep">·</span> {% endunless -%}{%- endif -%}{%- endfor -%}</span>
     </li>
     {% endfor %}
   </ul>

@@ -2,123 +2,273 @@
 layout: base
 title: Research
 permalink: /research/
-description: "Five threads, from recursive self improvement back to control theory and estimation."
+description: "Learning theory for recursive self improvement, robust reward modeling, distributed and collaborative learning, weak supervision, and stability."
 ---
 
-<p class="lede">
-  A thematic reading of the work rather than the chronological one the
-  <a href="{{ '/' | relative_url }}">CV</a> gives. The threads are not
-  independent, and the coupling is the point: <strong>search amplifies whatever
-  bias the signal carries</strong>, so a stronger optimizer aimed at a corrupted
-  objective is worse than a weaker one.
+{% assign ropoll = site.data.papers | where: "key", "ropoll" | first %}
+{% assign orchopt = site.data.papers | where: "key", "orchopt" | first %}
+{% assign gm = site.data.papers | where: "key", "gm-matching" | first %}
+{% assign bgmd = site.data.papers | where: "key", "bgmd" | first %}
+{% assign ndsc = site.data.papers | where: "key", "ndsc" | first %}
+{% assign momentum = site.data.papers | where: "key", "momentum-fl" | first %}
+{% assign gossip = site.data.papers | where: "key", "gossip" | first %}
+{% assign compression = site.data.papers | where: "key", "embedding-compression" | first %}
+{% assign pu = site.data.papers | where: "key", "pu-contrastive" | first %}
+{% assign ldkp = site.data.papers | where: "key", "ldkp" | first %}
+{% assign gupshup = site.data.papers | where: "key", "gupshup" | first %}
+{% assign alexa = site.data.papers | where: "key", "alexa-conversations" | first %}
+{% assign butterworth = site.data.papers | where: "key", "butterworth" | first %}
+{% assign lorenz = site.data.papers | where: "key", "lorenz-pid" | first %}
+{% assign bode = site.data.papers | where: "key", "bode" | first %}
+{% assign multiwing = site.data.papers | where: "key", "multiwing" | first %}
+{% assign fractional = site.data.papers | where: "key", "fractional-q" | first %}
+{% assign nonlinear = site.data.papers | where: "key", "nonlinear-ann" | first %}
+{% assign leastsquare = site.data.papers | where: "key", "least-square" | first %}
+{% assign dialog_patent = site.data.patents | where: "key", "goal-oriented-dialog" | first %}
+{% assign compression_patent = site.data.patents | where: "key", "nlp-embedding-compression" | first %}
+
+<div class="threads-intro">
+  <p>
+    I am broadly interested in learning theory. My research studies learning as a feedback process
+    under imperfect information. A learning system observes noisy or incomplete feedback,
+    constructs a reward or target, updates its weights, policies, prompts, tools, or coordination
+    structure under constraints, validates the resulting behavior, and changes the observations
+    available in the next round.
+  </p>
+  <p>
+    I ask what is identifiable from imperfect feedback, how an optimization objective should be
+    constructed when true utility is unobserved, which updates are computationally feasible, and
+    when repeated adaptation is dynamically stable. My current research brings these questions
+    together in models and agent systems that evaluate and modify their own behavior.
+  </p>
+</div>
+
+<div class="thread-chapters">
+    <section class="research-thread" aria-labelledby="thread-rsi">
+      <div class="thread-heading">
+        <span class="thread-index">01</span>
+        <div>
+          <h2 id="thread-rsi">Recursive Self Improvement</h2>
+          <p class="thread-role">Complete adaptation loop</p>
+        </div>
+      </div>
+      <div class="thread-layout">
+        <div class="thread-reading">
+          <p class="thread-vision">
+            My long-term goal is to develop learning systems that can adjust their policy (model
+            weights, prompts, memory, tools, and coordination structures) while remaining faithful
+            to their intended objectives. Such systems optimize reward models and evaluators that
+            are necessarily incomplete; as the learner adapts, it can discover and exploit their
+            errors. I study how reward modeling, post-training, constrained search, and
+            validation-based acceptance can be designed together so that repeated adaptation
+            improves true behavior rather than only increasing proxy reward.
+          </p>
+          <div class="thread-questions">
+            <h3>Key Questions</h3>
+            <ol>
+              <li>How can weights, policies, prompts, tools, and coordination structures be optimized within a common adaptation loop?</li>
+              <li>How should reward models be learned and updated when true utility is sparse, delayed, or unavailable, and the learner can exploit their errors?</li>
+              <li>What conditions make repeated updates improve true utility without forgetting, capability collapse, or drift?</li>
+            </ol>
+          </div>
+          <p class="thread-current"><strong>Current directions.</strong> Reward modeling, post-training and policy optimization, weight and prompt adaptation, orchestration search, and continual self improvement.</p>
+          <aside class="thread-application" aria-labelledby="embodied-title">
+            <h3 id="embodied-title">Application frontier · Embodied self improvement</h3>
+            <p>
+              An important application is embodied intelligence. Models and physical agents can
+              improve policies, weights, tools, and coordination in physics simulators, then
+              transfer those improvements to hardware. Systems such as
+              <a href="https://github.com/strands-labs/robots">Strands Robots</a> expose simulation
+              and physical robots through a shared agent interface, creating a testbed for reward
+              modeling, collaborative learning, and sim-to-real validation.
+            </p>
+          </aside>
+        </div>
+        <aside class="thread-evidence" aria-label="Selected publications and patents for recursive self improvement">
+          <h3>Selected Publications</h3>
+          <ul class="thread-papers">
+            {% include threadpaper.html paper=ropoll %}
+            {% include threadpaper.html paper=orchopt %}
+            {% include threadpaper.html paper=alexa %}
+          </ul>
+          <h3>Selected Patents</h3>
+          <ul class="thread-papers thread-patents">
+            {% include threadpatent.html patent=dialog_patent %}
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="research-thread" aria-labelledby="thread-distributed">
+      <div class="thread-heading">
+        <span class="thread-index">02</span>
+        <div>
+          <h2 id="thread-distributed">Distributed &amp; Collaborative Learning</h2>
+          <p class="thread-role">Collective optimization and coordination</p>
+        </div>
+      </div>
+      <div class="thread-layout">
+        <div class="thread-reading">
+          <p class="thread-vision">
+            Many learning systems consist of participants that hold different data, possess
+            different capabilities, and communicate through a limited or changing topology. My
+            long-term goal is to develop principles for collaborative learning across federated
+            clients, decentralized workers, distributed encoders, autonomous agents, and physical
+            robots. I study how local updates should be aggregated, what information must be
+            communicated, how coordination topology affects convergence, and how collective
+            learning can remain stable under heterogeneity, failures, and adversarial participants.
+          </p>
+          <div class="thread-questions">
+            <h3>Key Questions</h3>
+            <ol>
+              <li>When can decentralized learners or robot fleets match centralized training under limited communication?</li>
+              <li>How should aggregation, communication topology, and local computation adapt to heterogeneous or unreliable participants?</li>
+              <li>Which principles from gossip and federated optimization extend to multi-agent coordination and collaborative policy learning?</li>
+            </ol>
+          </div>
+        </div>
+        <aside class="thread-evidence" aria-label="Selected publications for distributed and collaborative learning">
+          <h3>Selected Publications</h3>
+          <ul class="thread-papers">
+            {% include threadpaper.html paper=orchopt %}
+            {% include threadpaper.html paper=ndsc %}
+            {% include threadpaper.html paper=momentum %}
+            {% include threadpaper.html paper=bgmd title="BGMD: Robust Training in High Dimensions via Block Coordinate Geometric Median Descent" %}
+            {% include threadpaper.html paper=gossip %}
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="research-thread" aria-labelledby="thread-robust">
+      <div class="thread-heading">
+        <span class="thread-index">03</span>
+        <div>
+          <h2 id="thread-robust">Robust &amp; Weakly Supervised Learning</h2>
+          <p class="thread-role">Inference from imperfect supervision</p>
+        </div>
+      </div>
+      <div class="thread-layout">
+        <div class="thread-reading">
+          <p class="thread-vision">
+            This thread studies what can be learned when supervision is corrupted, incomplete,
+            indirect, synthetic, or generated by another model. Robust learning and weak
+            supervision represent different failure modes: in one the signal exists but may be
+            corrupted; in the other the desired signal is only partially observed. My long-term
+            goal is to develop statistically principled and computationally practical methods that
+            distinguish ordinary noise, structured failure, missing information, and valid
+            disagreement across data selection, training, reward modeling, and evaluation.
+          </p>
+          <div class="thread-questions">
+            <h3>Key Questions</h3>
+            <ol>
+              <li>What remains identifiable under corrupted, incomplete, or model-generated supervision?</li>
+              <li>Can practical high-dimensional methods attain optimal robustness without manufacturing missing labels?</li>
+              <li>How should a learner combine supervision sources with different reliability without suppressing valid minority evidence?</li>
+            </ol>
+          </div>
+        </div>
+        <aside class="thread-evidence" aria-label="Selected publications for robust and weakly supervised learning">
+          <h3>Selected Publications</h3>
+          <ul class="thread-papers">
+            {% include threadpaper.html paper=ropoll %}
+            {% include threadpaper.html paper=gm %}
+            {% include threadpaper.html paper=bgmd title="BGMD: Robust Training in High Dimensions via Block Coordinate Geometric Median Descent" %}
+            {% include threadpaper.html paper=pu %}
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="research-thread" aria-labelledby="thread-efficiency">
+      <div class="thread-heading">
+        <span class="thread-index">04</span>
+        <div>
+          <h2 id="thread-efficiency">Efficient Learning</h2>
+          <p class="thread-role">Resource-constrained learning</p>
+        </div>
+      </div>
+      <div class="thread-layout">
+        <div class="thread-reading">
+          <p class="thread-vision">
+            This thread asks how much data, supervision, communication, memory, computation, and
+            physical interaction are necessary to achieve a desired level of learning performance.
+            I study methods that treat efficiency as part of the learning problem rather than as
+            post-processing: representations learned under memory constraints, distributed coding,
+            sample selection, communication-efficient optimization, and evaluation under fixed
+            model and rollout budgets. The long-term goal is to co-design statistical accuracy and
+            resource allocation across training, inference, and self improvement.
+          </p>
+          <div class="thread-questions">
+            <h3>Key Questions</h3>
+            <ol>
+              <li>What are the fundamental tradeoffs among statistical accuracy, data, model size, communication, and inference cost?</li>
+              <li>How can compression, selection, and resource allocation be incorporated into learning rather than applied afterward?</li>
+              <li>How should self-improving systems allocate tokens, rollouts, judge calls, simulator interactions, and physical trials?</li>
+            </ol>
+          </div>
+        </div>
+        <aside class="thread-evidence" aria-label="Selected publications and patents for efficient learning">
+          <h3>Selected Publications</h3>
+          <ul class="thread-papers">
+            {% include threadpaper.html paper=ropoll %}
+            {% include threadpaper.html paper=gm %}
+            {% include threadpaper.html paper=ndsc %}
+            {% include threadpaper.html paper=momentum %}
+            {% include threadpaper.html paper=compression %}
+          </ul>
+          <h3>Selected Patents</h3>
+          <ul class="thread-papers thread-patents">
+            {% include threadpatent.html patent=compression_patent %}
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="research-thread" aria-labelledby="thread-foundations">
+      <div class="thread-heading">
+        <span class="thread-index">05</span>
+        <div>
+          <h2 id="thread-foundations">Control &amp; Stability</h2>
+          <p class="thread-role">Feedback and stability</p>
+        </div>
+      </div>
+      <div class="thread-layout">
+        <div class="thread-reading">
+          <p class="thread-vision">
+            This thread supplies the dynamical perspective for the entire program. A continually
+            adapting learner changes the environment, data distribution, and evaluation conditions
+            it will encounter next. Its updates therefore form a closed-loop dynamical system rather
+            than a sequence of independent optimization problems. My long-term interest is in
+            translating ideas from system identification and stability analysis into guarantees for
+            adaptive models and agent systems.
+          </p>
+          <div class="thread-questions">
+            <h3>Key Questions</h3>
+            <ol>
+              <li>What is the appropriate notion of stability for a learner whose updates change its future data and evaluation conditions?</li>
+              <li>How can such a system be identified when the learner's interventions alter the environment?</li>
+              <li>When do locally improving updates produce globally stable behavior rather than drift, oscillation, or collapse?</li>
+            </ol>
+          </div>
+        </div>
+        <aside class="thread-evidence" aria-label="Selected publications for control, estimation, and signal processing">
+          <h3>Selected Publications</h3>
+          <ul class="thread-papers">
+            {% include threadpaper.html paper=butterworth %}
+            {% include threadpaper.html paper=lorenz %}
+            {% include threadpaper.html paper=bode %}
+            {% include threadpaper.html paper=nonlinear %}
+            {% include threadpaper.html paper=multiwing %}
+            {% include threadpaper.html paper=fractional %}
+            {% include threadpaper.html paper=leastsquare %}
+          </ul>
+        </aside>
+      </div>
+    </section>
+</div>
+
+<p class="threads-more">
+  Full author lists, publication types, and additional links are available under
+  <a href="{{ '/publications/' | relative_url }}">Publications</a>.
 </p>
-
-<!-- ── 1 ── -->
-<section class="theme">
-  <div class="theme-head">
-    <span class="theme-num">01</span>
-    <h3>Recursive self improvement</h3>
-  </div>
-  <p class="theme-sum">
-    Agent systems that propose changes to their own prompts, tools, and
-    orchestration, score them, and keep what scored better. I work on both halves
-    of that loop: the <em>signal</em> it optimizes against, and the
-    <em>search</em> that exploits it. The arc runs from human-specified agent
-    behaviour — Alexa Conversations, generated from hand-authored dialog
-    templates — to self-modifying behaviour. That transition is why the earlier
-    theory became load-bearing: once the human is out of the loop, nothing else
-    is checking the objective.
-  </p>
-  <div class="theme-fig">{% include fig/agents.svg %}</div>
-  {% assign g = site.data.papers | where_exp: "p", "p.thrusts contains 'rsi'" %}
-  {% include paperlist.html items=g %}
-</section>
-
-<!-- ── 2 ── -->
-<section class="theme">
-  <div class="theme-head">
-    <span class="theme-num">02</span>
-    <h3>Robust estimation under contamination</h3>
-  </div>
-  <p class="theme-sum">
-    The methodological spine, stated as a problem rather than a method: a
-    learning system is a chain of averaging steps, and the average is the least
-    robust estimator there is. Recognise a step as mean estimation under
-    contamination, then replace the naive estimator with one carrying a provable
-    breakdown point. The same diagnosis has now been applied at three points in
-    the pipeline, roughly one every three years — <strong>gradients across
-    workers</strong>, <strong>sample means used for matching</strong>, and
-    <strong>scores across a panel of judges</strong> — with the object different
-    each time and the mathematics unchanged.
-  </p>
-  <div class="theme-fig">{% include fig/robust.svg %}</div>
-  {% assign g = site.data.papers | where_exp: "p", "p.thrusts contains 'robust'" %}
-  {% include paperlist.html items=g %}
-</section>
-
-<!-- ── 3 ── -->
-<section class="theme">
-  <div class="theme-head">
-    <span class="theme-num">03</span>
-    <h3>Optimization: non-convex, distributed, combinatorial</h3>
-  </div>
-  <p class="theme-sum">
-    The other half of every result above: once you have decided what to estimate,
-    something still has to find it. Three regimes recur. <strong>Distributed</strong>
-    — what can be proved about convergence when workers are slow, sparsely
-    connected, and possibly hostile; this is where the lesson that an aggregation
-    rule is part of the estimator rather than part of the plumbing was learned, on
-    gradients, years before it was applied to judges. <strong>Non-convex</strong> —
-    most clean federated theory assumes convexity away, and the hard part is what
-    remains when you don't. <strong>Combinatorial and constrained</strong> — prompt
-    states, orchestration topology, and exactly-<em>k</em> subsets are discrete, and
-    continuous relaxation is usually the wrong move because the constraints that
-    matter are not ones you want to satisfy approximately.
-  </p>
-  <div class="theme-fig">{% include fig/distributed.svg %}</div>
-  {% assign g = site.data.papers | where_exp: "p", "p.thrusts contains 'optim'" %}
-  {% include paperlist.html items=g %}
-</section>
-
-<!-- ── 4 ── -->
-<section class="theme">
-  <div class="theme-head">
-    <span class="theme-num">04</span>
-    <h3>Learning on a budget: bits, labels, samples, tokens</h3>
-  </div>
-  <p class="theme-sum">
-    One question asked in four currencies over eleven years: you have a fixed
-    budget, so where does the accuracy actually go? Model footprint and learned
-    distributed compression spend <em>bits</em>; robust subset selection spends
-    <em>samples</em>; learning from positive and unlabeled data spends no
-    <em>negative labels</em> at all, because a non-click is not a negative and
-    manufacturing negatives injects the very bias you were avoiding. The current
-    form of the question is <em>tokens</em> — every iteration of a self-improving
-    loop spends inference, evaluation, and context.
-  </p>
-  <div class="theme-fig">{% include fig/weak.svg %}</div>
-  {% assign g = site.data.papers | where_exp: "p", "p.thrusts contains 'scarcity'" %}
-  {% include paperlist.html items=g %}
-</section>
-
-<!-- ── 5 ── -->
-<section class="theme">
-  <div class="theme-head">
-    <span class="theme-num">05</span>
-    <h3>Origins: control, estimation, signal processing</h3>
-  </div>
-  <p class="theme-sum">
-    The undergraduate work at Jadavpur was not machine learning. It was control
-    theory: fractional-order analog filters, optimal PID control of chaotic
-    Lorenz-like attractors, stability of delayed systems via Bode's integral, and
-    system identification under fractional Gaussian noise. Four ideas were
-    already present — <em>identify the system before you optimize it</em>;
-    <em>the noise model is a modelling choice</em>; <em>stability is not a
-    nice-to-have</em>; and <em>optimal control is optimization against a
-    dynamical objective</em>. Swap "plant" for "learned model" and "controller"
-    for "training procedure," and that is the current program almost verbatim.
-  </p>
-  <div class="theme-fig">{% include fig/origins.svg %}</div>
-  {% assign g = site.data.papers | where_exp: "p", "p.thrusts contains 'origins'" %}
-  {% include paperlist.html items=g %}
-</section>

@@ -13,7 +13,9 @@
 #   venue_full  spelled-out venue, shown on /papers
 #   year        integer, used for grouping
 #   type        conference | journal | workshop | preprint
-#   thrusts     rsi | robust | optim | scarcity | origins  (groups /research; a list)
+#   thrusts     robust | optim | scarcity | language | origins  (groups /research; a list)
+#               FIRST entry is the primary home: /research renders the full entry there once
+#               and cross-references it from the others, so no paper is listed twice.
 #   selected    true to surface on the home page
 #   thumb       false if there is no rendered cover in img/papers/
 #   note        long qualifier; note_short is the card version
@@ -29,7 +31,7 @@
   venue_full: International Conference on Machine Learning
   year: 2026
   type: workshop
-  thrusts: [rsi, robust]
+  thrusts: [robust]
   selected: true
   note: Workshop on Statistical Frameworks for Uncertainty in Agentic Systems (AgenticUQ)
   note_short: AgenticUQ Workshop
@@ -46,7 +48,7 @@
   venue_full: Conference on Language Modeling
   year: 2026
   type: workshop
-  thrusts: [rsi, optim]
+  thrusts: [optim]
   selected: true
   note: "2nd Workshop on Lifelong Agents: Learning, Aligning, and Evolving"
   note_short: Lifelong Agents Workshop
@@ -65,6 +67,7 @@
   thrusts: [robust, optim, scarcity]
   selected: true
   links:
+    PMLR: "https://proceedings.mlr.press/v267/acharya25b.html"
     OpenReview: "https://openreview.net/pdf?id=pxfpGbeVx2"
     arXiv: "https://arxiv.org/pdf/2504.00564"
   also:
@@ -127,7 +130,7 @@
   venue_full: International Conference on Machine Learning
   year: 2022
   type: workshop
-  thrusts: [scarcity]
+  thrusts: [robust]
   note: Principles of Distribution Shift (PODS) Workshop
   note_short: PODS Workshop
   links:
@@ -145,11 +148,13 @@
   venue_full: ACM International Conference on Information and Knowledge Management
   year: 2022
   type: workshop
-  thrusts: [scarcity]
+  thrusts: [language]
   note: "DL4SR'22: Workshop on Deep Learning for Search and Recommendation"
   note_short: DL4SR Workshop
   links:
+    CEUR-WS: "https://ceur-ws.org/Vol-3317/Paper9.pdf"
     arXiv: "https://arxiv.org/pdf/2203.15349.pdf"
+    HF Dataset: "https://huggingface.co/datasets/midas/ldkp3k"
 
 # ─────────────────────────── 2021 ───────────────────────────
 
@@ -160,7 +165,7 @@
   venue_full: "IEEE Transactions on Parallel and Distributed Systems"
   year: 2021
   type: journal
-  thrusts: [optim, scarcity]
+  thrusts: [scarcity, optim]
   links:
     IEEE Xplore: "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9664349"
     Code: "https://github.com/anishacharya/DeLiCoCo"
@@ -173,8 +178,10 @@
   venue_full: Conference of the North American Chapter of the Association for Computational Linguistics
   year: 2021
   type: conference
-  thrusts: [rsi]
+  thrusts: [language]
   selected: true
+  note: Demonstrations Track
+  note_short: Demonstrations Track
   links:
     ACL Anthology: "https://aclanthology.org/2021.naacl-demos.15/"
     Skill: "https://developer.amazon.com/en-US/docs/alexa/conversations/about-alexa-conversations.html"
@@ -187,7 +194,7 @@
   venue_full: Conference on Empirical Methods in Natural Language Processing
   year: 2021
   type: conference
-  thrusts: [scarcity]
+  thrusts: [language]
   links:
     ACL Anthology: "https://aclanthology.org/2021.emnlp-main.499/"
     Code: "https://github.com/midas-research/gupshup"
@@ -242,7 +249,9 @@
   title: Stability Analysis Of Delayed System Using Bode's Integral
   authors: [A Acharya, D Mitra, K Halder]
   venue: ICCCI 2013
-  venue_full: International Conference on Computer Communication and the Internet
+  # "Informatics", not "the Internet": per Crossref for DOI 10.1109/iccci.2013.6466311 the
+  # proceedings are the 2013 International Conference on Computer Communication and Informatics.
+  venue_full: International Conference on Computer Communication and Informatics
   year: 2013
   type: conference
   thrusts: [origins]

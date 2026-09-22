@@ -4,8 +4,27 @@
 # one line, roughly 70 characters or less. Anything longer is clipped with an
 # ellipsis (full text stays available as the link title).
 #
-# Fields: year (int), what (short), url (optional),
+# Fields: year (int), when (season, optional), what (short),
 #         kind: milestone | paper | patent | launch | talk | award | role | press
+#         links (optional) label -> url
+#
+# ALL links live in `links`. There is no `url` field any more: the row text is
+# never itself a hyperlink. Before, a launch showed named links on the right, a
+# paper buried its link under the row text, and a talk showed nothing at all —
+# three treatments, and no way to see which rows had material attached without
+# hovering every one. Now the right-hand column is the only place links appear,
+# so the presence of material is visible at a glance.
+#
+# Label by what the reader gets, not by the row's kind: OpenReview, PMLR, arXiv,
+# IEEE Xplore, ACL Anthology, ScienceDirect, Proceedings, Patent, Thesis, Docs,
+# Blog, Product, Code, Video, Article, Thread, Announcement. Talk rows use
+# `Paper` for the work presented and `Venue` for the event page — on a talk row
+# the reader's question is "where is the work", so `Paper` beats naming the host.
+#
+# Put the canonical link first; other views take whichever comes first.
+# Use `links` rather than inventing a row per link: the Research experience
+# section is deliberately bare, so every launch link must be reachable from here,
+# but "— docs" is not a news event.
 
 - year: 2026
   kind: talk
@@ -15,32 +34,42 @@
   kind: talk
   when: Fall
   what: "Oral, Amazon ML Conference — Robust LLM Jury"
+  links:
+    Paper: "https://openreview.net/pdf?id=Rvj0jSb86u"
 - year: 2026
   kind: launch
   when: Summer
   what: "AI-Assisted Product Listing — AWS Summit NY"
-  url: "https://aws.amazon.com/about-aws/whats-new/2026/06/ai-assisted-product-listing/"
+  links:
+    Blog: "https://aws.amazon.com/about-aws/whats-new/2026/06/ai-assisted-product-listing/"
+    Docs: "https://docs.aws.amazon.com/marketplace/latest/userguide/ai-assisted-product-listing.html"
+    Video: "https://www.youtube.com/watch?v=Vuz9l-NrYug&t=39s"
 - year: 2026
   kind: launch
   what: "AWS Partner Central — partner onboarding agent"
-  url: "https://docs.aws.amazon.com/partner-central/latest/getting-started/partner-onboarding-agent.html"
+  links:
+    Docs: "https://docs.aws.amazon.com/partner-central/latest/getting-started/partner-onboarding-agent.html"
 - year: 2026
   kind: launch
   what: "AWS Partner Central — partner funding agent"
-  url: "https://docs.aws.amazon.com/partner-central/latest/getting-started/partner-funding-agent.html"
+  links:
+    Docs: "https://docs.aws.amazon.com/partner-central/latest/getting-started/partner-funding-agent.html"
 - year: 2026
   kind: launch
   what: "AWS Partner Central MCP server"
-  url: "https://docs.aws.amazon.com/partner-central/latest/APIReference/partner-central-mcp-server.html"
+  links:
+    Docs: "https://docs.aws.amazon.com/partner-central/latest/APIReference/partner-central-mcp-server.html"
 - year: 2026
   kind: paper
   when: Summer
   what: "RoPoLL: Robust Panel of LLM Judges — ICML 2026"
-  url: "https://openreview.net/pdf?id=Rvj0jSb86u"
+  links:
+    OpenReview: "https://openreview.net/pdf?id=Rvj0jSb86u"
 - year: 2026
   kind: paper
   what: "OrchOpt: orchestration architecture search — COLM 2026"
-  url: "https://openreview.net/pdf?id=y6ArPzGAug"
+  links:
+    OpenReview: "https://openreview.net/pdf?id=y6ArPzGAug"
 - year: 2026
   kind: award
   when: Spring
@@ -49,14 +78,21 @@
   kind: talk
   when: Summer
   what: "Multi-Agent Optimization — AWS Marketplace Science, NYC"
+  links:
+    Paper: "https://openreview.net/pdf?id=y6ArPzGAug"
 - year: 2026
   kind: talk
   when: Summer
   what: "Agent Optimization — AI Across AWS, Austin"
+  links:
+    Paper: "https://openreview.net/pdf?id=y6ArPzGAug"
 - year: 2026
   kind: talk
   when: Summer
   what: "Robust LLM Jury — ICML 2026, Seoul"
+  links:
+    Paper: "https://openreview.net/pdf?id=Rvj0jSb86u"
+    Venue: "https://icml.cc/"
 - year: 2026
   kind: talk
   when: Spring
@@ -70,7 +106,8 @@
   kind: milestone
   when: Spring
   what: "PhD, Electrical and Computer Engineering — UT Austin"
-  url: "https://repositories.lib.utexas.edu/items/60cdbaf7-6899-40af-b1aa-a6e23ba9749e"
+  links:
+    Thesis: "https://repositories.lib.utexas.edu/items/60cdbaf7-6899-40af-b1aa-a6e23ba9749e"
 - year: 2025
   kind: role
   when: Spring
@@ -79,16 +116,45 @@
   kind: launch
   when: Fall
   what: "AWS Marketplace Agent Mode — re:Invent"
-  url: "https://aws.amazon.com/marketplace/agentmode/#/"
+  links:
+    Product: "https://aws.amazon.com/marketplace/agentmode/#/"
+    Announcement: "https://aws.amazon.com/about-aws/whats-new/2025/11/aws-marketplace-agent-mode-ai-enhanced-search/"
+- year: 2025
+  kind: press
+  when: Fall
+  what: "Agent Mode — ZDNet"
+  links:
+    Article: "https://www.zdnet.com/article/ai-agents-see-explosive-growth-on-aws-marketplace-over-40x-the-teams-initial-targets/"
+- year: 2025
+  kind: press
+  when: Fall
+  what: "Agent Mode — CRN"
+  links:
+    Article: "https://www.crn.com/news/cloud/2025/aws-marketplace-gets-ai-injection-and-huge-new-benefits-5-keys-to-know"
+- year: 2025
+  kind: press
+  when: Fall
+  what: "Agent Mode — The Ravit Show"
+  links:
+    Video: "https://www.youtube.com/watch?v=w3ffU4KAkrk"
+- year: 2025
+  kind: press
+  when: Fall
+  what: "Agent Mode — Inside Partnering"
+  links:
+    Video: "https://youtu.be/6SAYlRZh1XA?si=JC8mj1jB3ryPGFWc"
 - year: 2025
   kind: paper
   when: Summer
   what: "Geometric Median Matching — ICML 2025"
-  url: "https://openreview.net/pdf?id=pxfpGbeVx2"
+  links:
+    OpenReview: "https://openreview.net/pdf?id=pxfpGbeVx2"
 - year: 2025
   kind: talk
   when: Fall
   what: "Robust Sampling — AFSS, Seattle"
+  links:
+    Paper: "https://proceedings.mlr.press/v267/acharya25b.html"
 - year: 2025
   kind: role
   when: Fall
@@ -97,48 +163,61 @@
 - year: 2024
   kind: paper
   what: "Neural Distributed Source Coding — IEEE JSAIT"
-  url: "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10557705"
+  links:
+    IEEE Xplore: "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10557705"
 - year: 2024
   kind: role
   when: Summer
   what: "Head of AI Research, Eidon AI"
-  url: "https://docs.eidon.ai/the-network/eidon-state"
+- year: 2025
+  kind: launch
+  what: "Eidon State — multi-agent point-based system"
+  links:
+    Docs: "https://docs.eidon.ai/the-network/eidon-state"
 
 - year: 2023
   kind: talk
   when: Fall
   what: "Keynote and panel — FOCA 2023, Austin"
+  links:
+    Venue: "https://groupfuturistaevent.com/FOCA2023/"
 
 - year: 2022
   kind: patent
   when: Summer
   what: "US 11393454 — Goal Oriented Dialog Generation"
-  url: "https://patentimages.storage.googleapis.com/e6/63/6a/f06b172a2d2d00/US11393454.pdf"
+  links:
+    Patent: "https://patentimages.storage.googleapis.com/e6/63/6a/f06b172a2d2d00/US11393454.pdf"
 - year: 2022
   kind: paper
   when: Spring
   what: "BGMD: Block Coordinate Geometric Median Descent — AISTATS"
-  url: "https://proceedings.mlr.press/v151/acharya22a/acharya22a.pdf"
+  links:
+    PMLR: "https://proceedings.mlr.press/v151/acharya22a/acharya22a.pdf"
 - year: 2022
   kind: paper
   when: Summer
   what: "Non-Convex Federated Learning with Momentum — UAI 2022"
-  url: "https://openreview.net/pdf?id=SSlLRUIs9e9"
+  links:
+    OpenReview: "https://openreview.net/pdf?id=SSlLRUIs9e9"
 - year: 2022
   kind: paper
   when: Summer
   what: "Positive Unlabeled Contrastive Learning — ICML 2022"
-  url: "https://arxiv.org/abs/2206.01206"
+  links:
+    arXiv: "https://arxiv.org/abs/2206.01206"
 - year: 2022
   kind: paper
   when: Fall
   what: "LDKP: keyphrases from long documents — CIKM 2022"
-  url: "https://arxiv.org/pdf/2203.15349.pdf"
+  links:
+    arXiv: "https://arxiv.org/pdf/2203.15349.pdf"
 - year: 2022
   kind: award
   when: Spring
   what: "Meta PhD Research Fellowship Finalist"
-  url: "https://research.facebook.com/blog/2022/2/announcing-the-recipients-of-the-2022-meta-phd-research-fellowship/"
+  links:
+    Announcement: "https://research.facebook.com/blog/2022/2/announcing-the-recipients-of-the-2022-meta-phd-research-fellowship/"
 - year: 2022
   kind: talk
   when: Fall
@@ -152,16 +231,19 @@
   kind: paper
   when: Spring
   what: "Alexa Conversations — NAACL 2021"
-  url: "https://aclanthology.org/2021.naacl-demos.15/"
+  links:
+    ACL Anthology: "https://aclanthology.org/2021.naacl-demos.15/"
 - year: 2021
   kind: paper
   what: "Multiple Gossip Steps in Federated Learning — IEEE TPDS"
-  url: "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9664349"
+  links:
+    IEEE Xplore: "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9664349"
 - year: 2021
   kind: paper
   when: Fall
   what: "GupShup: code-switched summarization — EMNLP 2021"
-  url: "https://aclanthology.org/2021.emnlp-main.499/"
+  links:
+    ACL Anthology: "https://aclanthology.org/2021.emnlp-main.499/"
 - year: 2021
   kind: award
   when: Spring
@@ -178,22 +260,31 @@
   kind: patent
   when: Winter
   what: "US 10872601 — on-device NLP via embedding compression"
-  url: "https://patentimages.storage.googleapis.com/d1/a8/7a/77210494b73af9/US10872601.pdf"
+  links:
+    Patent: "https://patentimages.storage.googleapis.com/d1/a8/7a/77210494b73af9/US10872601.pdf"
 - year: 2020
   kind: press
   when: Fall
   what: "Alexa Conversations — CNN"
-  url: "https://www.cnn.com/2020/09/25/tech/amazon-alexa-conversational-ai/index.html"
+  links:
+    Article: "https://www.cnn.com/2020/09/25/tech/amazon-alexa-conversational-ai/index.html"
 - year: 2020
   kind: launch
   when: Summer
   what: "Alexa Conversations launched at Alexa Live"
-  url: "https://youtu.be/1nYfRvg976E"
+  links:
+    Video: "https://youtu.be/1nYfRvg976E"
+    Docs: "https://developer.amazon.com/en-US/docs/alexa/conversations/about-alexa-conversations.html"
 - year: 2020
   kind: role
   when: Summer
   what: "Research Scientist intern — Microsoft Research"
-  url: "https://github.com/microsoft/OpenMSFTL"
+- year: 2020
+  kind: launch
+  when: Summer
+  what: "OpenMSFTL — open-source federated learning platform"
+  links:
+    Code: "https://github.com/microsoft/OpenMSFTL"
 
 - year: 2019
   kind: milestone
@@ -203,42 +294,51 @@
   kind: paper
   when: Spring
   what: "Online Embedding Compression — AAAI 2019, spotlight"
-  url: "https://www.aaai.org/ojs/index.php/AAAI/article/view/4578"
+  links:
+    Proceedings: "https://www.aaai.org/ojs/index.php/AAAI/article/view/4578"
 - year: 2019
   kind: press
   when: Summer
   what: "Alexa Conversations — Forbes"
-  url: "https://www.forbes.com/sites/cognitiveworld/2019/06/12/amazon-advances-conversational-applications/"
+  links:
+    Article: "https://www.forbes.com/sites/cognitiveworld/2019/06/12/amazon-advances-conversational-applications/"
 - year: 2019
   kind: press
   when: Summer
   what: "Alexa Conversations — VentureBeat"
-  url: "https://www.youtube.com/watch?v=hEIjCF-KaRY"
+  links:
+    Video: "https://www.youtube.com/watch?v=hEIjCF-KaRY"
 - year: 2019
   kind: press
   when: Summer
   what: "Alexa Conversations — Amazon Science"
-  url: "https://www.amazon.science/blog/amazon-unveils-novel-alexa-dialog-modeling-for-natural-cross-skill-conversations"
+  links:
+    Article: "https://www.amazon.science/blog/amazon-unveils-novel-alexa-dialog-modeling-for-natural-cross-skill-conversations"
 - year: 2019
   kind: press
   when: Winter
   what: "Embedding compression — Amazon Science"
-  url: "https://www.amazon.science/blog/new-method-for-compressing-neural-networks-better-preserves-accuracy"
+  links:
+    Article: "https://www.amazon.science/blog/new-method-for-compressing-neural-networks-better-preserves-accuracy"
 - year: 2019
   kind: press
   when: Winter
   what: "Embedding compression — Packt"
-  url: "https://hub.packtpub.com/amazon-alexa-ai-researchers-develop-new-method-to-compress-neural-networks-and-preserves-accuracy-of-system/"
+  links:
+    Article: "https://hub.packtpub.com/amazon-alexa-ai-researchers-develop-new-method-to-compress-neural-networks-and-preserves-accuracy-of-system/"
 - year: 2019
   kind: press
   when: Winter
   what: "Embedding compression — Hacker News"
-  url: "https://news.ycombinator.com/item?id=18912182"
+  links:
+    Thread: "https://news.ycombinator.com/item?id=18912182"
 
 - year: 2018
   kind: talk
   when: Summer
   what: "Oral — Amazon Machine Learning Conference, Seattle"
+  links:
+    Paper: "https://www.aaai.org/ojs/index.php/AAAI/article/view/4578"
 - year: 2018
   kind: role
   when: Summer
@@ -275,11 +375,13 @@
 - year: 2014
   kind: paper
   what: "Analog Butterworth filters, fractional domain — Elsevier"
-  url: "https://www.sciencedirect.com/science/article/abs/pii/S0165168413002910"
+  links:
+    ScienceDirect: "https://www.sciencedirect.com/science/article/abs/pii/S0165168413002910"
 - year: 2014
   kind: paper
   what: "Optimum PID for Lorenz-like attractors — Elsevier"
-  url: "https://www.sciencedirect.com/science/article/abs/pii/S0378475414000469"
+  links:
+    ScienceDirect: "https://www.sciencedirect.com/science/article/abs/pii/S0378475414000469"
 - year: 2014
   kind: role
   when: Summer
@@ -292,25 +394,30 @@
 - year: 2013
   kind: paper
   what: "Delayed system stability via Bode's integral — ICCCI"
-  url: "https://ieeexplore.ieee.org/abstract/document/6466311"
+  links:
+    IEEE Xplore: "https://ieeexplore.ieee.org/abstract/document/6466311"
 
 - year: 2012
   kind: paper
   what: "Optimum PID control of multi-wing attractors — ICCCNT"
-  url: "https://ieeexplore.ieee.org/abstract/document/6396002"
+  links:
+    IEEE Xplore: "https://ieeexplore.ieee.org/abstract/document/6396002"
 - year: 2012
   kind: paper
   what: "Fractional-order analog filter quality factor — ICCCNT"
-  url: "https://ieeexplore.ieee.org/abstract/document/6396000"
+  links:
+    IEEE Xplore: "https://ieeexplore.ieee.org/abstract/document/6396000"
 - year: 2012
   kind: paper
   what: "ANN identification of nonlinear systems — PDGC"
-  url: "https://ieeexplore.ieee.org/abstract/document/6449856"
+  links:
+    IEEE Xplore: "https://ieeexplore.ieee.org/abstract/document/6449856"
 
 - year: 2011
   kind: paper
   what: "First publication — AC servo identification, ICEAS"
-  url: "https://ieeexplore.ieee.org/abstract/document/6147165/"
+  links:
+    IEEE Xplore: "https://ieeexplore.ieee.org/abstract/document/6147165/"
 
 - year: 2009
   kind: award
@@ -333,4 +440,6 @@
   kind: award
   when: Spring
   what: "State Rank 5 of ~700,000 — West Bengal Board"
-  url: "https://www.telegraphindia.com/west-bengal/upswing-in-city-pass-rate/cid/1005795"
+  links:
+    Article: "https://www.telegraphindia.com/west-bengal/upswing-in-city-pass-rate/cid/1005795"
+    Coverage: "https://www.telegraphindia.com/india/leap-leak-in-madhyamik/cid/707350"

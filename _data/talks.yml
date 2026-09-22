@@ -177,3 +177,47 @@
   host: Amazon Machine Learning Conference (AMLC)
   title: Efficient ML
   kind: Oral
+
+# Undergraduate IEEE conference presentations (BE, Jadavpur University) — the oral
+# presentations of the five IEEE papers in papers.yml.
+#
+# Cities and dates come from Crossref event metadata for each paper's DOI, which
+# records the conference name, host city and exact run dates (IEEE Xplore returns
+# 418 to automated fetches, so Crossref is the usable source):
+#   ICCCI 2013   10.1109/iccci.2013.6466311   Coimbatore    Jan 4-6, 2013
+#   PDGC 2012    10.1109/pdgc.2012.6449856    Solan         Dec 6-8, 2012
+#   ICCCNT 2012  10.1109/icccnt.2012.63960xx  Coimbatore    Jul 26-28, 2012
+#   ICEAS 2011   10.1109/iceas.2011.6147165   Bhubaneswar   Dec 28-30, 2011
+# Ordered by those true dates, so PDGC (December) precedes ICCCNT (July) within
+# 2012. The two Decembers carry different season labels on purpose: Dec 6-8 falls
+# in the Fall term, Dec 28-30 is past the solstice and reads as Winter.
+
+- when: Winter 2013
+  where: Coimbatore, India
+  host: IEEE ICCCI 2013
+  title: Stability of Delayed Systems
+  kind: Oral
+
+- when: Fall 2012
+  where: Solan, India
+  host: IEEE PDGC 2012
+  title: Neural Network System Identification
+  kind: Oral
+
+- when: Summer 2012
+  where: Coimbatore, India
+  host: IEEE ICCCNT 2012
+  title: Chaos Control via Optimal PID
+  kind: Oral
+
+- when: Summer 2012
+  where: Coimbatore, India
+  host: IEEE ICCCNT 2012
+  title: Fractional Order Analog Filters
+  kind: Oral
+
+- when: Winter 2011
+  where: Bhubaneswar, India
+  host: IEEE ICEAS 2011
+  title: System Identification under Fractional Gaussian Noise
+  kind: Oral

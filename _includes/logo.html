@@ -1,0 +1,15 @@
+{%- comment -%}
+Institution mark as a rounded square tile — the LinkedIn treatment.
+
+Built locally from official sources (Wikipedia SVGs, apple-touch-icons, site
+assets): each mark is trimmed, then either used edge-to-edge when it already
+carries a brand-coloured background (Amazon orange, SLB blue, TTIC, Eidon,
+Microsoft) or inset on a white tile when it doesn't. All are 160px (4x display)
+with a rounded-corner alpha mask, so no CSS container is needed.
+Usage: {% include logo.html logo=x %}
+{%- endcomment -%}
+<div class="job-logo">
+  {%- if include.logo and include.logo != "" %}
+  <img src="{{ '/img/logos/' | append: include.logo | append: '.png' | relative_url }}" alt="" loading="lazy">
+  {%- endif %}
+</div>

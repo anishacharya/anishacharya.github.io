@@ -1,0 +1,307 @@
+# Single source of truth for all publications.
+# Reconciled against ~/Desktop/portfolio/CV_ANISH/publication.tex (the active CV).
+#
+# Every publication page is a *view* over this file. To add a paper, append an
+# entry here and it appears on the home page, /papers, and /research
+# automatically. Never edit the generated pages directly.
+#
+# Fields:
+#   key         unique slug. Also the thumbnail filename: img/papers/<key>.png
+#   title       full title
+#   authors     list; write "A Acharya" for yourself so templates can bold it
+#   venue       short venue, shown on cards
+#   venue_full  spelled-out venue, shown on /papers
+#   year        integer, used for grouping
+#   type        conference | journal | workshop | preprint
+#   thrusts     robust | optim | scarcity | language | origins  (groups /research; a list)
+#               FIRST entry is the primary home: /research renders the full entry there once
+#               and cross-references it from the others, so no paper is listed twice.
+#   selected    true to surface on the home page
+#   thumb       false if there is no rendered cover in img/papers/
+#   note        long qualifier; note_short is the card version
+#   links       label -> url  (empty strings are skipped at render time)
+#   also        earlier / extended versions
+
+# ─────────────────────────── 2026 ───────────────────────────
+
+- key: ropoll
+  title: "RoPoLL: Robust Panel of LLM Judges"
+  authors: [A Acharya, K Pan, B Verkhovsky]
+  venue: ICML 2026
+  venue_full: International Conference on Machine Learning
+  year: 2026
+  type: workshop
+  thrusts: [robust]
+  selected: true
+  note: Workshop on Statistical Frameworks for Uncertainty in Agentic Systems (AgenticUQ)
+  note_short: AgenticUQ Workshop
+  links:
+    OpenReview: "https://openreview.net/pdf?id=Rvj0jSb86u"
+    arXiv: "https://arxiv.org/abs/2606.30931"
+    Amazon Science: "https://www.amazon.science/publications/ropoll-robust-panel-of-llm-judges"
+
+- key: orchopt
+  thumb: false
+  title: "OrchOpt: Validation-Gated Architecture Search for Self-Organizing Multi-Agent Orchestration"
+  authors: [A Dhanda, S A Niaki, A Acharya, B Verkhovsky]
+  venue: COLM 2026
+  venue_full: Conference on Language Modeling
+  year: 2026
+  type: workshop
+  thrusts: [optim]
+  selected: true
+  note: "2nd Workshop on Lifelong Agents: Learning, Aligning, and Evolving"
+  note_short: Lifelong Agents Workshop
+  links:
+    OpenReview: "https://openreview.net/pdf?id=y6ArPzGAug"
+
+# ─────────────────────────── 2025 ───────────────────────────
+
+- key: gm-matching
+  title: Geometric Median Matching for Robust k-Subset Selection from Noisy Data
+  authors: [A Acharya, S Sanghavi, A G Dimakis, I S Dhillon]
+  venue: ICML 2025
+  venue_full: International Conference on Machine Learning
+  year: 2025
+  type: conference
+  thrusts: [robust, optim, scarcity]
+  selected: true
+  links:
+    PMLR: "https://proceedings.mlr.press/v267/acharya25b.html"
+    OpenReview: "https://openreview.net/pdf?id=pxfpGbeVx2"
+    arXiv: "https://arxiv.org/pdf/2504.00564"
+  also:
+    - "Short version: ICML 2024 FMWild Workshop"
+
+# ─────────────────────────── 2024 ───────────────────────────
+
+- key: ndsc
+  title: Neural Distributed Source Coding
+  authors: [A Nagle, J Whang, A Acharya, H Kim, A Dimakis]
+  venue: IEEE JSAIT 2024
+  venue_full: "IEEE Journal on Selected Areas in Information Theory"
+  year: 2024
+  type: journal
+  thrusts: [scarcity]
+  links:
+    IEEE Xplore: "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10557705"
+    arXiv: "https://arxiv.org/pdf/2106.02797"
+
+# ─────────────────────────── 2022 ───────────────────────────
+
+- key: momentum-fl
+  title: Faster Non-Convex Federated Learning via Global and Local Momentum
+  authors: [R Das, A Acharya, A Hashemi, S Sanghavi, I Dhillon, U Topcu]
+  venue: UAI 2022
+  venue_full: Conference on Uncertainty in Artificial Intelligence
+  year: 2022
+  type: conference
+  thrusts: [optim]
+  note: Spotlight (short oral)
+  note_short: Spotlight
+  links:
+    OpenReview: "https://openreview.net/pdf?id=SSlLRUIs9e9"
+    arXiv: "https://arxiv.org/abs/2012.04061"
+
+- key: bgmd
+  title: Robust Training in High Dimensions via Block Coordinate Geometric Median Descent
+  authors: [A Acharya, A Hashemi, P Jain, S Sanghavi, I Dhillon, U Topcu]
+  venue: AISTATS 2022
+  venue_full: International Conference on Artificial Intelligence and Statistics
+  year: 2022
+  type: conference
+  thrusts: [robust, optim]
+  selected: true
+  note: Spotlight — recorded talk, virtual conference
+  note_short: Spotlight
+  links:
+    PMLR: "https://proceedings.mlr.press/v151/acharya22a/acharya22a.pdf"
+    Code: "https://github.com/anishacharya/BGMD"
+    Poster: "https://github.com/anishacharya/BGMD/blob/main/poster_aistats.pdf"
+    Slides: "https://github.com/anishacharya/BGMD/blob/main/slides_aistats.pdf"
+  also:
+    - "Short version: Joint IFML/CCSI Symposium (Simons Institute, UC Berkeley)"
+    - "Short version: NSF-TRIPODS Workshop on Communication Efficient Distributed Optimization"
+
+- key: pu-contrastive
+  title: Positive Unlabeled Contrastive Learning
+  authors: [A Acharya, S Sanghavi, L Jing, B Bhushanam, D Choudhary, M Rabbat, I Dhillon]
+  venue: ICML 2022
+  venue_full: International Conference on Machine Learning
+  year: 2022
+  type: workshop
+  thrusts: [robust]
+  note: Principles of Distribution Shift (PODS) Workshop
+  note_short: PODS Workshop
+  links:
+    Proceedings: "https://icml.cc/virtual/2022/20580"
+    arXiv: "https://arxiv.org/abs/2206.01206"
+  also:
+    - "Extended version: Understanding Contrastive Representation Learning from Positive Unlabeled (PU) Data — arXiv:2402.06038"
+    - "Short version: Simons Institute, UC Berkeley — Data-Driven Decision Processes Workshop"
+
+- key: ldkp
+  thumb: false
+  title: "LDKP: A Dataset for Identifying Keyphrases from Long Scientific Documents"
+  authors: [D Mahata, N Agarwal, D Gautam, A Kumar, S Parekh, Y K Singla, A Acharya, R R Shah]
+  venue: CIKM 2022
+  venue_full: ACM International Conference on Information and Knowledge Management
+  year: 2022
+  type: workshop
+  thrusts: [language]
+  note: "DL4SR'22: Workshop on Deep Learning for Search and Recommendation"
+  note_short: DL4SR Workshop
+  links:
+    CEUR-WS: "https://ceur-ws.org/Vol-3317/Paper9.pdf"
+    arXiv: "https://arxiv.org/pdf/2203.15349.pdf"
+    HF Dataset: "https://huggingface.co/datasets/midas/ldkp3k"
+
+# ─────────────────────────── 2021 ───────────────────────────
+
+- key: gossip
+  title: On the Benefits of Multiple Gossip Steps in Communication Constrained Federated Learning
+  authors: [A Hashemi, A Acharya, R Das, H Vikalo, S Sanghavi, I Dhillon]
+  venue: IEEE TPDS 2021
+  venue_full: "IEEE Transactions on Parallel and Distributed Systems"
+  year: 2021
+  type: journal
+  thrusts: [scarcity, optim]
+  links:
+    IEEE Xplore: "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9664349"
+    Code: "https://github.com/anishacharya/DeLiCoCo"
+
+- key: alexa-conversations
+  title: "Alexa Conversations: An Extensible Data-driven Approach for Building Task-oriented Dialogue Systems"
+  authors: [A Acharya, "and 30 others"]
+  authors_full: [A Acharya, S Adhikari, S Agarwal, V Auvray, N Belgamwar, A Biswas, S Chandra, T Chung, M Zarandi, R Gabriel, S Gao, R Goel, D Hakkani-Tur, J Jezabek, A Jha, J Kao, P Krishnan, P Ku, A Goyal, C Lin, Q Liu, A Mandal, A Metallinou, V Naik, Y Pan, S Paul, V Perera, A Sethi, M Shen, N Strom, E Wang]
+  venue: NAACL 2021
+  venue_full: Conference of the North American Chapter of the Association for Computational Linguistics
+  year: 2021
+  type: conference
+  thrusts: [language]
+  selected: true
+  note: Demonstrations Track
+  note_short: Demonstrations Track
+  links:
+    ACL Anthology: "https://aclanthology.org/2021.naacl-demos.15/"
+    Skill: "https://developer.amazon.com/en-US/docs/alexa/conversations/about-alexa-conversations.html"
+
+- key: gupshup
+  thumb: false
+  title: "GupShup: An Annotated Corpus for Abstractive Summarization of Open-Domain Code-Switched Conversations"
+  authors: [L Mehnaz, D Mahata, A Kumar, U S Gunturi, R Jain, G Gupta, R Gosangi, I G Lee, A Acharya, R Shah]
+  venue: EMNLP 2021
+  venue_full: Conference on Empirical Methods in Natural Language Processing
+  year: 2021
+  type: conference
+  thrusts: [language]
+  links:
+    ACL Anthology: "https://aclanthology.org/2021.emnlp-main.499/"
+    Code: "https://github.com/midas-research/gupshup"
+
+# ─────────────────────────── 2019 ───────────────────────────
+
+- key: embedding-compression
+  title: Online Embedding Compression for Text Classification using Low Rank Matrix Factorization
+  authors: [A Acharya, R Goel, A Metallinou, I Dhillon]
+  venue: AAAI 2019
+  venue_full: AAAI Conference on Artificial Intelligence
+  year: 2019
+  type: conference
+  thrusts: [scarcity]
+  note: Spotlight — 5-minute presentation
+  note_short: Spotlight
+  selected: true
+  links:
+    Proceedings: "https://www.aaai.org/ojs/index.php/AAAI/article/view/4578"
+    Code: "https://github.com/anishacharya/Online-Embedding-Compression-AAAI-2019"
+
+# ─────── Early work: control theory and signal processing (Jadavpur) ───────
+
+- key: butterworth
+  thumb: false
+  title: Extending The Concept of Analog Butterworth Filter For Fractional Domain
+  authors: [A Acharya, S Das, I Pan, S Das]
+  venue: Signal Processing 2014
+  venue_full: "Signal Processing (Elsevier)"
+  year: 2014
+  type: journal
+  thrusts: [origins]
+  links:
+    ScienceDirect: "https://www.sciencedirect.com/science/article/abs/pii/S0165168413002910"
+    arXiv: "https://arxiv.org/pdf/1210.8194"
+
+- key: lorenz-pid
+  thumb: false
+  title: Simulation studies on the design of optimum PID controllers to suppress chaotic oscillations in a family of Lorenz-like multi-wing attractors
+  authors: [S Das, A Acharya, I Pan]
+  venue: Math. Comp. Simulation 2014
+  venue_full: "Mathematics and Computers in Simulation (Elsevier)"
+  year: 2014
+  type: journal
+  thrusts: [origins, optim]
+  links:
+    ScienceDirect: "https://www.sciencedirect.com/science/article/abs/pii/S0378475414000469"
+    arXiv: "https://arxiv.org/pdf/1611.09844"
+
+- key: bode
+  thumb: false
+  title: Stability Analysis Of Delayed System Using Bode's Integral
+  authors: [A Acharya, D Mitra, K Halder]
+  venue: ICCCI 2013
+  # "Informatics", not "the Internet": per Crossref for DOI 10.1109/iccci.2013.6466311 the
+  # proceedings are the 2013 International Conference on Computer Communication and Informatics.
+  venue_full: International Conference on Computer Communication and Informatics
+  year: 2013
+  type: conference
+  thrusts: [origins]
+  links:
+    IEEE Xplore: "https://ieeexplore.ieee.org/abstract/document/6466311"
+
+- key: multiwing
+  thumb: false
+  title: Optimum PID Control of Multi-wing Attractors in A Family of Lorenz-like Chaotic Systems
+  authors: [A Acharya, S Das, I Pan]
+  venue: ICCCNT 2012
+  venue_full: International Conference on Computing, Communication and Networking Technologies
+  year: 2012
+  type: conference
+  thrusts: [origins, optim]
+  links:
+    IEEE Xplore: "https://ieeexplore.ieee.org/abstract/document/6396002"
+
+- key: fractional-q
+  thumb: false
+  title: Optimized Quality Factor of Fractional Order Analog Filters with Band-Pass and Band-Stop Characteristics
+  authors: [A Pakhira, S Das, A Acharya, I Pan, S Saha]
+  venue: ICCCNT 2012
+  venue_full: International Conference on Computing, Communication and Networking Technologies
+  year: 2012
+  type: conference
+  thrusts: [origins, optim]
+  links:
+    IEEE Xplore: "https://ieeexplore.ieee.org/abstract/document/6396000"
+
+- key: nonlinear-ann
+  thumb: false
+  title: "Identification of nonlinear systems from the knowledge around different operating conditions: a feed-forward multilayer Artificial Neural Net (ANN) based approach"
+  authors: [S Saha, S Das, A Acharya, A Kumar, S Mukherjee, I Pan, A Gupta]
+  venue: PDGC 2012
+  venue_full: International Conference on Parallel, Distributed and Grid Computing
+  year: 2012
+  type: conference
+  thrusts: [origins]
+  links:
+    IEEE Xplore: "https://ieeexplore.ieee.org/abstract/document/6449856"
+
+- key: least-square
+  thumb: false
+  title: Least square and instrumental variable system identification of AC servo position control system with fractional Gaussian noise
+  authors: [S Das, A Kumar, I Pan, A Acharya, S Das, A Gupta]
+  venue: ICEAS 2011
+  venue_full: International Conference on Energy, Automation and Signal
+  year: 2011
+  type: conference
+  thrusts: [origins]
+  links:
+    IEEE Xplore: "https://ieeexplore.ieee.org/abstract/document/6147165/"

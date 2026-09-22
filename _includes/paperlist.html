@@ -1,0 +1,22 @@
+{%- comment -%}
+Compact list of papers for a theme panel. Title first, full venue beneath —
+stacked rather than columned, so long journal names have room and can never
+collide with the title.
+Usage: {% include paperlist.html items=array %}
+{%- endcomment -%}
+<ul class="paperlist">
+  {% for p in include.items %}
+  {% assign primary = "" %}
+  {% for l in p.links %}{% if l[1] != "" and primary == "" %}{% assign primary = l[1] %}{% endif %}{% endfor %}
+  <li>
+    <p class="pl-title">
+      {% if primary != "" %}<a href="{{ primary }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}
+    </p>
+    <p class="pl-venue">
+      {{ p.venue_full | default: p.venue }}{% unless p.type == "preprint" %}, {{ p.year }}{% else %} {{ p.year }}{% endunless %}
+      {%- if p.note_short and p.note_short contains "Spotlight" %} <span class="pl-tag">Spotlight</span>{% endif %}
+      {%- if p.note and p.note contains "Workshop" %} <span class="pl-sub">· {{ p.note_short }}</span>{% endif %}
+    </p>
+  </li>
+  {% endfor %}
+</ul>

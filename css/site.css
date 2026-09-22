@@ -1,0 +1,922 @@
+/* ---------------------------------------------------------------------------
+   anishacharya.github.io
+   Hand-written. No framework, no JavaScript, no web fonts, no CDN.
+   Single authoritative stylesheet — every class used by a template is defined
+   here, in page order: tokens, chrome, type, landing, research, publications,
+   generic rows, photos, footer, responsive, print.
+   --------------------------------------------------------------------------- */
+
+:root {
+  --ink:        #17171a;
+  --ink-soft:   #4c4c55;
+  --ink-faint:  #85858f;
+  --rule:       #e6e4df;
+  --rule-soft:  #f0eeea;
+  --bg:         #fdfcfa;
+  --card:       #ffffff;
+  --accent:     #b3401a;
+  --accent-dim: #f7ede8;
+  --measure:    52rem;
+  --prose:      44rem;
+
+  /* Chart series. Validated for CVD separation in both modes
+     (dataviz validator: dE 9.2 light / 9.4 dark). Light aqua is 2.82:1 on
+     white, so every coloured mark carries a direct label — never colour alone. */
+  --s1: #eb6834;
+  --s2: #1baf7a;
+  /* Publication-type dots. Validated all-pairs in both modes
+     (worst CVD dE 9.2 light / 9.4 dark). Each dot sits beside its own word,
+     so identity is never colour-alone. */
+  --t-conf: #2a78d6;
+  --t-jour: #eb6834;
+  --t-work: #1baf7a;
+  --t-pre:  #85858f;
+  /* News badge hues, one per kind. Validated 8-slot categorical set (worst
+     adjacent CVD dE 9.1 light / 8.4 dark). Labels stay ink — aqua, yellow and
+     magenta fail 3:1 as text on white, so the hue lives in fill and border. */
+  --k-paper: #2a78d6;  --k-role: #eb6834;  --k-talk: #1baf7a;
+  --k-award: #eda100;  --k-press: #e87ba4; --k-launch: #008300;
+  --k-milestone: #4a3aa7; --k-patent: #e34948;
+
+  --serif: Charter, "Bitstream Charter", "Sitka Text", Cambria, Georgia, serif;
+  --sans:  system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink:        #ecebe8;
+    --ink-soft:   #b0aeaa;
+    --ink-faint:  #83817d;
+    --rule:       #2f2e2c;
+    --rule-soft:  #232220;
+    --bg:         #131311;
+    --card:       #1a1a18;
+    --accent:     #ef8a5e;
+    --accent-dim: #24160f;
+    --s1: #d95926;
+    --s2: #199e70;
+    --t-conf: #3987e5;
+    --t-jour: #d95926;
+    --t-work: #199e70;
+    --t-pre:  #83817d;
+    --k-paper: #3987e5;  --k-role: #d95926;  --k-talk: #199e70;
+    --k-award: #c98500;  --k-press: #d55181; --k-launch: #008300;
+    --k-milestone: #9085e9; --k-patent: #e66767;
+  }
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { font-size: 17px; -webkit-text-size-adjust: 100%; }
+
+/* Background field. A dense cluster, a thin adversarial tail, and two estimator
+   markers: the research object itself, used as texture. Fixed, static, monochrome,
+   and very low contrast.
+   Deliberately not animated. Anything that moves while a reader is mid-sentence
+   reads as a marketing page, which is the one impression this site cannot afford.
+   The veil is what makes it feel intentional rather than tiled: a radial fade to
+   the page background so the field survives only at the edges and never sits
+   underneath a line of text. */
+.bg-layer {
+  position: fixed; inset: 0; z-index: -2;
+  pointer-events: none; color: var(--ink); opacity: 0.055;
+}
+.bg-layer svg { width: 100%; height: 100%; display: block; }
+.bg-veil {
+  position: fixed; inset: 0; z-index: -1; pointer-events: none;
+  background: radial-gradient(120% 70% at 50% -10%, transparent 0%, var(--bg) 78%);
+}
+@media print { .bg-layer, .bg-veil { display: none; } }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--serif);
+  line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap { max-width: var(--measure); margin: 0 auto; padding: 0 1.5rem; }
+
+/* --- Masthead ----------------------------------------------------------- */
+
+.masthead { border-bottom: 1px solid var(--rule); }
+.masthead-in {
+  max-width: var(--measure); margin: 0 auto; padding: 0.9rem 1.5rem;
+  display: flex; flex-wrap: wrap; align-items: baseline;
+  justify-content: space-between; gap: 0.4rem 1.5rem;
+}
+.masthead-name {
+  font-family: var(--sans); font-size: 0.95rem; font-weight: 600;
+  color: var(--ink); text-decoration: none;
+}
+.masthead nav { display: flex; flex-wrap: wrap; gap: 1.15rem; }
+.masthead nav a {
+  font-family: var(--sans); font-size: 0.85rem; color: var(--ink-soft);
+  text-decoration: none; padding-bottom: 2px;
+  border-bottom: 1.5px solid transparent;
+}
+.masthead nav a:hover { color: var(--accent); }
+.masthead nav a[aria-current="page"] { color: var(--ink); border-bottom-color: var(--accent); }
+
+/* --- Type --------------------------------------------------------------- */
+
+main { padding: 2.6rem 0 4.5rem; }
+
+h1, h2, h3 { font-family: var(--sans); line-height: 1.2; color: var(--ink); }
+h1 { font-size: 2.05rem; font-weight: 660; letter-spacing: -0.025em; margin: 0 0 1.2rem; }
+
+h2 {
+  font-size: 0.8rem; font-weight: 680; letter-spacing: 0.11em;
+  text-transform: uppercase; color: var(--ink-faint);
+  margin: 3rem 0 1.25rem; display: flex; align-items: center; gap: 0.9rem;
+}
+h2::after { content: ""; flex: 1 1 auto; height: 1px; background: var(--rule); }
+
+h3 { font-size: 1.12rem; font-weight: 620; margin: 2rem 0 0.55rem; }
+
+p { margin: 0 0 1.1rem; }
+
+a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--accent-dim); }
+a:hover { border-bottom-color: var(--accent); }
+
+.lede {
+  font-size: 1.08rem; color: var(--ink-soft);
+  margin-bottom: 2rem; max-width: var(--prose);
+}
+.me { color: var(--ink); font-weight: 650; }
+
+/* --- Landing: identity card --------------------------------------------- */
+
+.idcard {
+  display: grid; grid-template-columns: 136px 1fr; gap: 1.9rem;
+  align-items: start; padding: 0.5rem 0 0;
+}
+.portrait {
+  width: 136px; height: 136px; border-radius: 3px;
+  object-fit: cover; display: block;
+  filter: grayscale(100%) contrast(106%);
+  box-shadow: 0 0 0 1px var(--rule);
+}
+.idcard h1 { margin: 0 0 0.5rem; font-size: 1.9rem; }
+.ident { min-width: 0; }
+.titles {
+  font-family: var(--sans); font-size: 0.93rem; line-height: 1.55;
+  color: var(--ink-soft); margin: 0;
+}
+
+.idlinks {
+  list-style: none; margin: 0.95rem 0 0; padding: 0;
+  display: flex; flex-wrap: wrap; gap: 0.45rem;
+}
+.idlinks a {
+  display: inline-flex; align-items: center; gap: 0.42rem;
+  font-family: var(--sans); font-size: 0.83rem; font-weight: 500;
+  color: var(--ink-soft); text-decoration: none;
+  border: 1px solid var(--rule); border-radius: 6px;
+  padding: 0.32rem 0.68rem; background: var(--card);
+  transition: color .14s ease, border-color .14s ease;
+}
+.idlinks a:hover { color: var(--accent); border-color: var(--accent); }
+.idlinks svg {
+  width: 15px; height: 15px; flex: 0 0 auto;
+  fill: none; stroke: currentColor; stroke-width: 1.35;
+  stroke-linecap: round; stroke-linejoin: round;
+}
+
+/* pill links used outside the idcard (e.g. the CV page PDF link) */
+.quicklinks { display: flex; flex-wrap: wrap; gap: 0.5rem 0.55rem; }
+.quicklinks a {
+  font-family: var(--sans); font-size: 0.82rem; font-weight: 500;
+  color: var(--ink-soft); border: 1px solid var(--rule);
+  border-radius: 100px; padding: 0.26rem 0.8rem; background: var(--card);
+}
+.quicklinks a:hover { color: var(--accent); border-color: var(--accent); }
+
+.bio { margin: 1.9rem 0 0; max-width: var(--prose); }
+.bio p { font-size: 1.02rem; }
+
+/* two-column bare topic list */
+.interests { list-style: none; margin: 0; padding: 0; columns: 2; column-gap: 2.5rem; }
+.interests li {
+  font-family: var(--sans); font-size: 0.92rem; color: var(--ink-soft);
+  line-height: 1.45; padding: 0.24rem 0 0.24rem 0.95rem;
+  position: relative; break-inside: avoid;
+}
+.interests li::before {
+  content: ""; position: absolute; left: 0; top: 0.75em;
+  width: 4px; height: 4px; border-radius: 50%;
+  background: var(--accent); opacity: 0.65;
+}
+
+/* --- News: scrollable record (date · badge · one line) ------------------- */
+
+.newsbox {
+  max-height: 23rem; overflow-y: auto;
+  border: 1px solid var(--rule); border-radius: 8px;
+  background: var(--card); padding: 0.5rem 1.15rem 0.6rem;
+  scrollbar-width: thin;
+}
+.newsbox:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.news { list-style: none; margin: 0; padding: 0; }
+.news li {
+  display: grid; grid-template-columns: 6.4rem 4.9rem minmax(0, 1fr) auto;
+  gap: 0.7rem; padding: 0.28rem 0; align-items: center;
+}
+.news li > * { min-width: 0; }
+.nd {
+  font-family: var(--sans); font-size: 0.78rem; color: var(--ink-faint);
+  white-space: nowrap;
+}
+.tl-kind {
+  font-family: var(--sans); font-size: 0.63rem; font-weight: 650;
+  letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--ink); border: 1px solid var(--rule); border-radius: 3px;
+  padding: 0.07rem 0.3rem; text-align: center; white-space: nowrap;
+}
+.tl-paper     { background: color-mix(in srgb, var(--k-paper) 15%, transparent);     border-color: color-mix(in srgb, var(--k-paper) 48%, transparent); }
+.tl-role      { background: color-mix(in srgb, var(--k-role) 15%, transparent);      border-color: color-mix(in srgb, var(--k-role) 48%, transparent); }
+.tl-talk      { background: color-mix(in srgb, var(--k-talk) 15%, transparent);      border-color: color-mix(in srgb, var(--k-talk) 48%, transparent); }
+.tl-award     { background: color-mix(in srgb, var(--k-award) 18%, transparent);     border-color: color-mix(in srgb, var(--k-award) 52%, transparent); }
+.tl-press     { background: color-mix(in srgb, var(--k-press) 15%, transparent);     border-color: color-mix(in srgb, var(--k-press) 48%, transparent); }
+.tl-launch    { background: color-mix(in srgb, var(--k-launch) 15%, transparent);    border-color: color-mix(in srgb, var(--k-launch) 55%, transparent); }
+.tl-milestone { background: color-mix(in srgb, var(--k-milestone) 15%, transparent); border-color: color-mix(in srgb, var(--k-milestone) 50%, transparent); }
+.tl-patent    { background: color-mix(in srgb, var(--k-patent) 15%, transparent);    border-color: color-mix(in srgb, var(--k-patent) 48%, transparent); }
+.nw {                      /* one line, always */
+  font-size: 0.885rem; line-height: 1.4;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.nw a { color: var(--ink); border-bottom: none; }
+.nw a:hover { color: var(--accent); }
+/* Secondary links on a row (docs, video, reference) — present but quiet, so they
+   never compete with the event itself. Collapses to zero width when absent. */
+.nx { font-family: var(--sans); font-size: 0.76rem; white-space: nowrap; }
+.nx a { color: var(--ink-faint); border-bottom: none; }
+.nx a:hover { color: var(--accent); }
+
+/* --- Thesis block ------------------------------------------------------- */
+
+.thesis {
+  border-left: 2px solid color-mix(in srgb, var(--accent) 55%, transparent);
+  padding: 0.1rem 0 0.1rem 1rem;
+}
+.thesis-title {
+  font-family: var(--sans); font-size: 0.99rem; font-weight: 600;
+  line-height: 1.4; margin: 0 0 0.28rem;
+}
+.thesis-title a { color: var(--ink); border-bottom-color: var(--accent-dim); }
+.thesis-title a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+.thesis-meta { font-size: 0.87rem; color: var(--ink-soft); margin: 0; }
+
+/* --- Research ----------------------------------------------------------- */
+
+.research-hero { max-width: 49rem; padding: 0.35rem 0 1.4rem; }
+.research-eyebrow {
+  font-family: var(--sans); font-size: 0.72rem; font-weight: 700;
+  letter-spacing: 0.13em; text-transform: uppercase; color: var(--accent);
+  margin: 0 0 0.55rem;
+}
+.research-hero h1 {
+  max-width: 46rem; margin: 0 0 1rem; font-size: clamp(2.25rem, 5.5vw, 3.15rem);
+  line-height: 1.06; letter-spacing: -0.045em; font-weight: 690;
+}
+.research-deck {
+  max-width: 45rem; margin: 0 0 0.85rem; font-size: 1.14rem;
+  line-height: 1.58; color: var(--ink-soft);
+}
+.research-affiliation {
+  font-family: var(--sans); font-size: 0.84rem; color: var(--ink-faint);
+  margin: 0 0 1.35rem;
+}
+.research-affiliation span { padding: 0 0.3rem; color: var(--rule); }
+.research-proof {
+  list-style: none; display: flex; flex-wrap: wrap; gap: 0; margin: 0; padding: 0;
+  border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule);
+}
+.research-proof li {
+  font-family: var(--sans); font-size: 0.76rem; font-weight: 570;
+  color: var(--ink-soft); padding: 0.54rem 0.7rem 0.54rem 0;
+  margin-right: 0.7rem; white-space: nowrap;
+}
+.research-proof li:not(:last-child)::after {
+  content: "·"; color: var(--ink-faint); margin-left: 0.7rem;
+}
+.research-intro {
+  max-width: var(--prose); margin: 0 0 1.2rem; font-size: 1.01rem;
+  line-height: 1.66; color: var(--ink-soft);
+}
+
+/* Scientific figures are explanatory, not decorative. The shared primitives keep
+   the existing hand-authored SVGs legible in both color schemes. */
+.research-figure { color: var(--ink); }
+.research-figure svg { width: 100%; height: auto; display: block; }
+.research-figure-wide {
+  max-width: 37rem; margin: 1.1rem 0 0.65rem; padding: 0.45rem 1rem 0.2rem;
+  background: var(--rule-soft); border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+}
+.research-figure-wide svg { max-height: 116px; }
+.research-figure .pt      { fill: currentColor; opacity: 0.3; }
+.research-figure .pt-o    { fill: none; stroke: currentColor; stroke-width: 1.4; opacity: 0.6; }
+.research-figure .nd      { fill: currentColor; opacity: 0.34; }
+.research-figure .ax rect { fill: none; stroke: currentColor; opacity: 0.22; }
+.research-figure .ax-l    { stroke: currentColor; opacity: 0.28; fill: none; stroke-width: 1; }
+.research-figure .ed      { stroke: currentColor; opacity: 0.16; fill: none; stroke-width: 1; }
+.research-figure .bd      { fill: none; stroke: currentColor; opacity: 0.3; stroke-width: 1.1; stroke-dasharray: 4 3; }
+.research-figure .sp      { stroke: currentColor; opacity: 0.32; fill: none; stroke-width: 1; stroke-dasharray: 3 3; }
+.research-figure .bx      { fill: currentColor; fill-opacity: 0.08; stroke: currentColor; stroke-opacity: 0.3; }
+.research-figure .ar      { stroke: currentColor; opacity: 0.4; fill: none; stroke-width: 1.2; }
+.research-figure .ar-d    { stroke: currentColor; opacity: 0.4; fill: none; stroke-width: 1.1; stroke-dasharray: 3 3; }
+.research-figure .op      { font: 500 14px var(--serif); fill: currentColor; opacity: 0.45; }
+.research-figure .lb      { font: 500 10px var(--sans); fill: currentColor; opacity: 0.62; }
+.research-figure .sm      { font-size: 9px; }
+.research-figure .s1-f, .research-figure .s1-f-g circle { fill: var(--s1); }
+.research-figure .s1-o, .research-figure .s1-o-g circle { fill: none; stroke: var(--s1); stroke-width: 1.8; }
+.research-figure .s1-s      { stroke: var(--s1); opacity: 0.65; }
+.research-figure .s1-stroke { fill: none; stroke: var(--s1); stroke-width: 1.4; }
+.research-figure .s1-line   { fill: none; stroke: var(--s1); stroke-width: 1.8; }
+.research-figure .s1-t      { font: 600 10px var(--sans); fill: var(--s1); }
+.research-figure .s2-f, .research-figure .s2-f-g circle { fill: var(--s2); }
+.research-figure .s2-o-g circle { fill: none; stroke: var(--s2); stroke-width: 1.8; }
+.research-figure .s2-fill { fill: var(--s2); fill-opacity: 0.85; }
+.research-figure .s2-line { fill: none; stroke: var(--s2); stroke-width: 1.8; }
+.research-figure .s2-t    { font: 600 10px var(--sans); fill: var(--s2); }
+
+.research-spine {
+  display: grid; grid-template-columns: 1fr auto 1fr auto 1fr;
+  align-items: stretch; max-width: 47rem; margin: 0 0 0.9rem;
+}
+.spine-step {
+  display: flex; flex-direction: column; min-width: 0; padding: 0.85rem 0.8rem;
+  color: var(--ink); background: var(--card); border: 1px solid var(--rule);
+  border-radius: 4px; text-decoration: none;
+}
+.spine-step:hover { border-color: var(--accent); }
+.spine-year {
+  font-family: var(--sans); font-size: 0.67rem; letter-spacing: 0.08em;
+  color: var(--accent); margin-bottom: 0.16rem;
+}
+.spine-step strong { font-family: var(--sans); font-size: 0.96rem; line-height: 1.3; }
+.spine-step > span:not(.spine-year) { font-size: 0.84rem; color: var(--ink-soft); }
+.spine-step small {
+  font-family: var(--sans); font-size: 0.69rem; color: var(--ink-faint);
+  margin-top: 0.5rem; line-height: 1.35;
+}
+.spine-arrow {
+  align-self: center; font-family: var(--sans); color: var(--ink-faint);
+  padding: 0 0.5rem;
+}
+.research-quote {
+  margin: 1.15rem 0 0; padding: 0; border: 0; font-style: italic;
+  font-size: 1.04rem; color: var(--ink-soft);
+}
+
+.research-feature {
+  display: grid; grid-template-columns: 2.7rem minmax(0, 1fr) 10.8rem;
+  gap: 1.25rem; padding: 1.7rem 0; border-top: 1px solid var(--rule-soft);
+  scroll-margin-top: 1.5rem;
+}
+.research-feature > * { min-width: 0; }
+.feature-index {
+  font-family: var(--sans); font-size: 1.28rem; font-weight: 300;
+  line-height: 1.1; color: var(--ink-faint); opacity: 0.65;
+}
+.feature-kicker, .status-label {
+  font-family: var(--sans); font-size: 0.68rem; font-weight: 700;
+  letter-spacing: 0.09em; text-transform: uppercase; color: var(--accent);
+  margin: 0 0 0.28rem;
+}
+.feature-body h3, .system-body h3, .frontier-intro h3, .frontier-status h3 {
+  margin: 0 0 0.3rem; font-size: 1.08rem;
+}
+.feature-body h3 a { color: var(--ink); border-bottom-color: transparent; }
+.feature-body h3 a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+.feature-body > p:not(.feature-kicker):not(.feature-meta):not(.feature-links) {
+  max-width: var(--prose); margin: 0.65rem 0 0; font-size: 0.94rem;
+  line-height: 1.6; color: var(--ink-soft);
+}
+.feature-meta {
+  font-family: var(--sans); font-size: 0.78rem; color: var(--ink-faint); margin: 0;
+}
+.feature-links {
+  display: flex; flex-wrap: wrap; gap: 0.35rem 0.9rem;
+  font-family: var(--sans); font-size: 0.77rem; margin: 0.65rem 0 0;
+}
+.feature-links a { border-bottom: none; }
+.feature-links a:hover { border-bottom: 1px solid var(--accent); }
+.feature-result {
+  align-self: start; border-left: 2px solid color-mix(in srgb, var(--accent) 55%, transparent);
+  padding: 0.2rem 0 0.2rem 0.85rem;
+}
+.feature-result strong {
+  display: block; font-family: var(--sans); font-size: 1.42rem;
+  line-height: 1.15; color: var(--ink); letter-spacing: -0.02em;
+}
+.feature-result span {
+  display: block; margin-top: 0.3rem; font-size: 0.78rem;
+  line-height: 1.45; color: var(--ink-faint);
+}
+.feature-result-word strong { font-size: 1.1rem; letter-spacing: 0.02em; }
+.feature-figure {
+  max-width: 26rem; margin-top: 0.85rem; padding: 0.25rem 0.75rem 0;
+  background: var(--rule-soft); border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+}
+.feature-figure svg { max-height: 98px; }
+
+.system-path { list-style: none; margin: 0; padding: 0; }
+.system-path > li {
+  display: grid; grid-template-columns: 8.5rem minmax(0, 1fr);
+  gap: 1.2rem; padding: 1rem 0; border-bottom: 1px solid var(--rule-soft);
+}
+.system-when {
+  font-family: var(--sans); font-size: 0.76rem; color: var(--ink-faint);
+  padding-top: 0.16rem; white-space: nowrap;
+}
+.system-body p:not(.feature-links) {
+  max-width: var(--prose); margin: 0.35rem 0 0; font-size: 0.9rem;
+  line-height: 1.58; color: var(--ink-soft);
+}
+
+.frontier-intro {
+  display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(16rem, 0.75fr);
+  gap: 2rem; align-items: center;
+}
+.frontier-intro p {
+  max-width: var(--prose); margin: 0.55rem 0 0; font-size: 0.96rem;
+  color: var(--ink-soft);
+}
+.frontier-figure {
+  padding: 0.45rem 0.8rem 0.2rem; background: var(--rule-soft);
+  border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule);
+}
+.frontier-status {
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0; margin-top: 1.5rem; border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+}
+.frontier-status article { padding: 1rem 1.1rem 1rem 0; }
+.frontier-status article + article { border-left: 1px solid var(--rule); padding-left: 1.1rem; }
+.frontier-status h3 { font-size: 0.96rem; }
+.frontier-status article > p:not(.status-label):not(.feature-links) {
+  margin: 0.45rem 0 0; font-size: 0.84rem; line-height: 1.55;
+  color: var(--ink-soft);
+}
+
+.record-grid {
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem; padding: 0 0 1.35rem;
+}
+.record-grid > div { display: flex; flex-direction: column; }
+.record-grid strong {
+  font-family: var(--sans); font-size: 1.45rem; line-height: 1.2;
+  color: var(--ink); letter-spacing: -0.02em;
+}
+.record-grid span { font-family: var(--sans); font-size: 0.82rem; color: var(--ink-soft); }
+.record-grid small { margin-top: 0.3rem; font-size: 0.76rem; line-height: 1.45; color: var(--ink-faint); }
+.research-next {
+  display: flex; flex-wrap: wrap; gap: 0.6rem 1.5rem;
+  padding-top: 1rem; border-top: 1px solid var(--rule);
+}
+.research-next a { font-family: var(--sans); font-size: 0.86rem; font-weight: 570; border-bottom: none; }
+.research-next a span { padding-left: 0.2rem; }
+
+@media (max-width: 40rem) {
+  .research-hero h1 { font-size: 2.15rem; }
+  .research-deck { font-size: 1.04rem; }
+  .research-proof { display: block; padding: 0.35rem 0; }
+  .research-proof li { padding: 0.18rem 0; margin: 0; white-space: normal; }
+  .research-proof li:not(:last-child)::after { content: none; }
+  .research-spine { grid-template-columns: 1fr; gap: 0.45rem; }
+  .spine-arrow { transform: rotate(90deg); padding: 0; line-height: 1; }
+  .research-feature { grid-template-columns: 2.2rem minmax(0, 1fr); gap: 0.85rem; }
+  .feature-result { grid-column: 2; }
+  .system-path > li { grid-template-columns: 1fr; gap: 0.15rem; }
+  .frontier-intro { grid-template-columns: 1fr; gap: 0.8rem; }
+  .frontier-status, .record-grid { grid-template-columns: 1fr; }
+  .frontier-status article + article {
+    border-left: 0; border-top: 1px solid var(--rule); padding-left: 0;
+  }
+  .record-grid { gap: 1rem; }
+}
+
+/* Concise research-pillar view. The page explains the research program; papers,
+   talks, roles, launches, patents, and metrics remain in their dedicated views. */
+.pillars-intro {
+  max-width: var(--prose); margin: 0 0 2.2rem;
+}
+.pillars-intro p {
+  margin: 0 0 0.75rem; font-size: 1.02rem; line-height: 1.65;
+  color: var(--ink-soft);
+}
+.pillars-intro p:first-child { color: var(--ink); }
+
+.pillar {
+  display: grid; grid-template-columns: 2.8rem minmax(0, 1fr);
+  gap: 1.25rem; padding: 1.75rem 0;
+  border-top: 1px solid var(--rule-soft);
+}
+.pillar > * { min-width: 0; }
+.pillar-no {
+  font-family: var(--sans); font-size: 1.25rem; font-weight: 300;
+  line-height: 1.15; color: var(--ink-faint); opacity: 0.65;
+  font-variant-numeric: tabular-nums;
+}
+.pillar h2 {
+  display: block; margin: 0 0 0.65rem; font-size: 1.15rem;
+  font-weight: 650; letter-spacing: -0.01em; text-transform: none;
+  color: var(--ink);
+}
+.pillar h2::after { display: none; }
+.pillar-main > p {
+  max-width: var(--prose); margin: 0; font-size: 0.96rem;
+  line-height: 1.65; color: var(--ink-soft);
+}
+.pillar-topics {
+  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.2rem 1.5rem; list-style: none; margin: 0.85rem 0 0; padding: 0;
+  max-width: var(--prose);
+}
+.pillar-topics li {
+  position: relative; padding-left: 0.85rem; font-family: var(--sans);
+  font-size: 0.82rem; line-height: 1.5; color: var(--ink-faint);
+}
+.pillar-topics li::before {
+  content: ""; position: absolute; left: 0; top: 0.68em;
+  width: 3px; height: 3px; border-radius: 50%; background: var(--accent);
+}
+.pillar-figure {
+  max-width: 29rem; margin: 1rem 0 0; padding: 0.35rem 0.75rem 0;
+  color: var(--ink); border-top: 1px solid var(--rule-soft);
+  border-bottom: 1px solid var(--rule-soft);
+}
+.pillar-figure svg { max-height: 104px; }
+.pillars-more {
+  max-width: var(--prose); margin: 1.25rem 0 0; padding-top: 1rem;
+  border-top: 1px solid var(--rule); font-size: 0.9rem; color: var(--ink-soft);
+}
+
+@media (max-width: 40rem) {
+  .pillar { grid-template-columns: 2rem minmax(0, 1fr); gap: 0.75rem; }
+  .pillar-topics { grid-template-columns: 1fr; }
+}
+
+/* Dense research index. Numbered threads, questions, and papers use aligned
+   gutters and compact two-column lists rather than cards or side rails. */
+.threads-intro {
+  max-width: 46rem; margin: 0 0 2.2rem;
+}
+.threads-intro p {
+  margin: 0 0 0.75rem; font-size: 1.02rem; line-height: 1.67;
+  color: var(--ink-soft);
+}
+.threads-intro p:first-child { color: var(--ink); }
+.threads-intro > p,
+.thread-vision,
+.thread-questions li,
+.thread-current,
+.thread-application p,
+.thread-paper-title { text-wrap: pretty; }
+.research-thread h2, .thread-application h3 { text-wrap: balance; }
+
+.thread-chapters { min-width: 0; }
+
+.research-thread {
+  display: grid; grid-template-columns: 2.8rem minmax(0, 1fr);
+  column-gap: 1.25rem; padding: 1.75rem 0 1.6rem;
+  border-top: 1px solid var(--rule); scroll-margin-top: 1.25rem;
+}
+.research-thread > * { min-width: 0; }
+.research-thread:first-child { border-top: none; }
+.thread-heading { display: contents; }
+.thread-index {
+  font-family: var(--sans); font-size: 1.25rem; font-weight: 300;
+  line-height: 1.15; color: var(--ink-faint); opacity: 0.65;
+  font-variant-numeric: tabular-nums;
+}
+.research-thread h2 {
+  display: block; margin: 0 0 0.18rem; font-size: 1.2rem;
+  font-weight: 660; letter-spacing: -0.014em; text-transform: none;
+  color: var(--ink);
+}
+.research-thread h2::after { display: none; }
+.thread-role {
+  margin: 0; font-family: var(--sans); font-size: 0.64rem;
+  font-weight: 700; line-height: 1.4; letter-spacing: 0.095em;
+  text-transform: uppercase; color: var(--accent);
+}
+.thread-layout {
+  grid-column: 2; min-width: 0; margin-top: 0.75rem;
+}
+.thread-reading { max-width: var(--prose); }
+.thread-layout > * { min-width: 0; }
+.thread-vision {
+  margin: 0; font-size: 0.97rem; line-height: 1.7; color: var(--ink-soft);
+}
+
+.thread-questions {
+  display: block; margin: 1.05rem 0 0; padding-top: 0.85rem;
+  border-top: 1px solid var(--rule-soft);
+}
+.thread-questions h3, .thread-evidence > h3 {
+  margin: 0; font-family: var(--sans); font-size: 0.72rem;
+  font-weight: 650; line-height: 1.45; letter-spacing: 0.02em;
+  color: var(--ink-faint);
+}
+.thread-application h3 {
+  margin: 0; font-family: var(--sans); font-size: 0.65rem;
+  font-weight: 700; line-height: 1.45; letter-spacing: 0.09em;
+  text-transform: uppercase; color: var(--accent);
+}
+.thread-questions ol {
+  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 1.35rem; list-style: none; counter-reset: question;
+  margin: 0.35rem 0 0; padding: 0;
+}
+.thread-questions li {
+  counter-increment: question; display: grid;
+  grid-template-columns: 1.15rem minmax(0, 1fr); gap: 0.3rem;
+  padding: 0.52rem 0; border-top: 1px solid var(--rule-soft);
+  font-size: 0.84rem; line-height: 1.5; color: var(--ink-soft);
+}
+.thread-questions li::before {
+  content: counter(question); padding-top: 0.08rem;
+  font-family: var(--sans); font-size: 0.67rem; font-weight: 650;
+  color: var(--accent); font-variant-numeric: tabular-nums;
+}
+.thread-current {
+  margin: 1rem 0 0; font-size: 0.84rem; line-height: 1.55;
+  color: var(--ink-soft);
+}
+.thread-current strong {
+  font-family: var(--sans); font-size: 0.68rem; letter-spacing: 0.06em;
+  text-transform: uppercase; color: var(--ink-faint);
+}
+.thread-application {
+  margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid var(--rule);
+}
+.thread-application p {
+  margin: 0.42rem 0 0; font-size: 0.88rem; line-height: 1.62;
+  color: var(--ink-soft);
+}
+
+.thread-evidence {
+  display: block; max-width: var(--prose); margin-top: 1rem;
+  padding-top: 0.85rem; border-top: 1px solid var(--rule-soft);
+}
+.thread-evidence > h3:not(:first-child) { margin-top: 0.9rem; }
+.thread-papers {
+  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 1.35rem; list-style: none; margin: 0.35rem 0 0; padding: 0;
+}
+.thread-patents { grid-template-columns: 1fr; }
+.thread-papers li {
+  min-width: 0; padding: 0.62rem 0;
+  border-top: 1px solid var(--rule-soft);
+}
+.thread-paper-title {
+  margin: 0; font-family: var(--sans); font-size: 0.79rem;
+  font-weight: 570; line-height: 1.42;
+}
+.thread-paper-title a { color: var(--ink); border-bottom-color: transparent; }
+.thread-paper-title a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+.thread-paper-venue {
+  margin: 0.17rem 0 0; font-size: 0.72rem; line-height: 1.4;
+  color: var(--ink-faint);
+}
+.thread-paper-venue span { color: var(--ink-faint); }
+.threads-more {
+  max-width: var(--prose); margin: 1.1rem 0 0; padding-top: 1rem;
+  border-top: 1px solid var(--rule); font-size: 0.86rem; color: var(--ink-soft);
+}
+
+@media (max-width: 40rem) {
+  .research-thread { grid-template-columns: 2rem minmax(0, 1fr); column-gap: 0.7rem; }
+  .thread-layout { grid-column: 2; }
+  .thread-questions ol, .thread-papers { grid-template-columns: 1fr; }
+}
+
+/* --- Publications ------------------------------------------------------- */
+
+.year {
+  font-family: var(--sans); font-size: 0.78rem; font-weight: 700;
+  letter-spacing: 0.13em; color: var(--ink-faint); margin: 2.4rem 0 0.7rem;
+}
+
+.pubs { list-style: none; margin: 0; padding: 0; }
+.pubs li { padding: 0.75rem 0; border-bottom: 1px solid var(--rule-soft); }
+.pubs li:last-child { border-bottom: none; }
+.pub-title {
+  font-family: var(--sans); font-size: 0.97rem; font-weight: 570;
+  line-height: 1.55; color: var(--ink); margin: 0 0 0.22rem;
+}
+
+/* Publication type tag. One uniform treatment so no type shouts louder than
+   another; the hue lives in the dot, the label stays ink for safe contrast. */
+.tag {
+  display: inline-flex; align-items: center; gap: 0.34rem;
+  font-family: var(--sans); font-size: 0.63rem; font-weight: 650;
+  letter-spacing: 0.07em; text-transform: uppercase;
+  color: var(--ink-soft); background: var(--rule-soft);
+  border: 1px solid var(--rule); border-radius: 3px;
+  padding: 0.11rem 0.42rem; margin-right: 0.5rem;
+  vertical-align: 0.14em; white-space: nowrap;
+}
+.tag::before {
+  content: ""; width: 6px; height: 6px; border-radius: 50%;
+  flex: 0 0 auto; background: var(--t-pre);
+}
+.tag-conf::before     { background: var(--t-conf); }
+.tag-journal::before  { background: var(--t-jour); }
+.tag-workshop::before { background: var(--t-work); }
+.tag-preprint::before { background: var(--t-pre); }
+
+/* Venue line: the conference or journal carries the emphasis; a workshop
+   qualifier is deliberately subordinate to it. */
+.pub-authors { font-size: 0.86rem; color: var(--ink-soft); margin: 0 0 0.18rem; }
+.pub-venue {
+  font-size: 0.89rem; color: var(--ink); font-style: italic;
+  margin: 0; line-height: 1.45;
+}
+.pub-note {
+  font-style: normal; font-family: var(--sans); font-size: 0.78rem;
+  color: var(--ink-faint); letter-spacing: 0.01em;
+}
+.pub-links { font-family: var(--sans); font-size: 0.81rem; margin: 0.32rem 0 0; }
+.pub-links a { border-bottom: none; margin-right: 0.9rem; font-weight: 500; }
+.pub-links a:hover { border-bottom: 1px solid var(--accent); }
+.pub-also { font-size: 0.82rem; color: var(--ink-faint); font-style: italic; margin: 0.25rem 0 0; }
+
+/* --- Generic rows (talks, CV, patents, notes) --------------------------- */
+
+.rows { list-style: none; margin: 0; padding: 0; }
+.row {
+  display: grid; grid-template-columns: 10.7rem minmax(0, 1fr);
+  gap: 1.1rem; padding: 0.62rem 0;
+  border-bottom: 1px solid var(--rule-soft);
+}
+.row:last-child { border-bottom: none; }
+.row > * { min-width: 0; }
+.row-when {
+  font-family: var(--sans); font-size: 0.79rem; color: var(--ink-faint);
+  padding-top: 0.15rem; white-space: nowrap;
+}
+.row-main .t {
+  font-family: var(--sans); font-size: 0.94rem; font-weight: 570; color: var(--ink);
+  line-height: 1.4;
+}
+.row-main .s { font-size: 0.86rem; color: var(--ink-soft); line-height: 1.45; }
+.row-main .k {
+  font-family: var(--sans); font-size: 0.71rem; font-weight: 600;
+  letter-spacing: 0.05em; text-transform: uppercase; color: var(--ink-faint);
+  margin-top: 0.1rem;
+}
+.row-main ul { margin: 0.3rem 0 0; padding-left: 1.05rem; }
+.row-main li { font-size: 0.86rem; color: var(--ink-soft); line-height: 1.5; }
+
+.more { font-family: var(--sans); font-size: 0.84rem; margin: 0.9rem 0 0; }
+/* Research experience. The date rides inline on the institution line rather than
+   in a left gutter, so the body gets the full measure. Contiguous stints only;
+   a company can repeat. */
+.jobs { list-style: none; margin: 0; padding: 0; }
+.job {
+  display: grid; grid-template-columns: 2.4rem minmax(0, 1fr);
+  column-gap: 0.9rem; padding: 0.85rem 0;
+  border-bottom: 1px solid var(--rule-soft);
+}
+
+/* Institution tile. The rounded square and its background are baked into the
+   PNG, so no CSS container is needed — nothing wraps the mark. */
+.job-logo { width: 2.4rem; height: 2.4rem; margin-top: 0.16rem; }
+.job-logo img { width: 100%; height: 100%; display: block; }
+
+/* Date, inline on the institution line. Never break a range across lines. */
+.job-date {
+  font-weight: 400; color: var(--ink-faint); font-size: 0.86rem;
+  white-space: nowrap;
+}
+.job-body { min-width: 0; }
+/* Education: degree leads, institution sits beneath it but stays legible. */
+.job-inst {
+  font-family: var(--sans); font-size: 0.89rem; font-weight: 480;
+  color: var(--ink); margin-top: 0.1rem;
+}
+.job-org { font-family: var(--sans); font-size: 1.04rem; font-weight: 650; color: var(--ink); letter-spacing: -0.01em; }
+.job-where { font-weight: 400; color: var(--ink-faint); font-size: 0.86rem; }
+
+/* Positions within a company. When there is more than one, a connector rail
+   with a dot per position groups them — the LinkedIn treatment. */
+.job-pos { list-style: none; margin: 0.3rem 0 0; padding: 0; }
+.job-pos li {
+  display: grid; grid-template-columns: minmax(0, 1fr) auto;
+  gap: 1rem; padding: 0.04rem 0;
+}
+
+.job-pos.railed { position: relative; padding-left: 1.05rem; }
+.job-pos.railed::before {
+  content: ""; position: absolute; left: 3px; top: 0.7em; bottom: 0.7em;
+  width: 1px; background: var(--rule);
+}
+.job-pos.railed li { padding: 0.22rem 0; position: relative; }
+.job-pos.railed li::before {
+  content: ""; position: absolute; left: -1.05rem; top: 0.62em;
+  width: 7px; height: 7px; border-radius: 50%;
+  background: var(--ink-faint); opacity: 0.55;
+  box-shadow: 0 0 0 2.5px var(--bg);
+}
+.pos-title {
+  font-family: var(--sans); font-size: 0.87rem;
+  display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+/* The role carries the weight; the team or course name is subordinate. */
+.pos-role { font-weight: 580; color: var(--ink); }
+.pos-team { font-weight: 400; color: var(--ink-soft); }
+/* Course sub-line (instructor of record, level) on its own row. */
+.pos-main { min-width: 0; }
+.pos-note {
+  display: block; font-family: var(--sans); font-size: 0.81rem;
+  color: var(--ink-faint); margin-top: 0.06rem;
+}
+.pos-when {
+  font-family: var(--sans); font-size: 0.77rem; color: var(--ink-faint);
+  white-space: nowrap;
+}
+
+/* Role paragraph: the note, plus a "Shipped …" sentence with each launch's links
+   in parentheses. Capped to the prose measure so it stays readable rather than
+   running the full column width. */
+.job-prose {
+  font-size: 0.875rem; line-height: 1.6; color: var(--ink-soft);
+  margin: 0.4rem 0 0; max-width: var(--prose);
+}
+.ship-name { color: var(--ink); font-weight: 560; }
+.job-prose a { color: var(--accent); border-bottom: 1px solid var(--accent-dim); }
+.job-prose a:hover { border-bottom-color: var(--accent); }
+.job-prose .sep { color: var(--ink-faint); opacity: 0.6; }
+
+/* Detail lines under an entry (thesis, advisors, committee). */
+.job-sub {
+  font-size: 0.86rem; color: var(--ink-soft);
+  margin: 0.16rem 0 0; line-height: 1.5;
+}
+
+.job-hosts {
+  font-family: var(--sans); font-size: 0.74rem; letter-spacing: 0.04em;
+  text-transform: uppercase; color: var(--ink-faint); margin: 0.35rem 0 0;
+}
+
+/* Shipped systems, inline inside the role description. */
+/* --- Photos ------------------------------------------------------------- */
+
+.photos {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(215px, 1fr));
+  gap: 0.7rem; margin: 1.5rem 0 0; padding: 0; list-style: none;
+}
+.photos figure { margin: 0; }
+.photos img {
+  width: 100%; height: 158px; object-fit: cover; border-radius: 4px; display: block;
+}
+.photos figcaption {
+  font-family: var(--sans); font-size: 0.75rem; color: var(--ink-faint); margin-top: 0.3rem;
+}
+
+/* --- Footer ------------------------------------------------------------- */
+
+footer { border-top: 1px solid var(--rule); }
+.footer-in { max-width: var(--measure); margin: 0 auto; padding: 1.9rem 1.5rem 3rem; }
+.footer-in .links { display: flex; flex-wrap: wrap; gap: 1.2rem; margin-bottom: 0.7rem; }
+.footer-in .links a {
+  font-family: var(--sans); font-size: 0.84rem; color: var(--ink-soft); border-bottom: none;
+}
+.footer-in .links a:hover { color: var(--accent); }
+.fine { font-family: var(--sans); font-size: 0.76rem; color: var(--ink-faint); margin: 0; }
+.fine a { color: var(--ink-faint); border-bottom: none; }
+.fine a:hover { color: var(--accent); }
+
+/* --- Responsive --------------------------------------------------------- */
+
+@media (max-width: 40rem) {
+  html { font-size: 16px; }
+  main { padding: 2rem 0 3rem; }
+  h1 { font-size: 1.65rem; }
+  .idcard { grid-template-columns: 100px 1fr; gap: 1.2rem; }
+  .portrait { width: 100px; height: 100px; }
+  .idcard h1 { font-size: 1.55rem; }
+  .interests { columns: 1; }
+  .news li { grid-template-columns: 5.6rem 4.6rem minmax(0, 1fr); gap: 0.5rem; }
+  .nw { font-size: 0.84rem; }
+  .row { grid-template-columns: 1fr; gap: 0.15rem; }
+  .job { row-gap: 0.2rem; column-gap: 0.7rem; }
+}
+
+/* --- Print -------------------------------------------------------------- */
+
+@media print {
+  .masthead nav, .footer-in .links, .idlinks, .quicklinks { display: none; }
+  body { background: #fff; color: #000; }
+  .newsbox { max-height: none; overflow: visible; border-color: #ccc; }
+  .thread-evidence, .thread-application, .thesis { border-color: #ccc; break-inside: avoid; }
+  a { color: #000; border-bottom: none; }
+}

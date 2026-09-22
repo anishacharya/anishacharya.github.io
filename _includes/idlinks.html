@@ -1,0 +1,36 @@
+{%- comment -%}
+Identity links with hand-drawn inline icons. No icon font, no CDN — the paths
+inherit currentColor so light/dark both work. Consistent 16x16 outline style.
+{%- endcomment -%}
+<ul class="idlinks">
+  <li>
+    <a href="https://scholar.google.com/citations?user={{ site.social.scholar }}">
+      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2 1.5 5.5 8 9l6.5-3.5L8 2Z"/><path d="M4 7.2v3.1c0 1.2 1.8 2.2 4 2.2s4-1 4-2.2V7.2"/></svg>
+      <span>Scholar</span>
+    </a>
+  </li>
+  <li>
+    <a href="https://github.com/{{ site.social.github }}">
+      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M5.6 3.4 2 8l3.6 4.6"/><path d="M10.4 3.4 14 8l-3.6 4.6"/></svg>
+      <span>GitHub</span>
+    </a>
+  </li>
+  <li>
+    <a href="https://www.linkedin.com/in/{{ site.social.linkedin }}">
+      <svg viewBox="0 0 16 16" aria-hidden="true"><rect x="2" y="2" width="12" height="12" rx="2.4"/><path d="M5 6.8v4.2"/><path d="M8 11V8.6c0-1 .8-1.8 1.8-1.8S11 7.6 11 8.6V11"/><circle cx="5" cy="4.9" r=".55" fill="currentColor" stroke="none"/></svg>
+      <span>LinkedIn</span>
+    </a>
+  </li>
+  <li>
+    <a href="{{ '/doc/CV_ANISH.pdf' | relative_url }}">
+      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 1.8h5l3 3v9.4H4V1.8Z"/><path d="M9 1.8v3h3"/><path d="M6 8.2h4M6 10.6h4"/></svg>
+      <span>CV</span>
+    </a>
+  </li>
+  <li>
+    <a href="mailto:{{ site.social.email }}">
+      <svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1.8" y="3.4" width="12.4" height="9.2" rx="1.6"/><path d="M2.2 4.6 8 8.9l5.8-4.3"/></svg>
+      <span>Email</span>
+    </a>
+  </li>
+</ul>

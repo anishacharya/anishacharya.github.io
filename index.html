@@ -52,8 +52,8 @@ description: "Anish Acharya, PhD — Senior Research Scientist at AWS. Robust an
       <div class="job-org">{{ e.degree }}</div>
       <div class="job-inst">{{ e.school }} <span class="job-where">· {{ e.where }}</span><span class="job-date"> · {{ e.when }}</span>{% if e.note %}<span class="job-where"> · {{ e.note }}</span>{% endif %}</div>
       {% if e.thesis %}<p class="job-sub">Thesis: <a href="{{ e.thesis_url }}"><em>{{ e.thesis }}</em></a></p>{% endif %}
-      {% if e.advisors %}<p class="job-sub">Advised by {{ e.advisors | join: " and " }}</p>{% endif %}
-      {% if e.committee %}<p class="job-sub">Committee: {{ e.committee | join: ", " }}</p>{% endif %}
+      {% if e.advisors %}<p class="job-sub">Advised by {% for a in e.advisors %}{% if a.scholar %}<a href="https://scholar.google.com/citations?user={{ a.scholar }}">{{ a.name }}</a>{% else %}{{ a.name }}{% endif %}{% unless forloop.last %} and {% endunless %}{% endfor %}</p>{% endif %}
+      {% if e.committee %}<p class="job-sub">Committee: {% for c in e.committee %}{% if c.scholar %}<a href="https://scholar.google.com/citations?user={{ c.scholar }}">{{ c.name }}</a>{% else %}{{ c.name }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>{% endif %}
     </div>
   </li>
   {% endfor %}
@@ -81,7 +81,7 @@ description: "Anish Acharya, PhD — Senior Research Scientist at AWS. Robust an
         from the News timeline below and from /publications, so this section stays
         a scannable index rather than a second copy of them.
       {%- endcomment -%}
-      {% if r.hosts %}<p class="job-hosts">Hosted by {{ r.hosts | join: ", " }}</p>{% endif %}
+      {% if r.hosts %}<p class="job-hosts">Hosted by {% for h in r.hosts %}{% if h.scholar %}<a href="https://scholar.google.com/citations?user={{ h.scholar }}">{{ h.name }}</a>{% else %}{{ h.name }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>{% endif %}
     </div>
   </li>
   {% endfor %}

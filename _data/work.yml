@@ -31,8 +31,18 @@ education:
     when: Fall 2019 – Spring 2025
     thesis: Robust and Efficient Learning in High Dimensions from Noisy Data
     thesis_url: "https://repositories.lib.utexas.edu/items/60cdbaf7-6899-40af-b1aa-a6e23ba9749e"
-    advisors: [Inderjit S. Dhillon, Sujay Sanghavi]
-    committee: [Alex Dimakis, Ludwig Schmidt, Nhat Ho]
+    advisors:
+      - name: Inderjit S. Dhillon
+        scholar: xBv5ZfkAAAAJ
+      - name: Sujay Sanghavi
+        scholar: O-DazBUAAAAJ
+    committee:
+      - name: Alex Dimakis
+        scholar: JSFmVQEAAAAJ
+      - name: Ludwig Schmidt
+        scholar: SWMKy70AAAAJ
+      - name: Nhat Ho
+        scholar: bvkFTZAAAAAJ
 
   - school: University of California, Irvine
     logo: uci
@@ -46,7 +56,6 @@ education:
     where: Kolkata, India
     when: Spring 2009 – Spring 2013
     note: Highest Honors (First Class)
-    advisors: [Amitava Gupta, Shantanu Das]
 
 roles:
   # One entry per *contiguous* stint at a company, in the CV's order.
@@ -90,7 +99,15 @@ roles:
     logo: meta
     when: Summer 2021 – Fall 2022
     note: Capacity Engineering and FAIR — positive-unlabeled contrastive learning for weakly supervised CTR prediction.
-    hosts: [Li Jing, Bhargav Bhushanam, Dhruv Choudhary, Michael Rabbat]
+    hosts:
+      - name: Li Jing
+        scholar: VhxDLwcAAAAJ
+      - name: Bhargav Bhushanam
+        scholar: nYaiiJQAAAAJ
+      - name: Dhruv Choudhary
+        scholar: U8sbg10AAAAJ
+      - name: Michael Rabbat
+        scholar: pkAWLt8AAAAJ
     positions:
       - title: Student Researcher
         when: Fall 2022
@@ -109,7 +126,11 @@ roles:
     # Do not name a launch here — the template appends a "Shipped …" sentence
     # from launches.yml, so naming OpenMSFTL would render it twice.
     note: Speech and Dialog Research Group — training robust to adversarial, Byzantine, and noisy client updates.
-    hosts: [Kenichi Kumatani, Dimitrios Dimitriadis]
+    hosts:
+      - name: Kenichi Kumatani
+        scholar: e7-T8U8AAAAJ
+      - name: Dimitrios Dimitriadis
+        scholar: AQSvco0AAAAJ
     positions:
       - title: Research Scientist
         when: Summer 2020
@@ -171,7 +192,9 @@ roles:
     logo: ttic
     when: Summer 2014
     note: Real-time stereo reconstruction for autonomous vehicles, for Toyota Research North America.
-    hosts: [David McAllester]
+    hosts:
+      - name: David McAllester
+        scholar: nbpafUkAAAAJ
     positions:
       - title: Visiting Research Assistant
         when: Summer 2014

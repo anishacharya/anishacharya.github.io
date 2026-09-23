@@ -912,10 +912,33 @@ footer { border-top: 1px solid var(--rule); }
   .portrait { width: 100px; height: 100px; }
   .idcard h1 { font-size: 1.55rem; }
   .interests { columns: 1; }
-  .news li { grid-template-columns: 5.6rem 4.6rem minmax(0, 1fr); gap: 0.5rem; }
-  .nw { font-size: 0.84rem; }
+  /* News: the desktop four-column row is too wide for a phone. Stack it —
+     date and badge share the top line, the event text wraps on its own line,
+     and the links sit below. Every row keeps all four fields visible. */
+  .news li {
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+      "date badge"
+      "what what"
+      "links links";
+    gap: 0.15rem 0.6rem;
+    align-items: center;
+    padding: 0.5rem 0;
+  }
+  .nd { grid-area: date; }
+  .tl-kind { grid-area: badge; justify-self: start; }
+  .nw {
+    grid-area: what; font-size: 0.84rem;
+    white-space: normal; overflow: visible; text-overflow: clip;
+  }
+  .nx { grid-area: links; white-space: normal; }
+  .nx:empty { display: none; }
   .row { grid-template-columns: 1fr; gap: 0.15rem; }
   .job { row-gap: 0.2rem; column-gap: 0.7rem; }
+  /* Let job/course labels wrap instead of clipping — a tooltip is not usable
+     on touch, so the full role must be visible in the flow. */
+  .pos-title { white-space: normal; overflow: visible; text-overflow: clip; }
+  .job-pos li { grid-template-columns: 1fr auto; }
 }
 
 /* --- Print -------------------------------------------------------------- */

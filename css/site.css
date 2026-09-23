@@ -9,7 +9,8 @@
 :root {
   --ink:        #17171a;
   --ink-soft:   #4c4c55;
-  --ink-faint:  #85858f;
+  /* 4.7:1 on --bg — clears WCAG AA for the small sans metadata that uses it. */
+  --ink-faint:  #71717a;
   --rule:       #e6e4df;
   --rule-soft:  #f0eeea;
   --bg:         #fdfcfa;
@@ -140,6 +141,26 @@ p { margin: 0 0 1.1rem; }
 
 a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--accent-dim); }
 a:hover { border-bottom-color: var(--accent); }
+
+/* Keyboard focus. One visible ring for every interactive element, since the
+   link styles above communicate state through colour and underline alone. */
+a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Skip link: offscreen until focused, then pinned to the top-left. Lets a
+   keyboard or screen-reader user jump past the masthead straight to content. */
+.skip-link {
+  position: absolute; left: 0.5rem; top: -3rem;
+  z-index: 10; padding: 0.5rem 0.9rem;
+  font-family: var(--sans); font-size: 0.85rem;
+  background: var(--card); color: var(--ink);
+  border: 1px solid var(--rule); border-radius: 3px;
+  transition: top 0.15s ease;
+}
+.skip-link:focus { top: 0.5rem; }
 
 .lede {
   font-size: 1.08rem; color: var(--ink-soft);

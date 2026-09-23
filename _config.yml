@@ -43,6 +43,13 @@ defaults:
       path: ""
     values:
       layout: "page"
+  # Keep the archived site reachable by direct URL but out of search results:
+  # noindex is set in each legacy page's <head>, and this drops the whole
+  # legacy/ tree from sitemap.xml so we never advertise noindex URLs.
+  - scope:
+      path: "legacy"
+    values:
+      sitemap: false
 
 # legacy/ is pre-rendered static HTML — copy it through untouched.
 include:

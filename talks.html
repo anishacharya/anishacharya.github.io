@@ -10,11 +10,11 @@ description: "Invited talks, keynotes, and presentations."
   <li class="row">
     <div class="row-when">{{ t.when }}</div>
     <div class="row-main">
-      <div class="t">{% if t.title %}{{ t.title }}{% else %}{{ t.host }}{% endif %}</div>
+      <div class="t">{% if t.topic %}{{ t.topic }}{% else %}{{ t.appearance }}{% endif %}</div>
       <div class="s">
-        {% if t.title %}{% if t.url %}<a href="{{ t.url }}">{{ t.host }}</a>{% else %}{{ t.host }}{% endif %} · {% endif %}{{ t.where }}
+        {% if t.url %}<a href="{{ t.url }}">{{ t.venue }}</a>{% else %}{{ t.venue }}{% endif %} · {{ t.location }}
       </div>
-      {% if t.kind %}<div class="k">{{ t.kind }}</div>{% endif %}
+      {% if t.type %}<div class="k">{{ t.type }}</div>{% endif %}
     </div>
   </li>
   {% endfor %}

@@ -15,10 +15,11 @@ but without them there is no signal to act on at all.
 Emitted site-wide rather than only on the homepage so any entry point carries the identity.
 
 ORCID and Scopus are wired in below (both in `sameAs` and as `identifier` PropertyValues).
+alphaXiv author page is in `sameAs`.
 
 TODO — remaining free, high-value additions, none of which I can invent an ID for:
-  * DBLP author page — dblp.org, auto-generated from the publication record; find the exact URL.
-  * Semantic Scholar author page — likewise.
+  * DBLP author page — dblp.org; confirm the exact URL is yours before adding.
+  * Semantic Scholar author page — semanticscholar.org, auto-generated from the publication record.
   * arXiv author identifier (arxiv.org/a/<id>) — links the preprints to the person.
 Add each to `sameAs` below once you have the URL. More independent, cross-linking profiles is
 directly what makes the entity resolvable.
@@ -88,6 +89,7 @@ directly what makes the entity resolvable.
     "https://scholar.google.com/citations?user={{ site.social.scholar }}",
     "https://orcid.org/0000-0002-3518-0510",
     "https://www.scopus.com/authid/detail.uri?authorId=57220707077",
+    "https://www.alphaxiv.org/@anish-acharya",
     "https://github.com/{{ site.social.github }}",
     "https://www.linkedin.com/in/{{ site.social.linkedin }}"
   ]

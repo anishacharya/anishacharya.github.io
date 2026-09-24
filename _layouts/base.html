@@ -44,6 +44,7 @@
   <link rel="icon" href="{{ '/img/portrait.jpg' | relative_url }}">
   <link rel="stylesheet" href="{{ '/css/site.css' | relative_url }}?v={{ site.time | date: '%s' }}">
   {% include person-schema.html %}
+  {% if page.collection == "papers" %}{% include paper-meta.html %}{% endif %}
 </head>
 <body>
   {%- comment -%}

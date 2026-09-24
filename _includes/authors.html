@@ -1,0 +1,9 @@
+{%- comment -%}
+Author list for one paper. The owner's name renders in full and emphasized.
+Usage: {% include authors.html paper=p %}
+{%- endcomment -%}
+{%- assign names = include.paper.authors_full | default: include.paper.authors -%}
+{%- for a in names -%}
+  {%- if a == "A Acharya" or a == "Anish Acharya" -%}<span class="me">Anish Acharya</span>{%- else -%}{{ a }}{%- endif -%}
+  {%- unless forloop.last %}, {% endunless -%}
+{%- endfor -%}

@@ -37,11 +37,24 @@ timezone: "America/Chicago"
 plugins:
   - jekyll-sitemap
 
+# One page per paper at /papers/<key>/. Stubs in _papers/ are generated from
+# _data/papers.yml by scripts/gen_paper_pages.py; do not edit them by hand.
+collections:
+  papers:
+    output: true
+    permalink: /papers/:name/
+
 defaults:
   - scope:
       path: ""
     values:
       layout: "page"
+  - scope:
+      path: ""
+      type: "papers"
+    values:
+      layout: "paper"
+      og_type: "article"
   # Keep the archived site reachable by direct URL but out of search results:
   # noindex is set in each legacy page's <head>, and this drops the whole
   # legacy/ tree from sitemap.xml so we never advertise noindex URLs.
@@ -62,3 +75,4 @@ exclude:
   - LICENSE
   - README.md
   - vendor
+  - scripts

@@ -1,12 +1,20 @@
 {%- assign paper = include.paper -%}
 {%- assign title = include.title | default: paper.title -%}
+{%- assign doc = site.papers | where: "key", paper.key | first -%}
 <li>
   <p class="thread-paper-title">
-    {%- for link in paper.links limit:1 -%}
-      <a href="{{ link[1] }}">{{ title }}</a>
-    {%- endfor -%}
+    {%- if doc -%}
+      <a href="{{ doc.url | relative_url }}">{{ title }}</a>
+    {%- else -%}
+      {%- for link in paper.links limit:1 -%}
+        <a href="{{ link[1] }}">{{ title }}</a>
+      {%- endfor -%}
+    {%- endif -%}
   </p>
   <p class="thread-paper-venue">
     {{ paper.venue }}{% if paper.note_short %} <span>· {{ paper.note_short }}</span>{% endif %}
   </p>
+  {%- if paper.summary %}
+  <p class="thread-paper-summary">{{ paper.summary }}</p>
+  {%- endif %}
 </li>

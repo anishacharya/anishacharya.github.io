@@ -8,7 +8,6 @@ description: "Publications by Anish Acharya: the full list by year, PhD thesis, 
   Also on <a href="https://scholar.google.com/citations?user={{ site.social.scholar }}">Google Scholar</a>.
 </p>
 
-<h2>All publications</h2>
 {% assign years = site.data.papers | group_by: "year" | sort: "name" | reverse %}
 {% for group in years %}
   <p class="year">{{ group.name }}</p>

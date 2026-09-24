@@ -1,0 +1,66 @@
+{%- comment -%}
+Scholarly metadata for a paper page, emitted in <head>.
+
+Highwire `citation_*` tags are what Google Scholar reads to index a paper and
+attribute it to its authors. The ScholarlyArticle JSON-LD ties the paper to the
+site's Person entity through the same @id used in person-schema.html.
+{%- endcomment -%}
+{%- assign p = site.data.papers | where: "key", page.key | first -%}
+{%- if p -%}
+{%- assign names = p.authors_full | default: p.authors -%}
+<meta name="citation_title" content="{{ p.title | escape }}">
+{%- for a in names %}
+<meta name="citation_author" content="{% if a == 'A Acharya' or a == 'Anish Acharya' %}Anish Acharya{% else %}{{ a | escape }}{% endif %}">
+{%- endfor %}
+<meta name="citation_publication_date" content="{{ p.year }}">
+{%- if p.type == "journal" %}
+<meta name="citation_journal_title" content="{{ p.venue_full | default: p.venue | escape }}">
+{%- elsif p.type == "workshop" and p.note %}
+{%- comment -%} Name the workshop, never the host conference alone. {%- endcomment %}
+<meta name="citation_conference_title" content="{{ p.note | append: ', ' | append: p.venue | escape }}">
+{%- else %}
+<meta name="citation_conference_title" content="{{ p.venue_full | default: p.venue | escape }}">
+{%- endif %}
+{%- assign pdf = "" -%}
+{%- for l in p.links -%}
+  {%- if pdf == "" and l[1] contains "pdf" -%}{%- assign pdf = l[1] -%}{%- endif -%}
+{%- endfor %}
+{%- if pdf != "" %}
+<meta name="citation_pdf_url" content="{{ pdf }}">
+{%- endif %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "@id": "{{ page.url | absolute_url }}#article",
+  "url": "{{ page.url | absolute_url }}",
+  "name": {{ p.title | jsonify }},
+  "headline": {{ p.title | truncate: 110 | jsonify }},
+  "description": {{ p.summary | jsonify }},
+  "datePublished": "{{ p.year }}",
+  {%- if p.type == "journal" %}
+  "isPartOf": { "@type": "Periodical", "name": {{ p.venue_full | default: p.venue | jsonify }} },
+  {%- endif %}
+  "author": [
+    {%- for a in names -%}
+    {%- if a == "A Acharya" or a == "Anish Acharya" %}
+    { "@type": "Person", "@id": "{{ site.url }}/#person", "name": "Anish Acharya" }
+    {%- else %}
+    { "@type": "Person", "name": {{ a | jsonify }} }
+    {%- endif -%}
+    {%- unless forloop.last %},{% endunless -%}
+    {%- endfor %}
+  ],
+  "sameAs": [
+    {%- assign first = true -%}
+    {%- for l in p.links -%}
+    {%- if l[1] != "" -%}
+    {%- unless first %},{% endunless %}
+    {{ l[1] | jsonify }}
+    {%- assign first = false -%}
+    {%- endif -%}
+    {%- endfor %}
+  ]
+}
+</script>
+{%- endif -%}

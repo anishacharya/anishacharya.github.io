@@ -1,0 +1,25 @@
+---
+layout: base
+---
+{%- comment -%}
+One page per paper. The stub in _papers/ carries only key, title, and
+description; everything else comes from _data/papers.yml.
+{%- endcomment -%}
+{% assign p = site.data.papers | where: "key", page.key | first %}
+<div class="paper-page">
+  <p class="pub-authors">{% include authors.html paper=p %}</p>
+  <p class="pub-venue">
+    {{ p.venue_full | default: p.venue }}, {{ p.year }}
+    {%- if p.note %} <span class="pub-note">· {{ p.note }}</span>{% endif %}
+  </p>
+  {% if p.summary %}<p class="paper-summary">{{ p.summary }}</p>{% endif %}
+  {% if p.links %}
+  <p class="pub-links">
+    {% for l in p.links %}{% if l[1] != "" %}<a href="{{ l[1] }}">{{ l[0] }}</a>{% endif %}{% endfor %}
+  </p>
+  {% endif %}
+  {% if p.also %}
+  <p class="pub-also">{% for a in p.also %}{{ a }}{% unless forloop.last %} · {% endunless %}{% endfor %}</p>
+  {% endif %}
+  <p class="more"><a href="{{ '/publications/' | relative_url }}">All publications</a> · <a href="{{ '/research/' | relative_url }}">Research</a></p>
+</div>

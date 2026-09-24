@@ -2,17 +2,11 @@
 layout: base
 title: Publications
 permalink: /publications/
-description: "Publications by Anish Acharya: the full list by year, PhD thesis, and granted US patents on robust learning, LLM evaluation, federated learning, and NLP."
+description: "Publications by Anish Acharya: PhD thesis, granted US patents, and the full list of papers by year on robust learning, LLM evaluation, federated learning, and NLP."
 ---
 <p class="lede">
   Also on <a href="https://scholar.google.com/citations?user={{ site.social.scholar }}">Google Scholar</a>.
 </p>
-
-{% assign years = site.data.papers | group_by: "year" | sort: "name" | reverse %}
-{% for group in years %}
-  <p class="year">{{ group.name }}</p>
-  {% include publist.html items=group.items %}
-{% endfor %}
 
 {% assign phd = site.data.work.education | first %}
 <h2>Thesis</h2>
@@ -44,3 +38,10 @@ description: "Publications by Anish Acharya: the full list by year, PhD thesis, 
   </li>
   {% endfor %}
 </ul>
+
+<h2>Papers</h2>
+{% assign years = site.data.papers | group_by: "year" | sort: "name" | reverse %}
+{% for group in years %}
+  <p class="year">{{ group.name }}</p>
+  {% include publist.html items=group.items %}
+{% endfor %}

@@ -2,23 +2,33 @@
 layout: base
 title: Publications
 permalink: /publications/
-description: "PhD thesis, publications, granted patents, and technical reports."
+description: "Publications by Anish Acharya: selected papers, the full list by year, PhD thesis, and granted US patents on robust learning, LLM evaluation, federated learning, and NLP."
 ---
-
 <p class="lede">
   Also on <a href="https://scholar.google.com/citations?user={{ site.social.scholar }}">Google Scholar</a>.
 </p>
+
+<h2>Selected</h2>
+{% assign selected = site.data.papers | where: "selected", true %}
+{% include publist.html items=selected %}
 
 {% assign phd = site.data.work.education | first %}
 <h2>Thesis</h2>
 <div class="thesis">
   <p class="thesis-title"><a href="{{ phd.thesis_url }}">{{ phd.thesis }}</a></p>
   <p class="thesis-meta">
-    {{ phd.degree }} · {{ phd.school }}, 2025<br>
+    {{ phd.degree }} · {{ phd.school }}, {{ phd.when | split: " " | last }}<br>
     Advised by {% for a in phd.advisors %}{% if a.scholar %}<a href="https://scholar.google.com/citations?user={{ a.scholar }}">{{ a.name }}</a>{% else %}{{ a.name }}{% endif %}{% unless forloop.last %} and {% endunless %}{% endfor %}.
     Committee: {% for c in phd.committee %}{% if c.scholar %}<a href="https://scholar.google.com/citations?user={{ c.scholar }}">{{ c.name }}</a>{% else %}{{ c.name }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}.
   </p>
 </div>
+
+<h2>All publications</h2>
+{% assign years = site.data.papers | group_by: "year" | sort: "name" | reverse %}
+{% for group in years %}
+  <p class="year">{{ group.name }}</p>
+  {% include publist.html items=group.items %}
+{% endfor %}
 
 <h2>Granted US patents</h2>
 <ul class="rows">
@@ -27,6 +37,7 @@ description: "PhD thesis, publications, granted patents, and technical reports."
     <div class="row-when">{{ pt.granted }}</div>
     <div class="row-main">
       <div class="t">{{ pt.title }}</div>
+      {% if pt.summary %}<div class="s">{{ pt.summary }}</div>{% endif %}
       <div class="s">
         {% for a in pt.inventors %}{% if a == "A Acharya" or a == "Anish Acharya" %}<strong>Anish Acharya</strong>{% else %}{{ a }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}
       </div>
@@ -38,10 +49,3 @@ description: "PhD thesis, publications, granted patents, and technical reports."
   </li>
   {% endfor %}
 </ul>
-
-<h2>Publications</h2>
-{% assign years = site.data.papers | group_by: "year" | sort: "name" | reverse %}
-{% for group in years %}
-  <p class="year">{{ group.name }}</p>
-  {% include publist.html items=group.items %}
-{% endfor %}

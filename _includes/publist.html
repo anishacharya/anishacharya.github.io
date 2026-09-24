@@ -20,6 +20,7 @@ Usage: {% include publist.html items=array %}
       {{ p.venue_full | default: p.venue }}, {{ p.year }}
       {%- if p.note_short %} <span class="pub-note">· {{ p.note_short }}</span>{% endif %}
     </p>
+    {% if p.summary %}<p class="pub-summary">{{ p.summary }}</p>{% endif %}
     {% if p.links %}
     <p class="pub-links">
       {% for l in p.links %}{% if l[1] != "" %}<a href="{{ l[1] }}">{{ l[0] }}</a>{% endif %}{% endfor %}

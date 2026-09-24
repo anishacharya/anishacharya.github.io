@@ -769,6 +769,11 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
 .pub-links a { border-bottom: none; margin-right: 0.9rem; font-weight: 500; }
 .pub-links a:hover { border-bottom: 1px solid var(--accent); }
 .pub-also { font-size: 0.82rem; color: var(--ink-faint); font-style: italic; margin: 0.25rem 0 0; }
+/* One-line result, in plain language. Sits between the venue and the links. */
+.pub-summary {
+  font-size: 0.88rem; line-height: 1.5; color: var(--ink-soft);
+  margin: 0.3rem 0 0; max-width: var(--prose);
+}
 
 /* --- Generic rows (talks, CV, patents, notes) --------------------------- */
 

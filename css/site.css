@@ -239,12 +239,6 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
 
 /* --- News: scrollable record (date · badge · one line) ------------------- */
 
-.news-earlier { margin: 0.8rem 0 0; }
-.news-earlier summary {
-  font-family: var(--sans); font-size: 0.84rem; color: var(--ink-soft); cursor: pointer;
-}
-.news-earlier .news { padding: 0.5rem 1.15rem 0; }
-
 .newsbox {
   max-height: 23rem; overflow-y: auto;
   border: 1px solid var(--rule); border-radius: 8px;

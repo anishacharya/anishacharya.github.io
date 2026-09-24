@@ -160,26 +160,13 @@ description: "Anish Acharya is a Senior Research Scientist at AWS working on lea
 </ul>
 
 {%- comment -%}
-  News shows the research-career record from 2019 (start of the PhD) onward.
-  Earlier items stay one click away rather than sharing the box with current
-  papers and launches.
+  News is the full record in one scrollable box, reverse-chronological.
 {%- endcomment -%}
-{% assign news_since = 2019 %}
-{% assign recent = site.data.timeline | where_exp: "e", "e.year >= news_since" %}
-{% assign earlier = site.data.timeline | where_exp: "e", "e.year < news_since" %}
 <h2>News</h2>
-<div class="newsbox" tabindex="0" role="region" aria-label="News since {{ news_since }}">
+<div class="newsbox" tabindex="0" role="region" aria-label="News and full record">
   <ul class="news">
-    {% for e in recent %}{% include newsrow.html e=e %}{% endfor %}
+    {% for e in site.data.timeline %}{% include newsrow.html e=e %}{% endfor %}
   </ul>
 </div>
-{% if earlier.size > 0 %}
-<details class="news-earlier">
-  <summary>Earlier, {{ earlier.last.year }}–{{ earlier.first.year }}</summary>
-  <ul class="news">
-    {% for e in earlier %}{% include newsrow.html e=e %}{% endfor %}
-  </ul>
-</details>
-{% endif %}
 
 {% endif %}

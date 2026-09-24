@@ -28,6 +28,15 @@
 #   thrusts, thumb   legacy fields from an earlier design; not rendered
 # ─────────────────────────── 2026 ───────────────────────────
 
+- key: splice
+  title: "SPLICE: Structured Prompt Local Iterative Combinatorial Evolution"
+  summary: "Treats a production prompt as a set of blocks, some frozen and some editable, and optimizes it with section-local textual gradients and elitist beam search, giving the first formal guarantees for iterative LLM-driven prompt optimization. Outperforms prior prompt optimizers across benchmarks and three model capability tiers while keeping frozen sections verbatim."
+  authors: [A Acharya, P Studans, A Dhanda, N V Rao, V A Khatri, S A Niaki, B Verkhovsky]
+  venue: NeurIPS 2026
+  venue_full: Conference on Neural Information Processing Systems
+  year: 2026
+  type: conference
+
 - key: ropoll
   title: "RoPoLL: Robust Panel of LLM Judges"
   summary: "Shows that averaging an LLM jury is unboundedly biased once any judge fails systematically, and replaces the average with a geometric-median aggregator that has the optimal 1/2 breakdown point. A 3-judge 38B panel beats a 675B judge by 1.31x under 30% corruption."

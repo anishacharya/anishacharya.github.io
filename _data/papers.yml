@@ -1,7 +1,7 @@
 # Single source of truth for all publications.
 # Reconciled against ~/Desktop/portfolio/CV_ANISH/publication.tex (the active CV).
 #
-# Views over this file: /publications (Selected, then all by year), the
+# Views over this file: /publications (all, reverse-chronological), the
 # homepage Selected Work section, the /research threads (papers are placed by
 # key in research.html), and one page per paper at /papers/<key>/.
 #
@@ -20,7 +20,7 @@
 #   venue_full  spelled-out venue
 #   year        integer, used for grouping
 #   type        conference | journal | workshop | preprint
-#   selected    true to show under Selected on /publications and the homepage
+#   selected    true to show in the homepage Selected Work section
 #   note        long qualifier (for workshops, the workshop name); note_short
 #               is the short version
 #   links       label -> url (empty strings are skipped at render time)

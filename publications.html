@@ -2,15 +2,18 @@
 layout: base
 title: Publications
 permalink: /publications/
-description: "Publications by Anish Acharya: selected papers, the full list by year, PhD thesis, and granted US patents on robust learning, LLM evaluation, federated learning, and NLP."
+description: "Publications by Anish Acharya: the full list by year, PhD thesis, and granted US patents on robust learning, LLM evaluation, federated learning, and NLP."
 ---
 <p class="lede">
   Also on <a href="https://scholar.google.com/citations?user={{ site.social.scholar }}">Google Scholar</a>.
 </p>
 
-<h2>Selected</h2>
-{% assign selected = site.data.papers | where: "selected", true %}
-{% include publist.html items=selected %}
+<h2>All publications</h2>
+{% assign years = site.data.papers | group_by: "year" | sort: "name" | reverse %}
+{% for group in years %}
+  <p class="year">{{ group.name }}</p>
+  {% include publist.html items=group.items %}
+{% endfor %}
 
 {% assign phd = site.data.work.education | first %}
 <h2>Thesis</h2>
@@ -22,13 +25,6 @@ description: "Publications by Anish Acharya: selected papers, the full list by y
     Committee: {% for c in phd.committee %}{% if c.scholar %}<a href="https://scholar.google.com/citations?user={{ c.scholar }}">{{ c.name }}</a>{% else %}{{ c.name }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}.
   </p>
 </div>
-
-<h2>All publications</h2>
-{% assign years = site.data.papers | group_by: "year" | sort: "name" | reverse %}
-{% for group in years %}
-  <p class="year">{{ group.name }}</p>
-  {% include publist.html items=group.items %}
-{% endfor %}
 
 <h2>Granted US patents</h2>
 <ul class="rows">

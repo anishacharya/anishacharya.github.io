@@ -1,27 +1,16 @@
 # Roles, education, teaching, awards, service, code.
 # Reconciled against CV_ANISH/{work,education,teaching,awards,service}.tex.
-# Section order on the landing page follows main.tex:
-#   education -> interests -> work -> teaching -> awards -> service -> patents
 #
-# IMPORTANT: never write "Present" in a date field — it rots silently.
-# Set `current: true` and the template renders the trailing dash.
-
-# Short display names for the landing-page chip strip. Full names live in
-# `education` and `roles` below and are used on /cv/.
-affiliations:
-  study:
-    - UT Austin
-    - UC Irvine
-    - Jadavpur University
-  work:
-    - AWS
-    - Meta FAIR
-    - Microsoft Research
-    - Amazon Alexa AI
-    - Eidon AI
-    - eBay
-    - Schlumberger
-    - TTIC
+# Rendered on the landing page, in this order: education, roles (Research
+# experience), teaching, service. The thesis block on /publications reads the
+# first education entry. `awards` and `code` are kept as CV source data and are
+# not rendered on the site.
+#
+# People (advisors, committee, hosts) are {name, scholar} records; `scholar` is
+# the Google Scholar user id and renders as a profile link.
+#
+# IMPORTANT: never write "Present" in a date field; it goes stale silently.
+# Leave the end of a current range open ("Spring 2025 –").
 
 education:
   - school: The University of Texas at Austin

@@ -28,7 +28,7 @@ description: "PhD thesis, publications, granted patents, and technical reports."
     <div class="row-main">
       <div class="t">{{ pt.title }}</div>
       <div class="s">
-        {% for a in pt.inventors %}{% if a == "A Acharya" %}<strong>{{ a }}</strong>{% else %}{{ a }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}
+        {% for a in pt.inventors %}{% if a == "A Acharya" or a == "Anish Acharya" %}<strong>Anish Acharya</strong>{% else %}{{ a }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}
       </div>
       <div class="s">
         {{ pt.number }} · {{ pt.assignee }}

@@ -1,27 +1,31 @@
 # Single source of truth for all publications.
 # Reconciled against ~/Desktop/portfolio/CV_ANISH/publication.tex (the active CV).
 #
-# Every publication page is a *view* over this file. To add a paper, append an
-# entry here and it appears on the home page, /papers, and /research
-# automatically. Never edit the generated pages directly.
+# Views over this file: /publications (Selected, then all by year), the
+# homepage Selected Work section, the /research threads (papers are placed by
+# key in research.html), and one page per paper at /papers/<key>/.
+#
+# Paper pages: every entry with a `summary` gets a page. After adding or
+# editing entries, regenerate the stubs:
+#     python3 scripts/gen_paper_pages.py
 #
 # Fields:
-#   key         unique slug. Also the thumbnail filename: img/papers/<key>.png
+#   key         unique slug; also the paper page URL
 #   title       full title
-#   authors     list; write "A Acharya" for yourself so templates can bold it
-#   venue       short venue, shown on cards
-#   venue_full  spelled-out venue, shown on /papers
+#   summary     one plain-language sentence or two stating the result
+#   authors     list; write "A Acharya" for yourself so templates render the
+#               full name and emphasize it
+#   authors_full  optional full author list, used instead of `authors`
+#   venue       short venue
+#   venue_full  spelled-out venue
 #   year        integer, used for grouping
 #   type        conference | journal | workshop | preprint
-#   thrusts     robust | optim | scarcity | language | origins  (groups /research; a list)
-#               FIRST entry is the primary home: /research renders the full entry there once
-#               and cross-references it from the others, so no paper is listed twice.
-#   selected    true to surface on the home page
-#   thumb       false if there is no rendered cover in img/papers/
-#   note        long qualifier; note_short is the card version
-#   links       label -> url  (empty strings are skipped at render time)
-#   also        earlier / extended versions
-
+#   selected    true to show under Selected on /publications and the homepage
+#   note        long qualifier (for workshops, the workshop name); note_short
+#               is the short version
+#   links       label -> url (empty strings are skipped at render time)
+#   also        earlier or extended versions
+#   thrusts, thumb   legacy fields from an earlier design; not rendered
 # ─────────────────────────── 2026 ───────────────────────────
 
 - key: ropoll

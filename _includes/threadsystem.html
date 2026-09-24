@@ -1,0 +1,15 @@
+{%- comment -%}
+A shipped system as research evidence. Links to the first launch link
+(product page or announcement).
+Usage: {% include threadsystem.html system=s %}
+{%- endcomment -%}
+{%- assign s = include.system -%}
+<li>
+  <p class="thread-paper-title">
+    {%- for link in s.links limit:1 -%}<a href="{{ link[1] }}">{{ s.name }}</a>{%- endfor -%}
+  </p>
+  <p class="thread-paper-venue">{{ s.org }}{% if s.venue %} · {{ s.venue }}{% else %} · {{ s.when }}{% endif %}</p>
+  {%- if s.what %}
+  <p class="thread-paper-summary">{{ s.what }}</p>
+  {%- endif %}
+</li>

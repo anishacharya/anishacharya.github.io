@@ -84,12 +84,17 @@ description: "Anish Acharya's research: learning theory for recursive self-impro
             </p>
           </aside>
         </div>
-        <aside class="thread-evidence" aria-label="Selected publications and patents for recursive self improvement">
+        <aside class="thread-evidence" aria-label="Selected publications, systems, and patents for recursive self improvement">
           <h3>Selected Publications</h3>
           <ul class="thread-papers">
             {% include threadpaper.html paper=ropoll %}
             {% include threadpaper.html paper=orchopt %}
             {% include threadpaper.html paper=alexa %}
+          </ul>
+          <h3>Selected Systems</h3>
+          <ul class="thread-papers">
+            {% assign aws_systems = site.data.launches | where: "role_key", "amazon-aws" %}
+            {% for s in aws_systems %}{% include threadsystem.html system=s %}{% endfor %}
           </ul>
           <h3>Selected Patents</h3>
           <ul class="thread-papers thread-patents">
@@ -252,7 +257,7 @@ description: "Anish Acharya's research: learning theory for recursive self-impro
             </ol>
           </div>
         </div>
-        <aside class="thread-evidence" aria-label="Selected publications for control, estimation, and signal processing">
+        <aside class="thread-evidence" aria-label="Selected publications for control and stability">
           <h3>Selected Publications</h3>
           <ul class="thread-papers">
             {% include threadpaper.html paper=butterworth %}

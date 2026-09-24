@@ -142,7 +142,7 @@
 - year: 2025
   kind: role
   when: Fall
-  what: "Instructor, UT Austin DiRP — NLO for LLMs"
+  what: "Instructor, UT Austin Directed Reading Program — Natural Language Optimization"
 - year: 2025
   kind: paper
   when: Summer
@@ -374,11 +374,11 @@
 - year: 2014
   kind: milestone
   when: Fall
-  what: "MS, Electrical and Computer Science — UC Irvine"
+  what: "MS, Electrical Engineering and Computer Science — UC Irvine"
 - year: 2014
   kind: role
   when: Summer
-  what: "Visiting Research Scientist — TTIC, for Toyota TRINA"
+  what: "Visiting Research Assistant — TTIC, for Toyota TRINA"
 - year: 2014
   kind: paper
   what: "Analog Butterworth filters, fractional domain — Elsevier"

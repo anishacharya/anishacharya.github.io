@@ -1,6 +1,7 @@
 # Shipped systems, newest first. Each launch carries its own links and press.
-# `role_key` must match the `key` of a role in work.yml — the Research experience
-# on the landing page renders each launch inline under its role.
+# `role_key` matches the `key` of a role in work.yml. Launches with
+# role_key: amazon-aws appear under "Shipped at AWS" in the homepage
+# Selected Work section, and as evidence on /research thread 01.
 
 - key: ai-product-listing
   name: AI-Assisted Product Listing

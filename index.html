@@ -44,6 +44,36 @@ description: "Anish Acharya is a Senior Research Scientist at AWS working on lea
   </p>
 </div>
 
+{%- comment -%}
+  Selected work: the evidence behind the bio, before the CV sections. Papers
+  are those marked `selected: true` in papers.yml; systems are AWS launches in
+  launches.yml.
+{%- endcomment -%}
+<h2>Selected Work</h2>
+<ul class="selwork">
+  {% assign selected = site.data.papers | where: "selected", true %}
+  {% for p in selected %}
+  {% assign doc = site.papers | where: "key", p.key | first %}
+  <li>
+    <p class="sel-title">{% if doc %}<a href="{{ doc.url | relative_url }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}</p>
+    <p class="sel-venue">{{ p.venue }}{% if p.note_short %} · {{ p.note_short }}{% endif %}</p>
+    {% if p.summary %}<p class="sel-summary">{{ p.summary }}</p>{% endif %}
+  </li>
+  {% endfor %}
+</ul>
+<h3 class="sel-sub">Shipped at AWS</h3>
+<ul class="selwork">
+  {% assign systems = site.data.launches | where: "role_key", "amazon-aws" %}
+  {% for s in systems %}
+  <li>
+    <p class="sel-title">{{ s.name }}</p>
+    <p class="sel-venue">{{ s.org }}{% if s.venue %} · {{ s.venue }}{% else %} · {{ s.when }}{% endif %}</p>
+    {% if s.what %}<p class="sel-summary">{{ s.what }}</p>{% endif %}
+    {% if s.links %}<p class="sel-links">{% for l in s.links %}<a href="{{ l[1] }}">{{ l[0] }}</a>{% unless forloop.last %} <span class="sep">·</span> {% endunless %}{% endfor %}</p>{% endif %}
+  </li>
+  {% endfor %}
+</ul>
+
 <h2>Education</h2>
 <ul class="jobs">
   {% for e in site.data.work.education %}
@@ -129,25 +159,27 @@ description: "Anish Acharya is a Senior Research Scientist at AWS working on lea
   {% endfor %}
 </ul>
 
+{%- comment -%}
+  News shows the research-career record from 2019 (start of the PhD) onward.
+  Earlier items stay one click away rather than sharing the box with current
+  papers and launches.
+{%- endcomment -%}
+{% assign news_since = 2019 %}
+{% assign recent = site.data.timeline | where_exp: "e", "e.year >= news_since" %}
+{% assign earlier = site.data.timeline | where_exp: "e", "e.year < news_since" %}
 <h2>News</h2>
-<div class="newsbox" tabindex="0" role="region" aria-label="News and full record">
+<div class="newsbox" tabindex="0" role="region" aria-label="News since {{ news_since }}">
   <ul class="news">
-    {% for e in site.data.timeline %}
-    <li>
-      <span class="nd">{% if e.when %}{{ e.when }}, {% endif %}{{ e.year }}</span>
-      <span class="tl-kind tl-{{ e.kind }}">{{ e.kind }}</span>
-      {%- comment -%}
-        Row text is never a link. Every link lives in .nx, named, so all 78 rows
-        expose their material the same way -- previously a launch showed named
-        links on the right, a paper hid its link under the row text, and a talk
-        showed nothing, which gave three treatments and no way to tell which rows
-        had anything attached without hovering each one.
-      {%- endcomment -%}
-      <span class="nw" title="{{ e.what }}">{{ e.what }}</span>
-      <span class="nx">{%- for k in e.links -%}{%- if k[1] != "" -%}<a href="{{ k[1] }}">{{ k[0] }}</a>{%- unless forloop.last %} <span class="sep">·</span> {% endunless -%}{%- endif -%}{%- endfor -%}</span>
-    </li>
-    {% endfor %}
+    {% for e in recent %}{% include newsrow.html e=e %}{% endfor %}
   </ul>
 </div>
+{% if earlier.size > 0 %}
+<details class="news-earlier">
+  <summary>Earlier, {{ earlier.last.year }}–{{ earlier.first.year }}</summary>
+  <ul class="news">
+    {% for e in earlier %}{% include newsrow.html e=e %}{% endfor %}
+  </ul>
+</details>
+{% endif %}
 
 {% endif %}

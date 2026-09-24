@@ -11,7 +11,8 @@
     USPTO: "https://patentimages.storage.googleapis.com/e6/63/6a/f06b172a2d2d00/US11393454.pdf"
 
 - key: nlp-embedding-compression
-  title: "Natural Language Processing: Amazon Alexa AI"
+  title: "Natural Language Processing"
+  summary: "Compressing word embeddings with low-rank matrix factorization for on-device natural language understanding."
   number: US10872601
   granted: 2020-12
   assignee: Amazon

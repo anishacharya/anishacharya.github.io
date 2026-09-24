@@ -15,8 +15,8 @@ description: "PhD thesis, publications, granted patents, and technical reports."
   <p class="thesis-title"><a href="{{ phd.thesis_url }}">{{ phd.thesis }}</a></p>
   <p class="thesis-meta">
     {{ phd.degree }} · {{ phd.school }}, 2025<br>
-    Advised by {{ phd.advisors | join: " and " }}.
-    Committee: {{ phd.committee | join: ", " }}.
+    Advised by {% for a in phd.advisors %}{% if a.scholar %}<a href="https://scholar.google.com/citations?user={{ a.scholar }}">{{ a.name }}</a>{% else %}{{ a.name }}{% endif %}{% unless forloop.last %} and {% endunless %}{% endfor %}.
+    Committee: {% for c in phd.committee %}{% if c.scholar %}<a href="https://scholar.google.com/citations?user={{ c.scholar }}">{{ c.name }}</a>{% else %}{{ c.name }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}.
   </p>
 </div>
 

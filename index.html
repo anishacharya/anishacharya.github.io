@@ -44,36 +44,6 @@ description: "Anish Acharya is a Senior Research Scientist at AWS working on lea
   </p>
 </div>
 
-{%- comment -%}
-  Selected work: the evidence behind the bio, before the CV sections. Papers
-  are those marked `selected: true` in papers.yml; systems are AWS launches in
-  launches.yml.
-{%- endcomment -%}
-<h2>Selected Work</h2>
-<ul class="selwork">
-  {% assign selected = site.data.papers | where: "selected", true %}
-  {% for p in selected %}
-  {% assign doc = site.papers | where: "key", p.key | first %}
-  <li>
-    <p class="sel-title">{% if doc %}<a href="{{ doc.url | relative_url }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}</p>
-    <p class="sel-venue">{{ p.venue }}{% if p.note_short %} · {{ p.note_short }}{% endif %}</p>
-    {% if p.summary %}<p class="sel-summary">{{ p.summary }}</p>{% endif %}
-  </li>
-  {% endfor %}
-</ul>
-<h3 class="sel-sub">Shipped at AWS</h3>
-<ul class="selwork">
-  {% assign systems = site.data.launches | where: "role_key", "amazon-aws" %}
-  {% for s in systems %}
-  <li>
-    <p class="sel-title">{{ s.name }}</p>
-    <p class="sel-venue">{{ s.org }}{% if s.venue %} · {{ s.venue }}{% else %} · {{ s.when }}{% endif %}</p>
-    {% if s.what %}<p class="sel-summary">{{ s.what }}</p>{% endif %}
-    {% if s.links %}<p class="sel-links">{% for l in s.links %}<a href="{{ l[1] }}">{{ l[0] }}</a>{% unless forloop.last %} <span class="sep">·</span> {% endunless %}{% endfor %}</p>{% endif %}
-  </li>
-  {% endfor %}
-</ul>
-
 <h2>Education</h2>
 <ul class="jobs">
   {% for e in site.data.work.education %}

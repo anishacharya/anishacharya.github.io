@@ -209,34 +209,6 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
 .bio { margin: 1.9rem 0 0; max-width: var(--prose); }
 .bio p { font-size: 1.02rem; }
 
-/* --- Selected work: papers and shipped systems, each with its result ----- */
-
-.selwork {
-  list-style: none; margin: 0; padding: 0;
-  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.2rem 2rem;
-}
-.selwork li { padding: 0.6rem 0; border-bottom: 1px solid var(--rule-soft); }
-.sel-title {
-  font-family: var(--sans); font-size: 0.95rem; font-weight: 600;
-  line-height: 1.35; margin: 0; text-wrap: balance;
-}
-.sel-title a { color: var(--ink); border-bottom: none; }
-.sel-title a:hover { color: var(--accent); }
-.sel-venue {
-  font-family: var(--sans); font-size: 0.78rem; color: var(--ink-faint); margin: 0.15rem 0 0;
-}
-.sel-summary {
-  font-size: 0.86rem; line-height: 1.5; color: var(--ink-soft); margin: 0.3rem 0 0;
-  text-wrap: pretty;
-}
-.sel-links { font-family: var(--sans); font-size: 0.78rem; margin: 0.3rem 0 0; }
-.sel-links a { border-bottom: none; }
-.sel-links .sep { color: var(--ink-faint); }
-.sel-sub {
-  font-size: 0.8rem; font-weight: 650; letter-spacing: 0.08em; text-transform: uppercase;
-  color: var(--ink-faint); margin: 1.6rem 0 0.2rem;
-}
-
 /* --- News: scrollable record (date · badge · one line) ------------------- */
 
 .newsbox {
@@ -624,7 +596,6 @@ footer { border-top: 1px solid var(--rule); }
   .idcard { grid-template-columns: 100px 1fr; gap: 1.2rem; }
   .portrait { width: 100px; height: 100px; }
   .idcard h1 { font-size: 1.55rem; }
-  .selwork { grid-template-columns: 1fr; }
   /* News: the desktop four-column row is too wide for a phone. Stack it —
      date and badge share the top line, the event text wraps on its own line,
      and the links sit below. Every row keeps all four fields visible. */

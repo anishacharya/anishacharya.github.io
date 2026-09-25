@@ -33,7 +33,7 @@
   summary: "Treats a production prompt as a set of blocks, some frozen and some editable, and optimizes it with section-local textual gradients and elitist beam search, giving the first formal guarantees for iterative LLM-driven prompt optimization. Outperforms prior prompt optimizers across benchmarks and three model capability tiers while keeping frozen sections verbatim."
   authors: [A Acharya, P Studans, A Dhanda, N V Rao, V A Khatri, S A Niaki, B Verkhovsky]
   venue: NeurIPS 2026
-  venue_full: Conference on Neural Information Processing Systems
+  venue_full: Conference on Neural Information Processing Systems (NeurIPS)
   year: 2026
   type: conference
 
@@ -42,7 +42,7 @@
   summary: "Shows that averaging an LLM jury is unboundedly biased once any judge fails systematically, and replaces the average with a geometric-median aggregator that has the optimal 1/2 breakdown point. A 3-judge 38B panel beats a 675B judge by 1.31x under 30% corruption."
   authors: [A Acharya, K Pan, B Verkhovsky]
   venue: ICML 2026
-  venue_full: International Conference on Machine Learning
+  venue_full: International Conference on Machine Learning (ICML)
   year: 2026
   type: workshop
   thrusts: [robust]
@@ -60,7 +60,7 @@
   summary: "Searches over multi-agent orchestration architectures and keeps a change only when it passes validation."
   authors: [A Dhanda, S A Niaki, A Acharya, B Verkhovsky]
   venue: COLM 2026
-  venue_full: Conference on Language Modeling
+  venue_full: Conference on Language Modeling (COLM)
   year: 2026
   type: workshop
   thrusts: [optim]
@@ -77,7 +77,7 @@
   summary: "Selects a k-subset whose mean tracks the geometric median of noisy data, giving an O(1/k) rate under arbitrary corruption, a quadratic improvement over random sampling."
   authors: [A Acharya, S Sanghavi, A G Dimakis, I S Dhillon]
   venue: ICML 2025
-  venue_full: International Conference on Machine Learning
+  venue_full: International Conference on Machine Learning (ICML)
   year: 2025
   type: conference
   thrusts: [robust, optim, scarcity]
@@ -96,7 +96,7 @@
   summary: "Learns lossy distributed source coding with a conditional VQ-VAE, handling arbitrary correlation structure in high dimensions with state-of-the-art PSNR."
   authors: [A Nagle, J Whang, A Acharya, H Kim, A Dimakis]
   venue: IEEE JSAIT 2024
-  venue_full: "IEEE Journal on Selected Areas in Information Theory"
+  venue_full: "IEEE Journal on Selected Areas in Information Theory (IEEE JSAIT)"
   year: 2024
   type: journal
   thrusts: [scarcity]
@@ -111,7 +111,7 @@
   summary: "Combines variance-reduced momentum at the server and at the clients to speed up non-convex federated learning under client heterogeneity and compressed communication."
   authors: [R Das, A Acharya, A Hashemi, S Sanghavi, I Dhillon, U Topcu]
   venue: UAI 2022
-  venue_full: Conference on Uncertainty in Artificial Intelligence
+  venue_full: Conference on Uncertainty in Artificial Intelligence (UAI)
   year: 2022
   type: conference
   thrusts: [optim]
@@ -126,7 +126,7 @@
   summary: "Makes geometric-median SGD practical in high dimensions by applying it to one chosen block of coordinates at a time, keeping the optimal 1/2 breakdown point for smooth non-convex problems."
   authors: [A Acharya, A Hashemi, P Jain, S Sanghavi, I Dhillon, U Topcu]
   venue: AISTATS 2022
-  venue_full: International Conference on Artificial Intelligence and Statistics
+  venue_full: International Conference on Artificial Intelligence and Statistics (AISTATS)
   year: 2022
   type: conference
   thrusts: [robust, optim]
@@ -147,7 +147,7 @@
   summary: "Extends contrastive pretraining to positive-unlabeled data with an unbiased, lower-variance loss that uses the few labeled positives."
   authors: [A Acharya, S Sanghavi, L Jing, B Bhushanam, D Choudhary, M Rabbat, I Dhillon]
   venue: ICML 2022
-  venue_full: International Conference on Machine Learning
+  venue_full: International Conference on Machine Learning (ICML)
   year: 2022
   type: workshop
   thrusts: [robust]
@@ -166,7 +166,7 @@
   summary: "Releases two corpora, about 1.3M and 100K full-text scientific articles, for identifying keyphrases beyond the title and abstract."
   authors: [D Mahata, N Agarwal, D Gautam, A Kumar, S Parekh, Y K Singla, A Acharya, R R Shah]
   venue: CIKM 2022
-  venue_full: ACM International Conference on Information and Knowledge Management
+  venue_full: ACM International Conference on Information and Knowledge Management (CIKM)
   year: 2022
   type: workshop
   thrusts: [language]
@@ -184,7 +184,7 @@
   summary: "Shows that several gossip steps between gradient updates improve decentralized learning under lossy compressed communication, even after paying for the extra communication."
   authors: [A Hashemi, A Acharya, R Das, H Vikalo, S Sanghavi, I Dhillon]
   venue: IEEE TPDS 2021
-  venue_full: "IEEE Transactions on Parallel and Distributed Systems"
+  venue_full: "IEEE Transactions on Parallel and Distributed Systems (IEEE TPDS)"
   year: 2021
   type: journal
   thrusts: [scarcity, optim]
@@ -199,7 +199,7 @@
   authors: [A Acharya, "and 30 others"]
   authors_full: [A Acharya, S Adhikari, S Agarwal, V Auvray, N Belgamwar, A Biswas, S Chandra, T Chung, M Zarandi, R Gabriel, S Gao, R Goel, D Hakkani-Tur, J Jezabek, A Jha, J Kao, P Krishnan, P Ku, A Goyal, C Lin, Q Liu, A Mandal, A Metallinou, V Naik, Y Pan, S Paul, V Perera, A Sethi, M Shen, N Strom, E Wang]
   venue: NAACL 2021
-  venue_full: Conference of the North American Chapter of the Association for Computational Linguistics
+  venue_full: Conference of the North American Chapter of the Association for Computational Linguistics (NAACL)
   year: 2021
   type: conference
   thrusts: [language]
@@ -216,7 +216,7 @@
   summary: "Introduces the first summarization dataset of Hindi-English code-switched conversations: over 6,800 conversations with human-written summaries."
   authors: [L Mehnaz, D Mahata, A Kumar, U S Gunturi, R Jain, G Gupta, R Gosangi, I G Lee, A Acharya, R Shah]
   venue: EMNLP 2021
-  venue_full: Conference on Empirical Methods in Natural Language Processing
+  venue_full: Conference on Empirical Methods in Natural Language Processing (EMNLP)
   year: 2021
   type: conference
   thrusts: [language]
@@ -231,7 +231,7 @@
   summary: "Compresses the word-embedding layer during training with low-rank factorization, reaching 90% compression with minimal accuracy loss and no added latency."
   authors: [A Acharya, R Goel, A Metallinou, I Dhillon]
   venue: AAAI 2019
-  venue_full: AAAI Conference on Artificial Intelligence
+  venue_full: AAAI Conference on Artificial Intelligence (AAAI)
   year: 2019
   type: conference
   thrusts: [scarcity]
@@ -278,7 +278,7 @@
   venue: ICCCI 2013
   # "Informatics", not "the Internet": per Crossref for DOI 10.1109/iccci.2013.6466311 the
   # proceedings are the 2013 International Conference on Computer Communication and Informatics.
-  venue_full: International Conference on Computer Communication and Informatics
+  venue_full: International Conference on Computer Communication and Informatics (ICCCI)
   year: 2013
   type: conference
   thrusts: [origins]
@@ -290,7 +290,7 @@
   title: Optimum PID Control of Multi-wing Attractors in A Family of Lorenz-like Chaotic Systems
   authors: [A Acharya, S Das, I Pan]
   venue: ICCCNT 2012
-  venue_full: International Conference on Computing, Communication and Networking Technologies
+  venue_full: International Conference on Computing, Communication and Networking Technologies (ICCCNT)
   year: 2012
   type: conference
   thrusts: [origins, optim]
@@ -302,7 +302,7 @@
   title: Optimized Quality Factor of Fractional Order Analog Filters with Band-Pass and Band-Stop Characteristics
   authors: [A Pakhira, S Das, A Acharya, I Pan, S Saha]
   venue: ICCCNT 2012
-  venue_full: International Conference on Computing, Communication and Networking Technologies
+  venue_full: International Conference on Computing, Communication and Networking Technologies (ICCCNT)
   year: 2012
   type: conference
   thrusts: [origins, optim]
@@ -314,7 +314,7 @@
   title: "Identification of nonlinear systems from the knowledge around different operating conditions: a feed-forward multilayer Artificial Neural Net (ANN) based approach"
   authors: [S Saha, S Das, A Acharya, A Kumar, S Mukherjee, I Pan, A Gupta]
   venue: PDGC 2012
-  venue_full: International Conference on Parallel, Distributed and Grid Computing
+  venue_full: International Conference on Parallel, Distributed and Grid Computing (PDGC)
   year: 2012
   type: conference
   thrusts: [origins]
@@ -326,7 +326,7 @@
   title: Least square and instrumental variable system identification of AC servo position control system with fractional Gaussian noise
   authors: [S Das, A Kumar, I Pan, A Acharya, S Das, A Gupta]
   venue: ICEAS 2011
-  venue_full: International Conference on Energy, Automation and Signal
+  venue_full: International Conference on Energy, Automation and Signal (ICEAS)
   year: 2011
   type: conference
   thrusts: [origins]

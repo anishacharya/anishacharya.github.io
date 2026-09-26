@@ -248,6 +248,7 @@
 - key: butterworth
   thumb: false
   title: Extending The Concept of Analog Butterworth Filter For Fractional Domain
+  summary: "Designs fractional-order Butterworth filters in the complex w-plane, including under-, hyper-, and ultra-damped poles, and demonstrates the formulation in simulations and a frequency-domain design example."
   authors: [A Acharya, S Das, I Pan, S Das]
   venue: Signal Processing 2014
   venue_full: "Signal Processing (Elsevier)"
@@ -261,6 +262,7 @@
 - key: lorenz-pid
   thumb: false
   title: Simulation studies on the design of optimum PID controllers to suppress chaotic oscillations in a family of Lorenz-like multi-wing attractors
+  summary: "Uses real-coded genetic-algorithm optimization to tune PID controllers for four Lorenz-family multi-wing chaotic systems, with robustness checked across initial conditions."
   authors: [S Das, A Acharya, I Pan]
   venue: Math. Comp. Simulation 2014
   venue_full: "Mathematics and Computers in Simulation (Elsevier)"
@@ -274,6 +276,7 @@
 - key: bode
   thumb: false
   title: Stability Analysis Of Delayed System Using Bode's Integral
+  summary: "Tunes PID controllers for delayed plants using Bode's integral and a Padé approximation of the delay, then compares the approach with genetic-algorithm tuning in MATLAB simulations."
   authors: [A Acharya, D Mitra, K Halder]
   venue: ICCCI 2013
   # "Informatics", not "the Internet": per Crossref for DOI 10.1109/iccci.2013.6466311 the
@@ -284,10 +287,12 @@
   thrusts: [origins]
   links:
     IEEE Xplore: "https://ieeexplore.ieee.org/abstract/document/6466311"
+    arXiv: "https://arxiv.org/abs/1212.6817"
 
 - key: multiwing
   thumb: false
   title: Optimum PID Control of Multi-wing Attractors in A Family of Lorenz-like Chaotic Systems
+  summary: "Applies real-coded genetic-algorithm optimization to tune PID control of Lorenz-like multi-wing chaotic attractors and compares the resulting state trajectories."
   authors: [A Acharya, S Das, I Pan]
   venue: ICCCNT 2012
   venue_full: International Conference on Computing, Communication and Networking Technologies (ICCCNT)
@@ -296,10 +301,12 @@
   thrusts: [origins, optim]
   links:
     IEEE Xplore: "https://ieeexplore.ieee.org/abstract/document/6396002"
+    arXiv: "https://arxiv.org/abs/1210.8195"
 
 - key: fractional-q
   thumb: false
   title: Optimized Quality Factor of Fractional Order Analog Filters with Band-Pass and Band-Stop Characteristics
+  summary: "Studies fractional-order band-pass and band-stop filters, whose characteristics are unavailable to conventional integer-order filters below second order, and optimizes their quality factor."
   authors: [A Pakhira, S Das, A Acharya, I Pan, S Saha]
   venue: ICCCNT 2012
   venue_full: International Conference on Computing, Communication and Networking Technologies (ICCCNT)
@@ -308,10 +315,12 @@
   thrusts: [origins, optim]
   links:
     IEEE Xplore: "https://ieeexplore.ieee.org/abstract/document/6396000"
+    arXiv: "https://arxiv.org/abs/1210.8196"
 
 - key: nonlinear-ann
   thumb: false
   title: "Identification of nonlinear systems from the knowledge around different operating conditions: a feed-forward multilayer Artificial Neural Net (ANN) based approach"
+  summary: "Identifies nonlinear systems from outputs near several linearized operating points using feed-forward multilayer neural networks, evaluated on nuclear-reactor monitoring and AC-servo control."
   authors: [S Saha, S Das, A Acharya, A Kumar, S Mukherjee, I Pan, A Gupta]
   venue: PDGC 2012
   venue_full: International Conference on Parallel, Distributed and Grid Computing (PDGC)
@@ -324,6 +333,7 @@
 - key: least-square
   thumb: false
   title: Least square and instrumental variable system identification of AC servo position control system with fractional Gaussian noise
+  summary: "Compares least-squares and instrumental-variable estimators for identifying an AC-servo position-control system under white and fractional Gaussian measurement noise."
   authors: [S Das, A Kumar, I Pan, A Acharya, S Das, A Gupta]
   venue: ICEAS 2011
   venue_full: International Conference on Energy, Automation and Signal (ICEAS)

@@ -17,6 +17,7 @@
   <title>{{ doc_title }}</title>
   <meta name="description" content="{{ page.description | default: site.description }}">
   <meta name="author" content="{{ site.author.name }}">
+  {% if site.verification.google_search_console %}<meta name="google-site-verification" content="{{ site.verification.google_search_console }}">{% endif %}
   {%- if page.noindex %}
   <meta name="robots" content="noindex">
   {%- else %}

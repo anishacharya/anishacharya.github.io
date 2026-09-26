@@ -22,6 +22,7 @@ social:
 # rendered <head>; never store account passwords or private API keys here.
 verification:
   google_search_console: "X6M5k4tpbgosFQu6dtbXEorrYYVoIJZcu8UNfkv6fuM"
+  bing_webmaster_tools: "56385C6FAED327E94C9E1F32BBAECF56"
 
 # --- Navigation ---------------------------------------------------------- #
 

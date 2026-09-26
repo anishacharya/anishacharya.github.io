@@ -6,6 +6,7 @@ One page per paper. The stub in _papers/ carries only key, title, and
 description; everything else comes from _data/papers.yml.
 {%- endcomment -%}
 {% assign p = site.data.papers | where: "key", page.key | first %}
+{% assign abstract = site.data.abstracts[p.key] %}
 <div class="paper-page">
   <p class="pub-authors">{% include authors.html paper=p %}</p>
   <p class="pub-venue">
@@ -13,6 +14,12 @@ description; everything else comes from _data/papers.yml.
     {%- if p.note %} <span class="pub-note">· {{ p.note }}</span>{% endif %}
   </p>
   {% if p.summary %}<p class="paper-summary">{{ p.summary }}</p>{% endif %}
+  {% if abstract %}
+  <section class="paper-abstract" aria-labelledby="abstract-heading">
+    <h2 id="abstract-heading">Abstract</h2>
+    <p>{{ abstract | escape }}</p>
+  </section>
+  {% endif %}
   {% if p.links %}
   <p class="pub-links">
     {% for l in p.links %}{% if l[1] != "" %}<a href="{{ l[1] }}">{{ l[0] }}</a>{% endif %}{% endfor %}

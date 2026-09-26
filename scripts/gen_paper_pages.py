@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
 """Generate one page stub per paper in _papers/ from _data/papers.yml.
 
-GitHub Pages does not run custom Jekyll plugins, so each paper page needs a
-file on disk. The stub holds only the key, title, and description; the paper
-layout reads everything else from _data/papers.yml.
-
-A paper gets a page only if it has a `summary`. Stale stubs are removed.
+GitHub Pages does not run custom Jekyll plugins, so every paper record needs a
+file on disk. The stub holds only the key, title, and short summary-based
+description; full source-authored abstracts live in _data/abstracts.yml and are
+read directly by the paper layout.
 
 Run from the repository root after editing _data/papers.yml:
     python3 scripts/gen_paper_pages.py

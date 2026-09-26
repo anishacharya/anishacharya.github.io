@@ -6,6 +6,7 @@ attribute it to its authors. The ScholarlyArticle JSON-LD ties the paper to the
 site's Person entity through the same @id used in person-schema.html.
 {%- endcomment -%}
 {%- assign p = site.data.papers | where: "key", page.key | first -%}
+{%- assign abstract = site.data.abstracts[p.key] -%}
 {%- if p -%}
 {%- assign names = p.authors_full | default: p.authors -%}
 <meta name="citation_title" content="{{ p.title | escape }}">
@@ -37,6 +38,9 @@ site's Person entity through the same @id used in person-schema.html.
   "name": {{ p.title | jsonify }},
   "headline": {{ p.title | truncate: 110 | jsonify }},
   "description": {{ p.summary | jsonify }},
+  {%- if abstract %}
+  "abstract": {{ abstract | jsonify }},
+  {%- endif %}
   "datePublished": "{{ p.year }}",
   {%- if p.type == "journal" %}
   "isPartOf": { "@type": "Periodical", "name": {{ p.venue_full | default: p.venue | jsonify }} },

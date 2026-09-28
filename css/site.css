@@ -626,7 +626,13 @@ footer { border-top: 1px solid var(--rule); }
   /* Let job/course labels wrap instead of clipping — a tooltip is not usable
      on touch, so the full role must be visible in the flow. */
   .pos-title { white-space: normal; overflow: visible; text-overflow: clip; }
-  .job-pos li { grid-template-columns: 1fr auto; }
+  /* Positions stack on a phone: forcing the date into a right-hand column
+     squeezes the role title into a sliver that wraps to three or four lines
+     while the date floats top-right. Give the title the full measure and drop
+     the date to its own quiet line beneath it. */
+  .job-pos li { grid-template-columns: 1fr; row-gap: 0.05rem; }
+  .job-pos.railed li { align-items: start; }
+  .pos-when { font-size: 0.74rem; }
 }
 
 /* --- Print -------------------------------------------------------------- */

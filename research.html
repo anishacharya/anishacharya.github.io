@@ -5,6 +5,7 @@ permalink: /research/
 description: "Anish Acharya's research: learning theory for recursive self-improvement, robust LLM evaluation, and multi-agent systems, across recursive self-improvement, distributed and collaborative learning, robust and weakly supervised learning, efficient learning, and control and stability."
 ---
 
+{% assign splice = site.data.papers | where: "key", "splice" | first %}
 {% assign ropoll = site.data.papers | where: "key", "ropoll" | first %}
 {% assign orchopt = site.data.papers | where: "key", "orchopt" | first %}
 {% assign gm = site.data.papers | where: "key", "gm-matching" | first %}
@@ -85,6 +86,7 @@ description: "Anish Acharya's research: learning theory for recursive self-impro
         <aside class="thread-evidence" aria-label="Selected publications, systems, and patents for recursive self improvement">
           <h3>Selected Publications</h3>
           <ul class="thread-papers">
+            {% include threadpaper.html paper=splice %}
             {% include threadpaper.html paper=ropoll %}
             {% include threadpaper.html paper=orchopt %}
             {% include threadpaper.html paper=alexa %}
@@ -214,6 +216,7 @@ description: "Anish Acharya's research: learning theory for recursive self-impro
         <aside class="thread-evidence" aria-label="Selected publications and patents for efficient learning">
           <h3>Selected Publications</h3>
           <ul class="thread-papers">
+            {% include threadpaper.html paper=splice %}
             {% include threadpaper.html paper=ropoll %}
             {% include threadpaper.html paper=gm %}
             {% include threadpaper.html paper=ndsc %}

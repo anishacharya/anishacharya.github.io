@@ -36,6 +36,8 @@
   venue_full: Conference on Neural Information Processing Systems (NeurIPS)
   year: 2026
   type: conference
+  thrusts: [optim, scarcity]
+  selected: true
 
 - key: ropoll
   title: "RoPoLL: Robust Panel of LLM Judges"

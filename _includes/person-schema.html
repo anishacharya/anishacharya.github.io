@@ -15,11 +15,10 @@ but without them there is no signal to act on at all.
 Emitted site-wide rather than only on the homepage so any entry point carries the identity.
 
 ORCID and Scopus are wired in below (both in `sameAs` and as `identifier` PropertyValues).
-alphaXiv, Semantic Scholar (author 40026200), ResearchGate, OpenReview and the UT Austin
-Center for Big Data Analytics member page are in `sameAs`.
+alphaXiv, Semantic Scholar (author 40026200), ResearchGate, OpenReview, DBLP (pid 120/7655)
+and the UT Austin Center for Big Data Analytics member page are in `sameAs`.
 
-TODO — remaining free, high-value additions, none of which I can invent an ID for:
-  * DBLP author page — dblp.org/pid/<pid>.html; confirm the exact URL is yours before adding.
+TODO — remaining free, high-value addition, which I can't invent an ID for:
   * arXiv author identifier (arxiv.org/a/<id>) — links the preprints to the person. arXiv's
     name search also returns a physicist named Anish Acharya, so use the claimed author ID.
 Add each to `sameAs` below once you have the URL. More independent, cross-linking profiles is
@@ -102,6 +101,7 @@ directly what makes the entity resolvable.
     "https://www.semanticscholar.org/author/Anish-Acharya/40026200",
     "https://www.researchgate.net/profile/Anish-Acharya-4",
     "https://openreview.net/profile?id=~Anish_Acharya1",
+    "https://dblp.org/pid/120/7655.html",
     "https://bigdata.oden.utexas.edu/author/anish-acharya/",
     "https://github.com/{{ site.social.github }}",
     "https://www.linkedin.com/in/{{ site.social.linkedin }}"

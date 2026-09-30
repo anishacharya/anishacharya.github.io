@@ -128,3 +128,21 @@ site has no search endpoint, and advertising one would be invalid markup.
   "about": { "@id": "{{ site.url }}/#person" }
 }
 </script>
+{%- comment -%}
+schema.org ProfilePage, homepage only. Google's profile-page guidance asks for this
+on a page whose main focus is one person; mainEntity points at the Person above.
+{%- endcomment %}
+{%- if page.url == "/" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "@id": "{{ site.url }}/#profilepage",
+  "url": "{{ site.url }}/",
+  "name": {{ site.title | jsonify }},
+  "isPartOf": { "@id": "{{ site.url }}/#website" },
+  "dateModified": "{{ site.time | date_to_xmlschema }}",
+  "mainEntity": { "@id": "{{ site.url }}/#person" }
+}
+</script>
+{%- endif %}

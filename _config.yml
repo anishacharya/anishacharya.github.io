@@ -42,6 +42,10 @@ timezone: "America/Chicago"
 
 plugins:
   - jekyll-sitemap
+  # Old-site URLs (/bio/, /talks/, ...) are still in search indexes. Each current
+  # page lists the old paths it replaces under `redirect_from`, so those links
+  # land on a real page instead of a 404.
+  - jekyll-redirect-from
 
 # One page per paper at /papers/<key>/. Stubs in _papers/ are generated from
 # _data/papers.yml by scripts/gen_paper_pages.py; do not edit them by hand.

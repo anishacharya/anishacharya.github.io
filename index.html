@@ -63,7 +63,7 @@ redirect_from:
     {% include logo.html logo=e.logo %}
     <div class="job-body">
       <div class="job-org">{{ e.degree }}</div>
-      <div class="job-inst">{{ e.school }} <span class="job-where">· {{ e.where }}</span><span class="job-date"> · {{ e.when }}</span>{% if e.note %}<span class="job-where"> · {{ e.note }}</span>{% endif %}</div>
+      <div class="job-inst">{{ e.school }} <span class="job-meta"><span class="sep">· </span><span class="job-where">{{ e.where }}</span><span class="sep"> · </span><span class="job-date">{{ e.when }}</span>{% if e.note %}<span class="sep"> · </span><span class="job-where">{{ e.note }}</span>{% endif %}</span></div>
       {% if e.thesis %}<p class="job-sub">Thesis: <a href="{{ e.thesis_url }}"><em>{{ e.thesis }}</em></a></p>{% endif %}
       {% if e.advisors %}<p class="job-sub">Advised by {% for a in e.advisors %}{% if a.scholar %}<a href="https://scholar.google.com/citations?user={{ a.scholar }}">{{ a.name }}</a>{% else %}{{ a.name }}{% endif %}{% unless forloop.last %} and {% endunless %}{% endfor %}</p>{% endif %}
       {% if e.committee %}<p class="job-sub">Committee: {% for c in e.committee %}{% if c.scholar %}<a href="https://scholar.google.com/citations?user={{ c.scholar }}">{{ c.name }}</a>{% else %}{{ c.name }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>{% endif %}
@@ -78,7 +78,7 @@ redirect_from:
   <li class="job">
     {% include logo.html logo=r.logo %}
     <div class="job-body">
-      <div class="job-org">{{ r.org }} <span class="job-where">· {{ r.where }}</span><span class="job-date"> · {{ r.when }}</span></div>
+      <div class="job-org">{{ r.org }} <span class="job-meta"><span class="sep">· </span><span class="job-where">{{ r.where }}</span><span class="sep"> · </span><span class="job-date">{{ r.when }}</span></span></div>
       <ul class="job-pos{% if r.positions.size > 1 %} railed{% endif %}">
         {% for p in r.positions %}
         <li>
@@ -106,7 +106,7 @@ redirect_from:
   <li class="job">
     {% include logo.html logo=t.logo %}
     <div class="job-body">
-      <div class="job-org">{{ t.school }} <span class="job-where">· {{ t.where }}</span><span class="job-date"> · {{ t.when }}</span></div>
+      <div class="job-org">{{ t.school }} <span class="job-meta"><span class="sep">· </span><span class="job-where">{{ t.where }}</span><span class="sep"> · </span><span class="job-date">{{ t.when }}</span></span></div>
       <ul class="job-pos{% if t.courses.size > 1 %} railed{% endif %}">
         {% for c in t.courses %}
         <li>

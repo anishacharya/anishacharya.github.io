@@ -64,6 +64,7 @@ description: "Anish Acharya's research: learning theory for recursive self-impro
             validation-based acceptance can be designed together so that repeated adaptation
             improves true behavior rather than only increasing proxy reward.
           </p>
+          {% include threadfigure.html src="/img/rsi-loop.svg" alt="One round of the recursive self-improvement loop: evaluate, diagnose, decide, update, validate, and accept, around a memory that persists across rounds. The evaluator, update space, invariants, and step size are fixed outside the loop; reward hacking, out-of-reach failures, irreversible actions, new capabilities, and distribution shift stop the loop and go to a human." %}
           <div class="thread-questions">
             <h3>Key Questions</h3>
             <ol>
@@ -125,6 +126,7 @@ description: "Anish Acharya's research: learning theory for recursive self-impro
             communicated, how coordination topology affects convergence, and how collective
             learning can remain stable under heterogeneity, failures, and adversarial participants.
           </p>
+          {% include threadfigure.html src="/img/thread-distributed.svg" alt="Six learners, each holding a different local data distribution, send compressed updates to a robust aggregator and gossip with their neighbours. One learner sends a corrupted update, which the robust median down-weights. Each learner has local data, local compute, a communication budget, and a sparse set of neighbours; client drift, failures, adversarial participants, and stale information are what can go wrong." %}
           <div class="thread-questions">
             <h3>Key Questions</h3>
             <ol>
@@ -166,6 +168,7 @@ description: "Anish Acharya's research: learning theory for recursive self-impro
             distinguish ordinary noise, structured failure, missing information, and valid
             disagreement across data selection, training, reward modeling, and evaluation.
           </p>
+          {% include threadfigure.html src="/img/thread-robust.svg" alt="A cluster of inliers, only some of them labeled positive, with an adversarial tail of corrupted points. As the corruption arrives, the mean is dragged toward the tail while the geometric median stays with the inliers. Supervision may be corrupted, incomplete, indirect, or model-generated; robustness here means a high breakdown point, estimating only what is identifiable, never treating unlabeled data as negative, and keeping valid minority evidence." %}
           <div class="thread-questions">
             <h3>Key Questions</h3>
             <ol>
@@ -206,6 +209,7 @@ description: "Anish Acharya's research: learning theory for recursive self-impro
             model and rollout budgets. The long-term goal is to co-design statistical accuracy and
             resource allocation across training, inference, and self improvement.
           </p>
+          {% include threadfigure.html src="/img/thread-efficiency.svg" alt="Error against resource budget for two approaches: compressing a model afterward, and building the budget into the learning objective. Building it in gives lower error at the same budget, and the same error at a fraction of the budget. The budgets are data, communication, memory, and compute; the design choices are treating the budget as a constraint, selecting a representative subset, compressing representations, and allocating resources where the marginal gain is highest." %}
           <div class="thread-questions">
             <h3>Key Questions</h3>
             <ol>
@@ -251,6 +255,7 @@ description: "Anish Acharya's research: learning theory for recursive self-impro
             translating ideas from system identification and stability analysis into guarantees for
             adaptive models and agent systems.
           </p>
+          {% include threadfigure.html src="/img/thread-control.svg" alt="A feedback block diagram: an objective enters a summing junction, the learner updates its parameters, its policy acts on the environment, which determines the data it sees next, and an evaluator turns outcomes into feedback that returns to the junction. Below, two trajectories of repeated adaptation in parameter space: a stable spiral that settles, and an unstable one that oscillates and drifts. The loop changes its own data, evaluator, environment, and target; the guarantees wanted are stability, identification, convergence, and a robustness margin." %}
           <div class="thread-questions">
             <h3>Key Questions</h3>
             <ol>

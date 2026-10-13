@@ -1,0 +1,195 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" role="img" aria-labelledby="title desc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+<title id="title">A learning system that improves itself</title>
+<desc id="desc">One round of the recursive self-improvement loop: evaluate, diagnose, decide, update, validate, and accept, around a memory that persists across rounds. The evaluator, update space, invariants, and step size are fixed outside the loop; reward hacking, out-of-reach failures, irreversible actions, new capabilities, and distribution shift stop the loop and go to a human.</desc>
+<style>
+  /* Light by default, dark to match the site. Loaded as an image, so none of
+     this reaches the page. Colours live in custom properties so gradient stops
+     and fills switch together. */
+  svg { --gr:#0a9e52; --cy:#0e8fa8; --mi:#0f9f6e; --am:#b37a00;
+        --ink:#17171a; --mute:#5c5c66; --node:#ffffff; --panel:#faf9f6; --glow:.35; }
+  @media (prefers-color-scheme: dark) {
+    svg { --gr:#00FF77; --cy:#22D3EE; --mi:#7CFFB0; --am:#FFB020;
+          --ink:#ecebe8; --mute:#9a9894; --node:#141413; --panel:#151514; --glow:.42; }
+  }
+  .ink{fill:var(--ink)} .mute{fill:var(--mute)}
+  .f-gr{fill:var(--gr)} .f-cy{fill:var(--cy)} .f-mi{fill:var(--mi)} .f-am{fill:var(--am)}
+  .s-gr{stroke:var(--gr)} .s-cy{stroke:var(--cy)} .s-mi{stroke:var(--mi)} .s-am{stroke:var(--am)}
+  .st-gr{stop-color:var(--gr)} .st-cy{stop-color:var(--cy)} .st-mi{stop-color:var(--mi)} .st-am{stop-color:var(--am)}
+  .node{fill:var(--node)} .panel{fill:var(--panel)} .bg{opacity:var(--glow)}
+</style>
+<defs>
+<linearGradient id="gx" x1="0" y1="0" x2="1" y2="0"><stop offset="0" class="st-gr"/><stop offset="0.5" class="st-cy"/><stop offset="1" class="st-gr"/><animateTransform attributeName="gradientTransform" type="translate" values="-0.3 0; 0.3 0; -0.3 0" dur="7s" repeatCount="indefinite"/></linearGradient>
+<linearGradient id="gxTitle" x1="0" y1="0" x2="1" y2="0"><stop offset="0" class="st-mi"/><stop offset="0.5" class="st-gr"/><stop offset="1" class="st-cy"/><animateTransform attributeName="gradientTransform" type="translate" values="-0.4 0; 0.4 0; -0.4 0" dur="9s" repeatCount="indefinite"/></linearGradient>
+<radialGradient id="nodeGlow" cx="0.5" cy="0.5" r="0.5"><stop offset="0" class="st-gr" stop-opacity="0.5"/><stop offset="1" class="st-gr" stop-opacity="0"/></radialGradient>
+<radialGradient id="hubGlow" cx="0.5" cy="0.5" r="0.5"><stop offset="0" class="st-cy" stop-opacity="0.42"/><stop offset="0.6" class="st-cy" stop-opacity="0.08"/><stop offset="1" class="st-cy" stop-opacity="0"/></radialGradient>
+<radialGradient id="bgGlowG" cx="0.5" cy="0.5" r="0.5"><stop offset="0" class="st-gr" stop-opacity="0.3"/><stop offset="1" class="st-gr" stop-opacity="0"/></radialGradient>
+<radialGradient id="bgGlowC" cx="0.5" cy="0.5" r="0.5"><stop offset="0" class="st-cy" stop-opacity="0.28"/><stop offset="1" class="st-cy" stop-opacity="0"/></radialGradient>
+<radialGradient id="bgGlowA" cx="0.5" cy="0.5" r="0.5"><stop offset="0" class="st-am" stop-opacity="0.16"/><stop offset="1" class="st-am" stop-opacity="0"/></radialGradient>
+</defs>
+
+<!-- atmosphere -->
+<g class="bg">
+<circle cx="250" cy="200" r="170" fill="url(#bgGlowG)"><animateTransform attributeName="transform" type="translate" values="0 0; 40 30; 0 0" dur="24s" repeatCount="indefinite"/></circle>
+<circle cx="960" cy="470" r="175" fill="url(#bgGlowC)"><animateTransform attributeName="transform" type="translate" values="0 0; -40 -28; 0 0" dur="27s" repeatCount="indefinite"/></circle>
+<circle cx="1040" cy="180" r="120" fill="url(#bgGlowA)"><animateTransform attributeName="transform" type="translate" values="0 0; -24 34; 0 0" dur="31s" repeatCount="indefinite"/></circle>
+<circle cx="1140.1" cy="563.4" r="1.5" class="f-gr" opacity="0.4"><animate attributeName="opacity" values="0.1;0.45;0.1" dur="6s" begin="0.0s" repeatCount="indefinite"/></circle>
+<circle cx="216.4" cy="117.1" r="1.5" class="f-gr" opacity="0.4"><animate attributeName="opacity" values="0.1;0.45;0.1" dur="7s" begin="0.6s" repeatCount="indefinite"/></circle>
+<circle cx="1157.4" cy="578.0" r="1.5" class="f-gr" opacity="0.4"><animate attributeName="opacity" values="0.1;0.45;0.1" dur="8s" begin="1.2s" repeatCount="indefinite"/></circle>
+<circle cx="40.6" cy="208.6" r="1.5" class="f-gr" opacity="0.4"><animate attributeName="opacity" values="0.1;0.45;0.1" dur="9s" begin="1.8s" repeatCount="indefinite"/></circle>
+<circle cx="153.2" cy="138.1" r="1.5" class="f-gr" opacity="0.4"><animate attributeName="opacity" values="0.1;0.45;0.1" dur="10s" begin="2.4s" repeatCount="indefinite"/></circle>
+<circle cx="152.4" cy="575.0" r="1.5" class="f-gr" opacity="0.4"><animate attributeName="opacity" values="0.1;0.45;0.1" dur="11s" begin="0.0s" repeatCount="indefinite"/></circle>
+<circle cx="260.2" cy="556.6" r="1.5" class="f-gr" opacity="0.4"><animate attributeName="opacity" values="0.1;0.45;0.1" dur="12s" begin="0.6s" repeatCount="indefinite"/></circle>
+<circle cx="83.3" cy="562.5" r="1.5" class="f-gr" opacity="0.4"><animate attributeName="opacity" values="0.1;0.45;0.1" dur="6s" begin="1.2s" repeatCount="indefinite"/></circle>
+<circle cx="58.6" cy="236.5" r="1.5" class="f-gr" opacity="0.4"><animate attributeName="opacity" values="0.1;0.45;0.1" dur="7s" begin="1.8s" repeatCount="indefinite"/></circle>
+<circle cx="197.2" cy="126.5" r="1.5" class="f-gr" opacity="0.4"><animate attributeName="opacity" values="0.1;0.45;0.1" dur="8s" begin="2.4s" repeatCount="indefinite"/></circle>
+<circle cx="60.0" cy="537.8" r="1.5" class="f-gr" opacity="0.4"><animate attributeName="opacity" values="0.1;0.45;0.1" dur="9s" begin="0.0s" repeatCount="indefinite"/></circle>
+<circle cx="397.2" cy="579.7" r="1.5" class="f-gr" opacity="0.4"><animate attributeName="opacity" values="0.1;0.45;0.1" dur="10s" begin="0.6s" repeatCount="indefinite"/></circle>
+<circle cx="928.5" cy="540.1" r="1.5" class="f-gr" opacity="0.4"><animate attributeName="opacity" values="0.1;0.45;0.1" dur="11s" begin="1.2s" repeatCount="indefinite"/></circle>
+<circle cx="1152.5" cy="523.5" r="1.5" class="f-gr" opacity="0.4"><animate attributeName="opacity" values="0.1;0.45;0.1" dur="12s" begin="1.8s" repeatCount="indefinite"/></circle>
+<circle cx="326.5" cy="115.3" r="1.5" class="f-gr" opacity="0.4"><animate attributeName="opacity" values="0.1;0.45;0.1" dur="6s" begin="2.4s" repeatCount="indefinite"/></circle>
+<circle cx="942.7" cy="539.7" r="1.5" class="f-gr" opacity="0.4"><animate attributeName="opacity" values="0.1;0.45;0.1" dur="7s" begin="0.0s" repeatCount="indefinite"/></circle>
+<circle cx="123.6" cy="124.8" r="1.5" class="f-gr" opacity="0.4"><animate attributeName="opacity" values="0.1;0.45;0.1" dur="8s" begin="0.6s" repeatCount="indefinite"/></circle>
+<circle cx="1017.6" cy="129.5" r="1.5" class="f-gr" opacity="0.4"><animate attributeName="opacity" values="0.1;0.45;0.1" dur="9s" begin="1.2s" repeatCount="indefinite"/></circle>
+<circle cx="549.4" cy="121.6" r="1.5" class="f-gr" opacity="0.4"><animate attributeName="opacity" values="0.1;0.45;0.1" dur="10s" begin="1.8s" repeatCount="indefinite"/></circle>
+<circle cx="944.3" cy="560.5" r="1.5" class="f-gr" opacity="0.4"><animate attributeName="opacity" values="0.1;0.45;0.1" dur="11s" begin="2.4s" repeatCount="indefinite"/></circle>
+<circle cx="52.1" cy="331.9" r="1.5" class="f-gr" opacity="0.4"><animate attributeName="opacity" values="0.1;0.45;0.1" dur="12s" begin="0.0s" repeatCount="indefinite"/></circle>
+<circle cx="278.9" cy="533.0" r="1.5" class="f-gr" opacity="0.4"><animate attributeName="opacity" values="0.1;0.45;0.1" dur="6s" begin="0.6s" repeatCount="indefinite"/></circle>
+<line x1="260.2" y1="556.6" x2="83.3" y2="562.5" stroke="url(#gx)" stroke-width="0.7" stroke-opacity="0.12"><animate attributeName="stroke-opacity" values="0.03;0.2;0.03" dur="7s" begin="1.2s" repeatCount="indefinite"/></line>
+<line x1="58.6" y1="236.5" x2="197.2" y2="126.5" stroke="url(#gx)" stroke-width="0.7" stroke-opacity="0.12"><animate attributeName="stroke-opacity" values="0.03;0.2;0.03" dur="9s" begin="0s" repeatCount="indefinite"/></line>
+<line x1="928.5" y1="540.1" x2="1152.5" y2="523.5" stroke="url(#gx)" stroke-width="0.7" stroke-opacity="0.12"><animate attributeName="stroke-opacity" values="0.03;0.2;0.03" dur="7s" begin="0s" repeatCount="indefinite"/></line>
+</g>
+
+<!-- heading -->
+<text x="600" y="58" text-anchor="middle" font-size="32" font-weight="700" fill="url(#gxTitle)" letter-spacing="-0.5">A learning system that improves itself.</text>
+<text x="600" y="90" text-anchor="middle" font-size="15.5" class="mute" font-weight="500">one round of feedback, once around the loop &#183; diagnose &#183; update &#183; validate &#183; accept</text>
+
+<!-- the loop -->
+<ellipse cx="600" cy="345" rx="180" ry="140" fill="none" stroke="url(#gx)" stroke-opacity="0.10" stroke-width="1"/>
+<path d="M643.5,209.2 A180,140 0 0 1 729.5,247.7" fill="none" stroke="url(#gx)" stroke-width="2" stroke-opacity="0.0" stroke-linecap="round"><animate attributeName="stroke-opacity" values="0;0.5" begin="1.7s" dur="0.5s" fill="freeze"/><animate attributeName="stroke-opacity" values="0.28;0.65;0.28" dur="4s" begin="9.5s" repeatCount="indefinite"/></path>
+<path d="M773.0,306.4 A180,140 0 0 1 773.0,383.6" fill="none" stroke="url(#gx)" stroke-width="2" stroke-opacity="0.0" stroke-linecap="round"><animate attributeName="stroke-opacity" values="0;0.5" begin="2.9s" dur="0.5s" fill="freeze"/><animate attributeName="stroke-opacity" values="0.28;0.65;0.28" dur="4s" begin="9.9s" repeatCount="indefinite"/></path>
+<path d="M729.5,442.3 A180,140 0 0 1 643.5,480.8" fill="none" stroke="url(#gx)" stroke-width="2" stroke-opacity="0.0" stroke-linecap="round"><animate attributeName="stroke-opacity" values="0;0.5" begin="4.1s" dur="0.5s" fill="freeze"/><animate attributeName="stroke-opacity" values="0.28;0.65;0.28" dur="4s" begin="10.3s" repeatCount="indefinite"/></path>
+<path d="M556.5,480.8 A180,140 0 0 1 470.5,442.3" fill="none" stroke="url(#gx)" stroke-width="2" stroke-opacity="0.0" stroke-linecap="round"><animate attributeName="stroke-opacity" values="0;0.5" begin="5.3s" dur="0.5s" fill="freeze"/><animate attributeName="stroke-opacity" values="0.28;0.65;0.28" dur="4s" begin="10.7s" repeatCount="indefinite"/></path>
+<path d="M427.0,383.6 A180,140 0 0 1 427.0,306.4" fill="none" stroke="url(#gx)" stroke-width="2" stroke-opacity="0.0" stroke-linecap="round"><animate attributeName="stroke-opacity" values="0;0.5" begin="6.5s" dur="0.5s" fill="freeze"/><animate attributeName="stroke-opacity" values="0.28;0.65;0.28" dur="4s" begin="11.1s" repeatCount="indefinite"/></path>
+<path d="M470.5,247.7 A180,140 0 0 1 556.5,209.2" fill="none" stroke="url(#gx)" stroke-width="2" stroke-opacity="0.0" stroke-linecap="round"><animate attributeName="stroke-opacity" values="0;0.5" begin="7.7s" dur="0.5s" fill="freeze"/><animate attributeName="stroke-opacity" values="0.28;0.65;0.28" dur="4s" begin="11.5s" repeatCount="indefinite"/></path>
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="9s" dur="0.6s" fill="freeze"/>
+<circle r="4.5" class="f-mi" opacity="0.9"><animateMotion path="M600,205 A180,140 0 1 1 600,485 A180,140 0 1 1 600,205" dur="10.2s" begin="9s" repeatCount="indefinite" rotate="auto"/></circle>
+<circle r="4.5" class="f-mi" opacity="0.9"><animateMotion path="M600,205 A180,140 0 1 1 600,485 A180,140 0 1 1 600,205" dur="10.2s" begin="12.4s" repeatCount="indefinite" rotate="auto"/></circle>
+<circle r="4.5" class="f-mi" opacity="0.9"><animateMotion path="M600,205 A180,140 0 1 1 600,485 A180,140 0 1 1 600,205" dur="10.2s" begin="15.8s" repeatCount="indefinite" rotate="auto"/></circle>
+</g>
+
+<!-- hub -->
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="0.4s" dur="0.55s" fill="freeze"/>
+<circle cx="600" cy="345" r="74" fill="url(#hubGlow)"/>
+<circle cx="600" cy="345" r="46" class="node" stroke="url(#gx)" stroke-width="2.5"><animate attributeName="stroke-opacity" values="0.55;1;0.55" dur="5s" repeatCount="indefinite"/></circle>
+<text x="600" y="342" text-anchor="middle" font-size="14" font-weight="700" class="ink">MEMORY</text>
+<text x="600" y="359" text-anchor="middle" font-size="11.5" class="f-cy">across rounds</text>
+<text x="600" y="414" text-anchor="middle" font-size="12" class="mute">even the attempts that changed nothing</text>
+</g>
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="1.5s" dur="0.5s" fill="freeze"/><line x1="600.0" y1="241.0" x2="600.0" y2="297.0" class="s-cy" stroke-width="0.8" stroke-opacity="0.25" stroke-dasharray="3 4"/></g>
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="2.7s" dur="0.5s" fill="freeze"/><line x1="723.0" y1="289.7" x2="643.8" y2="325.3" class="s-cy" stroke-width="0.8" stroke-opacity="0.25" stroke-dasharray="3 4"/></g>
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="3.9s" dur="0.5s" fill="freeze"/><line x1="723.0" y1="400.3" x2="643.8" y2="364.7" class="s-cy" stroke-width="0.8" stroke-opacity="0.25" stroke-dasharray="3 4"/></g>
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="5.1s" dur="0.5s" fill="freeze"/><line x1="600.0" y1="449.0" x2="600.0" y2="393.0" class="s-cy" stroke-width="0.8" stroke-opacity="0.25" stroke-dasharray="3 4"/></g>
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="6.3s" dur="0.5s" fill="freeze"/><line x1="477.0" y1="400.3" x2="556.2" y2="364.7" class="s-cy" stroke-width="0.8" stroke-opacity="0.25" stroke-dasharray="3 4"/></g>
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="7.5s" dur="0.5s" fill="freeze"/><line x1="477.0" y1="289.7" x2="556.2" y2="325.3" class="s-cy" stroke-width="0.8" stroke-opacity="0.25" stroke-dasharray="3 4"/></g>
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="1.2s" dur="0.5s" fill="freeze"/>
+<circle cx="600.0" cy="205.0" r="10" fill="none" class="s-cy" stroke-width="2" opacity="0"><animate attributeName="r" values="10;56" begin="1.2s" dur="0.8s" fill="freeze"/><animate attributeName="opacity" values="0.9;0" begin="1.2s" dur="0.8s" fill="freeze"/></circle>
+<circle cx="600.0" cy="205.0" r="46" fill="url(#nodeGlow)" opacity="0.6"/>
+<circle cx="600.0" cy="205.0" r="33" class="node s-cy" stroke-width="2"><animate attributeName="stroke-opacity" values="0.6;1;0.6" dur="3s" begin="1.2s" repeatCount="indefinite"/></circle>
+<text x="600.0" y="209.5" text-anchor="middle" font-size="13" font-weight="700" class="ink">1</text>
+<text x="600.0" y="260.0" text-anchor="middle" font-size="14.5" font-weight="700" class="f-cy" letter-spacing="0.4">EVALUATE</text>
+<text x="600.0" y="277.0" text-anchor="middle" font-size="12" class="mute">score a round on the evaluator</text>
+</g>
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="2.4s" dur="0.5s" fill="freeze"/>
+<circle cx="755.9" cy="275.0" r="10" fill="none" class="s-cy" stroke-width="2" opacity="0"><animate attributeName="r" values="10;56" begin="2.4s" dur="0.8s" fill="freeze"/><animate attributeName="opacity" values="0.9;0" begin="2.4s" dur="0.8s" fill="freeze"/></circle>
+<circle cx="755.9" cy="275.0" r="46" fill="url(#nodeGlow)" opacity="0.6"/>
+<circle cx="755.9" cy="275.0" r="33" class="node s-cy" stroke-width="2"><animate attributeName="stroke-opacity" values="0.6;1;0.6" dur="3s" begin="2.4s" repeatCount="indefinite"/></circle>
+<text x="755.9" y="279.5" text-anchor="middle" font-size="13" font-weight="700" class="ink">2</text>
+<text x="755.9" y="330.0" text-anchor="middle" font-size="14.5" font-weight="700" class="f-cy" letter-spacing="0.4">DIAGNOSE</text>
+<text x="755.9" y="347.0" text-anchor="middle" font-size="12" class="mute">cluster failures, find the locus</text>
+</g>
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="3.6s" dur="0.5s" fill="freeze"/>
+<circle cx="755.9" cy="415.0" r="10" fill="none" class="s-gr" stroke-width="2" opacity="0"><animate attributeName="r" values="10;56" begin="3.6s" dur="0.8s" fill="freeze"/><animate attributeName="opacity" values="0.9;0" begin="3.6s" dur="0.8s" fill="freeze"/></circle>
+<circle cx="755.9" cy="415.0" r="46" fill="url(#nodeGlow)" opacity="0.6"/>
+<circle cx="755.9" cy="415.0" r="33" class="node s-gr" stroke-width="2"><animate attributeName="stroke-opacity" values="0.6;1;0.6" dur="3s" begin="3.6s" repeatCount="indefinite"/></circle>
+<text x="755.9" y="419.5" text-anchor="middle" font-size="13" font-weight="700" class="ink">3</text>
+<text x="755.9" y="470.0" text-anchor="middle" font-size="14.5" font-weight="700" class="f-gr" letter-spacing="0.4">DECIDE</text>
+<text x="755.9" y="487.0" text-anchor="middle" font-size="12" class="mute">real or noise? name the cause</text>
+</g>
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="4.8s" dur="0.5s" fill="freeze"/>
+<circle cx="600.0" cy="485.0" r="10" fill="none" class="s-gr" stroke-width="2" opacity="0"><animate attributeName="r" values="10;56" begin="4.8s" dur="0.8s" fill="freeze"/><animate attributeName="opacity" values="0.9;0" begin="4.8s" dur="0.8s" fill="freeze"/></circle>
+<circle cx="600.0" cy="485.0" r="46" fill="url(#nodeGlow)" opacity="0.6"/>
+<circle cx="600.0" cy="485.0" r="33" class="node s-gr" stroke-width="2"><animate attributeName="stroke-opacity" values="0.6;1;0.6" dur="3s" begin="4.8s" repeatCount="indefinite"/></circle>
+<text x="600.0" y="489.5" text-anchor="middle" font-size="13" font-weight="700" class="ink">4</text>
+<text x="600.0" y="540.0" text-anchor="middle" font-size="14.5" font-weight="700" class="f-gr" letter-spacing="0.4">UPDATE</text>
+<text x="600.0" y="557.0" text-anchor="middle" font-size="12" class="mute">one candidate, in isolation</text>
+</g>
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="6.0s" dur="0.5s" fill="freeze"/>
+<circle cx="444.1" cy="415.0" r="10" fill="none" class="s-gr" stroke-width="2" opacity="0"><animate attributeName="r" values="10;56" begin="6.0s" dur="0.8s" fill="freeze"/><animate attributeName="opacity" values="0.9;0" begin="6.0s" dur="0.8s" fill="freeze"/></circle>
+<circle cx="444.1" cy="415.0" r="46" fill="url(#nodeGlow)" opacity="0.6"/>
+<circle cx="444.1" cy="415.0" r="33" class="node s-gr" stroke-width="2"><animate attributeName="stroke-opacity" values="0.6;1;0.6" dur="3s" begin="6.0s" repeatCount="indefinite"/></circle>
+<text x="444.1" y="419.5" text-anchor="middle" font-size="13" font-weight="700" class="ink">5</text>
+<text x="444.1" y="470.0" text-anchor="middle" font-size="14.5" font-weight="700" class="f-gr" letter-spacing="0.4">VALIDATE</text>
+<text x="444.1" y="487.0" text-anchor="middle" font-size="12" class="mute">gains hold, nothing regressed</text>
+</g>
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="7.2s" dur="0.5s" fill="freeze"/>
+<circle cx="444.1" cy="275.0" r="10" fill="none" class="s-mi" stroke-width="2" opacity="0"><animate attributeName="r" values="10;56" begin="7.2s" dur="0.8s" fill="freeze"/><animate attributeName="opacity" values="0.9;0" begin="7.2s" dur="0.8s" fill="freeze"/></circle>
+<circle cx="444.1" cy="275.0" r="46" fill="url(#nodeGlow)" opacity="0.6"/>
+<circle cx="444.1" cy="275.0" r="33" class="node s-mi" stroke-width="2"><animate attributeName="stroke-opacity" values="0.6;1;0.6" dur="3s" begin="7.2s" repeatCount="indefinite"/></circle>
+<text x="444.1" y="279.5" text-anchor="middle" font-size="13" font-weight="700" class="ink">6</text>
+<text x="444.1" y="330.0" text-anchor="middle" font-size="14.5" font-weight="700" class="f-mi" letter-spacing="0.4">ACCEPT</text>
+<text x="444.1" y="347.0" text-anchor="middle" font-size="12" class="mute">becomes the next baseline</text>
+</g>
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="8.6s" dur="0.6s" fill="freeze"/>
+<text x="480" y="196" text-anchor="middle" font-size="12" class="f-mi" font-style="italic">the next round is the proof</text>
+</g>
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="4.2s" dur="0.6s" fill="freeze"/>
+<text x="755.9" y="506" text-anchor="middle" font-size="12" class="mute" font-style="italic">most rounds end here</text>
+</g>
+
+<!-- fixed outside the loop -->
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="0.8s" dur="0.6s" fill="freeze"/>
+<rect x="28" y="230" width="292" height="200" rx="14" class="panel s-cy" stroke-opacity="0.35" stroke-width="1"/>
+<text x="46" y="258" font-size="12" font-weight="700" class="f-cy" letter-spacing="1.2">FIXED OUTSIDE THE LOOP</text>
+<circle cx="50" cy="281.5" r="2.8" class="f-cy" opacity="0.8"/>
+<text x="62" y="286" font-size="14" font-weight="650" class="ink">the evaluator</text>
+<text x="62" y="302" font-size="12" class="mute">what counts as better</text>
+<circle cx="50" cy="319.5" r="2.8" class="f-cy" opacity="0.8"/>
+<text x="62" y="324" font-size="14" font-weight="650" class="ink">the update space</text>
+<text x="62" y="340" font-size="12" class="mute">what it may change, and nothing else</text>
+<circle cx="50" cy="357.5" r="2.8" class="f-cy" opacity="0.8"/>
+<text x="62" y="362" font-size="14" font-weight="650" class="ink">the invariants</text>
+<text x="62" y="378" font-size="12" class="mute">checked every round, never sampled</text>
+<circle cx="50" cy="395.5" r="2.8" class="f-cy" opacity="0.8"/>
+<text x="62" y="400" font-size="14" font-weight="650" class="ink">the step size</text>
+<text x="62" y="416" font-size="12" class="mute">how far one round may move</text>
+</g>
+
+<!-- where the loop stops -->
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="5.4s" dur="0.6s" fill="freeze"/>
+<rect x="880" y="211" width="292" height="238" rx="14" class="panel s-am" stroke-opacity="0.35" stroke-width="1"/>
+<text x="898" y="239" font-size="12" font-weight="700" class="f-am" letter-spacing="1.2">WHERE THE LOOP STOPS</text>
+<circle cx="902" cy="262.5" r="2.8" class="f-am" opacity="0.8"/>
+<text x="914" y="267" font-size="14" font-weight="650" class="ink">reward hacking</text>
+<text x="914" y="283" font-size="12" class="mute">proxy rises, true utility does not</text>
+<circle cx="902" cy="300.5" r="2.8" class="f-am" opacity="0.8"/>
+<text x="914" y="305" font-size="14" font-weight="650" class="ink">out of reach</text>
+<text x="914" y="321" font-size="12" class="mute">a real failure, no fix in its space</text>
+<circle cx="902" cy="338.5" r="2.8" class="f-am" opacity="0.8"/>
+<text x="914" y="343" font-size="14" font-weight="650" class="ink">irreversible</text>
+<text x="914" y="359" font-size="12" class="mute">retrying is itself the harm</text>
+<circle cx="902" cy="376.5" r="2.8" class="f-am" opacity="0.8"/>
+<text x="914" y="381" font-size="14" font-weight="650" class="ink">new capability</text>
+<text x="914" y="397" font-size="12" class="mute">widening scope is not its call</text>
+<circle cx="902" cy="414.5" r="2.8" class="f-am" opacity="0.8"/>
+<text x="914" y="419" font-size="14" font-weight="650" class="ink">distribution shift</text>
+<text x="914" y="435" font-size="12" class="mute">every past proof goes stale</text>
+</g>
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="5.8s" dur="0.6s" fill="freeze"/>
+<path d="M781,394 Q834,384 874,352" fill="none" class="s-am" stroke-width="1.6" stroke-opacity="0.5" stroke-dasharray="5 5"/>
+<circle r="3.4" class="f-am"><animateMotion path="M781,394 Q834,384 874,352" dur="1.9s" begin="6.2s" repeatCount="indefinite"/></circle>
+<text x="834" y="406" text-anchor="middle" font-size="10.5" class="f-am" letter-spacing="0.5">it cannot fix this</text>
+</g>
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="9.4s" dur="0.8s" fill="freeze"/>
+<text x="600" y="612" text-anchor="middle" font-size="13" font-weight="700" class="mute" letter-spacing="0.8">NOTHING LANDS UNVALIDATED &#183; NOTHING WIDENS ITS OWN GATE &#183; THE OBJECTIVE STAYS FIXED</text>
+</g>
+</svg>

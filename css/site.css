@@ -1,6 +1,7 @@
 /* ---------------------------------------------------------------------------
    anishacharya.github.io
-   Hand-written. No framework, no JavaScript, no web fonts, no CDN.
+   Hand-written. No framework, no web fonts, no CDN. The only script is
+   js/swarm.js, the homepage hero; every page reads fine without it.
    Single authoritative stylesheet — every class used by a template is defined
    here, in page order: tokens, chrome, type, landing, research, publications,
    generic rows, footer, responsive, print.
@@ -87,7 +88,41 @@ html { font-size: 17px; -webkit-text-size-adjust: 100%; }
   position: fixed; inset: 0; z-index: -1; pointer-events: none;
   background: radial-gradient(120% 70% at 50% -10%, transparent 0%, var(--bg) 78%);
 }
-@media print { .bg-layer, .bg-veil { display: none; } }
+/* Homepage hero: the agent swarm from the agent swarm (js/swarm.js) over a
+   soft aurora. A fixed-height band behind the masthead and identity card that
+   fades into the page, so everything below it reads on the plain background.
+   Fixed px, not vh: a phone's URL bar resizes vh on every scroll. */
+.hero-swarm {
+  position: absolute; top: 0; left: 0; right: 0; height: 720px;
+  z-index: -1; pointer-events: none; overflow: hidden;
+  -webkit-mask-image: linear-gradient(180deg, #000 55%, transparent 100%);
+          mask-image: linear-gradient(180deg, #000 55%, transparent 100%);
+}
+.hero-swarm canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; opacity: 0.85; }
+.has-swarm .bg-layer { display: none; }
+.aurora { position: absolute; inset: 0; filter: blur(80px); opacity: 0.5; }
+.blob { position: absolute; border-radius: 50%; mix-blend-mode: screen; }
+.b1 { width: 46vw; height: 46vw; left: -10%; top: -30%;
+      background: radial-gradient(circle, rgba(139,92,246,.7), rgba(139,92,246,0) 68%);
+      animation: drift1 36s ease-in-out infinite; }
+.b2 { width: 42vw; height: 42vw; right: -8%; top: -18%;
+      background: radial-gradient(circle, rgba(34,211,238,.5), rgba(34,211,238,0) 68%);
+      animation: drift2 44s ease-in-out infinite; }
+.b3 { width: 36vw; height: 36vw; left: 30%; top: 10%;
+      background: radial-gradient(circle, rgba(94,234,212,.32), rgba(94,234,212,0) 70%);
+      animation: drift3 50s ease-in-out infinite; }
+@keyframes drift1 { 0%,100% { transform: translate3d(0,0,0) scale(1); }    50% { transform: translate3d(13%,8%,0) scale(1.15); } }
+@keyframes drift2 { 0%,100% { transform: translate3d(0,0,0) scale(1.06); } 50% { transform: translate3d(-12%,12%,0) scale(.9); } }
+@keyframes drift3 { 0%,100% { transform: translate3d(0,0,0) scale(.95); }  50% { transform: translate3d(9%,-12%,0) scale(1.13); } }
+/* Light mode: the swarm is drawn as light-on-dark, so invert lightness and
+   rotate back to the same hues — dark lineages on the pale page. The aurora
+   is additive light and has nothing to add on a white page. */
+@media (prefers-color-scheme: light) {
+  .hero-swarm canvas { filter: invert(1) hue-rotate(180deg); opacity: 0.7; }
+  .aurora { display: none; }
+}
+@media (prefers-reduced-motion: reduce) { .blob { animation: none; } }
+@media print { .bg-layer, .bg-veil, .hero-swarm { display: none; } }
 
 body {
   margin: 0;
@@ -211,6 +246,41 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
 .bio { margin: 1.9rem 0 0; max-width: var(--prose); }
 .bio p { font-size: 1.02rem; }
 
+/* --- Landing: research topics ------------------------------------------- */
+
+/* One card per research thread, each a link into its section on /research/.
+   The lead thread spans the full row; the rest pair up beneath it. */
+.topics {
+  list-style: none; margin: 0; padding: 0;
+  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.75rem;
+}
+.topic-lead { grid-column: 1 / -1; }
+.topic a {
+  display: flex; flex-direction: column; gap: 0.2rem; height: 100%;
+  padding: 0.95rem 1.1rem 1rem; color: var(--ink);
+  background: var(--card); border: 1px solid var(--rule); border-radius: 8px;
+  transition: border-color .14s ease;
+}
+.topic a:hover { border-color: var(--accent); }
+.topic-head { display: flex; align-items: baseline; gap: 0.55rem; }
+.topic-index {
+  font-family: var(--sans); font-size: 0.85rem; font-weight: 300;
+  color: var(--ink-faint); font-variant-numeric: tabular-nums;
+}
+.topic-title {
+  font-family: var(--sans); font-size: 1rem; font-weight: 620;
+  line-height: 1.3; letter-spacing: -0.01em;
+}
+.topic a:hover .topic-title { color: var(--accent); }
+.topic-role {
+  font-family: var(--sans); font-size: 0.62rem; font-weight: 700;
+  letter-spacing: 0.095em; text-transform: uppercase; color: var(--accent);
+}
+.topic-blurb {
+  margin-top: 0.3rem; font-size: 0.88rem; line-height: 1.55;
+  color: var(--ink-soft); text-wrap: pretty;
+}
+
 /* --- News: scrollable record (date · badge · one line) ------------------- */
 
 .newsbox {
@@ -312,6 +382,8 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
   color: var(--ink);
 }
 .research-thread h2::after { display: none; }
+/* Homepage topic cards link to these ids; leave room above when jumped to. */
+.research-thread h2[id] { scroll-margin-top: 1.5rem; }
 .thread-role {
   margin: 0; font-family: var(--sans); font-size: 0.64rem;
   font-weight: 700; line-height: 1.4; letter-spacing: 0.095em;
@@ -325,6 +397,18 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
 .thread-vision {
   margin: 0; font-size: 0.97rem; line-height: 1.7; color: var(--ink-soft);
 }
+
+/* Loop diagram under the RSI vision. Breaks out of the reading measure to the
+   left edge of the thread (over the number gutter) so its labels stay near
+   drawn size. On a phone it keeps a readable minimum width and scrolls
+   sideways instead of shrinking to illegibility. */
+.thread-figure {
+  margin: 1.4rem 0 0.4rem calc(-2.8rem - 1.25rem);
+  width: calc(100% + 2.8rem + 1.25rem);
+}
+.thread-figure-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.thread-figure img { display: block; width: 100%; height: auto; }
+.thread-figure-hint { display: none; }
 
 .thread-questions {
   display: block; margin: 1.05rem 0 0; padding-top: 0.85rem;
@@ -409,6 +493,12 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
   .thread-heading { display: flex; align-items: baseline; gap: 0.6rem; }
   .thread-index { font-size: 1rem; }
   .thread-questions ol, .thread-papers { grid-template-columns: 1fr; }
+  .thread-figure { margin-left: 0; width: 100%; }
+  .thread-figure img { min-width: 42rem; }
+  .thread-figure-hint {
+    display: block; margin-top: 0.35rem; font-family: var(--sans);
+    font-size: 0.72rem; color: var(--ink-faint);
+  }
 }
 
 /* --- Publications ------------------------------------------------------- */
@@ -619,6 +709,7 @@ footer { border-top: 1px solid var(--rule); }
   .titles { grid-area: titles; font-size: 0.9rem; }
   .idlinks { grid-area: links; margin-top: 1.1rem; }
   .bio { margin-top: 1.5rem; }
+  .topics { grid-template-columns: 1fr; gap: 0.6rem; }
   /* Jobs: smaller logo tile, and location/dates drop to their own line under
      the name instead of wrapping mid-phrase ("Austin, / TX · Fall 2019"). */
   .job { grid-template-columns: 2rem minmax(0, 1fr); }

@@ -1,0 +1,10 @@
+{%- comment -%}
+  Thread diagram under a research thread's vision paragraph.
+  Params: src (path under /img/), alt (full description; mirrors the SVG's <desc>).
+{%- endcomment -%}
+<figure class="thread-figure">
+  <div class="thread-figure-scroll">
+    <img src="{{ include.src | relative_url }}" width="1200" height="640" loading="lazy" alt="{{ include.alt }}">
+  </div>
+  <figcaption class="thread-figure-hint">Scroll sideways to see the full diagram.</figcaption>
+</figure>

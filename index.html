@@ -2,6 +2,7 @@
 layout: base
 title: ""
 hide_title: true
+swarm: true
 seo_title: "Anish Acharya — Senior Research Scientist, AWS · Machine Learning"
 description: "Anish Acharya is a Senior Research Scientist at AWS working on learning theory for recursive self-improvement, robust LLM evaluation, and multi-agent systems. PhD, UT Austin."
 redirect_from:
@@ -55,6 +56,19 @@ redirect_from:
     agent systems, especially when feedback is noisy, incomplete, or indirect.
   </p>
 </div>
+
+<h2>Research</h2>
+<ul class="topics">
+  {% for t in site.data.threads %}
+  <li class="topic{% if forloop.first %} topic-lead{% endif %}">
+    <a href="{{ '/research/' | relative_url }}#{{ t.id }}">
+      <span class="topic-head"><span class="topic-index">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</span><span class="topic-title">{{ t.title }}</span></span>
+      <span class="topic-role">{{ t.role }}</span>
+      <span class="topic-blurb">{{ t.blurb }}</span>
+    </a>
+  </li>
+  {% endfor %}
+</ul>
 
 <h2>Education</h2>
 <ul class="jobs">

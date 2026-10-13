@@ -58,6 +58,17 @@
 
   <div class="bg-layer">{% include bg-field.svg %}</div>
   <div class="bg-veil"></div>
+  {%- if page.swarm %}
+  {%- comment -%}
+    Homepage hero: aurora + agent swarm behind the masthead and identity card.
+    Without JavaScript the canvas stays empty and the static field shows instead.
+  {%- endcomment %}
+  <div class="hero-swarm" aria-hidden="true">
+    <div class="aurora"><span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span></div>
+    <canvas id="swarm"></canvas>
+  </div>
+  <script src="{{ '/js/swarm.js' | relative_url }}" defer></script>
+  {%- endif %}
 
   <header class="masthead">
     <div class="masthead-in">

@@ -247,14 +247,10 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
   stroke-linecap: round; stroke-linejoin: round;
 }
 
-.bio { margin: 1.9rem 0 0; max-width: var(--prose); }
+.bio { margin: 1.9rem 0 0; }
 .bio p { font-size: 1.02rem; }
 /* Keep a person's name on one line. */
 .nowrap { white-space: nowrap; }
-/* Desktop: keep each bio paragraph to six lines or fewer, the most the
-   browser will balance, so none ends half-empty. Phones keep `pretty`: there
-   the paragraphs run past what balancing handles. */
-@media (min-width: 40.01rem) { .bio p { text-wrap: balance; } }
 
 /* --- Landing: research topics ------------------------------------------- */
 
@@ -351,14 +347,9 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
 
 /* Dense research index. Numbered threads, questions, and papers use aligned
    gutters and compact two-column lists rather than cards or side rails. */
-.threads-intro {
-  max-width: 46rem; margin: 0 0 2.2rem;
-}
-.threads-intro p {
-  margin: 0 0 0.75rem; font-size: 1.02rem; line-height: 1.67;
-  color: var(--ink-soft);
-}
-.threads-intro p:first-child { color: var(--ink); }
+.threads-intro { margin: 0 0 2.2rem; }
+/* Same type as the About bio above it, so the two read as one voice. */
+.threads-intro p { margin: 0 0 1.1rem; font-size: 1.02rem; color: var(--ink); }
 .threads-intro > p,
 .thread-vision,
 .thread-questions li,

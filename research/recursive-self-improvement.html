@@ -1,0 +1,60 @@
+---
+layout: thread
+title: "Recursive Self Improvement"
+thread: thread-rsi
+permalink: /research/recursive-self-improvement/
+description: "Anish Acharya's research on recursive self-improvement: reward modeling, post-training, constrained search, and validation-based acceptance designed together so that repeated adaptation improves true behavior."
+---
+{% include research-refs.html %}
+<div class="thread-layout">
+  <div class="thread-reading">
+    <p class="thread-vision">
+      My long-term goal is to develop learning systems that can adjust their policy (model
+      weights, prompts, memory, tools, and coordination structures) while remaining faithful
+      to their intended objectives. Such systems optimize reward models and evaluators that
+      are necessarily incomplete; as the learner adapts, it can discover and exploit their
+      errors. I study how reward modeling, post-training, constrained search, and
+      validation-based acceptance can be designed together so that repeated adaptation
+      improves true behavior rather than only increasing proxy reward.
+    </p>
+    {% include threadfigure.html src="/img/rsi-loop.svg" width="800" height="526" alt="A learning system that improves itself: evaluate, diagnose, decide, update, validate, and accept, around a memory kept across rounds. Anything the loop cannot fix goes to human review." %}
+    <div class="thread-questions">
+      <h3>Key Questions</h3>
+      <ol>
+        <li>How can weights, policies, prompts, tools, and coordination structures be optimized within a common adaptation loop?</li>
+        <li>How should reward models be learned and updated when true utility is sparse, delayed, or unavailable, and the learner can exploit their errors?</li>
+        <li>What conditions make repeated updates improve true utility without forgetting, capability collapse, or drift?</li>
+      </ol>
+    </div>
+    <p class="thread-current"><strong>Current directions.</strong> Reward modeling, post-training and policy optimization, weight and prompt adaptation, orchestration search, and continual self improvement.</p>
+    <aside class="thread-application" aria-labelledby="embodied-title">
+      <h3 id="embodied-title">Application frontier · Embodied self improvement</h3>
+      <p>
+        An important application is embodied intelligence. Models and physical agents can
+        improve policies, weights, tools, and coordination in physics simulators, then
+        transfer those improvements to hardware. Systems such as
+        <a href="https://github.com/strands-labs/robots">Strands Robots</a> expose simulation
+        and physical robots through a shared agent interface, creating a testbed for reward
+        modeling, collaborative learning, and sim-to-real validation.
+      </p>
+    </aside>
+  </div>
+  <aside class="thread-evidence" aria-label="Selected publications, systems, and patents for recursive self improvement">
+    <h3>Selected Publications</h3>
+    <ul class="thread-papers">
+      {% include threadpaper.html paper=splice %}
+      {% include threadpaper.html paper=ropoll %}
+      {% include threadpaper.html paper=orchopt %}
+      {% include threadpaper.html paper=alexa %}
+    </ul>
+    <h3>Selected Systems</h3>
+    <ul class="thread-papers">
+      {% assign aws_systems = site.data.launches | where: "role_key", "amazon-aws" %}
+      {% for s in aws_systems %}{% include threadsystem.html system=s %}{% endfor %}
+    </ul>
+    <h3>Selected Patents</h3>
+    <ul class="thread-papers thread-patents">
+      {% include threadpatent.html patent=dialog_patent %}
+    </ul>
+  </aside>
+</div>

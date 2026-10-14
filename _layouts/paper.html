@@ -28,5 +28,5 @@ description; everything else comes from _data/papers.yml.
   {% if p.also %}
   <p class="pub-also">{% for a in p.also %}{{ a }}{% unless forloop.last %} · {% endunless %}{% endfor %}</p>
   {% endif %}
-  <p class="more"><a href="{{ '/publications/' | relative_url }}">All publications</a> · <a href="{{ '/research/' | relative_url }}">Research</a></p>
+  <p class="more"><a href="{{ '/#publications' | relative_url }}">All publications</a> · <a href="{{ '/#research' | relative_url }}">Research</a></p>
 </div>

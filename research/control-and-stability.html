@@ -1,0 +1,41 @@
+---
+layout: thread
+title: "Control & Stability"
+thread: thread-foundations
+permalink: /research/control-and-stability/
+description: "Anish Acharya's research on control and stability: adaptive learners as closed-loop dynamical systems, from system identification to stability guarantees."
+---
+{% include research-refs.html %}
+<div class="thread-layout">
+  <div class="thread-reading">
+    <p class="thread-vision">
+      This thread supplies the dynamical perspective for the entire program. A continually
+      adapting learner changes the environment, data distribution, and evaluation conditions
+      it will encounter next. Its updates therefore form a closed-loop dynamical system rather
+      than a sequence of independent optimization problems. My long-term interest is in
+      translating ideas from system identification and stability analysis into guarantees for
+      adaptive models and agent systems.
+    </p>
+    {% include threadfigure.html src="/img/thread-control.svg" alt="A feedback block diagram: an objective enters a summing junction, the learner updates its parameters, its policy acts on the environment, which determines the data it sees next, and an evaluator turns outcomes into feedback that returns to the junction. Below, two trajectories of repeated adaptation in parameter space: a stable spiral that settles, and an unstable one that oscillates and drifts. The loop changes its own data, evaluator, environment, and target; the guarantees wanted are stability, identification, convergence, and a robustness margin." %}
+    <div class="thread-questions">
+      <h3>Key Questions</h3>
+      <ol>
+        <li>What is the appropriate notion of stability for a learner whose updates change its future data and evaluation conditions?</li>
+        <li>How can such a system be identified when the learner's interventions alter the environment?</li>
+        <li>When do locally improving updates produce globally stable behavior rather than drift, oscillation, or collapse?</li>
+      </ol>
+    </div>
+  </div>
+  <aside class="thread-evidence" aria-label="Selected publications for control and stability">
+    <h3>Selected Publications</h3>
+    <ul class="thread-papers">
+      {% include threadpaper.html paper=butterworth %}
+      {% include threadpaper.html paper=lorenz %}
+      {% include threadpaper.html paper=bode %}
+      {% include threadpaper.html paper=nonlinear %}
+      {% include threadpaper.html paper=multiwing %}
+      {% include threadpaper.html paper=fractional %}
+      {% include threadpaper.html paper=leastsquare %}
+    </ul>
+  </aside>
+</div>

@@ -26,9 +26,12 @@ verification:
 
 # --- Navigation ---------------------------------------------------------- #
 
+# Every tab but News jumps to a section of the front page.
 nav:
-  Research: "/research/"
-  Publications: "/publications/"
+  About: "/#about"
+  Research: "/#research"
+  Publications: "/#publications"
+  Experience: "/#experience"
   News: "/news/"
 
 # --- Build --------------------------------------------------------------- #

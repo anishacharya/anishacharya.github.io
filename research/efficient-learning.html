@@ -1,0 +1,45 @@
+---
+layout: thread
+title: "Efficient Learning"
+thread: thread-efficiency
+permalink: /research/efficient-learning/
+description: "Anish Acharya's research on efficient learning: data, communication, memory, and compute budgets treated as part of the learning problem."
+---
+{% include research-refs.html %}
+<div class="thread-layout">
+  <div class="thread-reading">
+    <p class="thread-vision">
+      This thread asks how much data, supervision, communication, memory, computation, and
+      physical interaction are necessary to achieve a desired level of learning performance.
+      I study methods that treat efficiency as part of the learning problem rather than as
+      post-processing: representations learned under memory constraints, distributed coding,
+      sample selection, communication-efficient optimization, and evaluation under fixed
+      model and rollout budgets. The long-term goal is to co-design statistical accuracy and
+      resource allocation across training, inference, and self improvement.
+    </p>
+    {% include threadfigure.html src="/img/thread-efficiency.svg" alt="Error against resource budget for two approaches: compressing a model afterward, and building the budget into the learning objective. Building it in gives lower error at the same budget, and the same error at a fraction of the budget. The budgets are data, communication, memory, and compute; the design choices are treating the budget as a constraint, selecting a representative subset, compressing representations, and allocating resources where the marginal gain is highest." %}
+    <div class="thread-questions">
+      <h3>Key Questions</h3>
+      <ol>
+        <li>What are the fundamental tradeoffs among statistical accuracy, data, model size, communication, and inference cost?</li>
+        <li>How can compression, selection, and resource allocation be incorporated into learning rather than applied afterward?</li>
+        <li>How should self-improving systems allocate tokens, rollouts, judge calls, simulator interactions, and physical trials?</li>
+      </ol>
+    </div>
+  </div>
+  <aside class="thread-evidence" aria-label="Selected publications and patents for efficient learning">
+    <h3>Selected Publications</h3>
+    <ul class="thread-papers">
+      {% include threadpaper.html paper=splice %}
+      {% include threadpaper.html paper=ropoll %}
+      {% include threadpaper.html paper=gm %}
+      {% include threadpaper.html paper=ndsc %}
+      {% include threadpaper.html paper=momentum %}
+      {% include threadpaper.html paper=compression %}
+    </ul>
+    <h3>Selected Patents</h3>
+    <ul class="thread-papers thread-patents">
+      {% include threadpatent.html patent=compression_patent %}
+    </ul>
+  </aside>
+</div>

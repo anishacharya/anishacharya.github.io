@@ -1,0 +1,24 @@
+{%- comment -%}
+  Paper and patent records used by the research thread pages. Include once at
+  the top of a page: {% include research-refs.html %}
+{%- endcomment -%}
+{% assign splice = site.data.papers | where: "key", "splice" | first %}
+{% assign ropoll = site.data.papers | where: "key", "ropoll" | first %}
+{% assign orchopt = site.data.papers | where: "key", "orchopt" | first %}
+{% assign gm = site.data.papers | where: "key", "gm-matching" | first %}
+{% assign bgmd = site.data.papers | where: "key", "bgmd" | first %}
+{% assign ndsc = site.data.papers | where: "key", "ndsc" | first %}
+{% assign momentum = site.data.papers | where: "key", "momentum-fl" | first %}
+{% assign gossip = site.data.papers | where: "key", "gossip" | first %}
+{% assign compression = site.data.papers | where: "key", "embedding-compression" | first %}
+{% assign pu = site.data.papers | where: "key", "pu-contrastive" | first %}
+{% assign alexa = site.data.papers | where: "key", "alexa-conversations" | first %}
+{% assign butterworth = site.data.papers | where: "key", "butterworth" | first %}
+{% assign lorenz = site.data.papers | where: "key", "lorenz-pid" | first %}
+{% assign bode = site.data.papers | where: "key", "bode" | first %}
+{% assign multiwing = site.data.papers | where: "key", "multiwing" | first %}
+{% assign fractional = site.data.papers | where: "key", "fractional-q" | first %}
+{% assign nonlinear = site.data.papers | where: "key", "nonlinear-ann" | first %}
+{% assign leastsquare = site.data.papers | where: "key", "least-square" | first %}
+{% assign dialog_patent = site.data.patents | where: "key", "goal-oriented-dialog" | first %}
+{% assign compression_patent = site.data.patents | where: "key", "nlp-embedding-compression" | first %}

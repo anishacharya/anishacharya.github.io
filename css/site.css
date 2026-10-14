@@ -171,10 +171,14 @@ h2 {
   margin: 3rem 0 1.25rem; display: flex; align-items: center; gap: 0.9rem;
 }
 h2::after { content: ""; flex: 1 1 auto; height: 1px; background: var(--rule); }
+/* Section anchors: the front-page tabs land on /#about, /#research, ... */
+h2[id] { scroll-margin-top: 1.5rem; }
 
 h3 { font-size: 1.12rem; font-weight: 620; margin: 2rem 0 0.55rem; }
 
-p { margin: 0 0 1.1rem; }
+/* `pretty` lets the browser rebalance a paragraph's last lines so it never
+   ends on a lone word. */
+p { margin: 0 0 1.1rem; text-wrap: pretty; }
 
 a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--accent-dim); }
 a:hover { border-bottom-color: var(--accent); }
@@ -245,6 +249,12 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
 
 .bio { margin: 1.9rem 0 0; max-width: var(--prose); }
 .bio p { font-size: 1.02rem; }
+/* Keep a person's name on one line. */
+.nowrap { white-space: nowrap; }
+/* Desktop: keep each bio paragraph to six lines or fewer, the most the
+   browser will balance, so none ends half-empty. Phones keep `pretty`: there
+   the paragraphs run past what balancing handles. */
+@media (min-width: 40.01rem) { .bio p { text-wrap: balance; } }
 
 /* --- Landing: research topics ------------------------------------------- */
 
@@ -482,6 +492,27 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
   border-top: 1px solid var(--rule); font-size: 0.86rem; color: var(--ink-soft);
 }
 
+/* A thread on its own page (layout: thread). Outside the numbered-index grid,
+   the diagram breaks out of the reading measure to the full column instead. */
+.thread-page h1 { margin: 0.2rem 0 0.25rem; }
+.thread-kicker {
+  margin: 0; font-family: var(--sans); font-size: 0.8rem; color: var(--ink-faint);
+}
+.thread-kicker a { color: var(--ink-faint); border-bottom: none; }
+.thread-kicker a:hover { color: var(--accent); }
+.thread-page .thread-layout { margin-top: 1.4rem; }
+.thread-page .thread-vision { font-size: 1.02rem; color: var(--ink); }
+.thread-page .thread-figure {
+  margin-left: 0;
+  width: min(calc(100% + var(--measure) - 3rem - var(--prose)), calc(100vw - 3rem));
+}
+.thread-pager {
+  display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  margin-top: 2.6rem; padding-top: 1rem; border-top: 1px solid var(--rule);
+  font-family: var(--sans); font-size: 0.86rem;
+}
+.thread-pager a { border-bottom: none; }
+
 @media (max-width: 40rem) {
   /* No number gutter on a phone: it costs every line of every thread ~3rem.
      The index rides inline before the title instead. */
@@ -498,6 +529,13 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
 }
 
 /* --- Publications ------------------------------------------------------- */
+
+/* Front-page subsections (Publications: Thesis, Patents, Papers; Experience:
+   Education, Research experience, Teaching, Service). Sits between the
+   section h2 and the small year labels. */
+.subhead { font-size: 1rem; font-weight: 640; margin: 2.2rem 0 0.8rem; }
+h2 + .subhead { margin-top: 0; }
+.subhead + .year { margin-top: 0.4rem; }
 
 .year {
   font-family: var(--sans); font-size: 0.78rem; font-weight: 700;

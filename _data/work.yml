@@ -1,9 +1,9 @@
 # Roles, education, teaching, awards, service, code.
 # Reconciled against CV_ANISH/{work,education,teaching,awards,service}.tex.
 #
-# Rendered on the landing page, in this order: education, roles (Research
-# experience), teaching, service. The thesis block on /publications reads the
-# first education entry. `awards` and `code` are kept as CV source data and are
+# Rendered in the front page's Experience section, in this order: education, roles (Research
+# experience), teaching, service. The homepage bio links the first education
+# entry's thesis. `awards` and `code` are kept as CV source data and are
 # not rendered on the site.
 #
 # People (advisors, committee, hosts) are {name, scholar} records; `scholar` is

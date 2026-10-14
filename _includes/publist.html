@@ -1,6 +1,7 @@
 {%- comment -%}
 Full publication entry: title, authors, venue, links. No thumbnails.
 Usage: {% include publist.html items=array %}
+Pass compact=true to drop the one-line summaries (front page).
 {%- endcomment -%}
 <ul class="pubs">
   {% for p in include.items %}
@@ -19,7 +20,7 @@ Usage: {% include publist.html items=array %}
       {{ p.venue_full | default: p.venue }}, {{ p.year }}
       {%- if p.note_short %} <span class="pub-note">· {{ p.note_short }}</span>{% endif %}
     </p>
-    {% if p.summary %}<p class="pub-summary">{{ p.summary }}</p>{% endif %}
+    {% if p.summary and include.compact != true %}<p class="pub-summary">{{ p.summary }}</p>{% endif %}
     {% if p.links %}
     <p class="pub-links">
       {% for l in p.links %}{% if l[1] != "" %}<a href="{{ l[1] }}">{{ l[0] }}</a>{% endif %}{% endfor %}

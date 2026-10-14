@@ -1,0 +1,26 @@
+---
+layout: base
+---
+{%- comment -%}
+  One research thread on its own page. The page names its entry in
+  _data/threads.yml with `thread:`; number, role label, and the prev/next links
+  all come from that list, so the order lives in one place.
+{%- endcomment -%}
+{%- for t in site.data.threads -%}
+  {%- if t.id == page.thread -%}
+    {%- assign th = t -%}
+    {%- assign num = forloop.index | prepend: '0' | slice: -2, 2 -%}
+    {%- unless forloop.first -%}{%- assign i = forloop.index0 | minus: 1 -%}{%- assign prev = site.data.threads[i] -%}{%- endunless -%}
+    {%- unless forloop.last -%}{%- assign i = forloop.index0 | plus: 1 -%}{%- assign next = site.data.threads[i] -%}{%- endunless -%}
+  {%- endif -%}
+{%- endfor -%}
+<article class="thread-page">
+  <p class="thread-kicker"><a href="{{ '/#research' | relative_url }}">Research</a> · {{ num }}</p>
+  <h1>{{ page.title }}</h1>
+  <p class="thread-role">{{ th.role }}</p>
+  {{ content }}
+  <nav class="thread-pager" aria-label="Other research threads">
+    {%- if prev %}<a class="prev" href="{{ prev.page | relative_url }}">← {{ prev.title }}</a>{% else %}<span></span>{% endif -%}
+    {%- if next %}<a class="next" href="{{ next.page | relative_url }}">{{ next.title }} →</a>{% endif -%}
+  </nav>
+</article>

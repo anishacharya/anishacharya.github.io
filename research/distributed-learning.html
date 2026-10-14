@@ -1,0 +1,40 @@
+---
+layout: thread
+title: "Distributed & Collaborative Learning"
+thread: thread-distributed
+permalink: /research/distributed-learning/
+description: "Anish Acharya's research on distributed and collaborative learning: aggregation, communication, and coordination topology for learners with different data, capabilities, and reliability."
+---
+{% include research-refs.html %}
+<div class="thread-layout">
+  <div class="thread-reading">
+    <p class="thread-vision">
+      Many learning systems consist of participants that hold different data, possess
+      different capabilities, and communicate through a limited or changing topology. My
+      long-term goal is to develop principles for collaborative learning across federated
+      clients, decentralized workers, distributed encoders, autonomous agents, and physical
+      robots. I study how local updates should be aggregated, what information must be
+      communicated, how coordination topology affects convergence, and how collective
+      learning can remain stable under heterogeneity, failures, and adversarial participants.
+    </p>
+    {% include threadfigure.html src="/img/thread-distributed.svg" alt="Six learners, each holding a different local data distribution, send compressed updates to a robust aggregator and gossip with their neighbours. One learner sends a corrupted update, which the robust median down-weights. Each learner has local data, local compute, a communication budget, and a sparse set of neighbours; client drift, failures, adversarial participants, and stale information are what can go wrong." %}
+    <div class="thread-questions">
+      <h3>Key Questions</h3>
+      <ol>
+        <li>When can decentralized learners or robot fleets match centralized training under limited communication?</li>
+        <li>How should aggregation, communication topology, and local computation adapt to heterogeneous or unreliable participants?</li>
+        <li>Which principles from gossip and federated optimization extend to multi-agent coordination and collaborative policy learning?</li>
+      </ol>
+    </div>
+  </div>
+  <aside class="thread-evidence" aria-label="Selected publications for distributed and collaborative learning">
+    <h3>Selected Publications</h3>
+    <ul class="thread-papers">
+      {% include threadpaper.html paper=orchopt %}
+      {% include threadpaper.html paper=ndsc %}
+      {% include threadpaper.html paper=momentum %}
+      {% include threadpaper.html paper=bgmd title="BGMD: Robust Training in High Dimensions via Block Coordinate Geometric Median Descent" %}
+      {% include threadpaper.html paper=gossip %}
+    </ul>
+  </aside>
+</div>

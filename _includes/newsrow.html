@@ -2,11 +2,14 @@
 One News row. Row text is never a link: every link lives in .nx, named, so each
 row exposes its material the same way.
 Usage: {% include newsrow.html e=entry %}
+Pass hide_year=true under a year heading (on /news/) to show the season only.
 {%- endcomment -%}
 {%- assign e = include.e -%}
 <li>
-  <span class="nd">{% if e.when %}{{ e.when }}, {% endif %}{{ e.year }}</span>
+  <span class="nd">{% if include.hide_year %}{{ e.when }}{% else %}{% if e.when %}{{ e.when }} {% endif %}{{ e.year }}{% endif %}</span>
   <span class="tl-kind tl-{{ e.kind }}">{{ e.kind }}</span>
-  <span class="nw" title="{{ e.what }}">{{ e.what }}</span>
-  <span class="nx">{%- for k in e.links -%}{%- if k[1] != "" -%}<a href="{{ k[1] }}">{{ k[0] }}</a>{%- unless forloop.last %} <span class="sep">·</span> {% endunless -%}{%- endif -%}{%- endfor -%}</span>
+  <span class="nbody">
+    <span class="nw">{{ e.what }}</span>
+    <span class="nx">{%- for k in e.links -%}{%- if k[1] != "" -%}<a href="{{ k[1] }}">{{ k[0] }}</a>{%- unless forloop.last %} <span class="sep">·</span> {% endunless -%}{%- endif -%}{%- endfor -%}</span>
+  </span>
 </li>

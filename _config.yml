@@ -29,6 +29,7 @@ verification:
 nav:
   Research: "/research/"
   Publications: "/publications/"
+  News: "/news/"
 
 # --- Build --------------------------------------------------------------- #
 

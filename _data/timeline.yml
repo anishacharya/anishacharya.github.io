@@ -1,8 +1,7 @@
 # Full chronological record, newest first. Compiled from CV_ANISH/*.tex.
 #
-# Rendered in the scrollable News box on the landing page. Keep `what` SHORT —
-# one line, roughly 70 characters or less. Anything longer is clipped with an
-# ellipsis (full text stays available as the link title).
+# Rendered on /news/, grouped by year. `what` wraps, so nothing is clipped, but keep it to one short
+# sentence: it is a log line, not a description.
 #
 # Fields: year (int), when (season, optional), what (short),
 #         kind: milestone | paper | patent | launch | talk | award | role | press

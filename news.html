@@ -1,0 +1,21 @@
+---
+layout: base
+title: News
+permalink: /news/
+description: "News from Anish Acharya: talks, papers, product launches, patents, awards, and roles, newest first."
+---
+<p class="lede">
+  Talks, papers, launches, patents, awards, and roles, newest first.
+</p>
+
+{%- comment -%}
+  group_by keeps first-appearance order, and timeline.yml is newest first,
+  so years come out newest first without a sort.
+{%- endcomment -%}
+{% assign years = site.data.timeline | group_by: "year" %}
+{% for group in years %}
+  <p class="year">{{ group.name }}</p>
+  <ul class="news news-by-year">
+    {% for e in group.items %}{% include newsrow.html e=e hide_year=true %}{% endfor %}
+  </ul>
+{% endfor %}

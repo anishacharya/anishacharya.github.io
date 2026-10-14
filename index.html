@@ -11,7 +11,6 @@ redirect_from:
   - /contact/
   - /education/
   - /industry/
-  - /news/
   - /awards/
   - /press/
   - /services/
@@ -105,7 +104,7 @@ redirect_from:
         Deliberately bare: org, positions, dates, hosts — no description and no
         links. Prose lives in the CV PDF; `work.yml`'s `note` is kept as source
         material but is not rendered here. Everything a role produced is reachable
-        from the News timeline below and from /publications, so this section stays
+        from /news/ and /publications, so this section stays
         a scannable index rather than a second copy of them.
       {%- endcomment -%}
       {% if r.hosts %}<p class="job-hosts">Hosted by {% for h in r.hosts %}{% if h.scholar %}<a href="https://scholar.google.com/citations?user={{ h.scholar }}">{{ h.name }}</a>{% else %}{{ h.name }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>{% endif %}
@@ -154,15 +153,5 @@ redirect_from:
   </li>
   {% endfor %}
 </ul>
-
-{%- comment -%}
-  News is the full record in one scrollable box, reverse-chronological.
-{%- endcomment -%}
-<h2>News</h2>
-<div class="newsbox" tabindex="0" role="region" aria-label="News and full record">
-  <ul class="news">
-    {% for e in site.data.timeline %}{% include newsrow.html e=e %}{% endfor %}
-  </ul>
-</div>
 
 {% endif %}

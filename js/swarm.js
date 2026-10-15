@@ -155,14 +155,10 @@
         ctx.beginPath(); ctx.arc(w.x, w.y, rr, 0, Math.PI * 2); ctx.stroke();
       }
 
-      // the mass itself, and a label
+      // the mass itself
       ctx.strokeStyle = "rgba(240,255,252," + (0.7 * env).toFixed(3) + ")";
       ctx.lineWidth = 1;
       ctx.beginPath(); ctx.arc(w.x, w.y, 3 + 4 * env, 0, Math.PI * 2); ctx.stroke();
-      ctx.font = MONO;
-      ctx.fillStyle = "rgba(190,205,240," + (0.6 * env).toFixed(3) + ")";
-      ctx.fillText("\u03B4g #" + ("00" + w.id).slice(-3), w.x + 12, w.y - 10);
-      ctx.fillText("t+" + (w.t / 1000).toFixed(2) + "s", w.x + 12, w.y + 3);
     }
 
     // accumulated human mass: a ring that fills toward the alignment threshold
@@ -176,9 +172,6 @@
       ctx.strokeStyle = isA ? "rgba(94,234,212,0.85)" : "rgba(220,230,255," + (0.35 + 0.4 * f).toFixed(3) + ")";
       ctx.lineWidth = 1.6;
       ctx.beginPath(); ctx.arc(M.x, M.y, rr, -Math.PI / 2, -Math.PI / 2 + f * Math.PI * 2); ctx.stroke();
-      ctx.font = MONO;
-      ctx.fillStyle = isA ? "rgba(94,234,212,0.85)" : "rgba(190,205,240," + (0.3 + 0.4 * f).toFixed(3) + ")";
-      ctx.fillText(isA ? "aligned" : "pull " + Math.round(f * 100) + "%", M.x + rr + 6, M.y + 4);
     }
   }
 
@@ -479,7 +472,6 @@
   // ---- instrument layer ----------------------------------------------------
   // drawn under the swarm, very faint: a polar measurement field centred on the
   // singularity point, like a telescope reticle or a detector display
-  var MONO = "10px ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace";
   var bezelSpin = 0;
 
   function drawField(c, k, z, dt) {
@@ -528,7 +520,8 @@
   }
 
   // lock-on reticle at the singularity point: corner brackets that tighten as
-  // the network collapses, plus a live label
+  // the network collapses. No text readout: on a personal page it reads as
+  // debug output.
   function drawReticle(c, z, meanR) {
     var s = 30 - z * 16;                     // bracket half-size
     var arm = 7;
@@ -544,13 +537,6 @@
     });
     ctx.stroke();
 
-    // label, tracking the collapse
-    if (W < NARROW) { ctx.restore(); return; }
-    ctx.font = MONO;
-    ctx.fillStyle = "rgba(210,255,248," + (0.45 + z * 0.4).toFixed(3) + ")";
-    ctx.fillText(aligned ? "S\u2080 \u00B7 human-aligned" : "S\u2080", c.x + s + 8, c.y - s + 4);
-    ctx.fillStyle = "rgba(170,185,220," + (0.4 + z * 0.3).toFixed(3) + ")";
-    ctx.fillText("\u27E8r\u27E9 " + Math.round(meanR) + " px", c.x + s + 8, c.y - s + 17);
     ctx.restore();
   }
 

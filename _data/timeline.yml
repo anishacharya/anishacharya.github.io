@@ -4,6 +4,9 @@
 # sentence: it is a log line, not a description.
 #
 # Fields: year (int), when (season, optional), what (short),
+#         paper / talk_label (talks only, optional): the papers.yml key the talk
+#         presented, and a short label; the talk is then listed beside that
+#         paper in Publications
 #         kind: milestone | paper | patent | launch | talk | award | role | press
 #         links (optional) label -> url
 #
@@ -29,10 +32,14 @@
   kind: talk
   when: Fall
   what: "Oral, Amazon ML Conference — Prompt Optimization"
+  paper: splice
+  talk_label: "AMLC 2026 (oral)"
 - year: 2026
   kind: talk
   when: Fall
   what: "Oral, Amazon ML Conference — Robust LLM Jury"
+  paper: ropoll
+  talk_label: "AMLC 2026 (oral)"
   links:
     Paper: "https://openreview.net/pdf?id=Rvj0jSb86u"
 - year: 2026
@@ -53,18 +60,24 @@
   kind: talk
   when: Summer
   what: "Multi-Agent Optimization — AWS Marketplace Science, NYC"
+  paper: orchopt
+  talk_label: "AWS Marketplace Science, NYC"
   links:
     Paper: "https://openreview.net/pdf?id=y6ArPzGAug"
 - year: 2026
   kind: talk
   when: Summer
   what: "Agent Optimization — AI Across AWS, Austin"
+  paper: orchopt
+  talk_label: "AI Across AWS"
   links:
     Paper: "https://openreview.net/pdf?id=y6ArPzGAug"
 - year: 2026
   kind: talk
   when: Summer
   what: "Robust LLM Jury — ICML 2026, Seoul"
+  paper: ropoll
+  talk_label: "ICML 2026, Seoul"
   links:
     Paper: "https://openreview.net/pdf?id=Rvj0jSb86u"
     Venue: "https://icml.cc/"
@@ -76,6 +89,8 @@
   kind: talk
   when: Spring
   what: "Prompt Optimization — AWS Town Hall"
+  paper: splice
+  talk_label: "AWS Town Hall"
 - year: 2026
   kind: role
   when: Winter
@@ -136,6 +151,8 @@
   kind: talk
   when: Fall
   what: "Robust Sampling — AFSS, Seattle"
+  paper: gm-matching
+  talk_label: "AFSS 2025, Seattle"
   links:
     Paper: "https://proceedings.mlr.press/v267/acharya25b.html"
 - year: 2025
@@ -336,6 +353,8 @@
   kind: talk
   when: Summer
   what: "Oral — Amazon Machine Learning Conference, Seattle"
+  paper: embedding-compression
+  talk_label: "AMLC 2018 (oral)"
   links:
     Paper: "https://www.aaai.org/ojs/index.php/AAAI/article/view/4578"
 - year: 2018

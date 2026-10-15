@@ -251,6 +251,10 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
 .bio p { font-size: 1.02rem; }
 /* Keep a person's name on one line. */
 .nowrap { white-space: nowrap; }
+/* Bio links are dense (one per claim), so they read as ink with a faint
+   accent underline and only turn accent on hover. */
+.bio a { color: var(--ink); border-bottom-color: color-mix(in srgb, var(--accent) 45%, transparent); }
+.bio a:hover { color: var(--accent); border-bottom-color: var(--accent); }
 
 /* --- Landing: research topics ------------------------------------------- */
 
@@ -575,6 +579,15 @@ h2 + .subhead { margin-top: 0; }
 .pub-links { font-family: var(--sans); font-size: 0.81rem; margin: 0.32rem 0 0; }
 .pub-links a { border-bottom: none; margin-right: 0.9rem; font-weight: 500; }
 .pub-links a:hover { border-bottom: 1px solid var(--accent); }
+/* Grounding rows under a paper: products it powers, its deployment and press,
+   talks where it was presented. Same treatment as Experience's link rows. */
+.pub-ground {
+  list-style: none; margin: 0.3rem 0 0; padding: 0;
+  font-family: var(--sans); font-size: 0.79rem; line-height: 1.6; color: var(--ink-faint);
+}
+.pubs .pub-ground li { padding: 0; border-bottom: none; }
+.pub-ground a { border-bottom: none; }
+.pub-ground a:hover { border-bottom: 1px solid var(--accent); }
 .pub-also { font-size: 0.82rem; color: var(--ink-faint); font-style: italic; margin: 0.25rem 0 0; }
 /* Title links to the paper's own page; keep it reading as a title, not a link. */
 .pub-title a.pub-page { color: var(--ink); border-bottom: none; }
@@ -694,6 +707,16 @@ h2 + .subhead { margin-top: 0; }
   font-size: 0.86rem; color: var(--ink-soft);
   margin: 0.16rem 0 0; line-height: 1.5;
 }
+
+/* One CV line per role, then its links: one row per launch, named. */
+.job-note { font-size: 0.86rem; color: var(--ink-soft); margin: 0.3rem 0 0; line-height: 1.5; }
+.job-links {
+  list-style: none; margin: 0.3rem 0 0; padding: 0;
+  font-family: var(--sans); font-size: 0.79rem; line-height: 1.6; color: var(--ink-faint);
+}
+.job-links a { border-bottom: none; }
+.job-links a:hover { border-bottom: 1px solid var(--accent); }
+.job-sys { color: var(--ink-soft); font-weight: 560; margin-right: 0.5rem; }
 
 .job-hosts {
   font-family: var(--sans); font-size: 0.74rem; letter-spacing: 0.04em;

@@ -3,10 +3,14 @@
 #
 # Rendered in the front page's Experience section, in this order: education, roles (Research
 # experience), teaching, service. The homepage bio links the first education
-# entry's thesis. `awards` and `code` are kept as CV source data and are
-# not rendered on the site.
+# entry's thesis. `awards` is summarized in the homepage bio;
+# `awards` and `code` are otherwise kept as CV source data, not rendered.
 #
-# People (advisors, committee, hosts) are {name, scholar} records; `scholar` is
+# Roles may carry `links` (label -> url, internal or external); launches.yml
+# entries with a matching role_key are listed under the role too.
+#
+# Education entries may carry `honors`: a list of {what, url} shown under the
+# degree. People (advisors, committee, hosts) are {name, scholar} records; `scholar` is
 # the Google Scholar user id and renders as a profile link.
 #
 # IMPORTANT: never write "Present" in a date field; it goes stale silently.
@@ -17,6 +21,8 @@ education:
     logo: utaustin
     degree: PhD, Electrical and Computer Engineering
     where: Austin, TX
+    honors:
+      - what: Meta PhD Research Grant ($100,000)
     when: Fall 2019 – Spring 2025
     thesis: Robust and Efficient Learning in High Dimensions from Noisy Data
     thesis_url: "https://repositories.lib.utexas.edu/items/60cdbaf7-6899-40af-b1aa-a6e23ba9749e"
@@ -44,6 +50,27 @@ education:
     degree: BE, Electronics and Instrumentation Engineering
     where: Kolkata, India
     when: Spring 2009 – Spring 2013
+    advisors:
+      - name: Amitava Gupta
+        scholar: z1BR7IgAAAAJ
+      - name: Shantanu Das
+        scholar: 9ix9YS8AAAAJ
+    honors:
+      - what: Highest Honors (First Class)
+      - what: INSPIRE Fellowship, Govt. of India
+      - what: MHRD Fellowship for Academic Excellence, Govt. of India
+
+  # jpbs.png: the school crest, supplied by the user (no public source online).
+  - school: Jodhpur Park Boys School
+    logo: jpbs
+    degree: Secondary Education (Madhyamik)
+    where: Kolkata, India
+    when: "2007"
+    note: West Bengal Board of Secondary Education
+    honors:
+      - what: State Rank 5 of ~700,000 candidates
+        url: "https://www.telegraphindia.com/west-bengal/upswing-in-city-pass-rate/cid/1005795"
+      - what: Mamraj Agarwal Rashtriya Puraskar (National Award for Academic Excellence), from the Governor of West Bengal
 
 roles:
   # One entry per *contiguous* stint at a company, in the CV's order.
@@ -55,6 +82,10 @@ roles:
     logo: amazonwebservices
     when: Spring 2025 –
     note: Multi-agent orchestration meshes at AWS — architecture, core research, production integration, and eval-driven iteration.
+    links:
+      RoPoLL: "/papers/ropoll/"
+      SPLICE: "/papers/splice/"
+      OrchOpt: "/papers/orchopt/"
     positions:
       - title: Senior Research Scientist
         team: AWS
@@ -66,6 +97,9 @@ roles:
     logo: utaustin
     when: Fall 2019 – Spring 2025
     note: Doctoral research on robust, sample-efficient learning in high dimensions. Affiliated with IFML.
+    links:
+      Thesis: "https://repositories.lib.utexas.edu/items/60cdbaf7-6899-40af-b1aa-a6e23ba9749e"
+      IFML: "https://www.ifml.institute/"
     positions:
       - title: Graduate Research Assistant
         team: ECE and CS
@@ -96,6 +130,9 @@ roles:
         scholar: U8sbg10AAAAJ
       - name: Michael Rabbat
         scholar: cMPKe9UAAAAJ
+    links:
+      "PU contrastive learning (ICML 2022 workshop)": "/papers/pu-contrastive/"
+      arXiv: "https://arxiv.org/abs/2206.01206"
     positions:
       - title: Student Researcher
         when: Fall 2022

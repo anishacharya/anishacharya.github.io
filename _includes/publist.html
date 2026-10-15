@@ -26,6 +26,23 @@ Pass compact=true to drop the one-line summaries (front page).
       {% for l in p.links %}{% if l[1] != "" %}<a href="{{ l[1] }}">{{ l[0] }}</a>{% endif %}{% endfor %}
     </p>
     {% endif %}
+    {%- comment -%}
+      Grounding: what the paper led to. Launches that list it in `papers`
+      (launches.yml) and talks that name it in `paper` (timeline.yml). A launch
+      built on several papers shows as one linked name under "Powers"; a launch
+      built on this paper alone shows its full evidence (minus the paper link,
+      already above).
+    {%- endcomment -%}
+    {%- assign launched = site.data.launches | where_exp: "x", "x.papers contains p.key" -%}
+    {%- assign shared = launched | where_exp: "x", "x.papers.size > 1" -%}
+    {%- assign talks = site.data.timeline | where: "paper", p.key -%}
+    {% if launched.size > 0 or talks.size > 0 %}
+    <ul class="pub-ground">
+      {% if shared.size > 0 %}<li><span class="job-sys">Powers</span>{% for x in shared %}{% assign l1 = x.links | first %}<a href="{{ l1[1] }}">{{ x.name }}</a>{% unless forloop.last %}<span class="sep"> · </span>{% endunless %}{% endfor %}</li>{% endif %}
+      {% for x in launched %}{% if x.papers.size == 1 %}<li><span class="job-sys">{{ x.name }}</span>{% for l in x.links %}{% if l[0] != "Paper" %}<a href="{{ l[1] }}">{{ l[0] }}</a>{% unless forloop.last %}<span class="sep"> · </span>{% endunless %}{% endif %}{% endfor %}</li>{% endif %}{% endfor %}
+      {% if talks.size > 0 %}<li><span class="job-sys">Talks</span>{% for t in talks %}{% if t.links.Venue %}<a href="{{ t.links.Venue }}">{{ t.talk_label }}</a>{% else %}{{ t.talk_label }}{% endif %}{% unless forloop.last %}<span class="sep"> · </span>{% endunless %}{% endfor %}</li>{% endif %}
+    </ul>
+    {% endif %}
     {% if p.also %}
     <p class="pub-also">{% for a in p.also %}{{ a }}{% unless forloop.last %} · {% endunless %}{% endfor %}</p>
     {% endif %}

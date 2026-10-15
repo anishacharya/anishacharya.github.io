@@ -1,7 +1,9 @@
 # Shipped systems, newest first. Each launch carries its own links and press.
-# `role_key` matches the `key` of a role in work.yml. Launches with
-# role_key: amazon-aws appear under "Shipped at AWS" in the homepage
-# Selected Work section, and as evidence on /research thread 01.
+# `role_key` matches the `key` of a role in work.yml; every launch is listed
+# under its role in the front page's Experience section, and role_key:
+# amazon-aws launches also appear as evidence on the RSI thread page.
+# `papers` lists the papers (papers.yml keys) a launch is built on; each such
+# paper shows the launch beside it in Publications.
 
 - key: ai-product-listing
   name: AI-Assisted Product Listing
@@ -10,6 +12,7 @@
   when: 2026
   venue: AWS Summit NY 2026
   what: Also powers AWS Partner Assistant.
+  papers: [ropoll, splice, orchopt]
   links:
     Blog: "https://aws.amazon.com/about-aws/whats-new/2026/06/ai-assisted-product-listing/"
     Docs: "https://docs.aws.amazon.com/marketplace/latest/userguide/ai-assisted-product-listing.html"
@@ -21,6 +24,7 @@
   org: AWS
   when: 2026
   what: Partner onboarding and funding agents, served over MCP.
+  papers: [ropoll, splice, orchopt]
   links:
     Onboarding: "https://docs.aws.amazon.com/partner-central/latest/getting-started/partner-onboarding-agent.html"
     Funding: "https://docs.aws.amazon.com/partner-central/latest/getting-started/partner-funding-agent.html"
@@ -33,6 +37,7 @@
   when: 2025
   venue: "re:Invent 2025"
   what: Deep research over structured requirements, long-context reasoning, and grounded solution comparison.
+  papers: [ropoll, splice, orchopt]
   links:
     Product: "https://aws.amazon.com/marketplace/agentmode/#/"
     Blog: "https://aws.amazon.com/about-aws/whats-new/2025/11/aws-marketplace-agent-mode-ai-enhanced-search/"
@@ -50,12 +55,22 @@
   links:
     Technical Docs: "https://docs.eidon.ai/the-network/eidon-state"
 
+- key: openmsftl
+  name: OpenMSFTL
+  role_key: microsoft
+  org: Microsoft
+  when: 2020
+  what: Open-source federated learning platform.
+  links:
+    Code: "https://github.com/microsoft/OpenMSFTL"
+
 - key: alexa-conversations-launch
   name: Alexa Conversations
   role_key: amazon-alexa
   org: Amazon Alexa
   when: 2021
-  what: Goal-oriented dialog generation from dialog templates, APIs, and entity data. Primary inventor.
+  what: Goal-oriented dialog generation from dialog templates, APIs, and entity data. First author of the paper; primary inventor on its patent.
+  papers: [alexa-conversations]
   links:
     Paper: "https://aclanthology.org/2021.naacl-demos.15/"
     Patent: "https://patentimages.storage.googleapis.com/e6/63/6a/f06b172a2d2d00/US11393454.pdf"
@@ -71,6 +86,7 @@
   org: Amazon Alexa
   when: 2019
   what: Low-rank factorization folded into training for deployment-constrained NLU, deployed across a large fleet of per-skill models.
+  papers: [embedding-compression]
   links:
     Paper: "https://www.aaai.org/ojs/index.php/AAAI/article/view/4578"
     Patent: "https://patentimages.storage.googleapis.com/d1/a8/7a/77210494b73af9/US10872601.pdf"

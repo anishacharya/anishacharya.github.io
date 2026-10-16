@@ -16,6 +16,8 @@
 #   authors     list; write "A Acharya" for yourself so templates render the
 #               full name and emphasize it
 #   authors_full  optional full author list, used instead of `authors`
+#   keywords    search phrases for the paper, emitted as citation_keywords and
+#               schema.org `keywords` on its page; not shown on the page
 #   venue       short venue
 #   venue_full  spelled-out venue
 #   year        integer, used for grouping
@@ -32,6 +34,7 @@
   title: "SPLICE: Structured Prompt Local Iterative Combinatorial Evolution"
   summary: "Treats a production prompt as a set of blocks, some frozen and some editable, and optimizes it with section-local textual gradients and elitist beam search, giving the first formal guarantees for iterative LLM-driven prompt optimization. Outperforms prior prompt optimizers across benchmarks and three model capability tiers while keeping frozen sections verbatim."
   authors: [A Acharya, P Studans, A Dhanda, N V Rao, V A Khatri, S A Niaki, B Verkhovsky]
+  keywords: ["prompt optimization", "LLM prompt optimization", "textual gradients", "beam search", "large language models", "recursive self-improvement"]
   venue: NeurIPS 2026
   venue_full: Conference on Neural Information Processing Systems (NeurIPS)
   year: 2026
@@ -43,6 +46,7 @@
   title: "RoPoLL: Robust Panel of LLM Judges"
   summary: "Shows that averaging an LLM jury is unboundedly biased once any judge fails systematically, and replaces the average with a geometric-median aggregator that has the optimal 1/2 breakdown point. A 3-judge 38B panel beats a 675B judge by 1.31x under 30% corruption."
   authors: [A Acharya, K Pan, B Verkhovsky]
+  keywords: ["LLM-as-a-judge", "LLM evaluation", "robust LLM evaluation", "LLM jury", "robust aggregation", "geometric median", "breakdown point"]
   venue: ICML 2026
   venue_full: International Conference on Machine Learning (ICML)
   year: 2026
@@ -61,6 +65,7 @@
   title: "OrchOpt: Validation-Gated Architecture Search for Self-Organizing Multi-Agent Orchestration"
   summary: "Searches over multi-agent orchestration architectures and keeps a change only when it passes validation."
   authors: [A Dhanda, S A Niaki, A Acharya, B Verkhovsky]
+  keywords: ["multi-agent systems", "multi-agent orchestration", "agent architecture search", "validation-gated search", "self-organizing agents"]
   venue: COLM 2026
   venue_full: Conference on Language Modeling (COLM)
   year: 2026
@@ -79,6 +84,7 @@
   title: Geometric Median Matching for Robust k-Subset Selection from Noisy Data
   summary: "Selects a k-subset whose mean tracks the geometric median of noisy data, giving an O(1/k) rate under arbitrary corruption, a quadratic improvement over random sampling."
   authors: [A Acharya, S Sanghavi, A G Dimakis, I S Dhillon]
+  keywords: ["robust subset selection", "coreset selection", "data pruning", "geometric median", "robust statistics", "noisy data"]
   venue: ICML 2025
   venue_full: International Conference on Machine Learning (ICML)
   year: 2025
@@ -98,6 +104,7 @@
   title: Neural Distributed Source Coding
   summary: "Learns lossy distributed source coding with a conditional VQ-VAE, handling arbitrary correlation structure in high dimensions with state-of-the-art PSNR."
   authors: [A Nagle, J Whang, A Acharya, H Kim, A Dimakis]
+  keywords: ["distributed source coding", "neural compression", "VQ-VAE", "lossy compression"]
   venue: IEEE JSAIT 2024
   venue_full: "IEEE Journal on Selected Areas in Information Theory (IEEE JSAIT)"
   year: 2024
@@ -113,6 +120,7 @@
   title: Faster Non-Convex Federated Learning via Global and Local Momentum
   summary: "Combines variance-reduced momentum at the server and at the clients to speed up non-convex federated learning under client heterogeneity and compressed communication."
   authors: [R Das, A Acharya, A Hashemi, S Sanghavi, I Dhillon, U Topcu]
+  keywords: ["federated learning", "non-convex optimization", "momentum", "variance reduction", "communication compression", "client heterogeneity"]
   venue: UAI 2022
   venue_full: Conference on Uncertainty in Artificial Intelligence (UAI)
   year: 2022
@@ -128,6 +136,7 @@
   title: Robust Training in High Dimensions via Block Coordinate Geometric Median Descent
   summary: "Makes geometric-median SGD practical in high dimensions by applying it to one chosen block of coordinates at a time, keeping the optimal 1/2 breakdown point for smooth non-convex problems."
   authors: [A Acharya, A Hashemi, P Jain, S Sanghavi, I Dhillon, U Topcu]
+  keywords: ["robust training", "robust optimization", "geometric median", "robust SGD", "breakdown point", "high-dimensional optimization"]
   venue: AISTATS 2022
   venue_full: International Conference on Artificial Intelligence and Statistics (AISTATS)
   year: 2022
@@ -149,6 +158,7 @@
   title: Positive Unlabeled Contrastive Learning
   summary: "Extends contrastive pretraining to positive-unlabeled data with an unbiased, lower-variance loss that uses the few labeled positives."
   authors: [A Acharya, S Sanghavi, L Jing, B Bhushanam, D Choudhary, M Rabbat, I Dhillon]
+  keywords: ["positive-unlabeled learning", "PU learning", "contrastive learning", "self-supervised learning", "weak supervision"]
   venue: ICML 2022
   venue_full: International Conference on Machine Learning (ICML)
   year: 2022
@@ -168,6 +178,7 @@
   title: "LDKP: A Dataset for Identifying Keyphrases from Long Scientific Documents"
   summary: "Releases two corpora, about 1.3M and 100K full-text scientific articles, for identifying keyphrases beyond the title and abstract."
   authors: [D Mahata, N Agarwal, D Gautam, A Kumar, S Parekh, Y K Singla, A Acharya, R R Shah]
+  keywords: ["keyphrase extraction", "long-document understanding", "scientific documents", "NLP datasets"]
   venue: CIKM 2022
   venue_full: ACM International Conference on Information and Knowledge Management (CIKM)
   year: 2022
@@ -186,6 +197,7 @@
   title: On the Benefits of Multiple Gossip Steps in Communication Constrained Federated Learning
   summary: "Shows that several gossip steps between gradient updates improve decentralized learning under lossy compressed communication, even after paying for the extra communication."
   authors: [A Hashemi, A Acharya, R Das, H Vikalo, S Sanghavi, I Dhillon]
+  keywords: ["decentralized learning", "federated learning", "gossip algorithms", "communication compression", "distributed optimization"]
   venue: IEEE TPDS 2021
   venue_full: "IEEE Transactions on Parallel and Distributed Systems (IEEE TPDS)"
   year: 2021
@@ -201,6 +213,7 @@
   summary: "Builds task-oriented dialogue systems from a few seed dialogues and API specifications by simulating training dialogues. The simulator improves turn-level action prediction accuracy by over 50%."
   authors: [A Acharya, "and 30 others"]
   authors_full: [A Acharya, S Adhikari, S Agarwal, V Auvray, N Belgamwar, A Biswas, S Chandra, T Chung, M Zarandi, R Gabriel, S Gao, R Goel, D Hakkani-Tur, J Jezabek, A Jha, J Kao, P Krishnan, P Ku, A Goyal, C Lin, Q Liu, A Mandal, A Metallinou, V Naik, Y Pan, S Paul, V Perera, A Sethi, M Shen, N Strom, E Wang]
+  keywords: ["task-oriented dialogue systems", "dialogue simulation", "conversational AI", "Alexa", "natural language understanding"]
   venue: NAACL 2021
   venue_full: Conference of the North American Chapter of the Association for Computational Linguistics (NAACL)
   year: 2021
@@ -218,6 +231,7 @@
   title: "GupShup: An Annotated Corpus for Abstractive Summarization of Open-Domain Code-Switched Conversations"
   summary: "Introduces the first summarization dataset of Hindi-English code-switched conversations: over 6,800 conversations with human-written summaries."
   authors: [L Mehnaz, D Mahata, A Kumar, U S Gunturi, R Jain, G Gupta, R Gosangi, I G Lee, A Acharya, R Shah]
+  keywords: ["abstractive summarization", "dialogue summarization", "code-switching", "Hindi-English", "NLP datasets"]
   venue: EMNLP 2021
   venue_full: Conference on Empirical Methods in Natural Language Processing (EMNLP)
   year: 2021
@@ -233,6 +247,7 @@
   title: Online Embedding Compression for Text Classification using Low Rank Matrix Factorization
   summary: "Compresses the word-embedding layer during training with low-rank factorization, reaching 90% compression with minimal accuracy loss and no added latency."
   authors: [A Acharya, R Goel, A Metallinou, I Dhillon]
+  keywords: ["model compression", "embedding compression", "low-rank matrix factorization", "text classification"]
   venue: AAAI 2019
   venue_full: AAAI Conference on Artificial Intelligence (AAAI)
   year: 2019
@@ -253,6 +268,7 @@
   title: Extending The Concept of Analog Butterworth Filter For Fractional Domain
   summary: "Designs fractional-order Butterworth filters in the complex w-plane, including under-, hyper-, and ultra-damped poles, and demonstrates the formulation in simulations and a frequency-domain design example."
   authors: [A Acharya, S Das, I Pan, S Das]
+  keywords: ["fractional-order filters", "Butterworth filter", "fractional calculus", "analog filter design"]
   venue: Signal Processing 2014
   venue_full: "Signal Processing (Elsevier)"
   year: 2014
@@ -267,6 +283,7 @@
   title: Simulation studies on the design of optimum PID controllers to suppress chaotic oscillations in a family of Lorenz-like multi-wing attractors
   summary: "Uses real-coded genetic-algorithm optimization to tune PID controllers for four Lorenz-family multi-wing chaotic systems, with robustness checked across initial conditions."
   authors: [S Das, A Acharya, I Pan]
+  keywords: ["PID control", "chaotic systems", "Lorenz attractor", "multi-wing attractors", "genetic algorithms"]
   venue: Math. Comp. Simulation 2014
   venue_full: "Mathematics and Computers in Simulation (Elsevier)"
   year: 2014
@@ -281,6 +298,7 @@
   title: Stability Analysis Of Delayed System Using Bode's Integral
   summary: "Tunes PID controllers for delayed plants using Bode's integral and a Padé approximation of the delay, then compares the approach with genetic-algorithm tuning in MATLAB simulations."
   authors: [A Acharya, D Mitra, K Halder]
+  keywords: ["PID tuning", "time-delay systems", "Bode's integral", "stability analysis", "Padé approximation"]
   venue: ICCCI 2013
   # "Informatics", not "the Internet": per Crossref for DOI 10.1109/iccci.2013.6466311 the
   # proceedings are the 2013 International Conference on Computer Communication and Informatics.
@@ -297,6 +315,7 @@
   title: Optimum PID Control of Multi-wing Attractors in A Family of Lorenz-like Chaotic Systems
   summary: "Applies real-coded genetic-algorithm optimization to tune PID control of Lorenz-like multi-wing chaotic attractors and compares the resulting state trajectories."
   authors: [A Acharya, S Das, I Pan]
+  keywords: ["PID control", "chaotic systems", "multi-wing attractors", "Lorenz system", "genetic algorithms"]
   venue: ICCCNT 2012
   venue_full: International Conference on Computing, Communication and Networking Technologies (ICCCNT)
   year: 2012
@@ -311,6 +330,7 @@
   title: Optimized Quality Factor of Fractional Order Analog Filters with Band-Pass and Band-Stop Characteristics
   summary: "Studies fractional-order band-pass and band-stop filters, whose characteristics are unavailable to conventional integer-order filters below second order, and optimizes their quality factor."
   authors: [A Pakhira, S Das, A Acharya, I Pan, S Saha]
+  keywords: ["fractional-order filters", "band-pass filter", "band-stop filter", "quality factor", "fractional calculus"]
   venue: ICCCNT 2012
   venue_full: International Conference on Computing, Communication and Networking Technologies (ICCCNT)
   year: 2012
@@ -325,6 +345,7 @@
   title: "Identification of nonlinear systems from the knowledge around different operating conditions: a feed-forward multilayer Artificial Neural Net (ANN) based approach"
   summary: "Identifies nonlinear systems from outputs near several linearized operating points using feed-forward multilayer neural networks, evaluated on nuclear-reactor monitoring and AC-servo control."
   authors: [S Saha, S Das, A Acharya, A Kumar, S Mukherjee, I Pan, A Gupta]
+  keywords: ["nonlinear system identification", "neural networks", "feed-forward neural networks", "operating points"]
   venue: PDGC 2012
   venue_full: International Conference on Parallel, Distributed and Grid Computing (PDGC)
   year: 2012
@@ -338,6 +359,7 @@
   title: Least square and instrumental variable system identification of AC servo position control system with fractional Gaussian noise
   summary: "Compares least-squares and instrumental-variable estimators for identifying an AC-servo position-control system under white and fractional Gaussian measurement noise."
   authors: [S Das, A Kumar, I Pan, A Acharya, S Das, A Gupta]
+  keywords: ["system identification", "least squares", "instrumental variables", "fractional Gaussian noise", "AC servo control"]
   venue: ICEAS 2011
   venue_full: International Conference on Energy, Automation and Signal (ICEAS)
   year: 2011

@@ -6,9 +6,16 @@
   {%- comment -%}
     `seo_title` overrides the generated title. The homepage uses it to carry the
     role and field, which separates this Anish Acharya from others in search.
+    Research-thread pages take theirs from _data/threads.yml, phrased the way the
+    topic is searched; the on-page heading keeps the thread's own title.
   {%- endcomment -%}
+  {%- if page.layout == "thread" -%}
+    {%- assign thread = site.data.threads | where: "id", page.thread | first -%}
+  {%- endif -%}
   {%- if page.seo_title -%}
     {%- assign doc_title = page.seo_title -%}
+  {%- elsif thread.seo_title -%}
+    {%- assign doc_title = thread.seo_title | append: " · " | append: site.title -%}
   {%- elsif page.title and page.title != "" -%}
     {%- assign doc_title = page.title | append: " · " | append: site.title -%}
   {%- else -%}
@@ -43,10 +50,12 @@
   <meta name="twitter:title" content="{{ doc_title }}">
   <meta name="twitter:description" content="{{ page.description | default: site.description }}">
 
-  <link rel="icon" href="{{ '/img/portrait.jpg' | relative_url }}">
+  <link rel="icon" href="{{ '/img/anish-acharya-phd.jpg' | relative_url }}">
   <link rel="stylesheet" href="{{ '/css/site.css' | relative_url }}?v={{ site.time | date: '%s' }}">
   {% include person-schema.html %}
   {% if page.collection == "papers" %}{% include paper-meta.html %}{% endif %}
+  {% include breadcrumb-schema.html %}
+  {% if thread %}{% include thread-schema.html thread=thread %}{% endif %}
 </head>
 <body>
   {%- comment -%}
@@ -91,11 +100,11 @@
   <footer>
     <div class="footer-in">
       <div class="links">
-        <a href="https://scholar.google.com/citations?user={{ site.social.scholar }}">Google Scholar</a>
-        <a href="https://github.com/{{ site.social.github }}">GitHub</a>
-        <a href="https://www.linkedin.com/in/{{ site.social.linkedin }}">LinkedIn</a>
-        <a href="https://orcid.org/0000-0002-3518-0510">ORCID</a>
-        <a href="{{ '/doc/CV_ANISH.pdf' | relative_url }}">CV</a>
+        <a rel="me" href="https://scholar.google.com/citations?user={{ site.social.scholar }}">Google Scholar</a>
+        <a rel="me" href="https://github.com/{{ site.social.github }}">GitHub</a>
+        <a rel="me" href="https://www.linkedin.com/in/{{ site.social.linkedin }}">LinkedIn</a>
+        <a rel="me" href="https://orcid.org/0000-0002-3518-0510">ORCID</a>
+        <a href="{{ '/doc/Anish_Acharya_PhD_CV.pdf' | relative_url }}">CV</a>
         <a href="mailto:{{ site.social.email }}">Email</a>
       </div>
       <p class="fine">

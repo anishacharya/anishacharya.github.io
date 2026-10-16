@@ -29,6 +29,9 @@ site's Person entity through the same @id used in person-schema.html.
 {%- if pdf != "" %}
 <meta name="citation_pdf_url" content="{{ pdf }}">
 {%- endif %}
+{%- if p.keywords %}
+<meta name="citation_keywords" content="{{ p.keywords | join: '; ' | escape }}">
+{%- endif %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -42,6 +45,9 @@ site's Person entity through the same @id used in person-schema.html.
   "abstract": {{ abstract | jsonify }},
   {%- endif %}
   "datePublished": "{{ p.year }}",
+  {%- if p.keywords %}
+  "keywords": {{ p.keywords | join: ", " | jsonify }},
+  {%- endif %}
   {%- if p.type == "journal" %}
   "isPartOf": { "@type": "Periodical", "name": {{ p.venue_full | default: p.venue | jsonify }} },
   {%- endif %}

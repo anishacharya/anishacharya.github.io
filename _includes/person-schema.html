@@ -14,6 +14,11 @@ but without them there is no signal to act on at all.
 
 Emitted site-wide rather than only on the homepage so any entry point carries the identity.
 
+`alternateName` lists every form people search the name in ("Dr. Anish Acharya", "Anish Acharya
+PhD", ...), so each variant reconciles to this one entity rather than to whichever Anish Acharya has
+the most press. `knowsAbout` entries with a Wikipedia/Wikidata `sameAs` tie the person to those
+topic entities, the same ones the research pages name in `about` (_data/threads.yml).
+
 ORCID and Scopus are wired in below (both in `sameAs` and as `identifier` PropertyValues).
 alphaXiv, Semantic Scholar (author 40026200), ResearchGate, OpenReview, DBLP (pid 120/7655)
 and the UT Austin Center for Big Data Analytics member page are in `sameAs`.
@@ -21,6 +26,9 @@ and the UT Austin Center for Big Data Analytics member page are in `sameAs`.
 TODO — remaining free, high-value addition, which I can't invent an ID for:
   * arXiv author identifier (arxiv.org/a/<id>) — links the preprints to the person. arXiv's
     name search also returns a physicist named Anish Acharya, so use the claimed author ID.
+    As of 2026-10-15 the account (login "anishacharya") has no public author page:
+    acharya_a_1 and acharya_a_2 belong to other people, and ORCID is not linked, so
+    arxiv.org/a/0000-0002-3518-0510 404s. Claim the papers and link ORCID first.
 Add each to `sameAs` below once you have the URL. More independent, cross-linking profiles is
 directly what makes the entity resolvable.
 {%- endcomment -%}
@@ -30,14 +38,56 @@ directly what makes the entity resolvable.
   "@type": "Person",
   "@id": "{{ site.url }}/#person",
   "name": "Anish Acharya",
-  "alternateName": "Anish Acharya, PhD",
+  "alternateName": [
+    "Anish Acharya, PhD",
+    "Anish Acharya PhD",
+    "Anish Acharya, Ph.D.",
+    "Dr. Anish Acharya",
+    "Dr Anish Acharya",
+    "A. Acharya"
+  ],
   "givenName": "Anish",
   "familyName": "Acharya",
+  "honorificPrefix": "Dr.",
   "honorificSuffix": "PhD",
   "url": "{{ site.url }}/",
-  "image": "{{ '/img/portrait.jpg' | absolute_url }}",
+  "mainEntityOfPage": { "@id": "{{ site.url }}/#profilepage" },
+  "image": {
+    "@type": "ImageObject",
+    "@id": "{{ site.url }}/#portrait",
+    "url": "{{ '/img/anish-acharya-phd.jpg' | absolute_url }}",
+    "contentUrl": "{{ '/img/anish-acharya-phd.jpg' | absolute_url }}",
+    "caption": "Anish Acharya, PhD — Senior Research Scientist at Amazon Web Services"
+  },
   "email": "mailto:{{ site.social.email }}",
   "jobTitle": "Senior Research Scientist",
+  "hasOccupation": {
+    "@type": "Occupation",
+    "name": "Research Scientist",
+    "occupationLocation": { "@type": "City", "name": "Austin, Texas" }
+  },
+  "workLocation": {
+    "@type": "Place",
+    "name": "Austin, Texas",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Austin",
+      "addressRegion": "TX",
+      "addressCountry": "US"
+    }
+  },
+  "hasCredential": {
+    "@type": "EducationalOccupationalCredential",
+    "name": "PhD, Electrical and Computer Engineering",
+    "credentialCategory": "degree",
+    "educationalLevel": "Doctoral degree",
+    "dateCreated": "2025",
+    "recognizedBy": {
+      "@type": "CollegeOrUniversity",
+      "name": "The University of Texas at Austin",
+      "url": "https://www.utexas.edu/"
+    }
+  },
   "description": "{{ site.description }}",
   "disambiguatingDescription": "Machine learning research scientist at Amazon Web Services and PhD graduate of the University of Texas at Austin; not the venture capitalist of the same name at Andreessen Horowitz.",
   "identifier": [
@@ -56,9 +106,11 @@ directly what makes the entity resolvable.
   ],
   "worksFor": {
     "@type": "Organization",
+    "@id": "{{ site.url }}/#employer",
     "name": "Amazon Web Services",
     "url": "https://aws.amazon.com/"
   },
+  "affiliation": { "@id": "{{ site.url }}/#employer" },
   "alumniOf": [
     {
       "@type": "CollegeOrUniversity",
@@ -78,14 +130,19 @@ directly what makes the entity resolvable.
   ],
   "knowsAbout": [
     "Machine learning theory",
-    "Recursive self-improvement",
+    { "@type": "Thing", "name": "Recursive self-improvement", "sameAs": ["https://en.wikipedia.org/wiki/Recursive_self-improvement", "https://www.wikidata.org/wiki/Q1768494"] },
+    { "@type": "Thing", "name": "AI agents", "sameAs": ["https://en.wikipedia.org/wiki/AI_agent", "https://www.wikidata.org/wiki/Q132451509"] },
+    { "@type": "Thing", "name": "Multi-agent systems", "sameAs": ["https://en.wikipedia.org/wiki/Multi-agent_system", "https://www.wikidata.org/wiki/Q529909"] },
     "Robust LLM evaluation",
     "LLM-as-a-judge",
     "Reward modeling",
-    "Multi-agent systems",
-    "Distributed and federated learning",
-    "Robust optimization",
-    "Weakly supervised learning",
+    { "@type": "Thing", "name": "Reward hacking", "sameAs": ["https://en.wikipedia.org/wiki/Reward_hacking", "https://www.wikidata.org/wiki/Q123900749"] },
+    "Prompt optimization",
+    { "@type": "Thing", "name": "Federated learning", "sameAs": ["https://en.wikipedia.org/wiki/Federated_learning", "https://www.wikidata.org/wiki/Q50818671"] },
+    "Distributed learning",
+    { "@type": "Thing", "name": "Robust statistics", "sameAs": ["https://en.wikipedia.org/wiki/Robust_statistics", "https://www.wikidata.org/wiki/Q1665389"] },
+    { "@type": "Thing", "name": "Robust optimization", "sameAs": ["https://en.wikipedia.org/wiki/Robust_optimization", "https://www.wikidata.org/wiki/Q2160088"] },
+    { "@type": "Thing", "name": "Weakly supervised learning", "sameAs": ["https://en.wikipedia.org/wiki/Weak_supervision", "https://www.wikidata.org/wiki/Q65044138"] },
     "Efficient learning"
   ],
   "award": [

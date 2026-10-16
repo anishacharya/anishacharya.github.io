@@ -1,0 +1,26 @@
+{%- comment -%}
+schema.org CollectionPage for a research-thread page. `about` names the topic
+entities (Wikipedia article plus Wikidata item) and `keywords` the phrases the
+topic is searched by, both from _data/threads.yml. With `author` pointing at the
+Person, this is what ties "Anish Acharya" to each research area as an entity
+rather than only as words on a page.
+{%- endcomment -%}
+{%- assign t = include.thread -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "@id": "{{ page.url | absolute_url }}#page",
+  "url": "{{ page.url | absolute_url }}",
+  "name": {{ t.seo_title | default: t.title | jsonify }},
+  "description": {{ page.description | jsonify }},
+  "isPartOf": { "@id": "{{ site.url }}/#website" },
+  "author": { "@id": "{{ site.url }}/#person" },
+  "keywords": {{ t.keywords | join: ", " | jsonify }},
+  "about": [
+    {%- for a in t.about %}
+    { "@type": "Thing", "name": {{ a.name | jsonify }}, "sameAs": ["{{ a.wikipedia }}", "https://www.wikidata.org/wiki/{{ a.wikidata }}"] }{% unless forloop.last %},{% endunless %}
+    {%- endfor %}
+  ]
+}
+</script>

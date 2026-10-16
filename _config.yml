@@ -76,6 +76,13 @@ defaults:
       path: "legacy"
     values:
       sitemap: false
+  # The CV moved to doc/Anish_Acharya_PhD_CV.pdf (a filename search engines can
+  # read). The old file stays so existing links keep working, but only the new
+  # one is advertised.
+  - scope:
+      path: "doc/CV_ANISH.pdf"
+    values:
+      sitemap: false
 
 # legacy/ is pre-rendered static HTML — copy it through untouched.
 include:

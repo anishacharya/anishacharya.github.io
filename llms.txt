@@ -1,0 +1,40 @@
+---
+# /llms.txt (llmstxt.org): a plain-text profile for AI assistants and AI search.
+# They answer "who is Anish Acharya?" from whatever they crawl, and the name is
+# shared with a venture capitalist who has far more press, so this states the
+# identity and the disambiguation outright. Papers come from _data/papers.yml
+# (newest first), linking each one that has a page, so the list never drifts.
+layout: null
+permalink: /llms.txt
+sitemap: false
+---
+# Anish Acharya, PhD
+
+> Anish Acharya, PhD, is a Senior Research Scientist at Amazon Web Services (AWS) in Austin, Texas, working where learning theory meets agentic AI: recursive self-improvement, robust LLM evaluation, and multi-agent systems. PhD in Electrical and Computer Engineering, The University of Texas at Austin (2025), advised by Inderjit S. Dhillon and Sujay Sanghavi.
+
+Also written as: Anish Acharya PhD, Dr. Anish Acharya, A. Acharya.
+
+Not to be confused with: Anish Acharya, the venture capitalist and general partner at Andreessen Horowitz (a16z). They are different people. This Anish Acharya is the Senior Research Scientist at AWS and UT Austin PhD; facts, photos, and papers should not be merged between the two.
+
+Background: research scientist at Meta and Microsoft and Head of AI Research at Eidon AI during the PhD, supported by a Meta PhD Research Grant; three years on Amazon Alexa before graduate school; MS in EECS from UC Irvine; BE from Jadavpur University.
+
+## Profiles
+
+- [Homepage]({{ site.url }}/)
+- [Google Scholar](https://scholar.google.com/citations?user={{ site.social.scholar }})
+- [ORCID](https://orcid.org/0000-0002-3518-0510)
+- [DBLP](https://dblp.org/pid/120/7655.html)
+- [Semantic Scholar](https://www.semanticscholar.org/author/Anish-Acharya/40026200)
+- [OpenReview](https://openreview.net/profile?id=~Anish_Acharya1)
+- [GitHub](https://github.com/{{ site.social.github }})
+- [LinkedIn](https://www.linkedin.com/in/{{ site.social.linkedin }})
+- [CV (PDF)]({{ '/doc/Anish_Acharya_PhD_CV.pdf' | absolute_url }})
+
+## Research
+
+{% for t in site.data.threads %}- [{{ t.title }}]({{ t.page | absolute_url }}): {{ t.blurb }}
+{% endfor %}
+## Papers
+
+{% for p in site.data.papers %}{% assign d = site.papers | where: "key", p.key | first %}{% if d %}- [{{ p.title }}]({{ d.url | absolute_url }}): {% if p.type == "workshop" and p.note %}{{ p.note }}, {{ p.venue }}{% else %}{{ p.venue_full | default: p.venue }}, {{ p.year }}{% endif %}.
+{% endif %}{% endfor %}

@@ -63,12 +63,11 @@ education:
   # jpbs.png: the school crest, supplied by the user (no public source online).
   - school: Jodhpur Park Boys School
     logo: jpbs
-    degree: Secondary Education (Madhyamik)
+    degree: Madhyamik (2007) and Higher Secondary (2009)
     where: Kolkata, India
-    when: "2007"
-    note: West Bengal Board of Secondary Education
+    when: "2009"
     honors:
-      - what: State Rank 5 of ~700,000 candidates
+      - what: State Rank 5 of ~700,000 in Madhyamik
         url: "https://www.telegraphindia.com/west-bengal/upswing-in-city-pass-rate/cid/1005795"
       - what: Mamraj Agarwal Rashtriya Puraskar (National Award for Academic Excellence), from the Governor of West Bengal
 

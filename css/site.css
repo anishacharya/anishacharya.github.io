@@ -88,15 +88,21 @@ html { font-size: 17px; -webkit-text-size-adjust: 100%; }
   position: fixed; inset: 0; z-index: -1; pointer-events: none;
   background: radial-gradient(120% 70% at 50% -10%, transparent 0%, var(--bg) 78%);
 }
-/* Homepage hero: the agent swarm from the agent swarm (js/swarm.js) over a
-   soft aurora. A fixed-height band behind the masthead and identity card that
-   fades into the page, so everything below it reads on the plain background.
-   Fixed px, not vh: a phone's URL bar resizes vh on every scroll. */
+/* Site-wide background: the agent swarm from the agent swarm (js/swarm.js)
+   over a soft aurora, fixed to the viewport on every page. A veil dims it behind
+   the reading column so text stays legible; the margins keep it at full
+   strength. */
 .hero-swarm {
-  position: absolute; top: 0; left: 0; right: 0; height: 720px;
+  position: fixed; inset: 0;
   z-index: -1; pointer-events: none; overflow: hidden;
-  -webkit-mask-image: linear-gradient(180deg, #000 55%, transparent 100%);
-          mask-image: linear-gradient(180deg, #000 55%, transparent 100%);
+}
+.hero-swarm::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(90deg,
+    transparent 0%,
+    color-mix(in srgb, var(--bg) 62%, transparent) calc(50% - var(--measure) / 2),
+    color-mix(in srgb, var(--bg) 62%, transparent) calc(50% + var(--measure) / 2),
+    transparent 100%);
 }
 .hero-swarm canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; opacity: 0.85; }
 .has-swarm .bg-layer { display: none; }

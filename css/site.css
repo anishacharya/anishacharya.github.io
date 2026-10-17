@@ -88,10 +88,9 @@ html { font-size: 17px; -webkit-text-size-adjust: 100%; }
   position: fixed; inset: 0; z-index: -1; pointer-events: none;
   background: radial-gradient(120% 70% at 50% -10%, transparent 0%, var(--bg) 78%);
 }
-/* Site-wide background: the agent swarm from the agent swarm (js/swarm.js)
-   over a soft aurora, fixed to the viewport on every page. A veil dims it behind
-   the reading column so text stays legible; the margins keep it at full
-   strength. */
+/* Site-wide background: the agent swarm (js/swarm.js) over a soft aurora,
+   fixed to the viewport on every page. A veil dims it behind the reading
+   column so text stays legible; the margins keep it at full strength. */
 .hero-swarm {
   position: fixed; inset: 0;
   z-index: -1; pointer-events: none; overflow: hidden;

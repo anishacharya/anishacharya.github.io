@@ -3,9 +3,9 @@
    tightens, collapses into a black hole, and bangs back out; the survivors
    drift as a new generation until another galaxy captures them. Several
    galaxies run out of phase, so the structure keeps reorganising.
-   Adapted from the the agent swarm landing page. Decorative only: the
-   canvas is aria-hidden, fixed behind the content, and never takes pointer
-   events. Pauses while the tab is hidden; a still frame under reduced motion. */
+   Decorative only: the canvas is aria-hidden, fixed behind the content,
+   and never takes pointer events. Pauses while the tab is hidden; a still
+   frame under reduced motion. */
 (function () {
   "use strict";
 

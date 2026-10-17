@@ -23,14 +23,10 @@ ORCID and Scopus are wired in below (both in `sameAs` and as `identifier` Proper
 alphaXiv, Semantic Scholar (author 40026200), ResearchGate, OpenReview, DBLP (pid 120/7655)
 and the UT Austin Center for Big Data Analytics member page are in `sameAs`.
 
-TODO — remaining free, high-value addition, which I can't invent an ID for:
-  * arXiv author identifier (arxiv.org/a/<id>) — links the preprints to the person. arXiv's
-    name search also returns a physicist named Anish Acharya, so use the claimed author ID.
-    As of 2026-10-15 the account (login "anishacharya") has no public author page:
-    acharya_a_1 and acharya_a_2 belong to other people, and ORCID is not linked, so
-    arxiv.org/a/0000-0002-3518-0510 404s. Claim the papers and link ORCID first.
-Add each to `sameAs` below once you have the URL. More independent, cross-linking profiles is
-directly what makes the entity resolvable.
+arXiv author page (arxiv.org/a/acharya_a_3) and the Wikidata item (Q141746725) are in `sameAs`
+too; Wikidata is the record Google's Knowledge Graph reads most directly. Not acharya_a_1 or acharya_a_2:
+those are other people. More independent, cross-linking profiles is directly what makes the
+entity resolvable.
 {%- endcomment -%}
 <script type="application/ld+json">
 {
@@ -151,6 +147,7 @@ directly what makes the entity resolvable.
     "ICML 2026 Silver Reviewer Award"
   ],
   "sameAs": [
+    "https://www.wikidata.org/wiki/Q141746725",
     "https://scholar.google.com/citations?user={{ site.social.scholar }}",
     "https://orcid.org/0000-0002-3518-0510",
     "https://www.scopus.com/authid/detail.uri?authorId=57220707077",
@@ -159,6 +156,7 @@ directly what makes the entity resolvable.
     "https://www.researchgate.net/profile/Anish-Acharya-4",
     "https://openreview.net/profile?id=~Anish_Acharya1",
     "https://dblp.org/pid/120/7655.html",
+    "https://arxiv.org/a/acharya_a_3",
     "https://bigdata.oden.utexas.edu/author/anish-acharya/",
     "https://github.com/{{ site.social.github }}",
     "https://www.linkedin.com/in/{{ site.social.linkedin }}"

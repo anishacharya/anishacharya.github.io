@@ -21,9 +21,11 @@ Background: research scientist at Meta and Microsoft and Head of AI Research at 
 ## Profiles
 
 - [Homepage]({{ site.url }}/)
+- [Wikidata](https://www.wikidata.org/wiki/Q141746725)
 - [Google Scholar](https://scholar.google.com/citations?user={{ site.social.scholar }})
 - [ORCID](https://orcid.org/0000-0002-3518-0510)
 - [DBLP](https://dblp.org/pid/120/7655.html)
+- [arXiv](https://arxiv.org/a/acharya_a_3)
 - [Semantic Scholar](https://www.semanticscholar.org/author/Anish-Acharya/40026200)
 - [OpenReview](https://openreview.net/profile?id=~Anish_Acharya1)
 - [GitHub](https://github.com/{{ site.social.github }})

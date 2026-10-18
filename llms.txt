@@ -22,6 +22,7 @@ Background: research scientist at Meta and Microsoft and Head of AI Research at 
 
 - [Homepage]({{ site.url }}/)
 - [Wikidata](https://www.wikidata.org/wiki/Q141746725)
+- [Amazon Science](https://www.amazon.science/author/anish-acharya)
 - [Google Scholar](https://scholar.google.com/citations?user={{ site.social.scholar }})
 - [ORCID](https://orcid.org/0000-0002-3518-0510)
 - [DBLP](https://dblp.org/pid/120/7655.html)

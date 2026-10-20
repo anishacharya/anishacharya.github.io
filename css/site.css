@@ -8,63 +8,40 @@
    --------------------------------------------------------------------------- */
 
 :root {
-  --ink:        #17171a;
-  --ink-soft:   #4c4c55;
-  /* 4.7:1 on --bg — clears WCAG AA for the small sans metadata that uses it. */
-  --ink-faint:  #71717a;
-  --rule:       #e6e4df;
-  --rule-soft:  #f0eeea;
-  --bg:         #fdfcfa;
-  --card:       #ffffff;
-  --accent:     #b3401a;
-  --accent-dim: #f7ede8;
+  /* Dark only, whatever the device asks for: the swarm, the aurora and the
+     diagrams are drawn for a dark page. */
+  color-scheme: dark;
+  --ink:        #ecebe8;
+  --ink-soft:   #b0aeaa;
+  --ink-faint:  #83817d;
+  --rule:       #2f2e2c;
+  --rule-soft:  #232220;
+  --bg:         #131311;
+  --card:       #1a1a18;
+  --accent:     #ef8a5e;
+  --accent-dim: #24160f;
   --measure:    52rem;
   --prose:      44rem;
 
-  /* Chart series. Validated for CVD separation in both modes
-     (dataviz validator: dE 9.2 light / 9.4 dark). Light aqua is 2.82:1 on
-     white, so every coloured mark carries a direct label — never colour alone. */
-  --s1: #eb6834;
-  --s2: #1baf7a;
-  /* Publication-type dots. Validated all-pairs in both modes
-     (worst CVD dE 9.2 light / 9.4 dark). Each dot sits beside its own word,
-     so identity is never colour-alone. */
-  --t-conf: #2a78d6;
-  --t-jour: #eb6834;
-  --t-work: #1baf7a;
-  --t-pre:  #85858f;
+  /* Chart series. Validated for CVD separation (dataviz validator: dE 9.4).
+     Every coloured mark carries a direct label — never colour alone. */
+  --s1: #d95926;
+  --s2: #199e70;
+  /* Publication-type dots. Validated all-pairs (worst CVD dE 9.4). Each dot
+     sits beside its own word, so identity is never colour-alone. */
+  --t-conf: #3987e5;
+  --t-jour: #d95926;
+  --t-work: #199e70;
+  --t-pre:  #83817d;
   /* News badge hues, one per kind. Validated 8-slot categorical set (worst
-     adjacent CVD dE 9.1 light / 8.4 dark). Labels stay ink — aqua, yellow and
-     magenta fail 3:1 as text on white, so the hue lives in fill and border. */
-  --k-paper: #2a78d6;  --k-role: #eb6834;  --k-talk: #1baf7a;
-  --k-award: #eda100;  --k-press: #e87ba4; --k-launch: #008300;
-  --k-milestone: #4a3aa7; --k-patent: #e34948;
+     adjacent CVD dE 8.4). Labels stay ink and the hue lives in fill and border,
+     so no badge depends on coloured text meeting contrast. */
+  --k-paper: #3987e5;  --k-role: #d95926;  --k-talk: #199e70;
+  --k-award: #c98500;  --k-press: #d55181; --k-launch: #008300;
+  --k-milestone: #9085e9; --k-patent: #e66767;
 
   --serif: Charter, "Bitstream Charter", "Sitka Text", Cambria, Georgia, serif;
   --sans:  system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --ink:        #ecebe8;
-    --ink-soft:   #b0aeaa;
-    --ink-faint:  #83817d;
-    --rule:       #2f2e2c;
-    --rule-soft:  #232220;
-    --bg:         #131311;
-    --card:       #1a1a18;
-    --accent:     #ef8a5e;
-    --accent-dim: #24160f;
-    --s1: #d95926;
-    --s2: #199e70;
-    --t-conf: #3987e5;
-    --t-jour: #d95926;
-    --t-work: #199e70;
-    --t-pre:  #83817d;
-    --k-paper: #3987e5;  --k-role: #d95926;  --k-talk: #199e70;
-    --k-award: #c98500;  --k-press: #d55181; --k-launch: #008300;
-    --k-milestone: #9085e9; --k-patent: #e66767;
-  }
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -119,13 +96,6 @@ html { font-size: 17px; -webkit-text-size-adjust: 100%; }
 @keyframes drift1 { 0%,100% { transform: translate3d(0,0,0) scale(1); }    50% { transform: translate3d(13%,8%,0) scale(1.15); } }
 @keyframes drift2 { 0%,100% { transform: translate3d(0,0,0) scale(1.06); } 50% { transform: translate3d(-12%,12%,0) scale(.9); } }
 @keyframes drift3 { 0%,100% { transform: translate3d(0,0,0) scale(.95); }  50% { transform: translate3d(9%,-12%,0) scale(1.13); } }
-/* Light mode: the swarm is drawn as light-on-dark, so invert lightness and
-   rotate back to the same hues — dark lineages on the pale page. The aurora
-   is additive light and has nothing to add on a white page. */
-@media (prefers-color-scheme: light) {
-  .hero-swarm canvas { filter: invert(1) hue-rotate(180deg); opacity: 0.7; }
-  .aurora { display: none; }
-}
 @media (prefers-reduced-motion: reduce) { .blob { animation: none; } }
 @media print { .bg-layer, .bg-veil, .hero-swarm { display: none; } }
 

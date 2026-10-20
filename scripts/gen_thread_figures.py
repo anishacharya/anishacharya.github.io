@@ -1,8 +1,8 @@
 """Generate the research-thread diagrams in img/ (threads 02-05).
 
 Shares the visual language of img/rsi-loop.svg (hand-edited, not generated):
-gradient title, centre diagram, two side panels, footer line, light/dark via
-prefers-color-scheme. Edit the text here, then run:
+gradient title, centre diagram, two side panels, footer line, dark only like
+the site. Edit the text here, then run:
 
     python3 scripts/gen_thread_figures.py img
 """
@@ -10,14 +10,10 @@ import math, random, sys
 OUT = sys.argv[1]
 
 STYLE = '''<style>
-  /* Light by default, dark to match the site. Loaded as an image, so none of
+  /* Dark only, to match the site. Loaded as an image, so none of
      this reaches the page. Shared with rsi-loop.svg. */
-  svg { --gr:#0a9e52; --cy:#0e8fa8; --mi:#0f9f6e; --am:#b37a00;
-        --ink:#17171a; --mute:#5c5c66; --node:#ffffff; --panel:#faf9f6; --glow:.35; }
-  @media (prefers-color-scheme: dark) {
-    svg { --gr:#00FF77; --cy:#22D3EE; --mi:#7CFFB0; --am:#FFB020;
-          --ink:#ecebe8; --mute:#9a9894; --node:#141413; --panel:#151514; --glow:.42; }
-  }
+  svg { --gr:#00FF77; --cy:#22D3EE; --mi:#7CFFB0; --am:#FFB020;
+        --ink:#ecebe8; --mute:#9a9894; --node:#141413; --panel:#151514; --glow:.42; }
   .ink{fill:var(--ink)} .mute{fill:var(--mute)}
   .f-gr{fill:var(--gr)} .f-cy{fill:var(--cy)} .f-mi{fill:var(--mi)} .f-am{fill:var(--am)}
   .s-gr{stroke:var(--gr)} .s-cy{stroke:var(--cy)} .s-mi{stroke:var(--mi)} .s-am{stroke:var(--am)} .s-mute{stroke:var(--mute)}

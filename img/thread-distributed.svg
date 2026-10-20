@@ -2,14 +2,10 @@
 <title id="title">Many learners, one model</title>
 <desc id="desc">Six learners, each holding a different local data distribution, send compressed updates to a robust aggregator and gossip with their neighbours. One learner sends a corrupted update, which the robust median down-weights. Each learner has local data, local compute, a communication budget, and a sparse set of neighbours; client drift, failures, adversarial participants, and stale information are what can go wrong.</desc>
 <style>
-  /* Light by default, dark to match the site. Loaded as an image, so none of
+  /* Dark only, to match the site. Loaded as an image, so none of
      this reaches the page. Shared with rsi-loop.svg. */
-  svg { --gr:#0a9e52; --cy:#0e8fa8; --mi:#0f9f6e; --am:#b37a00;
-        --ink:#17171a; --mute:#5c5c66; --node:#ffffff; --panel:#faf9f6; --glow:.35; }
-  @media (prefers-color-scheme: dark) {
-    svg { --gr:#00FF77; --cy:#22D3EE; --mi:#7CFFB0; --am:#FFB020;
-          --ink:#ecebe8; --mute:#9a9894; --node:#141413; --panel:#151514; --glow:.42; }
-  }
+  svg { --gr:#00FF77; --cy:#22D3EE; --mi:#7CFFB0; --am:#FFB020;
+        --ink:#ecebe8; --mute:#9a9894; --node:#141413; --panel:#151514; --glow:.42; }
   .ink{fill:var(--ink)} .mute{fill:var(--mute)}
   .f-gr{fill:var(--gr)} .f-cy{fill:var(--cy)} .f-mi{fill:var(--mi)} .f-am{fill:var(--am)}
   .s-gr{stroke:var(--gr)} .s-cy{stroke:var(--cy)} .s-mi{stroke:var(--mi)} .s-am{stroke:var(--am)} .s-mute{stroke:var(--mute)}

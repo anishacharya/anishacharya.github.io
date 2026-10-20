@@ -4,6 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {%- comment -%}
+    Dark only, on every device. These two reach the browser before the
+    stylesheet, so a phone in light mode never flashes a white page, and the
+    browser bar matches --bg.
+  {%- endcomment %}
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#131311">
+  {%- comment -%}
     `seo_title` overrides the generated title. The homepage uses it to carry the
     role and field, which separates this Anish Acharya from others in search.
     Research-thread pages take theirs from _data/threads.yml, phrased the way the

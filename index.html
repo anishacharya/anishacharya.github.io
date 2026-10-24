@@ -44,19 +44,23 @@ redirect_from:
 
 <h2 id="about">About</h2>
 {%- comment -%}
-  First-impression profile: the current role, earlier roles in one line, and
-  degrees. Advisors and committee live in the Thesis block; dates and details
-  in Experience and Education. Wording follows the CV source.
+  First-impression profile: the current role, the PhD (advisors, topic, grant,
+  roles held during it), and earlier roles in one line. Committee lives in the
+  Thesis block; dates and details in Experience and Education. Wording follows
+  the CV source.
 {%- endcomment -%}
+{% assign phd = site.data.work.education | first %}
 <div class="bio">
   <p>
     I am a Senior Research Scientist at Amazon Web Services in Austin, Texas, working where learning
     theory meets agentic AI. I lead a central evaluation, red-teaming, and governance platform gating
     every agent system release, with recursive self-improvement built in so the agents keep learning
-    and improving. Previously I was a research scientist at Meta and Microsoft, Head of AI Research at
-    Eidon AI, and an applied scientist on Amazon Alexa. I hold a PhD in Electrical and Computer
-    Engineering from The University of Texas at Austin, an MS in EECS from UC Irvine, and a BE from
-    Jadavpur University.
+    and improving. I received my PhD in Electrical and Computer Engineering from The University of
+    Texas at Austin in Spring 2025, advised by {% for a in phd.advisors %}{% if a.scholar %}<a href="https://scholar.google.com/citations?user={{ a.scholar }}">{{ a.name }}</a>{% else %}{{ a.name }}{% endif %}{% unless forloop.last %} and {% endunless %}{% endfor %},
+    where my research studied robust and efficient learning in high dimensions. During my PhD I
+    received a $100K Meta PhD Research Grant, held research scientist internships at Meta and
+    Microsoft, and had a short startup stint. Before my PhD I was an Applied Scientist at Amazon
+    AGI, and earlier held data science roles at eBay, Schlumberger, and an early-stage startup.
   </p>
 </div>
 
@@ -81,7 +85,7 @@ redirect_from:
   {% endfor %}
 </ul>
 
-{% assign phd = site.data.work.education | first %}
+<h2 id="publications">Publications</h2>
 <h3 class="subhead">Thesis</h3>
 <div class="thesis">
   <p class="thesis-title"><a href="{{ phd.thesis_url }}">{{ phd.thesis }}</a></p>
@@ -92,7 +96,6 @@ redirect_from:
   </p>
 </div>
 
-<h2 id="publications">Publications</h2>
 <h3 class="subhead">Granted US patents</h3>
 <ul class="rows">
   {% for pt in site.data.patents %}

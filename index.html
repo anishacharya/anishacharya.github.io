@@ -105,7 +105,7 @@ redirect_from:
       <div class="t">{{ pt.title }}</div>
       {% if pt.summary %}<div class="s">{{ pt.summary }}</div>{% endif %}
       <div class="s">
-        {% for a in pt.inventors %}{% if a == "A Acharya" or a == "Anish Acharya" %}<strong>Anish Acharya</strong>{% else %}{{ a }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}
+        {% include authors.html names=pt.inventors key=pt.key %}
       </div>
       <div class="s">
         {{ pt.number }} · {{ pt.assignee }}

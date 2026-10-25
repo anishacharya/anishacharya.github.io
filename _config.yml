@@ -26,13 +26,14 @@ verification:
 
 # --- Navigation ---------------------------------------------------------- #
 
-# Every tab but News jumps to a section of the front page.
+# Every tab jumps to a section of the front page. Standalone pages (News,
+# Collaborators) are linked from the footer instead, so they stay crawlable
+# without crowding the tabs.
 nav:
   About: "/#about"
   Research: "/#research"
   Publications: "/#publications"
   Experience: "/#experience"
-  News: "/news/"
 
 # --- Build --------------------------------------------------------------- #
 

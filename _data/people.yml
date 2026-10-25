@@ -1,0 +1,133 @@
+# Collaborators: coauthors, co-inventors, advisors, thesis committee, and
+# internship hosts. Rendered at /collaborators/ (linked from the footer, not the
+# nav), and used by _includes/authors.html to link coauthor names in paper and
+# patent author lists to Google Scholar.
+#
+# Fields:
+#   name     full name as published (arXiv, ACL Anthology, Crossref, Amazon
+#            Science); never expand an initial from memory
+#   scholar  Google Scholar user id. Only ids confirmed on the paper's own
+#            Scholar entry or on the owner's Scholar co-author list. Leave it out
+#            rather than guess; a wrong id links to a stranger.
+#   as       spellings used in papers.yml `authors` / patents.yml `inventors`
+#   papers   shared paper and patent keys. Where two coauthors of one paper
+#            share a spelling ("S Das" twice), write key@N, N being the 1-based
+#            position in that paper's author list.
+#   role     advisor | committee | host (optional; shown on the page)
+#   group    key into `groups`
+
+groups:
+  - key: aws
+    title: Amazon Web Services
+  - key: ut
+    title: UT Austin (PhD)
+  - key: meta
+    title: Meta
+  - key: msr
+    title: Microsoft Research
+  - key: alexa
+    title: Amazon Alexa AI
+  - key: nlp
+    title: NLP datasets (LDKP, GupShup)
+  - key: ttic
+    title: Toyota Technological Institute at Chicago
+  - key: ju
+    title: Jadavpur University (undergraduate)
+
+people:
+  # ── AWS ──
+  - { name: Brian Verkhovsky, as: [B Verkhovsky], papers: [splice, ropoll, orchopt], group: aws }
+  - { name: Amit Dhanda, scholar: CSkPkmkAAAAJ, as: [A Dhanda], papers: [splice, orchopt], group: aws }
+  - { name: Sina Amini Niaki, as: [S A Niaki], papers: [splice, orchopt], group: aws }
+  - { name: Kris W. Pan, as: [K Pan], papers: [ropoll], group: aws }
+  - { name: P. Studans, as: [P Studans], papers: [splice], group: aws }
+  - { name: N. V. Rao, as: [N V Rao], papers: [splice], group: aws }
+  - { name: V. A. Khatri, as: [V A Khatri], papers: [splice], group: aws }
+
+  # ── UT Austin ──
+  - { name: Inderjit S. Dhillon, scholar: xBv5ZfkAAAAJ, as: [I Dhillon, I S Dhillon], papers: [gm-matching, momentum-fl, bgmd, pu-contrastive, gossip, embedding-compression, nlp-embedding-compression], role: advisor, group: ut }
+  - { name: Sujay Sanghavi, scholar: O-DazBUAAAAJ, as: [S Sanghavi], papers: [gm-matching, momentum-fl, bgmd, pu-contrastive, gossip], role: advisor, group: ut }
+  - { name: Alexandros G. Dimakis, scholar: JSFmVQEAAAAJ, as: [A G Dimakis, A Dimakis], papers: [gm-matching, ndsc], role: committee, group: ut }
+  - { name: Ludwig Schmidt, scholar: SWMKy70AAAAJ, papers: [], role: committee, group: ut }
+  - { name: Nhat Ho, scholar: Xs7cKMwAAAAJ, papers: [], role: committee, group: ut }
+  - { name: Ufuk Topcu, scholar: jeNGFfQAAAAJ, as: [U Topcu], papers: [momentum-fl, bgmd], group: ut }
+  - { name: Haris Vikalo, as: [H Vikalo], papers: [gossip], group: ut }
+  - { name: Prateek Jain, scholar: qYhRbJoAAAAJ, as: [P Jain], papers: [bgmd], group: ut }
+  - { name: Abolfazl Hashemi, scholar: Se7mocgAAAAJ, as: [A Hashemi], papers: [momentum-fl, bgmd, gossip], group: ut }
+  - { name: Rudrajit Das, scholar: L5K4mJMAAAAJ, as: [R Das], papers: [momentum-fl, gossip], group: ut }
+  - { name: Hyeji Kim, scholar: uK5wa_EAAAAJ, as: [H Kim], papers: [ndsc], group: ut }
+  - { name: Jay Whang, scholar: rBH-cpMAAAAJ, as: [J Whang], papers: [ndsc], group: ut }
+  - { name: Alliot Nagle, scholar: OUilkgIAAAAJ, as: [A Nagle], papers: [ndsc], group: ut }
+
+  # ── Meta ──
+  - { name: Michael Rabbat, scholar: cMPKe9UAAAAJ, as: [M Rabbat], papers: [pu-contrastive], role: host, group: meta }
+  - { name: Li Jing, scholar: VhxDLwcAAAAJ, as: [L Jing], papers: [pu-contrastive], role: host, group: meta }
+  - { name: Bhargav Bhushanam, scholar: nYaiiJQAAAAJ, as: [B Bhushanam], papers: [pu-contrastive], role: host, group: meta }
+  - { name: Dhruv Choudhary, scholar: U8sbg10AAAAJ, as: [D Choudhary], papers: [pu-contrastive], role: host, group: meta }
+
+  # ── Microsoft Research ──
+  - { name: Kenichi Kumatani, scholar: qsIUPW0AAAAJ, papers: [], role: host, group: msr }
+  - { name: Dimitrios Dimitriadis, scholar: AQSvco0AAAAJ, papers: [], role: host, group: msr }
+
+  # ── Amazon Alexa AI ──
+  - { name: Angeliki Metallinou, scholar: tF0dNkUAAAAJ, as: [A Metallinou], papers: [alexa-conversations, embedding-compression, goal-oriented-dialog, nlp-embedding-compression], group: alexa }
+  - { name: Dilek Hakkani-Tür, scholar: GMcL_9kAAAAJ, as: [D Hakkani-Tur, D H Tur], papers: [alexa-conversations, goal-oriented-dialog], group: alexa }
+  - { name: Rahul Goel, as: [R Goel], papers: [alexa-conversations, embedding-compression, nlp-embedding-compression], group: alexa }
+  - { name: Tagyoung Chung, as: [T Chung], papers: [alexa-conversations, goal-oriented-dialog], group: alexa }
+  - { name: Arindam Mandal, as: [A Mandal], papers: [alexa-conversations, goal-oriented-dialog], group: alexa }
+  - { name: Shachi Paul, as: [S Paul], papers: [alexa-conversations, goal-oriented-dialog], group: alexa }
+  - { name: Shubhra Chandra, as: [S Chandra], papers: [alexa-conversations, goal-oriented-dialog], group: alexa }
+  - { name: Chien-Wei Lin, as: [C Lin], papers: [alexa-conversations, goal-oriented-dialog], group: alexa }
+  - { name: Suranjit Adhikari, as: [S Adhikari], papers: [alexa-conversations], group: alexa }
+  - { name: Sanchit Agarwal, as: [S Agarwal], papers: [alexa-conversations], group: alexa }
+  - { name: Vincent Auvray, as: [V Auvray], papers: [alexa-conversations], group: alexa }
+  - { name: Nehal Belgamwar, as: [N Belgamwar], papers: [alexa-conversations], group: alexa }
+  - { name: Arijit Biswas, as: [A Biswas], papers: [alexa-conversations], group: alexa }
+  - { name: Maryam Fazel-Zarandi, as: [M Zarandi], papers: [alexa-conversations], group: alexa }
+  - { name: Raefer Gabriel, as: [R Gabriel], papers: [alexa-conversations], group: alexa }
+  - { name: Shuyang Gao, as: [S Gao], papers: [alexa-conversations], group: alexa }
+  - { name: Jan Jezabek, as: [J Jezabek], papers: [alexa-conversations], group: alexa }
+  - { name: Abhay Jha, as: [A Jha], papers: [alexa-conversations], group: alexa }
+  - { name: Jiun-Yu Kao, as: [J Kao], papers: [alexa-conversations], group: alexa }
+  - { name: Prakash Krishnan, as: [P Krishnan], papers: [alexa-conversations], group: alexa }
+  - { name: Peter Ku, as: [P Ku], papers: [alexa-conversations], group: alexa }
+  - { name: Anuj Goyal, as: [A Goyal], papers: [alexa-conversations], group: alexa }
+  - { name: Qing Liu, as: [Q Liu], papers: [alexa-conversations], group: alexa }
+  - { name: Vishal Naik, as: [V Naik], papers: [alexa-conversations], group: alexa }
+  - { name: Yi Pan, as: [Y Pan], papers: [alexa-conversations], group: alexa }
+  - { name: Vittorio Perera, as: [V Perera], papers: [alexa-conversations], group: alexa }
+  - { name: Abhishek Sethi, as: [A Sethi], papers: [alexa-conversations], group: alexa }
+  - { name: Minmin Shen, as: [M Shen], papers: [alexa-conversations], group: alexa }
+  - { name: Nikko Strom, as: [N Strom], papers: [alexa-conversations], group: alexa }
+  - { name: Eddie Wang, as: [E Wang], papers: [alexa-conversations], group: alexa }
+
+  # ── NLP datasets ──
+  - { name: Rajiv Ratn Shah, as: [R R Shah, R Shah], papers: [ldkp, gupshup], group: nlp }
+  - { name: Debanjan Mahata, as: [D Mahata], papers: [ldkp, gupshup], group: nlp }
+  - { name: Amardeep Kumar, as: [A Kumar], papers: [ldkp, gupshup], group: nlp }
+  - { name: Yaman Kumar Singla, as: [Y K Singla], papers: [ldkp], group: nlp }
+  - { name: Navneet Agarwal, as: [N Agarwal], papers: [ldkp], group: nlp }
+  - { name: Dibya Gautam, as: [D Gautam], papers: [ldkp], group: nlp }
+  - { name: Swapnil Parekh, as: [S Parekh], papers: [ldkp], group: nlp }
+  - { name: Laiba Mehnaz, as: [L Mehnaz], papers: [gupshup], group: nlp }
+  - { name: Uma Sushmitha Gunturi, as: [U S Gunturi], papers: [gupshup], group: nlp }
+  - { name: Rakesh Gosangi, as: [R Gosangi], papers: [gupshup], group: nlp }
+  - { name: Riya Jain, as: [R Jain], papers: [gupshup], group: nlp }
+  - { name: Gauri Gupta, as: [G Gupta], papers: [gupshup], group: nlp }
+  - { name: Isabelle Lee, as: [I G Lee], papers: [gupshup], group: nlp }
+
+  # ── TTIC ──
+  - { name: David McAllester, scholar: nbpafUkAAAAJ, papers: [], role: host, group: ttic }
+
+  # ── Jadavpur University ──
+  - { name: Amitava Gupta, scholar: z1BR7IgAAAAJ, as: [A Gupta], papers: [nonlinear-ann, least-square], role: advisor, group: ju }
+  - { name: Shantanu Das, scholar: 9ix9YS8AAAAJ, as: [S Das], papers: [butterworth@4, least-square@5], role: advisor, group: ju }
+  - { name: Saptarshi Das, scholar: AnvxAbkAAAAJ, as: [S Das], papers: [butterworth@2, lorenz-pid, multiwing, fractional-q, nonlinear-ann, least-square@1], group: ju }
+  - { name: Indranil Pan, as: [I Pan], papers: [butterworth, lorenz-pid, multiwing, fractional-q, nonlinear-ann, least-square], group: ju }
+  - { name: Abhishek Kumar, as: [A Kumar], papers: [nonlinear-ann, least-square], group: ju }
+  - { name: Debatri Mitra, as: [D Mitra], papers: [bode], group: ju }
+  - { name: Kaushik Halder, as: [K Halder], papers: [bode], group: ju }
+  - { name: Anindya Pakhira, as: [A Pakhira], papers: [fractional-q], group: ju }
+  - { name: Suman Saha, as: [S Saha], papers: [fractional-q], group: ju }
+  - { name: Sayan Saha, as: [S Saha], papers: [nonlinear-ann], group: ju }
+  - { name: Sumit Mukherjee, as: [S Mukherjee], papers: [nonlinear-ann], group: ju }

@@ -543,6 +543,10 @@ h2 + .subhead { margin-top: 0; }
 /* Venue line: the conference or journal carries the emphasis; a workshop
    qualifier is deliberately subordinate to it. */
 .pub-authors { font-size: 0.86rem; color: var(--ink-soft); margin: 0 0 0.18rem; }
+/* Coauthor names link to Google Scholar. Kept in the text colour so a long
+   author line reads as names, not a row of links; the accent shows on hover. */
+a.coauthor { color: inherit; border-bottom: 1px dotted var(--ink-faint); }
+a.coauthor:hover { color: var(--accent); border-bottom-color: var(--accent); }
 .pub-venue {
   font-size: 0.89rem; color: var(--ink); font-style: italic;
   margin: 0; line-height: 1.45;
@@ -711,6 +715,24 @@ footer { border-top: 1px solid var(--rule); }
 .fine a { color: var(--ink-faint); border-bottom: none; }
 .fine a:hover { color: var(--accent); }
 
+/* --- Collaborators ------------------------------------------------------ */
+
+/* Two columns of compact entries: name (linked to Scholar) with an optional
+   role, and the shared work underneath. One column on phones. */
+.people {
+  list-style: none; margin: 0; padding: 0;
+  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 1.6rem;
+}
+.people li { padding: 0.5rem 0; border-bottom: 1px solid var(--rule-soft); min-width: 0; }
+.people .n { font-family: var(--sans); font-size: 0.94rem; font-weight: 570; color: var(--ink); }
+.people .n a { color: inherit; border-bottom: 1px dotted var(--ink-faint); }
+.people .n a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+.people .role {
+  font-family: var(--sans); font-size: 0.7rem; letter-spacing: 0.08em;
+  text-transform: uppercase; color: var(--ink-faint); margin-left: 0.35rem;
+}
+.people .w { display: block; font-size: 0.84rem; color: var(--ink-soft); line-height: 1.45; margin-top: 0.1rem; }
+
 /* --- Responsive --------------------------------------------------------- */
 
 @media (max-width: 40rem) {
@@ -718,6 +740,7 @@ footer { border-top: 1px solid var(--rule); }
   main { padding: 1.75rem 0 3rem; }
   .wrap, .masthead-in, .footer-in { padding-inline: 1.15rem; }
   h1 { font-size: 1.65rem; }
+  .people { grid-template-columns: 1fr; }
   /* Identity card: photo beside name and titles, link buttons on their own
      full-width row underneath. Beside the photo they were squeezed into a
      narrow column and wrapped three rows deep. */

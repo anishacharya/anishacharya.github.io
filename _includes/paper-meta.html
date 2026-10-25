@@ -55,8 +55,14 @@ site's Person entity through the same @id used in person-schema.html.
     {%- for a in names -%}
     {%- if a == "A Acharya" or a == "Anish Acharya" %}
     { "@type": "Person", "@id": "{{ site.url }}/#person", "name": "Anish Acharya" }
-    {%- else %}
-    { "@type": "Person", "name": {{ a | jsonify }} }
+    {%- else -%}
+    {%- comment -%} Same lookup as authors.html: full name, plus Scholar as sameAs. {%- endcomment -%}
+    {%- assign pos = p.key | append: "@" | append: forloop.index -%}
+    {%- assign cands = site.data.people.people | where_exp: "x", "x.as contains a" -%}
+    {%- assign by_pos = cands | where_exp: "x", "x.papers contains pos" -%}
+    {%- assign by_key = cands | where_exp: "x", "x.papers contains p.key" -%}
+    {%- assign who = by_pos | concat: by_key | first %}
+    { "@type": "Person", "name": {{ who.name | default: a | jsonify }}{% if who.scholar %}, "sameAs": "https://scholar.google.com/citations?user={{ who.scholar }}"{% endif %} }
     {%- endif -%}
     {%- unless forloop.last %},{% endunless -%}
     {%- endfor %}

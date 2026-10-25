@@ -1,0 +1,63 @@
+---
+layout: base
+title: Collaborators
+permalink: /collaborators/
+description: "Coauthors, co-inventors, advisors, and hosts Anish Acharya has worked with, grouped by where the work happened, with links to their Google Scholar profiles."
+---
+{%- comment -%}
+  Not in the nav; linked from the footer. Everything comes from
+  _data/people.yml, so add a coauthor there, not here. The JSON-LD below
+  attaches the same people to the site's Person entity as `colleague`, so it
+  describes exactly what this page shows.
+{%- endcomment -%}
+<p class="lede">
+  Coauthors, co-inventors, advisors, and hosts, grouped by where we worked together.
+</p>
+
+{% assign everyone = site.data.people.people %}
+{% for g in site.data.people.groups %}
+  {% assign ps = everyone | where: "group", g.key %}
+  <h3 class="subhead">{{ g.title }}</h3>
+  <ul class="people">
+    {% for x in ps %}
+    <li>
+      <span class="n">{% if x.scholar %}<a href="https://scholar.google.com/citations?user={{ x.scholar }}">{{ x.name }}</a>{% else %}{{ x.name }}{% endif %}</span>
+      {%- if x.role == "advisor" %} <span class="role">advisor</span>
+      {%- elsif x.role == "committee" %} <span class="role">thesis committee</span>
+      {%- elsif x.role == "host" %} <span class="role">host</span>
+      {%- endif %}
+      {% if x.papers.size > 0 %}
+      <span class="w">
+        {%- for k in x.papers -%}
+          {%- assign key = k | split: "@" | first -%}
+          {%- assign pp = site.data.papers | where: "key", key | first -%}
+          {%- assign pt = site.data.patents | where: "key", key | first -%}
+          {%- if pp -%}
+            {%- assign doc = site.papers | where: "key", key | first -%}
+            {%- if pp.title contains ":" -%}{%- assign label = pp.title | split: ":" | first -%}{%- else -%}{%- assign label = pp.title | truncatewords: 7, "…" -%}{%- endif -%}
+            {%- if doc -%}<a href="{{ doc.url | relative_url }}">{{ label }}</a>{%- else -%}{{ label }}{%- endif %} ({{ pp.year }})
+          {%- elsif pt -%}
+            {%- assign l1 = pt.links | first -%}
+            <a href="{{ l1[1] }}">US patent {{ pt.number | remove: "US" }}</a>
+          {%- endif -%}
+          {%- unless forloop.last %}<span class="sep"> · </span>{% endunless -%}
+        {%- endfor -%}
+      </span>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+{% endfor %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "{{ site.url }}/#person",
+  "colleague": [
+    {%- for x in everyone %}
+    { "@type": "Person", "name": {{ x.name | jsonify }}{% if x.scholar %}, "sameAs": "https://scholar.google.com/citations?user={{ x.scholar }}"{% endif %} }{% unless forloop.last %},{% endunless %}
+    {%- endfor %}
+  ]
+}
+</script>
